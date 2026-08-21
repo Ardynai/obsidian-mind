@@ -1,0 +1,21 @@
+---
+source_file: "src/lib/data/polymarket.ts"
+type: "code"
+community: "Polymarket Integration"
+location: "L297"
+tags:
+  - graphify/code
+  - graphify/EXTRACTED
+  - community/Polymarket_Integration
+---
+
+# isRecord()
+
+## Connections
+- [[fetchDataPositions()]] - `calls` [EXTRACTED]
+- [[fetchGammaMarkets()]] - `calls` [EXTRACTED]
+- [[parseGammaMarket()]] - `calls` [EXTRACTED]
+- [[parsePosition()]] - `calls` [EXTRACTED]
+- [[polymarket.ts]] - `contains` [EXTRACTED]
+
+#graphify/code #graphify/EXTRACTED #community/Polymarket_Integration

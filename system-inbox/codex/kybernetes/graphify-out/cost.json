@@ -1,0 +1,14 @@
+{
+  "runs": [
+    {
+      "date": "2026-08-21T05:24:00+00:00",
+      "input_tokens": 332869,
+      "output_tokens": 21045,
+      "files": 661,
+      "commit": "8cfacc4",
+      "note": "extract 324914/17755 + cluster-only labels 7955/3290"
+    }
+  ],
+  "total_input_tokens": 332869,
+  "total_output_tokens": 21045
+}

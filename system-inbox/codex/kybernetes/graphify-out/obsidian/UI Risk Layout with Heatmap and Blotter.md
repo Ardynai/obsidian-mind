@@ -1,0 +1,16 @@
+---
+source_file: "docs/assets/flash-after-risk.png"
+type: "image"
+community: "Risk and Limit UI"
+tags:
+  - graphify/image
+  - graphify/INFERRED
+  - community/Risk_and_Limit_UI
+---
+
+# UI: Risk Layout with Heatmap and Blotter
+
+## Connections
+- [[UI Risk Panel with Limit and Usage Metrics]] - `conceptually_related_to` [INFERRED]
+
+#graphify/image #graphify/INFERRED #community/Risk_and_Limit_UI
