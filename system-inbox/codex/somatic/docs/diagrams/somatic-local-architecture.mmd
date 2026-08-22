@@ -1,0 +1,8 @@
+%% Somatic local architecture — Bioluminescence (simplified Mermaid alternate)
+%% The authored figure is docs/diagrams/somatic-local-architecture.svg
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#12261E', 'primaryTextColor': '#EAF5EF', 'primaryBorderColor': '#35E7A6', 'lineColor': '#35E7A6', 'secondaryColor': '#0a1812', 'tertiaryColor': '#08150F', 'fontFamily': 'IBM Plex Sans, Segoe UI, sans-serif'}}}%%
+flowchart LR
+  UI["Local UI<br/>Bioluminescence cockpit<br/>React · R3F Field · ⌘K<br/>CSP script-src 'self'<br/>python -m somatic ui"]
+  Bridge["stdlib bridge<br/>http.server · loopback<br/>JSON API on 127.0.0.1<br/>refuses non-loopback Host"]
+  Engine["Engine (stdlib)<br/>require_consent · default-OFF<br/>emergency_screen → clinician<br/>frame_advisory · citation-bind<br/>screen_biosecurity · refuse"]
+  UI -->|"JSON / loopback"| Bridge -->|"reuses gates"| Engine

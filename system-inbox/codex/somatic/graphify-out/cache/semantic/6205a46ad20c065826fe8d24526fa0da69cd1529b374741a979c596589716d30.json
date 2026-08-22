@@ -1,0 +1,1 @@
+{"nodes": [{"id": "docs_cli", "label": "CLI Documentation", "file_type": "document", "source_file": "docs/cli.md", "rationale": "Describes standard-library CLI commands for running workflows, doctor checks, and sensor validation."}], "edges": [], "hyperedges": []}

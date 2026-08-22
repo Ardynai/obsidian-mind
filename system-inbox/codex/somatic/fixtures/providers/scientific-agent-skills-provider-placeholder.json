@@ -1,0 +1,73 @@
+{
+  "id": "scientific-agent-skills-provider-placeholder",
+  "class": "science-skills",
+  "name": "Scientific Agent Skills Provider Placeholder",
+  "version": "0.1.0",
+  "description": "Disabled metadata for the Phase 5C K-Dense-AI/scientific-agent-skills adapter scaffold. No external skill package is imported or executed.",
+  "status": "scaffolded",
+  "external_runtime_enabled": false,
+  "disabled_by_default": true,
+  "metadata_only": true,
+  "skill_execution_enabled": false,
+  "provider_module": "somatic.providers.scientific_agent_skills",
+  "provider_class": "ScientificAgentSkillsProvider",
+  "optional_dependency": {
+    "package": "scientific-agent-skills",
+    "import_name": "scientific_agent_skills",
+    "required_for_basic_install": false,
+    "imported_at_module_import_time": false
+  },
+  "local_repo_inspected": true,
+  "local_path": "C:\\AI\\external-sources\\somatic\\scientific-agent-skills",
+  "inspected_commit": "effb57c5699c1d400ef461a7aa80fc6693939805",
+  "license": {
+    "file": "LICENSE.md",
+    "identifier": "MIT"
+  },
+  "capabilities": [
+    {
+      "id": "science_skills.lookup",
+      "input_types": ["task", "modality", "tags"],
+      "output_types": ["skill-record-list"]
+    },
+    {
+      "id": "science_skills.describe",
+      "input_types": ["skill-id"],
+      "output_types": ["skill-record"]
+    },
+    {
+      "id": "science_database_connectors.list",
+      "input_types": [],
+      "output_types": ["database-connector-list"]
+    },
+    {
+      "id": "science_database_connectors.describe",
+      "input_types": ["connector-id"],
+      "output_types": ["database-connector-record"]
+    }
+  ],
+  "modes_supported": ["literature-only", "hypothesis-tournament", "robin-loop", "in-silico-screening"],
+  "data_locality": "unknown",
+  "determinism": "best-effort",
+  "offline_supported": false,
+  "permissions_required": ["read:workflow", "read:input", "write:artifact"],
+  "auth": {
+    "type": "none",
+    "secrets_required": []
+  },
+  "limits": {
+    "network_calls_allowed": false,
+    "database_calls_allowed": false,
+    "skill_execution_allowed": false,
+    "runtime_import_allowed": false,
+    "basic_install_dependency": false
+  },
+  "artifacts_emitted": ["skill-map", "adapter-plan"],
+  "evidence_emitted": [],
+  "safety_notes": [
+    "Skill records are planning references until a future adapter maps inputs, outputs, and safety gates.",
+    "No tool execution should occur during lookup or describe operations.",
+    "No external database/API calls are allowed in the Phase 5C metadata scaffold.",
+    "Health and clinical data must remain local unless explicitly configured and consented."
+  ]
+}

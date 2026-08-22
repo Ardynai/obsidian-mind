@@ -1,0 +1,1 @@
+{"nodes": [{"id": "fixtures_bench_ripasudil_damd", "label": "Ripasudil dAMD Task", "file_type": "code", "source_file": "fixtures/bench/ripasudil-damd.json", "rationale": "Canonical traction task for reproducing Robin ripasudil/dAMD in sandbox."}], "edges": [], "hyperedges": []}

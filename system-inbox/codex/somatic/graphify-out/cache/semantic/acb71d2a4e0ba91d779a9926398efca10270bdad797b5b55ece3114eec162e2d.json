@@ -1,0 +1,1 @@
+{"nodes": [{"id": "science_biosecurity_screen_biosecurity", "label": "screen_biosecurity", "file_type": "code", "source_file": "somatic/science/biosecurity.py", "rationale": "Refuses requests naming pathogens or toxins of concern."}], "edges": [], "hyperedges": []}

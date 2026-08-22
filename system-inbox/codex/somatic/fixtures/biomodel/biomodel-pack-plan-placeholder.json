@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "biomodel-pack-plan-placeholder",
+  "phase": "6D",
+  "status": "planned-not-packed",
+  "bundle_id": "biomodel-provenance-placeholder",
+  "bundle_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "pack_class": "data",
+  "candidate_type": "dataset",
+  "alternate_candidate_type": "document",
+  "code_pack": false,
+  "executable_files": [],
+  "publishing_enabled": false,
+  "catalog_publish_enabled": false,
+  "transport_status": "absent-future",
+  "signing_enabled": false,
+  "signed_pack_created": false,
+  "draft_pack_manifest": false,
+  "license_review_required": true,
+  "public_seeding_allowed": false,
+  "artifacts_local_research_outputs": true,
+  "recommended_files": [
+    {
+      "id": "biomodel_provenance_bundle",
+      "relative_path": "artifacts/biomodel_provenance_bundle.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "provenance-bundle",
+      "content_type": "application/json",
+      "local_only": true,
+      "research_only": true
+    }
+  ],
+  "requirements_before_public_packaging": [
+    "license review before public seeding",
+    "provenance review",
+    "safety review",
+    "hash verification",
+    "explicit publication approval"
+  ],
+  "metadata": {
+    "phase": "6D",
+    "pack_planning_only": true,
+    "future_transport": "not implemented",
+    "future_publication": "not approved",
+    "all_artifacts_local_test_fixtures_or_research_outputs": true
+  }
+}

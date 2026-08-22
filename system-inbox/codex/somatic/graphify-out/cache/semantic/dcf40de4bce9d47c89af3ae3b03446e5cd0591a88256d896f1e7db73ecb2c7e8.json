@@ -1,0 +1,1 @@
+{"nodes": [{"id": "fixtures_providers_paperqa2_provider_placeholder", "label": "PaperQA2 Provider Placeholder", "file_type": "code", "source_file": "fixtures/providers/paperqa2-provider-placeholder.json", "rationale": "Disabled metadata for the Phase 5B PaperQA2 literature adapter scaffold."}], "edges": [], "hyperedges": []}

@@ -1,0 +1,85 @@
+<p class="kicker">This machine</p>
+<h1>All off.</h1>
+<p class="lead">This machine is local. Capabilities stay off until you grant them.</p>
+<p class="info-banner">Informational only. Not a diagnosis or treatment. Confirm anything that matters with a licensed professional.</p>
+<div class="kpis">
+  <div class="kpi em">
+    <div class="lab">Scopes granted</div>
+    <div class="val">0<small>/7</small></div>
+  </div>
+  <div class="kpi cyan">
+    <div class="lab">Sensor lanes</div>
+    <div class="val">7</div>
+  </div>
+</div>
+<div class="ringcard" role="img" aria-label="0 of 7 consent scopes granted. Default is off.">
+  <div class="cap" aria-hidden="true"><b>0<span>/7</span></b><span>capabilities</span></div>
+</div>
+<div class="meter" role="img" aria-label="Seven-tick fallback meter, all off.">
+  <div class="tick"><span class="tick-bar"></span><span class="tick-label">01</span></div>
+  <div class="tick"><span class="tick-bar"></span><span class="tick-label">02</span></div>
+  <div class="tick"><span class="tick-bar"></span><span class="tick-label">03</span></div>
+  <div class="tick"><span class="tick-bar"></span><span class="tick-label">04</span></div>
+  <div class="tick"><span class="tick-bar"></span><span class="tick-label">05</span></div>
+  <div class="tick"><span class="tick-bar"></span><span class="tick-label">06</span></div>
+  <div class="tick"><span class="tick-bar"></span><span class="tick-label">07</span></div>
+</div>
+<div class="empty" role="status">
+  <h2>Quiet on purpose</h2>
+  <p>Nothing is granted yet. Open Consent when you want a capability.</p>
+</div>
+<ol class="scope-glance">
+  <li>
+    <span class="n">01</span>
+    <span>Analysis insight</span>
+    <span class="pill off">OFF</span>
+  </li>
+</ol>
+<div class="blocked" role="status">
+  <h2>Analysis insight is off</h2>
+  <p>This screen stays quiet until you turn that scope on. Every scope starts off.</p>
+  <button class="primary" type="button">Turn on Analysis insight</button>
+</div>
+<div class="honest-null" role="status">
+  <h2>No bound evidence</h2>
+  <p>No evidence available; consult a professional.</p>
+</div>
+<form>
+  <label>
+    <span>Question</span>
+    <textarea id="question" name="question">What patterns stand out in my data?</textarea>
+  </label>
+  <p class="error" role="alert">Could not parse the data packet.</p>
+  <button class="primary" type="submit">Search local corpus</button>
+</form>
+<div class="chart-wrap">
+  <p class="muted">Your resting_hr series (own numbers only)</p>
+  <svg class="chart" viewBox="0 0 360 96" role="img" aria-label="resting_hr: four of your own values, not a population normal">
+    <polyline fill="none" stroke="currentColor" stroke-width="2" points="10,70 120,60 240,64 350,40" />
+  </svg>
+</div>
+<section class="lane">
+  <div class="row">
+    <h2>wifi-csi</h2>
+    <span class="pill off">Sandbox</span>
+    <span class="pill">Live grant OFF</span>
+  </div>
+  <p>Sandbox features only.</p>
+</section>
+<section class="sandbox-banner">
+  <strong>Sandbox · synthetic · not a real person.</strong>
+  <p>Field view renders sandbox pose joints and occupancy. Not a real body scan.</p>
+</section>
+<section class="field-panel">
+  <h2>Body</h2>
+  <canvas class="field-canvas" role="img" aria-label="Sandbox body skeleton from synthetic head and torso joints"></canvas>
+</section>
+<section class="scope">
+  <div class="row">
+    <span class="scope-num" aria-hidden="true">01</span>
+    <h2>Analysis insight</h2>
+    <span class="pill off">OFF</span>
+  </div>
+  <p>Compute descriptive insights on granted data.</p>
+  <button class="primary" type="button">Turn on Analysis insight</button>
+</section>

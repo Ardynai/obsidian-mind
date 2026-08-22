@@ -1,0 +1,1 @@
+{"nodes": [{"id": "docs_hardware_esp32_csi", "label": "ESP32 WiFi-CSI Quickstart", "file_type": "document", "source_file": "docs/hardware/esp32-csi.md", "rationale": "Provides the hardware integration guide for ESP32 CSI sensing."}], "edges": [], "hyperedges": []}

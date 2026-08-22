@@ -1,0 +1,593 @@
+{
+  "execution_permitted": false,
+  "fixture_contract_version": 1,
+  "fixture_kind": "phase-11b-review-record-fixtures",
+  "metadata_only": true,
+  "planning_only": true,
+  "real_mode_runtime_enabled": false,
+  "records": {
+    "all_gates_reviewed_runtime_disabled": {
+      "domain": "wifi-csi-rf-booth",
+      "execution_permitted": false,
+      "metadata_only": true,
+      "missing_gate_count": 0,
+      "missing_gates": [],
+      "planning_only": true,
+      "real_mode_runtime_enabled": false,
+      "record_status": "reviewed-runtime-disabled",
+      "rejected_gate_count": 0,
+      "rejected_gates": [],
+      "required_gates": [
+        "consent",
+        "license-review",
+        "privacy-review",
+        "hardware-review",
+        "model-artifact-review",
+        "dependency-review",
+        "network-policy-review"
+      ],
+      "review_record_contract_version": 1,
+      "review_record_kind": "phase-11-real-mode-review-record",
+      "reviewed_gate_count": 7,
+      "reviewed_gates": [
+        "consent",
+        "license-review",
+        "privacy-review",
+        "hardware-review",
+        "model-artifact-review",
+        "dependency-review",
+        "network-policy-review"
+      ],
+      "reviews": {
+        "consent": {
+          "gate_id": "consent",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "consent-boundary-metadata",
+          "review_type": "consent-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "dependency_review": {
+          "gate_id": "dependency-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "dependency-boundary-metadata",
+          "review_type": "dependency-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "hardware_review": {
+          "gate_id": "hardware-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "hardware-boundary-metadata",
+          "review_type": "hardware-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "license_review": {
+          "gate_id": "license-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "license-source-boundary-metadata",
+          "review_type": "license-source-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "model_artifact_review": {
+          "gate_id": "model-artifact-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "model-artifact-boundary-metadata",
+          "review_type": "model-artifact-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "network_policy_review": {
+          "gate_id": "network-policy-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "network-policy-boundary-metadata",
+          "review_type": "network-policy-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "privacy_review": {
+          "gate_id": "privacy-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "privacy-boundary-metadata",
+          "review_type": "privacy-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        }
+      },
+      "runtime_stage": "not-implemented",
+      "sanitized": true,
+      "schema_version": 1
+    },
+    "document_ingestion_reviewed": {
+      "domain": "document-ingestion",
+      "execution_permitted": false,
+      "metadata_only": true,
+      "missing_gate_count": 0,
+      "missing_gates": [],
+      "planning_only": true,
+      "real_mode_runtime_enabled": false,
+      "record_status": "reviewed-runtime-disabled",
+      "rejected_gate_count": 0,
+      "rejected_gates": [],
+      "required_gates": [
+        "consent",
+        "license-review",
+        "privacy-review",
+        "hardware-review",
+        "model-artifact-review",
+        "dependency-review",
+        "network-policy-review"
+      ],
+      "review_record_contract_version": 1,
+      "review_record_kind": "phase-11-real-mode-review-record",
+      "reviewed_gate_count": 7,
+      "reviewed_gates": [
+        "consent",
+        "license-review",
+        "privacy-review",
+        "hardware-review",
+        "model-artifact-review",
+        "dependency-review",
+        "network-policy-review"
+      ],
+      "reviews": {
+        "consent": {
+          "gate_id": "consent",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "consent-boundary-metadata",
+          "review_type": "consent-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "dependency_review": {
+          "gate_id": "dependency-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "dependency-boundary-metadata",
+          "review_type": "dependency-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "hardware_review": {
+          "gate_id": "hardware-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "hardware-boundary-metadata",
+          "review_type": "hardware-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "license_review": {
+          "gate_id": "license-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "license-source-boundary-metadata",
+          "review_type": "license-source-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "model_artifact_review": {
+          "gate_id": "model-artifact-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "model-artifact-boundary-metadata",
+          "review_type": "model-artifact-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "network_policy_review": {
+          "gate_id": "network-policy-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "network-policy-boundary-metadata",
+          "review_type": "network-policy-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "privacy_review": {
+          "gate_id": "privacy-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "privacy-boundary-metadata",
+          "review_type": "privacy-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        }
+      },
+      "runtime_stage": "not-implemented",
+      "sanitized": true,
+      "schema_version": 1
+    },
+    "incomplete_review_record": {
+      "domain": "document-ingestion",
+      "execution_permitted": false,
+      "metadata_only": true,
+      "missing_gate_count": 3,
+      "missing_gates": [
+        "model-artifact-review",
+        "dependency-review",
+        "network-policy-review"
+      ],
+      "planning_only": true,
+      "real_mode_runtime_enabled": false,
+      "record_status": "missing-required-reviews",
+      "rejected_gate_count": 0,
+      "rejected_gates": [],
+      "required_gates": [
+        "consent",
+        "license-review",
+        "privacy-review",
+        "hardware-review",
+        "model-artifact-review",
+        "dependency-review",
+        "network-policy-review"
+      ],
+      "review_record_contract_version": 1,
+      "review_record_kind": "phase-11-real-mode-review-record",
+      "reviewed_gate_count": 4,
+      "reviewed_gates": [
+        "consent",
+        "license-review",
+        "privacy-review",
+        "hardware-review"
+      ],
+      "reviews": {
+        "consent": {
+          "gate_id": "consent",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "consent-boundary-metadata",
+          "review_type": "consent-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "dependency_review": {
+          "gate_id": "dependency-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "dependency-boundary-metadata",
+          "review_type": "dependency-review",
+          "runtime_permission": false,
+          "safe_to_proceed": false,
+          "sanitized": true,
+          "status": "not-reviewed"
+        },
+        "hardware_review": {
+          "gate_id": "hardware-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "hardware-boundary-metadata",
+          "review_type": "hardware-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "license_review": {
+          "gate_id": "license-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "license-source-boundary-metadata",
+          "review_type": "license-source-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "model_artifact_review": {
+          "gate_id": "model-artifact-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "model-artifact-boundary-metadata",
+          "review_type": "model-artifact-review",
+          "runtime_permission": false,
+          "safe_to_proceed": false,
+          "sanitized": true,
+          "status": "not-reviewed"
+        },
+        "network_policy_review": {
+          "gate_id": "network-policy-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "network-policy-boundary-metadata",
+          "review_type": "network-policy-review",
+          "runtime_permission": false,
+          "safe_to_proceed": false,
+          "sanitized": true,
+          "status": "not-reviewed"
+        },
+        "privacy_review": {
+          "gate_id": "privacy-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "privacy-boundary-metadata",
+          "review_type": "privacy-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        }
+      },
+      "runtime_stage": "not-implemented",
+      "sanitized": true,
+      "schema_version": 1
+    },
+    "rejected_review_record": {
+      "domain": "document-ingestion",
+      "execution_permitted": false,
+      "metadata_only": true,
+      "missing_gate_count": 1,
+      "missing_gates": [
+        "license-review"
+      ],
+      "planning_only": true,
+      "real_mode_runtime_enabled": false,
+      "record_status": "rejected-fail-closed",
+      "rejected_gate_count": 1,
+      "rejected_gates": [
+        "license-review"
+      ],
+      "required_gates": [
+        "consent",
+        "license-review",
+        "privacy-review",
+        "hardware-review",
+        "model-artifact-review",
+        "dependency-review",
+        "network-policy-review"
+      ],
+      "review_record_contract_version": 1,
+      "review_record_kind": "phase-11-real-mode-review-record",
+      "reviewed_gate_count": 6,
+      "reviewed_gates": [
+        "consent",
+        "privacy-review",
+        "hardware-review",
+        "model-artifact-review",
+        "dependency-review",
+        "network-policy-review"
+      ],
+      "reviews": {
+        "consent": {
+          "gate_id": "consent",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "consent-boundary-metadata",
+          "review_type": "consent-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "dependency_review": {
+          "gate_id": "dependency-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "dependency-boundary-metadata",
+          "review_type": "dependency-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "hardware_review": {
+          "gate_id": "hardware-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "hardware-boundary-metadata",
+          "review_type": "hardware-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "license_review": {
+          "gate_id": "license-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "license-source-boundary-metadata",
+          "review_type": "license-source-review",
+          "runtime_permission": false,
+          "safe_to_proceed": false,
+          "sanitized": true,
+          "status": "rejected"
+        },
+        "model_artifact_review": {
+          "gate_id": "model-artifact-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "model-artifact-boundary-metadata",
+          "review_type": "model-artifact-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "network_policy_review": {
+          "gate_id": "network-policy-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "network-policy-boundary-metadata",
+          "review_type": "network-policy-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "privacy_review": {
+          "gate_id": "privacy-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "privacy-boundary-metadata",
+          "review_type": "privacy-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        }
+      },
+      "runtime_stage": "not-implemented",
+      "sanitized": true,
+      "schema_version": 1
+    },
+    "wifi_csi_rf_booth_reviewed": {
+      "domain": "wifi-csi-rf-booth",
+      "execution_permitted": false,
+      "metadata_only": true,
+      "missing_gate_count": 0,
+      "missing_gates": [],
+      "planning_only": true,
+      "real_mode_runtime_enabled": false,
+      "record_status": "reviewed-runtime-disabled",
+      "rejected_gate_count": 0,
+      "rejected_gates": [],
+      "required_gates": [
+        "consent",
+        "license-review",
+        "privacy-review",
+        "hardware-review",
+        "model-artifact-review",
+        "dependency-review",
+        "network-policy-review"
+      ],
+      "review_record_contract_version": 1,
+      "review_record_kind": "phase-11-real-mode-review-record",
+      "reviewed_gate_count": 7,
+      "reviewed_gates": [
+        "consent",
+        "license-review",
+        "privacy-review",
+        "hardware-review",
+        "model-artifact-review",
+        "dependency-review",
+        "network-policy-review"
+      ],
+      "reviews": {
+        "consent": {
+          "gate_id": "consent",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "consent-boundary-metadata",
+          "review_type": "consent-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "dependency_review": {
+          "gate_id": "dependency-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "dependency-boundary-metadata",
+          "review_type": "dependency-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "hardware_review": {
+          "gate_id": "hardware-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "hardware-boundary-metadata",
+          "review_type": "hardware-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "license_review": {
+          "gate_id": "license-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "license-source-boundary-metadata",
+          "review_type": "license-source-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "model_artifact_review": {
+          "gate_id": "model-artifact-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "model-artifact-boundary-metadata",
+          "review_type": "model-artifact-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "network_policy_review": {
+          "gate_id": "network-policy-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "network-policy-boundary-metadata",
+          "review_type": "network-policy-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        },
+        "privacy_review": {
+          "gate_id": "privacy-review",
+          "metadata_only": true,
+          "required": true,
+          "review_scope": "privacy-boundary-metadata",
+          "review_type": "privacy-review",
+          "runtime_permission": false,
+          "safe_to_proceed": true,
+          "sanitized": true,
+          "status": "reviewed"
+        }
+      },
+      "runtime_stage": "not-implemented",
+      "sanitized": true,
+      "schema_version": 1
+    }
+  },
+  "runtime_stage": "not-implemented",
+  "sanitized": true,
+  "schema_version": 1,
+  "status": "review-record-fixtures-runtime-disabled"
+}

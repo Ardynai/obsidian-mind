@@ -1,0 +1,56 @@
+{
+  "id": "scientific-agent-skills-provider-mock-config",
+  "class": "science-skills",
+  "name": "Scientific Agent Skills Provider Mock Config",
+  "version": "0.1.0",
+  "description": "Deterministic fake-backed scientific-agent-skills provider config for Somatic scaffold tests.",
+  "status": "scaffolded",
+  "provider_module": "somatic.providers.scientific_agent_skills",
+  "provider_class": "ScientificAgentSkillsProvider",
+  "disabled_by_default": true,
+  "external_runtime_enabled": false,
+  "fake_backed": true,
+  "optional_dependency": {
+    "package": "scientific-agent-skills",
+    "import_name": "scientific_agent_skills",
+    "required_for_basic_install": false,
+    "imported_at_module_import_time": false
+  },
+  "config": {
+    "enabled": true,
+    "mode": "mock",
+    "max_skills": 5,
+    "max_database_connectors": 5,
+    "allow_external_calls": false,
+    "allow_skill_execution": false,
+    "require_explicit_consent": true,
+    "staged_source_path": "C:\\AI\\external-sources\\somatic\\scientific-agent-skills",
+    "inspected_commit": "effb57c5699c1d400ef461a7aa80fc6693939805",
+    "mock_catalog_id": "scientific-agent-skills-sample-catalog"
+  },
+  "auth": {
+    "type": "none",
+    "secrets_required": []
+  },
+  "capabilities": [
+    "science_skills.lookup",
+    "science_skills.describe",
+    "science_skills.list",
+    "science_database_connectors.list",
+    "science_database_connectors.describe"
+  ],
+  "limits": {
+    "network_calls_allowed": false,
+    "database_calls_allowed": false,
+    "skill_execution_allowed": false,
+    "runtime_import_allowed": false,
+    "basic_install_dependency": false
+  },
+  "catalog_fixture": "fixtures/providers/scientific-agent-skills-sample-catalog.json",
+  "safety_notes": [
+    "Mock mode returns deterministic local metadata only.",
+    "No skills are executed in Phase 5C.",
+    "No external databases or APIs are called.",
+    "Future real adapter work must require explicit configuration and consent."
+  ]
+}

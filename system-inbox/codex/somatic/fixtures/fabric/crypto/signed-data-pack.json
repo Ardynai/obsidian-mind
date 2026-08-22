@@ -1,0 +1,39 @@
+{
+  "class": "data",
+  "createdAt": "2026-05-28T17:04:09Z",
+  "description": "TEST VECTOR ONLY. Signed with checked-in test keys; not for production use.",
+  "files": [
+    {
+      "executable": false,
+      "installTarget": "somatic/crypto-data-pack/payload.json",
+      "path": "payload.json",
+      "sha256": "7777777777777777777777777777777777777777777777777777777777777777",
+      "size": 64
+    }
+  ],
+  "harnesses": [
+    "somatic"
+  ],
+  "id": "somatic/crypto-data-pack",
+  "license": "Apache-2.0",
+  "name": "Somatic Crypto Data Pack",
+  "publisher": {
+    "displayName": "Somatic Test Fixtures",
+    "keyId": "1325b850c2871916eae203f0efc3c8987f64e5e3cdb27679e6d1fa97808357e6",
+    "namespace": "somatic"
+  },
+  "schemaVersion": "1.0.0",
+  "signatures": [
+    {
+      "algo": "ed25519",
+      "keyId": "1325b850c2871916eae203f0efc3c8987f64e5e3cdb27679e6d1fa97808357e6",
+      "sig": "j3AdhzV+KQZI1T011xAiOZ3D3VKcRfdauw8lFqjPwrBVA+lr55UvSIukP1M4pN9hTNOM4O88g3kOCJ8jVDBgCQ=="
+    }
+  ],
+  "transport": {
+    "infohash": "7777777777777777777777777777777777777777",
+    "magnet": "magnet:?xt=urn:btih:7777777777777777777777777777777777777777&dn=somatic%2Fcrypto-data-pack%400.1.0&ws=https%3A%2F%2Fexample.invalid%2Ffabric%2Fcrypto%2F"
+  },
+  "type": "dataset",
+  "version": "0.1.0"
+}

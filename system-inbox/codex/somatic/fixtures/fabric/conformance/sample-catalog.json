@@ -1,0 +1,25 @@
+{
+  "harness": "somatic",
+  "packs": [
+    {
+      "class": "data",
+      "id": "somatic/sample-dataset",
+      "infohash": "1111111111111111111111111111111111111111",
+      "license": "CC-BY-4.0",
+      "manifestDigest": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+      "publisherKeyId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "size": 128,
+      "type": "dataset",
+      "version": "0.1.0"
+    }
+  ],
+  "publishedAt": "2026-05-28T17:10:00Z",
+  "schemaVersion": "1.0.0",
+  "signatures": [
+    {
+      "algo": "ed25519",
+      "keyId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "sig": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    }
+  ]
+}

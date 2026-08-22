@@ -1,0 +1,1 @@
+{"nodes": [{"id": "bridge_origin_origin_is_loopback", "label": "origin_is_loopback", "file_type": "code", "source_file": "somatic/bridge/origin.py", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null, "rationale": null}], "edges": [], "hyperedges": []}

@@ -1,0 +1,1 @@
+{"nodes": [{"id": "workflows_wifi_csi_observation", "label": "WiFi CSI Observation Workflow", "file_type": "document", "source_file": "workflows/wifi-csi-observation.yaml", "rationale": "Defines the planning-only mode for CSI metadata boundaries without live hardware access."}], "edges": [], "hyperedges": []}

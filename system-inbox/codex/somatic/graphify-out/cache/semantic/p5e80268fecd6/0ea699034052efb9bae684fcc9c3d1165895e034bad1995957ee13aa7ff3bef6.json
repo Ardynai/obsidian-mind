@@ -1,0 +1,1 @@
+{"nodes": [{"id": "ingest_csv", "label": "CSV Ingestor", "file_type": "code", "source_file": "somatic/ingest/csv.py", "rationale": "Parses user-owned numeric readings from CSV files."}], "edges": [{"source": "ingest_csv", "target": "ingest_packet", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "somatic/ingest/csv.py"}], "hyperedges": []}

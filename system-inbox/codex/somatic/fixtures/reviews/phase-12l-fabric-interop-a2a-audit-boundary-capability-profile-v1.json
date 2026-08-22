@@ -1,0 +1,555 @@
+{
+  "a2a_transport_implementation_added": false,
+  "a2a_transport_status": "not-implemented",
+  "active_grant_present": false,
+  "agent_invoked_secure_drop_allowed": false,
+  "audit_boundary_statement": "Plaintext JSON default and decode-to-audit are future fabric requirements only; Phase 12L implements no MessageCodec, transport, MCP runtime, or audit writer.",
+  "authorization_status": "not-authorized",
+  "automation_invoked_secure_drop_allowed": false,
+  "bundled_agpl_codec_allowed": false,
+  "capability_phase": "fabric-interop-a2a-audit-boundary-profile-only",
+  "connector_grant_present": false,
+  "connector_installation_added": false,
+  "covert_channel_allowed": false,
+  "credential_loading_added": false,
+  "credential_policy": "phase-h-vault-reference-only",
+  "cross_repo_mutation_allowed": false,
+  "crypto_implementation_added": false,
+  "db_storage_write_added": false,
+  "decode_to_audit_future_requirement_only": true,
+  "execution_permitted": false,
+  "fabric_boundary_statement": "Phase 12L names future fabric interop and A2A audit boundaries only; it implements no runtime messaging, codec, transport, connector install, pack registration, MCP serving, provider call, or cross-repo mutation.",
+  "fabric_capability_label_count": 15,
+  "fabric_capability_labels": [
+    {
+      "capability_status": "fabric-capability-label-metadata-only",
+      "execution_permitted": false,
+      "fabric_capability_label": "fabric-pack-scan-aware",
+      "future_requirement_only": true,
+      "implementation_added": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_status": "fabric-capability-label-metadata-only",
+      "execution_permitted": false,
+      "fabric_capability_label": "connector-scan-compatible",
+      "future_requirement_only": true,
+      "implementation_added": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_status": "fabric-capability-label-metadata-only",
+      "execution_permitted": false,
+      "fabric_capability_label": "message-codec-seam-consumer",
+      "future_requirement_only": true,
+      "implementation_added": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_status": "fabric-capability-label-metadata-only",
+      "execution_permitted": false,
+      "fabric_capability_label": "plaintext-json-default",
+      "future_requirement_only": true,
+      "implementation_added": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_status": "fabric-capability-label-metadata-only",
+      "execution_permitted": false,
+      "fabric_capability_label": "decode-to-audit-required",
+      "future_requirement_only": true,
+      "implementation_added": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_status": "fabric-capability-label-metadata-only",
+      "execution_permitted": false,
+      "fabric_capability_label": "opaque-traffic-rejected",
+      "future_requirement_only": true,
+      "implementation_added": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_status": "fabric-capability-label-metadata-only",
+      "execution_permitted": false,
+      "fabric_capability_label": "a2a-handshake-aware",
+      "future_requirement_only": true,
+      "implementation_added": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_status": "fabric-capability-label-metadata-only",
+      "execution_permitted": false,
+      "fabric_capability_label": "capability-advertisement-aware",
+      "future_requirement_only": true,
+      "implementation_added": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_status": "fabric-capability-label-metadata-only",
+      "execution_permitted": false,
+      "fabric_capability_label": "codec-negotiation-aware",
+      "future_requirement_only": true,
+      "implementation_added": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_status": "fabric-capability-label-metadata-only",
+      "execution_permitted": false,
+      "fabric_capability_label": "keyring-did-identity-aware",
+      "future_requirement_only": true,
+      "implementation_added": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_status": "fabric-capability-label-metadata-only",
+      "execution_permitted": false,
+      "fabric_capability_label": "phase-h-gated",
+      "future_requirement_only": true,
+      "implementation_added": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_status": "fabric-capability-label-metadata-only",
+      "execution_permitted": false,
+      "fabric_capability_label": "agent-protocol-mcp-interop-aware",
+      "future_requirement_only": true,
+      "implementation_added": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_status": "fabric-capability-label-metadata-only",
+      "execution_permitted": false,
+      "fabric_capability_label": "locus-fusion-target-candidate",
+      "future_requirement_only": true,
+      "implementation_added": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_status": "fabric-capability-label-metadata-only",
+      "execution_permitted": false,
+      "fabric_capability_label": "locus-agent-expose-consumer-candidate",
+      "future_requirement_only": true,
+      "implementation_added": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_status": "fabric-capability-label-metadata-only",
+      "execution_permitted": false,
+      "fabric_capability_label": "secure-drop-ui-consumer-candidate",
+      "future_requirement_only": true,
+      "implementation_added": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    }
+  ],
+  "fabric_interop_a2a_audit_profile_contract_version": 1,
+  "fabric_interop_status": "metadata-only",
+  "fabric_safety_review_required": true,
+  "fabric_transfer_execution_granted": false,
+  "filesystem_access_granted": false,
+  "filesystem_autoscan_added": false,
+  "forbidden_out_of_scope_label_count": 12,
+  "forbidden_out_of_scope_labels": [
+    {
+      "allowed": false,
+      "execution_permitted": false,
+      "forbidden_label": "no-bundled-agpl-codec",
+      "forbidden_status": "out-of-scope-label-metadata-only",
+      "metadata_only": true,
+      "out_of_scope": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "allowed": false,
+      "execution_permitted": false,
+      "forbidden_label": "no-glossopetrae-vendoring",
+      "forbidden_status": "out-of-scope-label-metadata-only",
+      "metadata_only": true,
+      "out_of_scope": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "allowed": false,
+      "execution_permitted": false,
+      "forbidden_label": "no-st3gg-vendoring",
+      "forbidden_status": "out-of-scope-label-metadata-only",
+      "metadata_only": true,
+      "out_of_scope": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "allowed": false,
+      "execution_permitted": false,
+      "forbidden_label": "no-covert-channel",
+      "forbidden_status": "out-of-scope-label-metadata-only",
+      "metadata_only": true,
+      "out_of_scope": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "allowed": false,
+      "execution_permitted": false,
+      "forbidden_label": "no-opaque-message-acting",
+      "forbidden_status": "out-of-scope-label-metadata-only",
+      "metadata_only": true,
+      "out_of_scope": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "allowed": false,
+      "execution_permitted": false,
+      "forbidden_label": "no-secret-in-pack",
+      "forbidden_status": "out-of-scope-label-metadata-only",
+      "metadata_only": true,
+      "out_of_scope": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "allowed": false,
+      "execution_permitted": false,
+      "forbidden_label": "no-secret-in-log",
+      "forbidden_status": "out-of-scope-label-metadata-only",
+      "metadata_only": true,
+      "out_of_scope": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "allowed": false,
+      "execution_permitted": false,
+      "forbidden_label": "no-secret-in-ipc",
+      "forbidden_status": "out-of-scope-label-metadata-only",
+      "metadata_only": true,
+      "out_of_scope": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "allowed": false,
+      "execution_permitted": false,
+      "forbidden_label": "no-secret-in-audit",
+      "forbidden_status": "out-of-scope-label-metadata-only",
+      "metadata_only": true,
+      "out_of_scope": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "allowed": false,
+      "execution_permitted": false,
+      "forbidden_label": "no-agent-invoked-secure-drop",
+      "forbidden_status": "out-of-scope-label-metadata-only",
+      "metadata_only": true,
+      "out_of_scope": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "allowed": false,
+      "execution_permitted": false,
+      "forbidden_label": "no-automation-invoked-secure-drop",
+      "forbidden_status": "out-of-scope-label-metadata-only",
+      "metadata_only": true,
+      "out_of_scope": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "allowed": false,
+      "execution_permitted": false,
+      "forbidden_label": "no-untrusted-content-execution",
+      "forbidden_status": "out-of-scope-label-metadata-only",
+      "metadata_only": true,
+      "out_of_scope": true,
+      "real_mode_runtime_enabled": false
+    }
+  ],
+  "glossopetrae_vendoring_allowed": false,
+  "grant_status": "no-grant",
+  "http_execution_granted": false,
+  "jules_human_review_required_for_validator_or_fabric_safety_semantics": true,
+  "mcp_client_implementation_added": false,
+  "mcp_interop_status": "not-implemented",
+  "mcp_server_implementation_added": false,
+  "mcp_tool_exposure_added": false,
+  "message_codec_implementation_added": false,
+  "message_codec_status": "not-implemented",
+  "metadata_only": true,
+  "model_execution_granted": false,
+  "network_call_execution_granted": false,
+  "non_authorizing_proof": true,
+  "opaque_message_acting_allowed": false,
+  "opaque_traffic_allowed": false,
+  "pack_registration_added": false,
+  "phase12l_allows_a2a_transport": false,
+  "phase12l_allows_fabric_runtime": false,
+  "phase12l_allows_mcp_runtime": false,
+  "phase12l_allows_secure_drop_send_receive": false,
+  "phase12l_authorizes_runtime": false,
+  "plaintext_json_default_future_requirement_only": true,
+  "process_control_granted": false,
+  "production_ready": false,
+  "profile_id": "p12l-fabric-a2a-audit-profile-5e5f9df31370410d",
+  "profile_kind": "phase-12l-fabric-interop-a2a-audit-boundary-capability-profile",
+  "profile_status": "phase-12l-fabric-interop-a2a-audit-boundary-profile-only",
+  "provider_call_execution_granted": false,
+  "provider_execution_granted": false,
+  "real_mode_authorization_added": false,
+  "real_mode_runtime_enabled": false,
+  "required_future_gate_count": 10,
+  "required_future_gates": [
+    {
+      "execution_permitted": false,
+      "future_gate_label": "shared-fabric-contract-review",
+      "gate_status": "future-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "satisfied": false
+    },
+    {
+      "execution_permitted": false,
+      "future_gate_label": "message-codec-contract-review",
+      "gate_status": "future-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "satisfied": false
+    },
+    {
+      "execution_permitted": false,
+      "future_gate_label": "decode-to-audit-policy-review",
+      "gate_status": "future-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "satisfied": false
+    },
+    {
+      "execution_permitted": false,
+      "future_gate_label": "a2a-handshake-contract-review",
+      "gate_status": "future-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "satisfied": false
+    },
+    {
+      "execution_permitted": false,
+      "future_gate_label": "phase-h-vault-boundary-review",
+      "gate_status": "future-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "satisfied": false
+    },
+    {
+      "execution_permitted": false,
+      "future_gate_label": "mcp-agent-protocol-interop-review",
+      "gate_status": "future-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "satisfied": false
+    },
+    {
+      "execution_permitted": false,
+      "future_gate_label": "secure-drop-user-initiation-review",
+      "gate_status": "future-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "satisfied": false
+    },
+    {
+      "execution_permitted": false,
+      "future_gate_label": "connector-pack-static-gate-review",
+      "gate_status": "future-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "satisfied": false
+    },
+    {
+      "execution_permitted": false,
+      "future_gate_label": "cross-repo-mutation-denial-review",
+      "gate_status": "future-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "satisfied": false
+    },
+    {
+      "execution_permitted": false,
+      "future_gate_label": "jules-security-fabric-safety-review",
+      "gate_status": "future-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "satisfied": false
+    }
+  ],
+  "runtime_adapter_execution_granted": false,
+  "runtime_model_execution_granted": false,
+  "runtime_stage": "not-implemented",
+  "schedule_enforcement_added": false,
+  "secrets_access_granted": false,
+  "secure_drop_boundary_statement": "Secure Drop remains a user-initiated content-fabric boundary only; no agent or automation invocation is allowed.",
+  "secure_drop_receive_permitted": false,
+  "secure_drop_send_permitted": false,
+  "secure_drop_status": "consumer-boundary-only",
+  "secure_drop_user_initiated_boundary_only": true,
+  "security_review_required": true,
+  "service_discovery_runtime_added": false,
+  "source_phase_range": "12A-12K,evidence-sensor-fabric-safety-boundaries",
+  "source_phase_reference_count": 10,
+  "source_phase_references": [
+    {
+      "execution_permitted": false,
+      "metadata_only": true,
+      "phase_label": "12A",
+      "real_mode_runtime_enabled": false,
+      "reference_status": "referenced-safety-boundary-metadata-only",
+      "runtime_stage": "not-implemented",
+      "source_kind": "phase-12a-runtime-authorization-design-charter",
+      "source_reference_id": "p12a-charter-24ac2ec2e83eeca6"
+    },
+    {
+      "execution_permitted": false,
+      "metadata_only": true,
+      "phase_label": "12B",
+      "real_mode_runtime_enabled": false,
+      "reference_status": "referenced-safety-boundary-metadata-only",
+      "runtime_stage": "not-implemented",
+      "source_kind": "phase-12b-runtime-authorization-record-candidate",
+      "source_reference_id": "p12b-record-3cc57e7c02909f17"
+    },
+    {
+      "execution_permitted": false,
+      "metadata_only": true,
+      "phase_label": "12C",
+      "real_mode_runtime_enabled": false,
+      "reference_status": "referenced-safety-boundary-metadata-only",
+      "runtime_stage": "not-implemented",
+      "source_kind": "phase-12c-visual-supervision-capability-profile",
+      "source_reference_id": "p12c-profile-f14562c8bee7f2cf"
+    },
+    {
+      "execution_permitted": false,
+      "metadata_only": true,
+      "phase_label": "12D",
+      "real_mode_runtime_enabled": false,
+      "reference_status": "referenced-safety-boundary-metadata-only",
+      "runtime_stage": "not-implemented",
+      "source_kind": "phase-12d-visual-desktop-consent-gate-requirements",
+      "source_reference_id": "p12d-consent-profile-202b54f6df2e31ab"
+    },
+    {
+      "execution_permitted": false,
+      "metadata_only": true,
+      "phase_label": "12E",
+      "real_mode_runtime_enabled": false,
+      "reference_status": "referenced-safety-boundary-metadata-only",
+      "runtime_stage": "not-implemented",
+      "source_kind": "phase-12e-physiological-sensor-capability-profile",
+      "source_reference_id": "p12e-sensor-profile-27b4384b76fff5be"
+    },
+    {
+      "execution_permitted": false,
+      "metadata_only": true,
+      "phase_label": "12F",
+      "real_mode_runtime_enabled": false,
+      "reference_status": "referenced-safety-boundary-metadata-only",
+      "runtime_stage": "not-implemented",
+      "source_kind": "phase-12f-secure-drop-consumer-boundary",
+      "source_reference_id": "p12f-secure-drop-boundary-4a0ab66302c38643"
+    },
+    {
+      "execution_permitted": false,
+      "metadata_only": true,
+      "phase_label": "12G",
+      "real_mode_runtime_enabled": false,
+      "reference_status": "referenced-safety-boundary-metadata-only",
+      "runtime_stage": "not-implemented",
+      "source_kind": "phase-12g-production-readiness-coverage-matrix",
+      "source_reference_id": "p12g-production-matrix-896b0707f4359c80"
+    },
+    {
+      "execution_permitted": false,
+      "metadata_only": true,
+      "phase_label": "12H",
+      "real_mode_runtime_enabled": false,
+      "reference_status": "referenced-safety-boundary-metadata-only",
+      "runtime_stage": "not-implemented",
+      "source_kind": "phase-12h-somatic-standalone-production-readiness-ownership-map",
+      "source_reference_id": "p12h-standalone-ownership-96971b3c7a5f25d9"
+    },
+    {
+      "execution_permitted": false,
+      "metadata_only": true,
+      "phase_label": "12I",
+      "real_mode_runtime_enabled": false,
+      "reference_status": "referenced-safety-boundary-metadata-only",
+      "runtime_stage": "not-implemented",
+      "source_kind": "phase-12i-integrative-herbal-nutrition-knowledge-capability-profile",
+      "source_reference_id": "p12i-integrative-profile-b93b8619fa01755e"
+    },
+    {
+      "execution_permitted": false,
+      "metadata_only": true,
+      "phase_label": "12K",
+      "real_mode_runtime_enabled": false,
+      "reference_status": "referenced-safety-boundary-metadata-only",
+      "runtime_stage": "not-implemented",
+      "source_kind": "phase-12k-external-compute-quantum-backend-capability-profile",
+      "source_reference_id": "p12k-compute-quantum-profile-33be0fab4c493763"
+    }
+  ],
+  "st3gg_vendoring_allowed": false,
+  "status_label_count": 4,
+  "status_labels": [
+    {
+      "execution_permitted": false,
+      "label_status": "fabric-capability-label-metadata-only",
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "status_label": "p12l-fabric-interop-a2a-audit-boundary-profile"
+    },
+    {
+      "execution_permitted": false,
+      "label_status": "fabric-capability-label-metadata-only",
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "status_label": "fabric-interop-labels-metadata-only"
+    },
+    {
+      "execution_permitted": false,
+      "label_status": "fabric-capability-label-metadata-only",
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "status_label": "a2a-mcp-secure-drop-runtime-not-implemented"
+    },
+    {
+      "execution_permitted": false,
+      "label_status": "fabric-capability-label-metadata-only",
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "status_label": "decode-to-audit-future-requirement-only"
+    }
+  ],
+  "task_execution_granted": false,
+  "untrusted_content_executable": false,
+  "untrusted_content_execution_added": false,
+  "vault_env_access_granted": false,
+  "ws_stream_execution_granted": false
+}

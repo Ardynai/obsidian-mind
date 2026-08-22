@@ -1,0 +1,88 @@
+{
+  "id": "boltz2-plan-placeholder",
+  "schema_version": 1,
+  "provider_id": "boltz2-biomodel-provider",
+  "request_id": "biomodel-request-placeholder",
+  "objective": "Plan a Boltz-2 structure and affinity prediction without executing the model.",
+  "status": "planned-not-executed",
+  "model_family": "Boltz",
+  "model_version": "boltz2",
+  "command_shape": [
+    "boltz",
+    "predict",
+    "<input_path>",
+    "--model",
+    "boltz2",
+    "--out_dir",
+    "<local-output-dir>",
+    "--cache",
+    "<explicit-local-cache>",
+    "--output_format",
+    "mmcif"
+  ],
+  "input_artifact_refs": ["fixture://biomodel/input/boltz2-example.yaml"],
+  "output_artifact_refs": [
+    "mock-boltz://boltz2-plan-placeholder/predictions",
+    "mock-boltz://boltz2-plan-placeholder/confidence-json",
+    "mock-boltz://boltz2-plan-placeholder/affinity-json"
+  ],
+  "required_local_artifacts": [
+    "Boltz YAML input",
+    "precomputed MSA or explicit single-sequence placeholder",
+    "future explicit local cache path"
+  ],
+  "blocked_actions": [
+    "import boltz runtime",
+    "execute boltz predict",
+    "download CCD/molecule data",
+    "download Boltz checkpoints",
+    "call MMseqs2 or ColabFold MSA server",
+    "use GPU/TPU runtime"
+  ],
+  "consent_requirements": [
+    "explicit opt-in before model runtime",
+    "explicit opt-in before model/data download",
+    "explicit opt-in before MSA server or cloud call"
+  ],
+  "resource_requirements": {
+    "runtime_enabled": false,
+    "basic_install_dependency": false,
+    "default_upstream_accelerator": "gpu"
+  },
+  "provenance": {
+    "source_path": "C:\\AI\\external-sources\\somatic\\boltz",
+    "inspected_commit": "b1ebfc46ecf57f5414e0d1a6f9027bbb122c53bc",
+    "license": "MIT",
+    "upstream_entrypoint": "boltz = boltz.main:cli"
+  },
+  "limitations": [
+    "No structure, affinity, efficacy, safety, lab, or clinical conclusion is produced."
+  ],
+  "metadata": {
+    "mock": true,
+    "runtime_execution": false,
+    "model_downloads": false,
+    "msa_server": false,
+    "network_calls": false,
+    "gpu_execution": false,
+    "real_runtime": "future-only",
+    "phase": "6C",
+    "readiness_report": {
+      "ready": false,
+      "execution_permitted": false,
+      "runtime_boundary": "future-real-runtime-only",
+      "phase_runtime": "not-implemented",
+      "block_reasons": [
+        "runtime-execution-disabled",
+        "model-downloads-disabled",
+        "msa-server-disabled",
+        "network-calls-disabled",
+        "gpu-execution-disabled",
+        "missing-resource-review",
+        "missing-provenance-plan",
+        "missing-user-consent",
+        "research-only-boundary-not-acknowledged"
+      ]
+    }
+  }
+}

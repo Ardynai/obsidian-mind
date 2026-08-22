@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "id": "scientific-agent-skills-sample-catalog",
+  "description": "Deterministic Somatic mock metadata subset derived from staged K-Dense-AI/scientific-agent-skills source inspection.",
+  "source": {
+    "repo": "K-Dense-AI/scientific-agent-skills",
+    "local_path": "C:\\AI\\external-sources\\somatic\\scientific-agent-skills",
+    "inspected_commit": "effb57c5699c1d400ef461a7aa80fc6693939805",
+    "license": "MIT",
+    "metadata_only": true,
+    "vendored_into_somatic": false
+  },
+  "limits": {
+    "skill_execution_allowed": false,
+    "database_calls_allowed": false,
+    "network_calls_allowed": false,
+    "basic_install_dependency": false
+  },
+  "skills": [
+    {
+      "id": "paper-lookup",
+      "name": "Paper Lookup",
+      "source_skill_path": "skills/paper-lookup/SKILL.md",
+      "category": "literature",
+      "description": "Mock metadata for staged literature search across PubMed, PMC, bioRxiv, medRxiv, arXiv, OpenAlex, Crossref, Semantic Scholar, CORE, and Unpaywall.",
+      "input_requirements": ["literature query", "DOI/PMID/arXiv id optional"],
+      "output_artifacts": ["paper metadata list", "citation metadata"],
+      "tags": ["literature", "papers", "citations"],
+      "mock_metadata": true,
+      "execution_enabled": false
+    },
+    {
+      "id": "database-lookup",
+      "name": "Database Lookup",
+      "source_skill_path": "skills/database-lookup/SKILL.md",
+      "category": "database",
+      "description": "Mock metadata for staged public scientific, biomedical, materials, patent, economic, and clinical database guidance.",
+      "input_requirements": ["entity or topic query", "database selection"],
+      "output_artifacts": ["raw database response metadata", "queried database list"],
+      "tags": ["database", "pubchem", "chembl", "uniprot", "clinicaltrials"],
+      "mock_metadata": true,
+      "execution_enabled": false
+    },
+    {
+      "id": "medchem",
+      "name": "Medchem",
+      "source_skill_path": "skills/medchem/SKILL.md",
+      "category": "chemistry",
+      "description": "Mock metadata for staged medicinal chemistry filtering, structural alerts, drug-likeness rules, and library triage.",
+      "input_requirements": ["SMILES or molecule set", "filter criteria"],
+      "output_artifacts": ["compound triage metadata", "filter rationale"],
+      "tags": ["chemistry", "drug-discovery", "screening"],
+      "mock_metadata": true,
+      "execution_enabled": false
+    },
+    {
+      "id": "clinical-decision-support",
+      "name": "Clinical Decision Support",
+      "source_skill_path": "skills/clinical-decision-support/SKILL.md",
+      "category": "clinical",
+      "description": "Mock metadata for staged group-level clinical research document guidance, evidence grading, biomarker cohort analysis, and treatment recommendation report structure.",
+      "input_requirements": ["de-identified cohort evidence", "clinical question"],
+      "output_artifacts": ["clinical research report plan", "evidence grading notes"],
+      "tags": ["clinical", "trials", "evidence-grading"],
+      "mock_metadata": true,
+      "execution_enabled": false
+    },
+    {
+      "id": "esm-responsible-biodesign-note",
+      "name": "Protein Design Safety Placeholder",
+      "source_skill_path": "skills/esm/SKILL.md",
+      "category": "safety",
+      "description": "Mock metadata derived from the staged ESM skill's responsible biodesign note for future protein design safety review.",
+      "input_requirements": ["protein sequence/design objective", "safety review context"],
+      "output_artifacts": ["biosecurity review note", "protein design caveats"],
+      "tags": ["protein", "biosecurity", "safety"],
+      "mock_metadata": true,
+      "execution_enabled": false
+    }
+  ],
+  "database_connectors": [
+    {
+      "id": "pubchem",
+      "name": "PubChem",
+      "source_skill_id": "database-lookup",
+      "reference_file": "skills/database-lookup/references/pubchem.md",
+      "domains": ["chemistry", "drug-discovery"],
+      "description": "Mock metadata for compound, synonym, and property lookup.",
+      "execution_enabled": false
+    },
+    {
+      "id": "chembl",
+      "name": "ChEMBL",
+      "source_skill_id": "database-lookup",
+      "reference_file": "skills/database-lookup/references/chembl.md",
+      "domains": ["chemistry", "pharmacology"],
+      "description": "Mock metadata for bioactivity and drug-target lookup.",
+      "execution_enabled": false
+    },
+    {
+      "id": "clinicaltrials",
+      "name": "ClinicalTrials.gov",
+      "source_skill_id": "database-lookup",
+      "reference_file": "skills/database-lookup/references/clinicaltrials.md",
+      "domains": ["clinical", "trials"],
+      "description": "Mock metadata for clinical trial registry lookup.",
+      "execution_enabled": false
+    },
+    {
+      "id": "uniprot",
+      "name": "UniProt",
+      "source_skill_id": "database-lookup",
+      "reference_file": "skills/database-lookup/references/uniprot.md",
+      "domains": ["biology", "protein"],
+      "description": "Mock metadata for protein sequence and annotation lookup.",
+      "execution_enabled": false
+    },
+    {
+      "id": "pdb",
+      "name": "RCSB PDB",
+      "source_skill_id": "database-lookup",
+      "reference_file": "skills/database-lookup/references/pdb.md",
+      "domains": ["biology", "structure"],
+      "description": "Mock metadata for experimental 3D protein structures.",
+      "execution_enabled": false
+    }
+  ],
+  "safety_notes": [
+    "This fixture is metadata only.",
+    "No staged skill code is executed.",
+    "No database/API calls are made.",
+    "Health and clinical data must remain local unless a future adapter is explicitly configured and consented."
+  ]
+}

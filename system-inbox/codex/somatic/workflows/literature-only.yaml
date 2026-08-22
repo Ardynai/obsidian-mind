@@ -1,0 +1,20 @@
+schema_version: 0
+id: literature-only
+status: placeholder
+title: Literature Only
+mode: research
+description: Reviews literature, extracts evidence, and drafts research summaries for human review.
+adapters:
+  literature: required
+  llm: optional
+inputs:
+  - research_question
+  - source_corpus
+outputs:
+  - evidence_table
+  - research_summary
+gates:
+  human_review_required: true
+  external_actions_allowed: false
+notes:
+  - No clinical claims or lab actions.

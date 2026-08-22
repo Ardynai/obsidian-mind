@@ -1,0 +1,25 @@
+{
+  "harness": "somatic",
+  "packs": [
+    {
+      "class": "code",
+      "id": "somatic/crypto-code-pack",
+      "infohash": "8888888888888888888888888888888888888888",
+      "license": "Apache-2.0",
+      "manifestDigest": "sha256:5690816743f63a8ecdf3ea8209ba998ec73d710ae25a70fc773491240b8cf465",
+      "publisherKeyId": "1325b850c2871916eae203f0efc3c8987f64e5e3cdb27679e6d1fa97808357e6",
+      "size": 64,
+      "type": "plugin",
+      "version": "0.1.0"
+    }
+  ],
+  "publishedAt": "2026-05-28T17:04:09Z",
+  "schemaVersion": "1.0.0",
+  "signatures": [
+    {
+      "algo": "ed25519",
+      "keyId": "1325b850c2871916eae203f0efc3c8987f64e5e3cdb27679e6d1fa97808357e6",
+      "sig": "Pbm/C91wMW0XI2d4dyLNNhslaFtQ6tRJOfItgk0a11CR7Dmvjyv7qUcpS0vm8645+kVrkNvvmvm1rl1GZN7lDQ=="
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "adapter_execution_granted": false,
+  "authorization_phase": "design-only",
+  "authorization_status": "not-authorized",
+  "charter_id": "p12a-charter-24ac2ec2e83eeca6",
+  "charter_kind": "phase-12a-runtime-authorization-design-charter",
+  "charter_scope": "future-authorization-gate-model-only",
+  "charter_status": "phase-12a-satisfies-no-future-runtime-gates",
+  "execution_permitted": false,
+  "future_required_gate_count": 8,
+  "future_required_gates": [
+    {
+      "execution_permitted": false,
+      "gate_id": "explicit-human-authorization-record",
+      "gate_status": "future-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_runtime_authorization": true,
+      "satisfied_by_phase12a": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "scoped-runtime-domain-selection",
+      "gate_status": "future-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_runtime_authorization": true,
+      "satisfied_by_phase12a": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "adapter-specific-safety-review",
+      "gate_status": "future-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_runtime_authorization": true,
+      "satisfied_by_phase12a": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "privacy-data-boundary-review",
+      "gate_status": "future-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_runtime_authorization": true,
+      "satisfied_by_phase12a": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "fixture-to-real-data-transition-review",
+      "gate_status": "future-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_runtime_authorization": true,
+      "satisfied_by_phase12a": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "rollback-disable-plan",
+      "gate_status": "future-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_runtime_authorization": true,
+      "satisfied_by_phase12a": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "audit-log-requirements",
+      "gate_status": "future-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_runtime_authorization": true,
+      "satisfied_by_phase12a": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "jules-human-review-for-validator-authorization-semantics",
+      "gate_status": "future-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_runtime_authorization": true,
+      "satisfied_by_phase12a": false
+    }
+  ],
+  "jules_review_required_for_validator_or_authorization_semantics": true,
+  "model_execution_granted": false,
+  "passed_future_gate_count": 0,
+  "phase12a_satisfies_future_gates": false,
+  "provider_execution_granted": false,
+  "real_mode_runtime_enabled": false,
+  "runtime_authorization_design_charter_contract_version": 1,
+  "runtime_stage": "not-implemented",
+  "satisfied_future_gate_count": 0,
+  "source_governance_closeout": {
+    "artifact_kind": "phase-11m-planning-governance-closeout-index",
+    "blocker_count": 10,
+    "contract_version": 1,
+    "execution_permitted": false,
+    "final_status": "phase-11-planning-governance-complete",
+    "missing_future_gate_count": 9,
+    "phase_range": "11A-11L",
+    "readiness_gap": "real-mode-authorization-missing",
+    "real_mode_runtime_enabled": false,
+    "runtime_authorization_status": "not-authorized",
+    "runtime_stage": "not-implemented",
+    "stale_count": 1,
+    "unresolved_review_count": 21
+  },
+  "source_phase_range": "11L-11M",
+  "source_runtime_gap_ledger": {
+    "artifact_kind": "phase-11l-runtime-authorization-gap-ledger",
+    "authorization_status": "not-authorized",
+    "contract_version": 1,
+    "execution_permitted": false,
+    "missing_future_gate_count": 9,
+    "readiness_gap": "real-mode-authorization-missing",
+    "real_mode_runtime_enabled": false,
+    "runtime_stage": "not-implemented",
+    "source_phase_range": "11A-11K"
+  }
+}

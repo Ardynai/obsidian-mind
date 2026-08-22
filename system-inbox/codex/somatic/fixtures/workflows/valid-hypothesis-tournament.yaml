@@ -1,0 +1,251 @@
+schema_version: 1
+id: valid-hypothesis-tournament
+title: Valid Hypothesis Tournament Fixture
+mode: hypothesis-tournament
+description: Offline fixture for deterministic mock hypothesis generation, review, ranking, and refinement.
+version: 0.2.0
+status: fixture
+stages:
+  - id: collect-fixture-evidence
+    kind: literature-search
+    requires: []
+    provider_refs:
+      - literature
+    inputs:
+      - research_question
+      - local_fixture_corpus
+    outputs:
+      - evidence_table
+  - id: generate-candidates
+    kind: hypothesis-generation
+    requires:
+      - collect-fixture-evidence
+    provider_refs:
+      - proposer
+    inputs:
+      - evidence_table
+    outputs:
+      - candidate_hypotheses
+  - id: reflect-and-review
+    kind: critique
+    requires:
+      - generate-candidates
+    provider_refs:
+      - reviewer
+    inputs:
+      - candidate_hypotheses
+      - evidence_table
+    outputs:
+      - reflection_notes
+      - review_scores
+    safety_gate: mock-review-boundary
+  - id: evaluate-csi-replay-readiness
+    kind: csi-replay-evaluation
+    requires:
+      - reflect-and-review
+    provider_refs:
+      - sensor
+    inputs:
+      - csi_batch_replay_groups
+      - environment_fixture_rows
+    outputs:
+      - team_orchestrator_summary
+      - csi_evidence_pack
+      - environment_evidence_pack
+    safety_gate: mock-review-boundary
+  - id: bracket-and-refine
+    kind: hypothesis-refinement
+    requires:
+      - reflect-and-review
+    provider_refs:
+      - reviewer
+    inputs:
+      - review_scores
+      - reflection_notes
+    outputs:
+      - tournament_bracket
+      - refined_hypotheses
+      - ranked_hypotheses
+  - id: render-report
+    kind: report
+    requires:
+      - bracket-and-refine
+    provider_refs:
+      - report
+    inputs:
+      - ranked_hypotheses
+    outputs:
+      - report_packet
+inputs:
+  - id: research_question
+    kind: text
+    required: true
+    sensitivity: public
+    description: Research question for an offline mock tournament.
+  - id: local_fixture_corpus
+    kind: directory
+    required: true
+    sensitivity: public
+    description: Local fixture corpus used without network access.
+  - id: csi_batch_replay_groups
+    kind: csi-replay-evaluation-groups
+    provider_id: wifi-csi
+    required: false
+    sensitivity: private
+    description: Local fake/sample CSI fixture groups for sanitized tournament readiness metadata only.
+    groups:
+      - id: parsed-group
+        refs:
+          - sample-esp32-csi.csv
+          - sample-amplitude-phase.csv
+          - sample-csi-jsonl.jsonl
+      - id: partial-group
+        refs:
+          - sample-esp32-csi.csv
+          - mixed-valid-invalid-csi.csv
+      - id: rejected-group
+        refs:
+          - unsupported-csi.npz
+  - id: environment_fixture_rows
+    kind: environment-fixture-rows
+    provider_id: environment-fixture
+    required: false
+    sensitivity: private
+    description: Local neutral environment tabular fixture rows for sanitized row/count/status readiness metadata only.
+    refs:
+      - environment-mixed.csv
+providers:
+  - ref: literature
+    class: literature
+    capabilities:
+      - corpus.search
+      - evidence.extract
+    required: true
+    constraints:
+      offline_required: true
+  - ref: proposer
+    class: llm
+    capabilities:
+      - hypothesis.generate
+      - hypothesis.mutate
+    required: true
+    constraints:
+      offline_required: true
+      mock_only: true
+  - ref: reviewer
+    class: llm
+    capabilities:
+      - critique.generate
+      - score.review
+    required: true
+    constraints:
+      offline_required: true
+      mock_only: true
+  - ref: sensor
+    class: sensor
+    capabilities:
+      - wifi-csi.fixture-replay
+      - wifi-csi.batch-replay-evaluation
+      - environment-fixture.evidence-pack
+    required: false
+    constraints:
+      offline_required: true
+      mock_only: true
+      fixture_only: true
+      research_only: true
+      allow_live_capture: false
+      allow_hardware_access: false
+      allow_network_calls: false
+  - ref: report
+    class: report
+    capabilities:
+      - report.packet.create
+    required: true
+    constraints:
+      offline_required: true
+artifacts:
+  - id: evidence_table
+    kind: evidence-table
+    format: json
+    retention: run
+    hash_required: true
+  - id: candidate_hypotheses
+    kind: hypothesis-set
+    format: json
+    retention: run
+    hash_required: true
+  - id: reflection_notes
+    kind: report-packet
+    format: json
+    retention: run
+    hash_required: true
+  - id: review_scores
+    kind: report-packet
+    format: json
+    retention: run
+    hash_required: true
+  - id: tournament_bracket
+    kind: hypothesis-set
+    format: json
+    retention: run
+    hash_required: true
+  - id: refined_hypotheses
+    kind: hypothesis-set
+    format: json
+    retention: run
+    hash_required: true
+  - id: ranked_hypotheses
+    kind: hypothesis-set
+    format: json
+    retention: user-export
+    hash_required: true
+  - id: csi_evidence_pack
+    kind: csi-evidence-pack
+    format: json
+    retention: run
+    hash_required: true
+  - id: environment_evidence_pack
+    kind: environment-tabular-evidence-pack
+    format: json
+    retention: run
+    hash_required: true
+  - id: report_packet
+    kind: report-packet
+    format: markdown
+    retention: user-export
+    hash_required: true
+safety_profile:
+  risk_class: low
+  domain: general-research
+  human_review_required: true
+  external_actions_allowed: false
+  real_lab_action_requires_approval: false
+  clinical_safety_gate_required: false
+  code_pack_quarantine_required: false
+  notes:
+    - Mock offline tournament only.
+    - No medical, clinical, lab, live sensor, Fabric, or external provider action.
+evidence_requirements:
+  min_records: 1
+  accepted_source_types:
+    - paper
+    - dataset
+    - user-note
+    - csi-replay-readiness-metadata
+    - environment-readiness-metadata
+  citation_required: true
+  provenance_required: true
+  hash_required: true
+  limitations_required: true
+  counterevidence_required: true
+output_packet:
+  kind: report-packet
+  schema_ref: docs/report-packet.md
+  required_sections:
+    - summary
+    - ranked_hypotheses
+    - score_table
+    - safety_review
+    - limitations
+    - next_steps
+  review_state: human-review-required

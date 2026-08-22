@@ -1,0 +1,1 @@
+{"nodes": [{"id": "somatic_fabric_pack_schema", "label": "Fabric Pack Schema", "file_type": "document", "source_file": "docs/fabric-pack-schema.md", "rationale": "Defines the normative schema for pack.json manifests and file verification."}], "edges": [], "hyperedges": []}

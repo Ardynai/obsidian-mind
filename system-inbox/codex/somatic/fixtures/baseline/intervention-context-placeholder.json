@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "intervention-context-placeholder",
+  "workflow_id": "valid-n-of-1",
+  "intervention_tag_id": "intervention-tag-placeholder",
+  "sensor_feature_set_id": "sensor-feature-set-n-of-1-sandbox",
+  "baseline_comparison_id": "baseline-comparison-placeholder",
+  "personal_profile_id": "personal-profile-placeholder",
+  "baseline_graph_id": "baseline-graph-placeholder",
+  "baseline_comparison_status": "placeholder-comparison-complete",
+  "baseline_status_counts": {
+    "within_baseline": 5,
+    "outside_baseline": 1,
+    "insufficient_data": 1
+  },
+  "artifact_refs": {
+    "sensor_feature_set": "artifacts/sensor_feature_set.json",
+    "baseline_comparison": "artifacts/baseline_comparison.json",
+    "personal_profile": "artifacts/personal_profile.json",
+    "baseline_graph": "artifacts/baseline_graph.json"
+  },
+  "artifact_hashes": {
+    "sensor_feature_set": "placeholder-sha256",
+    "baseline_comparison": "placeholder-sha256",
+    "personal_profile": "placeholder-sha256",
+    "baseline_graph": "placeholder-sha256"
+  },
+  "mock": true,
+  "offline": true,
+  "research_only": true,
+  "sandbox_only": true,
+  "fake_backed": true,
+  "local_only": true,
+  "recommendation_generated": false,
+  "prescription_generated": false,
+  "treatment_recommendation": false,
+  "medical_advice": false,
+  "claim_effectiveness": false,
+  "real_intervention_performed": false,
+  "real_health_data_loaded": false,
+  "real_profile_storage": false,
+  "personal_data_exported": false,
+  "baseline_data_exported": false,
+  "live_sensor_access": false,
+  "hardware_access": false,
+  "network_calls": false,
+  "database_access": false,
+  "external_memory": false,
+  "raw_rf_data_collected": false,
+  "raw_csi_data_collected": false,
+  "diagnosis": false,
+  "emergency_triage": false,
+  "real_monitoring": false,
+  "real_scheduling": false,
+  "notification_automation": false,
+  "reminder_automation": false,
+  "clinical_interpretation": false,
+  "medical_or_clinical_claim": false,
+  "future_real_use_requirements": [
+    "explicit consent",
+    "human review",
+    "clinical review where applicable",
+    "local storage controls",
+    "safety gates",
+    "no emergency-triage substitution"
+  ],
+  "limitations": [
+    "Mock local intervention tag scaffold only.",
+    "No recommendation or prescription is generated.",
+    "No treatment recommendation, medical advice, or emergency triage is produced.",
+    "Medication and clinician placeholders are disabled metadata only.",
+    "Response evaluation is future planning only, not real monitoring.",
+    "No reminders, automation, notification, or scheduling is created."
+  ],
+  "metadata": {
+    "context_status": "artifact-linking-only",
+    "response_evaluation_status": "future-planning-only"
+  }
+}

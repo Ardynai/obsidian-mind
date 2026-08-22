@@ -1,0 +1,1 @@
+{"nodes": [{"id": "somatic_workflow_loader_py", "label": "somatic/workflow_loader.py", "file_type": "code", "source_file": "somatic/workflow_loader.py", "rationale": "Loads and validates workflow YAML fixtures.", "verification": "unverified"}], "edges": [], "hyperedges": []}

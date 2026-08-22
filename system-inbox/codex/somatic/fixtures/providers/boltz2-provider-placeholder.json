@@ -1,0 +1,57 @@
+{
+  "id": "boltz2-provider-placeholder",
+  "class": "biomodel",
+  "name": "Boltz-2 Provider Placeholder",
+  "version": "0.1.0",
+  "description": "Placeholder metadata for future Boltz-2 biomodel planning. No model package, weights, or external service is imported or executed.",
+  "status": "planned",
+  "disabled_by_default": true,
+  "fake_backed": true,
+  "external_runtime_enabled": false,
+  "local_repo_inspected": true,
+  "local_path": "C:\\AI\\external-sources\\somatic\\boltz",
+  "inspected_commit": "b1ebfc46ecf57f5414e0d1a6f9027bbb122c53bc",
+  "license": "MIT",
+  "optional_dependency": {
+    "package": "boltz",
+    "required_for_basic_install": false,
+    "imported_at_module_import": false
+  },
+  "capabilities": [
+    {
+      "id": "biomodel.plan",
+      "input_types": ["target-ref", "artifact-ref", "constraint-map"],
+      "output_types": ["model-run-plan"]
+    },
+    {
+      "id": "biomodel.run",
+      "input_types": ["model-run-plan"],
+      "output_types": ["model-result"]
+    }
+  ],
+  "modes_supported": ["in-silico-screening", "robin-loop"],
+  "data_locality": "local-planning-only",
+  "determinism": "deterministic-mock-metadata",
+  "offline_supported": true,
+  "permissions_required": ["read:workflow", "read:input", "read:evidence", "write:evidence", "write:artifact", "execute:model"],
+  "auth": {
+    "type": "none",
+    "secrets_required": []
+  },
+  "limits": {
+    "network_calls_allowed": false,
+    "runtime_import_allowed": false,
+    "basic_install_dependency": false,
+    "model_download_allowed": false,
+    "msa_server_allowed": false,
+    "gpu_execution_allowed": false,
+    "prediction_execution_allowed": false
+  },
+  "artifacts_emitted": ["model-run-plan", "model-result"],
+  "evidence_emitted": ["sim", "model-output"],
+  "safety_notes": [
+    "Future biomodel adapters must document model assumptions, provenance, and license gates.",
+    "Boltz source is staged and inspected for planning only; no runtime import is allowed by this placeholder.",
+    "No biomodel execution, model download, or private data release is allowed by this placeholder."
+  ]
+}

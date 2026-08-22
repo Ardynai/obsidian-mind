@@ -1,0 +1,28 @@
+{
+  "documents": [
+    {
+      "id": "doc-101",
+      "status": "parsed",
+      "word_count": 56,
+      "line_count": 4,
+      "char_count": 312,
+      "format": "plain-text"
+    },
+    {
+      "id": "doc-102",
+      "status": "partial",
+      "word_count": 0,
+      "line_count": 0,
+      "char_count": 0,
+      "format": "unknown"
+    },
+    {
+      "id": "doc-103",
+      "status": "rejected",
+      "word_count": 0,
+      "line_count": 0,
+      "char_count": 0,
+      "format": "unsupported"
+    }
+  ]
+}

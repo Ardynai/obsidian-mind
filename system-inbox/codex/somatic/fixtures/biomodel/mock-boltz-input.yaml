@@ -1,0 +1,17 @@
+version: 1
+description: Placeholder Boltz-style input for Somatic fake-backed planning tests only.
+runtime_enabled: false
+model_downloads_allowed: false
+msa_server_allowed: false
+network_calls_allowed: false
+gpu_execution_allowed: false
+sequences:
+  - id: mock-protein-A
+    kind: protein
+    sequence_ref: protein://mock-kinase-alpha
+  - id: mock-ligand-001
+    kind: ligand
+    ligand_ref: ligand://mock-ligand-001
+constraints:
+  research_only: true
+  no_real_prediction: true

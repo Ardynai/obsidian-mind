@@ -1,0 +1,55 @@
+{
+  "class": "data",
+  "createdAt": "2026-06-01T00:00:00Z",
+  "dependencies": [],
+  "description": "TEST VECTOR ONLY. Shared interop data pack signed with checked-in test keys.",
+  "files": [
+    {
+      "executable": false,
+      "installTarget": "somatic/shared-data-pack/data/metadata.json",
+      "path": "data/metadata.json",
+      "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "size": 128
+    },
+    {
+      "executable": false,
+      "installTarget": "somatic/shared-data-pack/data/table.csv",
+      "path": "data/table.csv",
+      "sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+      "size": 256
+    }
+  ],
+  "harnesses": [
+    "somatic"
+  ],
+  "id": "somatic/shared-data-pack",
+  "license": "Apache-2.0",
+  "name": "Somatic Shared Data Pack",
+  "publisher": {
+    "displayName": "Somatic Shared Fixture Publisher",
+    "keyId": "1325b850c2871916eae203f0efc3c8987f64e5e3cdb27679e6d1fa97808357e6",
+    "namespace": "somatic"
+  },
+  "schemaVersion": "1.0.0",
+  "signatures": [
+    {
+      "algo": "ed25519",
+      "keyId": "1325b850c2871916eae203f0efc3c8987f64e5e3cdb27679e6d1fa97808357e6",
+      "sig": "57nmbxWKN8G+LGyteUxO098OjQAESV6z7/Hdt7zQ1OOeQlG1KtlbE27uBPKdjzG/dYsfP2PjQxnttiJJ0mLLDQ=="
+    }
+  ],
+  "transport": {
+    "infohash": "1111111111111111111111111111111111111111",
+    "magnet": "magnet:?xt=urn:btih:1111111111111111111111111111111111111111&dn=somatic%2Fshared-data-pack%401.0.0&ws=https%3A%2F%2Fexample.invalid%2Ffabric%2Fshared%2F"
+  },
+  "type": "dataset",
+  "version": "1.0.0",
+  "xInteropUnknown": {
+    "nested": {
+      "a": 1,
+      "z": 2
+    },
+    "note": "unknown fields must remain in canonical bytes and signing payloads",
+    "unicode": "Ω"
+  }
+}

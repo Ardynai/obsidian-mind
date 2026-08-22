@@ -1,0 +1,22 @@
+schema_version: 0
+id: wet-lab-manual
+status: placeholder
+title: Wet Lab Manual
+mode: manual_lab
+description: Produces human-readable lab plans, checklists, and observation forms.
+adapters:
+  lab_planner: required
+inputs:
+  - research_plan
+  - available_equipment
+  - safety_constraints
+outputs:
+  - manual_protocol_draft
+  - operator_checklist
+  - observation_form
+gates:
+  human_review_required: true
+  real_lab_action_requires_approval: true
+  autonomous_lab_action_allowed: false
+notes:
+  - No equipment control in Phase 0.

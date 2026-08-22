@@ -1,0 +1,6 @@
+frame_id,timestamp,subcarrier,amplitude,phase,label,raw_samples,rssi,extra_note
+
+edge-frame-001,0.0,1,1.0,0.1,fixture-still,"[1,0]",-50,ignored-local-note
+
+edge-frame-002,0.1,2,1.2,-0.2,fixture-motion,"[2,1]",-49,ignored-local-note
+

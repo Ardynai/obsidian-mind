@@ -1,0 +1,34 @@
+{
+  "class": "data",
+  "createdAt": "2026-05-28T17:04:09Z",
+  "description": "Somatic placeholder conformance data pack. The digest and signature fixtures are not cryptographic.",
+  "files": [
+    {
+      "executable": false,
+      "installTarget": "somatic/sample-dataset/records.json",
+      "path": "records.json",
+      "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "size": 128
+    }
+  ],
+  "harnesses": [
+    "somatic",
+    "locus"
+  ],
+  "id": "somatic/sample-dataset",
+  "license": "CC-BY-4.0",
+  "name": "Somatic Sample Dataset",
+  "publisher": {
+    "displayName": "Somatic Fixtures",
+    "keyId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "namespace": "somatic"
+  },
+  "schemaVersion": "1.0.0",
+  "signatures": [],
+  "transport": {
+    "infohash": "1111111111111111111111111111111111111111",
+    "magnet": "magnet:?xt=urn:btih:1111111111111111111111111111111111111111&dn=somatic%2Fsample-dataset%400.1.0&ws=https%3A%2F%2Fexample.invalid%2Ffabric%2Fsomatic%2Fsample-dataset%2F0.1.0%2F"
+  },
+  "type": "dataset",
+  "version": "0.1.0"
+}

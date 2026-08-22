@@ -1,0 +1,44 @@
+{
+  "harness": "somatic",
+  "packs": [
+    {
+      "class": "code",
+      "id": "somatic/shared-code-pack",
+      "infohash": "2222222222222222222222222222222222222222",
+      "license": "Apache-2.0",
+      "manifestDigest": "sha256:37e1bd59cd6877c236e4aa1500368f5fd17322dadd2063f95bebe76175856b69",
+      "publisherKeyId": "1325b850c2871916eae203f0efc3c8987f64e5e3cdb27679e6d1fa97808357e6",
+      "size": 576,
+      "type": "plugin",
+      "version": "1.0.0"
+    },
+    {
+      "class": "data",
+      "id": "somatic/shared-data-pack",
+      "infohash": "1111111111111111111111111111111111111111",
+      "license": "Apache-2.0",
+      "manifestDigest": "sha256:31c66ec2c9b86c07241fec3b3fea7e6d7fcfce9656fce8e63738d23d93d3a7e6",
+      "publisherKeyId": "1325b850c2871916eae203f0efc3c8987f64e5e3cdb27679e6d1fa97808357e6",
+      "size": 384,
+      "type": "dataset",
+      "version": "1.0.0"
+    }
+  ],
+  "publishedAt": "2026-06-01T00:00:00Z",
+  "schemaVersion": "1.0.0",
+  "signatures": [
+    {
+      "algo": "ed25519",
+      "keyId": "1325b850c2871916eae203f0efc3c8987f64e5e3cdb27679e6d1fa97808357e6",
+      "sig": "Y8NO3dfxJ8OB6/HPhEnVHGJ7EculRostsYMTCTXvFWHlX8z4+PMwSoBX0IvlokjFohoUCWuLw4fD4cKSM3bSAQ=="
+    }
+  ],
+  "xInteropUnknown": {
+    "contains": [
+      "code",
+      "data"
+    ],
+    "note": "catalog unknown fields must remain in canonical signing payloads",
+    "tamperedAfterSigning": true
+  }
+}

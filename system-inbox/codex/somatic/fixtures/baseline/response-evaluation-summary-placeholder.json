@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "response-evaluation-summary-placeholder",
+  "workflow_id": "valid-n-of-1",
+  "follow_up_observation_window_id": "follow-up-observation-window-placeholder",
+  "follow_up_sensor_snapshot_id": "follow-up-sensor-snapshot-placeholder",
+  "response_comparison_id": "response-comparison-placeholder",
+  "trend_status_vocabulary": [
+    "toward_baseline",
+    "away_from_baseline",
+    "unchanged",
+    "insufficient_data"
+  ],
+  "summary_status": "fixture-trend-labels-only",
+  "trend_counts": {
+    "toward_baseline": 1,
+    "away_from_baseline": 0,
+    "unchanged": 5,
+    "insufficient_data": 1
+  },
+  "status_by_category": {
+    "respiratory_rate": "unchanged",
+    "movement_score": "toward_baseline",
+    "sleep_state_estimate": "unchanged",
+    "posture_state": "unchanged",
+    "csi_confidence": "unchanged",
+    "environmental_context": "unchanged",
+    "notes_placeholder": "insufficient_data"
+  },
+  "toward_baseline_categories": [
+    "movement_score"
+  ],
+  "away_from_baseline_categories": [],
+  "unchanged_categories": [
+    "respiratory_rate",
+    "sleep_state_estimate",
+    "posture_state",
+    "csi_confidence",
+    "environmental_context"
+  ],
+  "insufficient_data_categories": [
+    "notes_placeholder"
+  ],
+  "mock": true,
+  "offline": true,
+  "research_only": true,
+  "sandbox_only": true,
+  "fake_backed": true,
+  "local_only": true,
+  "effectiveness_claim": false,
+  "claim_effectiveness": false,
+  "recommendation_generated": false,
+  "prescription_generated": false,
+  "treatment_recommendation": false,
+  "medical_advice": false,
+  "real_intervention_performed": false,
+  "real_health_data_loaded": false,
+  "personal_data_exported": false,
+  "hardware_access": false,
+  "live_sensor_access": false,
+  "network_calls": false,
+  "database_access": false,
+  "external_memory": false,
+  "diagnosis": false,
+  "emergency_triage": false,
+  "real_monitoring": false,
+  "real_response_monitoring": false,
+  "real_scheduling": false,
+  "notification_automation": false,
+  "reminder_automation": false,
+  "clinical_interpretation": false,
+  "medical_or_clinical_claim": false,
+  "metadata": {
+    "fixture_ref": "fixtures/baseline/response-evaluation-summary-placeholder.json",
+    "summary": "fixture-trend-labels-only",
+    "no_effectiveness_claim": true
+  },
+  "future_real_use_requirements": [
+    "explicit consent",
+    "human review",
+    "clinical review where applicable",
+    "local storage controls",
+    "privacy gates",
+    "safety gates",
+    "real scheduling and monitoring safety review",
+    "no emergency-triage substitution"
+  ],
+  "limitations": [
+    "Fake-backed local research-only planning only.",
+    "Response trend labels are fixture trend labels only.",
+    "No intervention effectiveness is claimed.",
+    "No recommendation, prescription, treatment recommendation, medical advice, diagnosis, or emergency triage is produced.",
+    "No reminders, automation, notification, scheduling, or real monitoring is created."
+  ]
+}

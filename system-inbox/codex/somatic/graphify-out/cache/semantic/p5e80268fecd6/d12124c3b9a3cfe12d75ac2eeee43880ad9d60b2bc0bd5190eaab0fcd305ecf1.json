@@ -1,0 +1,1 @@
+{"nodes": [{"id": "ui_src_components_inspectorpanel", "label": "Inspector Panel Component", "file_type": "code", "source_file": "ui/src/components/InspectorPanel.tsx"}], "edges": [{"source": "ui_src_components_inspectorpanel", "target": "ui_src_charts", "relation": "references", "confidence": "INFERRED", "source_file": "ui/src/components/InspectorPanel.tsx"}], "hyperedges": []}

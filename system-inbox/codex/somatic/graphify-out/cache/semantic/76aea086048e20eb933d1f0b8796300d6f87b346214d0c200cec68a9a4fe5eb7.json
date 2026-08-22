@@ -1,0 +1,1 @@
+{"nodes": [{"id": "ui_package_json", "label": "Somatic UI Package", "file_type": "code", "source_file": "ui/package.json", "rationale": "Defines frontend dependencies including React 19, Three.js (R3F), GSAP, and Vite."}], "edges": [], "hyperedges": []}

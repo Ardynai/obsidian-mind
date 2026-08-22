@@ -1,0 +1,3 @@
+frame_id,timestamp,subcarrier,amplitude,phase,label,unknown_raw_values
+mixed-frame-001,0.0,1,1.0,0.0,fixture-valid,"[1,0]"
+mixed-frame-002,0.1,2,not-number,,fixture-invalid,"[2,1]"

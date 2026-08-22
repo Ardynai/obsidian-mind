@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "id": "n-of-1-report-packet-placeholder",
+  "run_id": "run-n-of-1-report-packet-placeholder",
+  "workflow_id": "valid-n-of-1",
+  "workflow_mode": "n-of-1",
+  "generated_at": "run-n-of-1-report-packet-placeholder",
+  "artifact_count": 17,
+  "present_artifact_count": 17,
+  "packet_complete": true,
+  "packet_status": "complete",
+  "missing_artifacts": [],
+  "artifact_refs": {
+    "sensor_stream_plan": {
+      "relative_path": "artifacts/sensor_stream_plan.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    },
+    "sensor_observations": {
+      "relative_path": "artifacts/sensor_observations.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    },
+    "sensor_feature_set": {
+      "relative_path": "artifacts/sensor_feature_set.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    },
+    "sensor_evidence_record": {
+      "relative_path": "artifacts/sensor_evidence_record.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    },
+    "n_of_1_baseline_placeholder": {
+      "relative_path": "artifacts/n_of_1_baseline_placeholder.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    },
+    "personal_profile": {
+      "relative_path": "artifacts/personal_profile.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    },
+    "baseline_graph": {
+      "relative_path": "artifacts/baseline_graph.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    },
+    "baseline_comparison": {
+      "relative_path": "artifacts/baseline_comparison.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    },
+    "intervention_tag": {
+      "relative_path": "artifacts/intervention_tag.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    },
+    "intervention_context": {
+      "relative_path": "artifacts/intervention_context.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    },
+    "response_evaluation_plan": {
+      "relative_path": "artifacts/response_evaluation_plan.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    },
+    "mock_intervention_ledger": {
+      "relative_path": "artifacts/mock_intervention_ledger.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    },
+    "follow_up_observation_window": {
+      "relative_path": "artifacts/follow_up_observation_window.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    },
+    "follow_up_sensor_snapshot": {
+      "relative_path": "artifacts/follow_up_sensor_snapshot.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    },
+    "response_comparison": {
+      "relative_path": "artifacts/response_comparison.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    },
+    "response_evaluation_summary": {
+      "relative_path": "artifacts/response_evaluation_summary.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    },
+    "n_of_1_summary": {
+      "relative_path": "artifacts/n_of_1_summary.json",
+      "sha256": "placeholder-sha256",
+      "present": true
+    }
+  },
+  "artifact_hashes": {
+    "sensor_stream_plan": "placeholder-sha256",
+    "sensor_observations": "placeholder-sha256",
+    "sensor_feature_set": "placeholder-sha256",
+    "sensor_evidence_record": "placeholder-sha256",
+    "n_of_1_baseline_placeholder": "placeholder-sha256",
+    "personal_profile": "placeholder-sha256",
+    "baseline_graph": "placeholder-sha256",
+    "baseline_comparison": "placeholder-sha256",
+    "intervention_tag": "placeholder-sha256",
+    "intervention_context": "placeholder-sha256",
+    "response_evaluation_plan": "placeholder-sha256",
+    "mock_intervention_ledger": "placeholder-sha256",
+    "follow_up_observation_window": "placeholder-sha256",
+    "follow_up_sensor_snapshot": "placeholder-sha256",
+    "response_comparison": "placeholder-sha256",
+    "response_evaluation_summary": "placeholder-sha256",
+    "n_of_1_summary": "placeholder-sha256"
+  },
+  "loop_stages": [
+    {
+      "stage": "observation",
+      "artifact_names": [
+        "sensor_stream_plan",
+        "sensor_observations",
+        "sensor_feature_set",
+        "sensor_evidence_record"
+      ],
+      "status": "complete"
+    },
+    {
+      "stage": "baseline",
+      "artifact_names": [
+        "n_of_1_baseline_placeholder",
+        "personal_profile",
+        "baseline_graph",
+        "baseline_comparison"
+      ],
+      "status": "complete"
+    },
+    {
+      "stage": "intervention_tag",
+      "artifact_names": [
+        "intervention_tag",
+        "intervention_context",
+        "response_evaluation_plan",
+        "mock_intervention_ledger"
+      ],
+      "status": "complete"
+    },
+    {
+      "stage": "follow_up",
+      "artifact_names": [
+        "follow_up_observation_window",
+        "follow_up_sensor_snapshot"
+      ],
+      "status": "complete"
+    },
+    {
+      "stage": "response_comparison",
+      "artifact_names": [
+        "response_comparison",
+        "response_evaluation_summary",
+        "n_of_1_summary"
+      ],
+      "status": "complete"
+    }
+  ],
+  "safety_boundary_flags": {
+    "fake_backed": true,
+    "no_hardware": true,
+    "no_real_health_data": true,
+    "no_diagnosis": true,
+    "no_treatment": true,
+    "no_recommendation": true,
+    "no_prescription": true,
+    "no_emergency_triage": true,
+    "no_effectiveness_claim": true,
+    "no_monitoring": true,
+    "no_scheduling": true
+  },
+  "mock": true,
+  "offline": true,
+  "research_only": true,
+  "sandbox_only": true,
+  "simulated": true,
+  "fake_backed": true,
+  "local_only": true,
+  "medical_record": false,
+  "advice_generated": false,
+  "recommendation_generated": false,
+  "prescription_generated": false,
+  "treatment_recommendation": false,
+  "medical_advice": false,
+  "effectiveness_claim": false,
+  "no_effectiveness_claim": true,
+  "claim_effectiveness": false,
+  "real_health_data_loaded": false,
+  "real_profile_storage": false,
+  "personal_data_exported": false,
+  "personal_health_data_exported": false,
+  "baseline_data_exported": false,
+  "raw_sensor_data_collected": false,
+  "hardware_access": false,
+  "live_sensor_access": false,
+  "network_calls": false,
+  "database_access": false,
+  "external_memory": false,
+  "diagnosis": false,
+  "emergency_triage": false,
+  "real_monitoring": false,
+  "real_response_monitoring": false,
+  "real_scheduling": false,
+  "notification_automation": false,
+  "reminder_automation": false,
+  "real_intervention_performed": false,
+  "clinical_interpretation": false,
+  "medical_or_clinical_claim": false,
+  "limitations": [
+    "Fake-backed local research-only report packet.",
+    "Hashes are for reproducibility/provenance only.",
+    "Packet is not a medical record.",
+    "Packet is not a health record.",
+    "No effectiveness claim or advice is generated.",
+    "No intervention effectiveness is claimed.",
+    "No reminders, automation, notification, scheduling, or real monitoring is created."
+  ],
+  "future_real_use_requirements": [
+    "explicit consent",
+    "privacy review",
+    "safety review",
+    "human review",
+    "clinical review where applicable",
+    "local-first storage controls",
+    "retention and export controls"
+  ]
+}

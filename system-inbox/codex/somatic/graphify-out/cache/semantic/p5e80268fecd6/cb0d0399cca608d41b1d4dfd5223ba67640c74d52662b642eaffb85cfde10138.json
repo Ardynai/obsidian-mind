@@ -1,0 +1,1 @@
+{"nodes": [{"id": "ui_scripts_a11y_check", "label": "A11y Check Script", "file_type": "code", "source_file": "ui/scripts/a11y-check.mjs"}], "edges": [{"source": "ui_scripts_a11y_check", "target": "ui_readme", "relation": "references", "confidence": "INFERRED", "source_file": "ui/scripts/a11y-check.mjs"}], "hyperedges": []}

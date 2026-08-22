@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "biomodel-readiness-report-placeholder",
+  "ready": false,
+  "execution_permitted": false,
+  "runtime_boundary": "future-real-runtime-only",
+  "phase_runtime": "not-implemented",
+  "research_only": true,
+  "block_reasons": [
+    "runtime-execution-disabled",
+    "model-downloads-disabled",
+    "msa-server-disabled",
+    "network-calls-disabled",
+    "gpu-execution-disabled",
+    "missing-resource-review",
+    "missing-provenance-plan",
+    "missing-user-consent",
+    "research-only-boundary-not-acknowledged"
+  ],
+  "policy": {
+    "policy_version": "phase-6c-safe-default",
+    "runtime_boundary": "future-real-runtime-only",
+    "runtime_execution_enabled": false,
+    "model_downloads_enabled": false,
+    "msa_server_enabled": false,
+    "network_calls_enabled": false,
+    "gpu_execution_enabled": false,
+    "resource_review_complete": false,
+    "provenance_plan_complete": false,
+    "require_user_consent": true,
+    "require_research_only_acknowledgement": true
+  },
+  "consent": {
+    "user_consent": false,
+    "research_only_acknowledged": false,
+    "consent_scope": "none"
+  },
+  "plan": {
+    "id": "biomodel-plan-placeholder",
+    "provider_id": "boltz2-biomodel-provider",
+    "status": "planned-not-executed"
+  },
+  "metadata": {
+    "phase": "6C",
+    "real_runtime_enabled_in_this_phase": false,
+    "fake_backed_in_silico_available": true
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "canonicalization": "Phase 4B deterministic sorted-key compact JSON scaffold; not a final RFC 8785 cross-implementation conformance vector.",
+  "ed25519": "Not verified in Phase 4B; signatures remain placeholder bytes.",
+  "placeholderSignatures": true,
+  "sampleCatalogDigest": "sha256:8f845ff0a7901287111f5b9f5e2c88c73a3b85dcc18f65ab11d8a773a63e888d",
+  "samplePackSigningPayloadSha256": "e69b608b45504046b7def712addfc9bcd47092cc782f1b80c8ffb8388bd88242",
+  "sampleSignedPackManifestDigest": "sha256:0f28f6172f483e51967d9faecf2de4cac56260fe1f426ead5424154e349cec62"
+}

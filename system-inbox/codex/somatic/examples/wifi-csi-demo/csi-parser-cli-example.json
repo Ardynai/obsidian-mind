@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "example_id": "wifi-csi-parser-cli-fixture-run",
+  "title": "CSI parser CLI fixture run",
+  "entrypoint": "python -m somatic",
+  "cli_args": [
+    "csi-parse",
+    "sample-esp32-csi.csv",
+    "--repo-root",
+    "."
+  ],
+  "expected_exit_code": 0,
+  "expected_output": {
+    "kind": "stdout-json",
+    "status": "parsed",
+    "contract_version": 1,
+    "sanitized_metadata_only": true,
+    "portable_public_export": false,
+    "local_parser_contract_report": true
+  },
+  "privacy_boundary": {
+    "fixture_only": true,
+    "offline": true,
+    "metadata_only": true,
+    "hardware_access": false,
+    "network_calls": false,
+    "live_capture": false,
+    "signal_values_exported": false
+  }
+}

@@ -1,0 +1,1 @@
+{"nodes": [{"id": "somatic_bench_runner_run_bench", "label": "run_bench", "file_type": "code", "source_file": "somatic/bench/runner.py"}], "edges": [{"source": "somatic_bench_runner_run_bench", "target": "somatic_science_harness_run_science_loop", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "somatic/bench/runner.py"}], "hyperedges": []}

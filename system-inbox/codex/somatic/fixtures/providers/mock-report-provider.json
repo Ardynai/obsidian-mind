@@ -1,0 +1,31 @@
+{
+  "id": "mock-report-provider",
+  "class": "report",
+  "name": "Mock Report Provider",
+  "version": "0.1.0",
+  "description": "Offline fixture provider for report packet and Markdown report generation.",
+  "capabilities": [
+    {
+      "id": "report.packet.create",
+      "input_types": ["evidence-table", "hypothesis-set", "safety-decision"],
+      "output_types": ["report-packet", "markdown"]
+    }
+  ],
+  "modes_supported": ["literature-only", "robin-loop", "wifi-csi-observation", "n-of-1", "hybrid-clinical"],
+  "data_locality": "local-only",
+  "determinism": "deterministic",
+  "offline_supported": true,
+  "permissions_required": ["read:workflow", "read:evidence", "write:report"],
+  "auth": {
+    "type": "none",
+    "secrets_required": []
+  },
+  "limits": {
+    "network_calls_allowed": false
+  },
+  "artifacts_emitted": ["report-packet", "markdown"],
+  "evidence_emitted": [],
+  "mock": {
+    "stable_timestamps": true
+  }
+}

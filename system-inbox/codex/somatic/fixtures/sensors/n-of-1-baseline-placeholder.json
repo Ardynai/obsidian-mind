@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "n-of-1-baseline-placeholder",
+  "mock": true,
+  "offline": true,
+  "research_only": true,
+  "baseline_collection": "not-performed",
+  "local_baseline": "placeholder",
+  "observation_window": "placeholder-window-local-only",
+  "real_health_data": false,
+  "real_health_data_loaded": false,
+  "real_profile_storage": false,
+  "live_sensor_access": false,
+  "hardware_access": false,
+  "network_calls": false,
+  "database_access": false,
+  "personal_data_exported": false,
+  "personal_health_data_exported": false,
+  "baseline_data_exported": false,
+  "real_monitoring": false,
+  "diagnosis": false,
+  "treatment_recommendation": false,
+  "emergency_triage": false,
+  "clinical_interpretation": false,
+  "medical_or_clinical_claim": false,
+  "limitations": [
+    "No real baseline was collected.",
+    "No real health data was loaded.",
+    "No real profile storage was performed.",
+    "No real sensor stream was monitored.",
+    "No clinical conclusion was produced."
+  ],
+  "future_real_baseline_requirements": [
+    "explicit local storage consent",
+    "data-locality review",
+    "privacy review",
+    "safety review",
+    "human review",
+    "retention and export controls",
+    "separate opt-in configuration"
+  ]
+}

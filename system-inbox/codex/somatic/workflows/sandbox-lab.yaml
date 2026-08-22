@@ -1,0 +1,19 @@
+schema_version: 0
+id: sandbox-lab
+status: placeholder
+title: Sandbox Lab
+mode: simulation
+description: Runs simulated experiments for users without lab access or before real-world planning.
+adapters:
+  simulator: required
+inputs:
+  - simulated_protocol
+  - simulation_parameters
+outputs:
+  - simulated_observations
+  - simulation_report
+gates:
+  human_review_required: true
+  external_actions_allowed: false
+notes:
+  - Outputs must be labeled as simulation.

@@ -1,0 +1,1 @@
+{"nodes": [{"id": "ingest_packet", "label": "Ingested Packet", "file_type": "code", "source_file": "somatic/ingest/packet.py", "rationale": "Standardized data structure for personal health observations."}], "edges": [], "hyperedges": []}

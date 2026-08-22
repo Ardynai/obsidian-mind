@@ -1,0 +1,40 @@
+{
+  "expires": "2027-05-28T00:00:00Z",
+  "publishers": [
+    {
+      "displayName": "Somatic Fixtures",
+      "keys": [
+        {
+          "algo": "ed25519",
+          "keyId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "publicKey": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+          "status": "active",
+          "validFrom": "2026-01-01T00:00:00Z",
+          "validUntil": null
+        }
+      ],
+      "namespace": "somatic",
+      "threshold": 1
+    }
+  ],
+  "rootKeys": [
+    {
+      "algo": "ed25519",
+      "keyId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "publicKey": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+      "status": "active",
+      "validFrom": "2026-01-01T00:00:00Z",
+      "validUntil": null
+    }
+  ],
+  "rootThreshold": 1,
+  "schemaVersion": "1.0.0",
+  "signatures": [
+    {
+      "algo": "ed25519",
+      "keyId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "sig": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    }
+  ],
+  "version": 1
+}

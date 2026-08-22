@@ -1,0 +1,25 @@
+schema_version: 0
+id: wifi-csi-observation
+status: placeholder
+title: WiFi CSI Observation
+mode: sensor_observation
+description: Plans fake-backed WiFi CSI metadata boundaries for research; no live capture or hardware access is implemented.
+adapters:
+  wifi_csi: optional
+  sensor: optional
+inputs:
+  - observation_plan
+  - consent_record
+  - sensor_configuration
+outputs:
+  - csi_capture_plan_placeholder
+  - csi_feature_set_placeholder
+  - analysis_notes
+gates:
+  human_review_required: true
+  consent_required: true
+  privacy_review_required: true
+notes:
+  - Avoid hidden surveillance use cases.
+  - Phase 7B is planning-only and disabled by default.
+  - No ESP32, RTL8812AU, router, adapter, driver, monitor mode, packet capture, WiFi probing, raw RF/CSI collection, or network calls.

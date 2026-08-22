@@ -1,0 +1,51 @@
+{
+  "id": "safety-request-phase1a-001",
+  "schema_version": 1,
+  "workflow_id": "valid-wifi-csi-observation",
+  "run_id": "run-phase1a-sample",
+  "mode": "wifi-csi-observation",
+  "stage_id": "report-observations",
+  "requested_action": "create-report-packet",
+  "domain": "sensor-research",
+  "inputs": [
+    {
+      "id": "consent_record",
+      "sensitivity": "personal",
+      "consent_state": "declared"
+    },
+    {
+      "id": "csi_planning_placeholder",
+      "sensitivity": "internal",
+      "license_state": "fixture"
+    }
+  ],
+  "providers": [
+    {
+      "ref": "sensor",
+      "class": "sensor",
+      "capabilities": ["wifi-csi.plan", "wifi-csi.summarize"],
+      "permissions": ["observe:sensor", "write:evidence", "write:artifact"]
+    }
+  ],
+  "evidence_refs": ["ev-phase1a-sample-001"],
+  "artifacts": [
+    {
+      "id": "csi_analysis",
+      "kind": "model-output",
+      "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    }
+  ],
+  "claims": [
+    "This report summarizes fake-backed WiFi CSI planning metadata for research review."
+  ],
+  "pack_refs": ["somatic.fixture.csi-planning-placeholder"],
+  "requested_outputs": ["report-packet"],
+  "checks_requested": [
+    "medical-boundary",
+    "unsupported-claim",
+    "evidence-sufficiency",
+    "human-review-required",
+    "privacy-consent",
+    "license-gate"
+  ]
+}

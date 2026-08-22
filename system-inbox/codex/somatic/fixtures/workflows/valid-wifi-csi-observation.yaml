@@ -1,0 +1,131 @@
+schema_version: 1
+id: valid-wifi-csi-observation
+title: Valid WiFi CSI Planning Fixture
+mode: wifi-csi-observation
+description: Offline fixture for consent-aware WiFi CSI planning metadata only.
+version: 0.1.0
+status: fixture
+stages:
+  - id: plan-csi-fixture-boundary
+    kind: sensor-plan
+    requires: []
+    provider_refs:
+      - sensor
+    inputs:
+      - consent_record
+      - csi_planning_placeholder
+    outputs:
+      - csi_capture_plan
+    safety_gate: consent-privacy-review
+  - id: summarize-csi-placeholders
+    kind: analysis
+    requires:
+      - plan-csi-fixture-boundary
+    provider_refs:
+      - sensor
+    inputs:
+      - csi_capture_plan
+    outputs:
+      - csi_analysis
+  - id: report-observations
+    kind: report
+    requires:
+      - summarize-csi-placeholders
+    provider_refs:
+      - report
+    inputs:
+      - csi_analysis
+    outputs:
+      - report_packet
+inputs:
+  - id: consent_record
+    kind: file
+    required: true
+    sensitivity: personal
+    description: Consent and data-use statement for the fixture.
+  - id: csi_planning_placeholder
+    kind: file
+    required: true
+    sensitivity: internal
+    ref: fixture://sensors/csi/csi-capture-plan-placeholder.json
+    description: Local CSI planning placeholder; no samples, raw RF, or raw CSI are collected.
+providers:
+  - ref: sensor
+    class: sensor
+    capabilities:
+      - wifi-csi.plan
+      - wifi-csi.summarize
+    required: true
+    constraints:
+      offline_required: true
+      mock_only: true
+      fake_backed: true
+      fixture_pack_only: true
+      allow_live_capture: false
+      allow_wifi_csi_capture: false
+      allow_packet_capture: false
+      allow_wifi_network_probing: false
+      allow_monitor_mode: false
+      allow_driver_access: false
+      allow_raw_rf_collection: false
+      allow_raw_rf_export: false
+      allow_raw_csi_collection: false
+      allow_raw_csi_export: false
+      allow_hardware_access: false
+      allow_network_calls: false
+      allow_real_monitoring: false
+  - ref: report
+    class: report
+    capabilities:
+      - report.packet.create
+    required: true
+artifacts:
+  - id: csi_capture_plan
+    kind: plan
+    format: json
+    retention: run
+    hash_required: true
+  - id: csi_analysis
+    kind: evidence-table
+    format: json
+    retention: run
+    hash_required: true
+  - id: report_packet
+    kind: report-packet
+    format: json
+    retention: user-export
+    hash_required: true
+safety_profile:
+  risk_class: moderate
+  domain: sensor-research
+  human_review_required: true
+  external_actions_allowed: false
+  real_lab_action_requires_approval: false
+  clinical_safety_gate_required: false
+  code_pack_quarantine_required: false
+  notes:
+    - Requires consent and privacy review before use.
+    - Fixture planning metadata only; no live WiFi CSI capture, raw RF/CSI collection, packet capture, monitor mode, WiFi device probing, or hardware access.
+    - No ESP32, RTL8812AU, router, adapter, or driver access.
+    - No real monitoring, clinical interpretation, diagnosis, treatment, or emergency triage.
+evidence_requirements:
+  min_records: 1
+  accepted_source_types:
+    - csi-planning-placeholder
+    - fabric-pack
+    - user-note
+  citation_required: false
+  provenance_required: true
+  hash_required: true
+  limitations_required: true
+  counterevidence_required: false
+output_packet:
+  kind: report-packet
+  schema_ref: docs/report-packet.md
+  required_sections:
+    - summary
+    - evidence_table
+    - methods
+    - safety_review
+    - limitations
+  review_state: human-review-required

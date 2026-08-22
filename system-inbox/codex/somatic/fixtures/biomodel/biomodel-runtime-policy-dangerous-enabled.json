@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "biomodel-runtime-policy-dangerous-enabled",
+  "policy_version": "phase-6c-dangerous-enabled-fixture",
+  "runtime_boundary": "future-real-runtime-only",
+  "runtime_execution_enabled": true,
+  "model_downloads_enabled": true,
+  "msa_server_enabled": true,
+  "network_calls_enabled": true,
+  "gpu_execution_enabled": true,
+  "resource_review_complete": true,
+  "provenance_plan_complete": true,
+  "require_user_consent": true,
+  "require_research_only_acknowledgement": true,
+  "metadata": {
+    "phase": "6C",
+    "purpose": "negative test fixture only; never grants execution in Phase 6C",
+    "real_runtime_enabled_in_this_phase": false
+  }
+}

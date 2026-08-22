@@ -1,0 +1,346 @@
+{
+  "acoustic_processing_execution_granted": false,
+  "adapter_execution_granted": false,
+  "authorization_status": "not-authorized",
+  "bia_measurement_execution_granted": false,
+  "bluetooth_execution_granted": false,
+  "clinical_recommendation_execution_granted": false,
+  "cloud_sync_execution_granted": false,
+  "device_connection_execution_granted": false,
+  "execution_permitted": false,
+  "grant_status": "no-grant",
+  "jules_review_required_for_validator_or_authorization_semantics": true,
+  "medical_inference_execution_granted": false,
+  "model_execution_granted": false,
+  "network_call_execution_granted": false,
+  "non_diagnostic_boundaries": [
+    {
+      "boundary_id": "wellness-body-composition-trend-metadata-only",
+      "boundary_status": "non-diagnostic-wellness-trend-metadata-only",
+      "clinical_recommendation_permitted": false,
+      "diagnosis_permitted": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "satisfied_by_phase12e": false
+    },
+    {
+      "boundary_id": "no-diagnosis",
+      "boundary_status": "non-diagnostic-wellness-trend-metadata-only",
+      "clinical_recommendation_permitted": false,
+      "diagnosis_permitted": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "satisfied_by_phase12e": false
+    },
+    {
+      "boundary_id": "no-clinical-recommendation",
+      "boundary_status": "non-diagnostic-wellness-trend-metadata-only",
+      "clinical_recommendation_permitted": false,
+      "diagnosis_permitted": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "satisfied_by_phase12e": false
+    },
+    {
+      "boundary_id": "no-disease-detection",
+      "boundary_status": "non-diagnostic-wellness-trend-metadata-only",
+      "clinical_recommendation_permitted": false,
+      "diagnosis_permitted": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "satisfied_by_phase12e": false
+    },
+    {
+      "boundary_id": "no-medical-scanner-equivalence-claim",
+      "boundary_status": "non-diagnostic-wellness-trend-metadata-only",
+      "clinical_recommendation_permitted": false,
+      "diagnosis_permitted": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "satisfied_by_phase12e": false
+    },
+    {
+      "boundary_id": "no-mri-ct-ultrasound-replacement-claim",
+      "boundary_status": "non-diagnostic-wellness-trend-metadata-only",
+      "clinical_recommendation_permitted": false,
+      "diagnosis_permitted": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "satisfied_by_phase12e": false
+    }
+  ],
+  "non_diagnostic_boundary_count": 6,
+  "passed_sensor_gate_count": 0,
+  "phase12e_profiles_are_approvals_grants_or_permissions": false,
+  "phase12e_satisfies_sensor_gates": false,
+  "physiological_sensor_profile_contract_version": 1,
+  "physiological_sensor_profile_id": "p12e-sensor-profile-27b4384b76fff5be",
+  "profile_kind": "phase-12e-physiological-sensor-capability-profile",
+  "profile_status": "phase-12e-physiological-sensor-profile-only-non-executing",
+  "provider_execution_granted": false,
+  "real_mode_runtime_enabled": false,
+  "required_future_gate_count": 10,
+  "required_future_gates": [
+    {
+      "execution_permitted": false,
+      "gate_id": "explicit-human-consent-record",
+      "gate_status": "future-physiological-sensor-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_physiological_sensor_runtime": true,
+      "satisfied_by_phase12e": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "device-specific-safety-review",
+      "gate_status": "future-physiological-sensor-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_physiological_sensor_runtime": true,
+      "satisfied_by_phase12e": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "manufacturer-device-provenance-review",
+      "gate_status": "future-physiological-sensor-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_physiological_sensor_runtime": true,
+      "satisfied_by_phase12e": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "measurement-protocol-review",
+      "gate_status": "future-physiological-sensor-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_physiological_sensor_runtime": true,
+      "satisfied_by_phase12e": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "hydration-meal-exercise-context-capture-policy",
+      "gate_status": "future-physiological-sensor-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_physiological_sensor_runtime": true,
+      "satisfied_by_phase12e": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "privacy-redaction-policy",
+      "gate_status": "future-physiological-sensor-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_physiological_sensor_runtime": true,
+      "satisfied_by_phase12e": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "retention-policy",
+      "gate_status": "future-physiological-sensor-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_physiological_sensor_runtime": true,
+      "satisfied_by_phase12e": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "disable-rollback-plan",
+      "gate_status": "future-physiological-sensor-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_physiological_sensor_runtime": true,
+      "satisfied_by_phase12e": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "clinical-boundary-disclaimer",
+      "gate_status": "future-physiological-sensor-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_physiological_sensor_runtime": true,
+      "satisfied_by_phase12e": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "jules-human-review-for-validator-authorization-semantics",
+      "gate_status": "future-physiological-sensor-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_physiological_sensor_runtime": true,
+      "satisfied_by_phase12e": false
+    }
+  ],
+  "runtime_adapter_execution_granted": false,
+  "runtime_stage": "not-implemented",
+  "satisfied_sensor_gate_count": 0,
+  "sensor_capability_label_count": 9,
+  "sensor_capability_labels": [
+    {
+      "capability_status": "metadata-only-no-sensor-enabled",
+      "execution_permitted": false,
+      "measurement_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "sensor_capability_label": "hand-to-foot-bia-scale",
+      "sensor_enabled_by_phase12e": false
+    },
+    {
+      "capability_status": "metadata-only-no-sensor-enabled",
+      "execution_permitted": false,
+      "measurement_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "sensor_capability_label": "hand-to-feet-segmental-bia-scale",
+      "sensor_enabled_by_phase12e": false
+    },
+    {
+      "capability_status": "metadata-only-no-sensor-enabled",
+      "execution_permitted": false,
+      "measurement_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "sensor_capability_label": "multi-frequency-bia",
+      "sensor_enabled_by_phase12e": false
+    },
+    {
+      "capability_status": "metadata-only-no-sensor-enabled",
+      "execution_permitted": false,
+      "measurement_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "sensor_capability_label": "segmental-body-composition",
+      "sensor_enabled_by_phase12e": false
+    },
+    {
+      "capability_status": "metadata-only-no-sensor-enabled",
+      "execution_permitted": false,
+      "measurement_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "sensor_capability_label": "phase-angle-summary",
+      "sensor_enabled_by_phase12e": false
+    },
+    {
+      "capability_status": "metadata-only-no-sensor-enabled",
+      "execution_permitted": false,
+      "measurement_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "sensor_capability_label": "resistance-reactance-summary",
+      "sensor_enabled_by_phase12e": false
+    },
+    {
+      "capability_status": "metadata-only-no-sensor-enabled",
+      "execution_permitted": false,
+      "measurement_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "sensor_capability_label": "hydration-sensitive-body-composition-trend",
+      "sensor_enabled_by_phase12e": false
+    },
+    {
+      "capability_status": "metadata-only-no-sensor-enabled",
+      "execution_permitted": false,
+      "measurement_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "sensor_capability_label": "future-acoustic-body-map",
+      "sensor_enabled_by_phase12e": false
+    },
+    {
+      "capability_status": "metadata-only-no-sensor-enabled",
+      "execution_permitted": false,
+      "measurement_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "sensor_capability_label": "future-ultrasound-body-map",
+      "sensor_enabled_by_phase12e": false
+    }
+  ],
+  "sensor_phase": "capability-profile-only",
+  "source_consent_gate_profile": {
+    "authorization_status": "not-authorized",
+    "capability_category_count": 12,
+    "consent_gate_profile_id": "p12d-consent-profile-202b54f6df2e31ab",
+    "consent_gate_status": "phase-12d-consent-gate-requirements-only-non-executing",
+    "consent_phase": "gate-requirements-only",
+    "contract_version": 1,
+    "execution_permitted": false,
+    "grant_status": "no-grant",
+    "passed_consent_gate_count": 0,
+    "profile_kind": "phase-12d-visual-desktop-consent-gate-requirements",
+    "real_mode_runtime_enabled": false,
+    "required_future_gate_count": 9,
+    "runtime_stage": "not-implemented",
+    "satisfied_consent_gate_count": 0,
+    "source_phase_range": "12A-12C"
+  },
+  "source_design_charter": {
+    "artifact_kind": "phase-12a-runtime-authorization-design-charter",
+    "authorization_phase": "design-only",
+    "authorization_status": "not-authorized",
+    "charter_id": "p12a-charter-24ac2ec2e83eeca6",
+    "charter_status": "phase-12a-satisfies-no-future-runtime-gates",
+    "contract_version": 1,
+    "execution_permitted": false,
+    "future_required_gate_count": 8,
+    "passed_future_gate_count": 0,
+    "real_mode_runtime_enabled": false,
+    "runtime_stage": "not-implemented",
+    "satisfied_future_gate_count": 0,
+    "source_phase_range": "11L-11M"
+  },
+  "source_phase_range": "12A-12B,12D,sensor-evidence",
+  "source_record_candidate": {
+    "authorization_phase": "record-candidate-only",
+    "authorization_status": "not-authorized",
+    "contract_version": 1,
+    "decision_status": "not-submitted",
+    "execution_permitted": false,
+    "grant_status": "no-grant",
+    "real_mode_runtime_enabled": false,
+    "record_candidate_status": "phase-12b-record-candidate-not-approval-grant-or-permission",
+    "record_id": "p12b-record-3cc57e7c02909f17",
+    "record_kind": "phase-12b-runtime-authorization-record-candidate",
+    "requested_domain_count": 2,
+    "required_future_gate_count": 8,
+    "required_future_reviewer_role_count": 6,
+    "runtime_stage": "not-implemented",
+    "source_phase": "12A"
+  },
+  "source_sensor_evidence_boundaries": {
+    "boundary_kind": "existing-sensor-evidence-boundaries",
+    "boundary_label_count": 4,
+    "boundary_labels": [
+      "fixture-only-sensor-evidence-providers",
+      "metadata-only-provider-registry",
+      "sensor-privacy-boundary",
+      "real-mode-readiness-gate"
+    ],
+    "boundary_status": "existing-sensor-evidence-boundaries-metadata-only",
+    "execution_permitted": false,
+    "real_mode_runtime_enabled": false,
+    "runtime_stage": "not-implemented",
+    "source_phase_range": "7A-11M"
+  },
+  "ultrasound_processing_execution_granted": false,
+  "usb_execution_granted": false
+}

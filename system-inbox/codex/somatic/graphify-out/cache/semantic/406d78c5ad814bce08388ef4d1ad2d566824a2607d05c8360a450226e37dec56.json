@@ -1,0 +1,1 @@
+{"nodes": [{"id": "fabric_spec", "label": "Fabric Specification", "file_type": "code", "source_file": "somatic/fabric/spec.py", "rationale": "Defines constants for the out-of-process federation connector."}], "edges": [], "hyperedges": []}

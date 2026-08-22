@@ -1,0 +1,1 @@
+{"nodes": [{"id": "somatic_evidence_bus_sandbox_adapters_sandboxmodalityadapter", "label": "SandboxModalityAdapter", "file_type": "code", "source_file": "somatic/evidence_bus/sandbox_adapters.py", "rationale": "Tier-0 adapter for Evidence Bus modalities that emits deterministic synthetic features without hardware access."}], "edges": [], "hyperedges": []}

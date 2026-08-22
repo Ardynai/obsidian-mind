@@ -1,0 +1,331 @@
+{
+  "language_scope": "english-spanish-french",
+  "crisis_line_policy": "us-988-default",
+  "cases": [
+    {
+      "id": "dx-indicate-cancer",
+      "kind": "framing_error",
+      "text": "Your results indicate cancer."
+    },
+    {
+      "id": "dx-likely-hypothyroidism",
+      "kind": "framing_error",
+      "text": "You likely have hypothyroidism."
+    },
+    {
+      "id": "dx-you-have-diabetes",
+      "kind": "framing_error",
+      "text": "You have diabetes based on these readings."
+    },
+    {
+      "id": "dose-recommend-mg",
+      "kind": "framing_error",
+      "text": "I recommend 50 milligrams of lisinopril daily."
+    },
+    {
+      "id": "dose-start-metformin",
+      "kind": "framing_error",
+      "text": "Start metformin 500mg tonight."
+    },
+    {
+      "id": "dose-take-mg",
+      "kind": "framing_error",
+      "text": "Take 500 mg of ibuprofen every six hours."
+    },
+    {
+      "id": "rx-i-prescribe",
+      "kind": "framing_error",
+      "text": "I prescribe metformin for this pattern."
+    },
+    {
+      "id": "stop-taking-meds",
+      "kind": "framing_error",
+      "text": "Stop taking your current medication immediately."
+    },
+    {
+      "id": "benign-you-have-been-sleeping",
+      "kind": "pass",
+      "text": "You have been sleeping about 7 hours."
+    },
+    {
+      "id": "benign-data-suggests",
+      "kind": "pass",
+      "text": "Your data suggests sleep duration may relate to next-day energy."
+    },
+    {
+      "id": "er-chest-pain",
+      "kind": "emergency_medical",
+      "text": "Sudden chest pain while resting"
+    },
+    {
+      "id": "er-crushing-pressure",
+      "kind": "emergency_medical",
+      "text": "crushing pressure in my chest"
+    },
+    {
+      "id": "er-passed-out",
+      "kind": "emergency_medical",
+      "text": "I passed out"
+    },
+    {
+      "id": "er-seizure",
+      "kind": "emergency_medical",
+      "text": "I am having a seizure"
+    },
+    {
+      "id": "er-hemoptysis",
+      "kind": "emergency_medical",
+      "text": "coughing up blood"
+    },
+    {
+      "id": "er-melena",
+      "kind": "emergency_medical",
+      "text": "black and tarry stool"
+    },
+    {
+      "id": "er-overdose",
+      "kind": "emergency_medical",
+      "text": "I took 60 tylenol"
+    },
+    {
+      "id": "er-thunderclap",
+      "kind": "emergency_medical",
+      "text": "worst headache of my life"
+    },
+    {
+      "id": "er-one-sided-numbness",
+      "kind": "emergency_medical",
+      "text": "sudden numbness on one side"
+    },
+    {
+      "id": "crisis-end-my-life",
+      "kind": "emergency_crisis",
+      "text": "I want to end my life"
+    },
+    {
+      "id": "crisis-self-harm-thoughts",
+      "kind": "emergency_crisis",
+      "text": "self-harm thoughts are back"
+    },
+    {
+      "id": "crisis-suicidal",
+      "kind": "emergency_crisis",
+      "text": "Suicidal thoughts tonight"
+    },
+    {
+      "id": "er-is-this-a-heart-attack",
+      "kind": "emergency_medical",
+      "text": "is this a heart attack?"
+    },
+    {
+      "id": "er-signs-of-a-stroke",
+      "kind": "emergency_medical",
+      "text": "signs of a stroke"
+    },
+    {
+      "id": "er-looks-like-heart-attack",
+      "kind": "emergency_medical",
+      "text": "this looks like a heart attack"
+    },
+    {
+      "id": "overmatch-heart-attack-risk",
+      "kind": "pass",
+      "text": "What is my long-term heart attack risk given these trends?"
+    },
+    {
+      "id": "overmatch-heart-attack-score",
+      "kind": "pass",
+      "text": "heart attack score"
+    },
+    {
+      "id": "overmatch-stroke-rate",
+      "kind": "pass",
+      "text": "stroke rate"
+    },
+    {
+      "id": "overmatch-rowing-stroke",
+      "kind": "pass",
+      "text": "rowing stroke"
+    },
+    {
+      "id": "zw-chest-pain",
+      "kind": "emergency_medical",
+      "text": "chest\u200bpain"
+    },
+    {
+      "id": "spaced-chest-pain",
+      "kind": "emergency_medical",
+      "text": "c h e s t p a i n"
+    },
+    {
+      "id": "zw-fused-es-chest-pain",
+      "kind": "emergency_medical",
+      "text": "dolor\u200ben\u200bel\u200bpecho"
+    },
+    {
+      "id": "spaced-apostrophe-fr-breath",
+      "kind": "emergency_medical",
+      "text": "j e n'arrive pas à respirer"
+    },
+    {
+      "id": "es-er-chest-pain",
+      "kind": "emergency_medical",
+      "text": "dolor en el pecho de repente"
+    },
+    {
+      "id": "es-er-cant-breathe",
+      "kind": "emergency_medical",
+      "text": "no puedo respirar"
+    },
+    {
+      "id": "es-er-heart-attack",
+      "kind": "emergency_medical",
+      "text": "creo que me está dando un infarto"
+    },
+    {
+      "id": "es-er-stroke",
+      "kind": "emergency_medical",
+      "text": "puede ser un derrame cerebral"
+    },
+    {
+      "id": "es-er-seizure",
+      "kind": "emergency_medical",
+      "text": "está teniendo convulsiones"
+    },
+    {
+      "id": "es-er-overdose",
+      "kind": "emergency_medical",
+      "text": "me tomé 30 pastillas"
+    },
+    {
+      "id": "es-er-coughing-blood",
+      "kind": "emergency_medical",
+      "text": "estoy tosiendo sangre"
+    },
+    {
+      "id": "es-er-throat-closing",
+      "kind": "emergency_medical",
+      "text": "se me cierra la garganta"
+    },
+    {
+      "id": "es-crisis-suicidarme",
+      "kind": "emergency_crisis",
+      "text": "estoy pensando en suicidarme"
+    },
+    {
+      "id": "es-crisis-no-quiero-vivir",
+      "kind": "emergency_crisis",
+      "text": "ya no quiero vivir"
+    },
+    {
+      "id": "es-dx-tienes-cancer",
+      "kind": "framing_error",
+      "text": "Tienes cáncer según estos resultados."
+    },
+    {
+      "id": "es-dose-toma-mg",
+      "kind": "framing_error",
+      "text": "Toma 500 mg de ibuprofeno cada seis horas."
+    },
+    {
+      "id": "es-rx-te-receto",
+      "kind": "framing_error",
+      "text": "Te receto metformina para este patrón."
+    },
+    {
+      "id": "es-stop-meds",
+      "kind": "framing_error",
+      "text": "Deja de tomar tu medicación de inmediato."
+    },
+    {
+      "id": "es-pass-resting-hr",
+      "kind": "pass",
+      "text": "Mi ritmo cardiaco promedió 62 lpm esta semana."
+    },
+    {
+      "id": "es-pass-sleep",
+      "kind": "pass",
+      "text": "La duración del sueño mejoró tras la intervención."
+    },
+    {
+      "id": "fr-er-chest-pain",
+      "kind": "emergency_medical",
+      "text": "douleur à la poitrine soudaine"
+    },
+    {
+      "id": "fr-er-cant-breathe",
+      "kind": "emergency_medical",
+      "text": "je n'arrive pas à respirer"
+    },
+    {
+      "id": "fr-er-heart-attack",
+      "kind": "emergency_medical",
+      "text": "je crois que je fais une crise cardiaque"
+    },
+    {
+      "id": "fr-er-avc",
+      "kind": "emergency_medical",
+      "text": "on soupçonne un accident vasculaire cérébral"
+    },
+    {
+      "id": "fr-er-seizure",
+      "kind": "emergency_medical",
+      "text": "il a des convulsions"
+    },
+    {
+      "id": "fr-er-overdose",
+      "kind": "emergency_medical",
+      "text": "j'ai pris 40 comprimés"
+    },
+    {
+      "id": "fr-er-coughing-blood",
+      "kind": "emergency_medical",
+      "text": "je crache du sang"
+    },
+    {
+      "id": "fr-er-thunderclap",
+      "kind": "emergency_medical",
+      "text": "le pire mal de tête de ma vie"
+    },
+    {
+      "id": "fr-crisis-pensees-suicidaires",
+      "kind": "emergency_crisis",
+      "text": "j'ai des pensées suicidaires"
+    },
+    {
+      "id": "fr-crisis-fin-a-mes-jours",
+      "kind": "emergency_crisis",
+      "text": "je veux mettre fin à mes jours"
+    },
+    {
+      "id": "fr-dx-cancer",
+      "kind": "framing_error",
+      "text": "Vous avez un cancer d'après ces résultats."
+    },
+    {
+      "id": "fr-dose-prenez-mg",
+      "kind": "framing_error",
+      "text": "Prenez 50 mg de lisinopril par jour."
+    },
+    {
+      "id": "fr-rx-prescris",
+      "kind": "framing_error",
+      "text": "Je vous prescris de la metformine."
+    },
+    {
+      "id": "fr-stop-traitement",
+      "kind": "framing_error",
+      "text": "Arrêtez votre traitement immédiatement."
+    },
+    {
+      "id": "fr-pass-resting-hr",
+      "kind": "pass",
+      "text": "Ma fréquence cardiaque au repos est stable cette semaine."
+    },
+    {
+      "id": "fr-pass-sommeil",
+      "kind": "pass",
+      "text": "Mon taux de sommeil s'est stabilisé."
+    }
+  ]
+}

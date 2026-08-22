@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "response-evaluation-plan-placeholder",
+  "workflow_id": "valid-n-of-1",
+  "intervention_tag_id": "intervention-tag-placeholder",
+  "intervention_context_id": "intervention-context-placeholder",
+  "future_comparison_window": "placeholder-follow-up-window",
+  "windows": [
+    {
+      "id": "intervention-window-placeholder",
+      "label": "Placeholder follow-up comparison window",
+      "relative_start": "placeholder-t+00m",
+      "relative_end": "placeholder-t+30m",
+      "window_status": "placeholder",
+      "future_comparison_window": "placeholder-follow-up-window",
+      "observation_only": true,
+      "no_real_scheduling": true,
+      "no_real_monitoring": true,
+      "no_notification_automation": true,
+      "no_reminder_automation": true,
+      "no_effectiveness_claim": true,
+      "limitations": [
+        "Placeholder window only; no reminder, schedule, notification, or monitoring is created."
+      ]
+    }
+  ],
+  "metrics_to_recheck": [
+    "movement_score",
+    "notes_placeholder"
+  ],
+  "baseline_categories_to_compare": [
+    "respiratory_rate",
+    "movement_score",
+    "sleep_state_estimate",
+    "posture_state",
+    "csi_confidence",
+    "environmental_context",
+    "notes_placeholder"
+  ],
+  "evaluation_status": "placeholder-future-planning-only",
+  "status_vocabulary": [
+    "not_evaluated",
+    "insufficient_data",
+    "no_claim"
+  ],
+  "mock": true,
+  "offline": true,
+  "research_only": true,
+  "sandbox_only": true,
+  "fake_backed": true,
+  "local_only": true,
+  "recommendation_generated": false,
+  "prescription_generated": false,
+  "treatment_recommendation": false,
+  "medical_advice": false,
+  "claim_effectiveness": false,
+  "real_intervention_performed": false,
+  "real_health_data_loaded": false,
+  "personal_data_exported": false,
+  "live_sensor_access": false,
+  "hardware_access": false,
+  "network_calls": false,
+  "database_access": false,
+  "external_memory": false,
+  "diagnosis": false,
+  "emergency_triage": false,
+  "real_monitoring": false,
+  "real_scheduling": false,
+  "notification_automation": false,
+  "reminder_automation": false,
+  "clinical_interpretation": false,
+  "medical_or_clinical_claim": false,
+  "future_real_use_requirements": [
+    "explicit consent",
+    "human review",
+    "clinical review where applicable",
+    "local storage controls",
+    "safety gates",
+    "no emergency-triage substitution"
+  ],
+  "limitations": [
+    "Mock local intervention tag scaffold only.",
+    "No recommendation or prescription is generated.",
+    "No treatment recommendation, medical advice, or emergency triage is produced.",
+    "Medication and clinician placeholders are disabled metadata only.",
+    "Response evaluation is future planning only, not real monitoring.",
+    "No reminders, automation, notification, or scheduling is created."
+  ],
+  "metadata": {
+    "no_real_scheduling": true,
+    "no_real_monitoring": true,
+    "no_notification_or_reminder": true
+  }
+}

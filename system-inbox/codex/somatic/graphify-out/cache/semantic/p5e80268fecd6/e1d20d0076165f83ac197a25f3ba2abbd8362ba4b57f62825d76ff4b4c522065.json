@@ -1,0 +1,1 @@
+{"nodes": [{"id": "examples_hardware_csi_udp_forward", "label": "CSI UDP Forwarder", "file_type": "code", "source_file": "examples/hardware/csi_udp_forward.py", "rationale": "Host-side CSI line forwarder: stdin/serial/demo -> UDP 127.0.0.1."}], "edges": [], "hyperedges": []}

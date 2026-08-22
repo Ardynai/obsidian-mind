@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0.0",
+  "unknownField": {
+    "z": 2,
+    "a": [
+      3,
+      {
+        "b": "bee",
+        "a": "aye"
+      }
+    ]
+  },
+  "class": "data"
+}

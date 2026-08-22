@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "csi-parser-report-placeholder",
+  "parser_id": "somatic-csi-fixture-parser-v1",
+  "status": "placeholder",
+  "scope": "local fake/sample fixtures only",
+  "dependency_profile": "python-standard-library",
+  "fixture_only": true,
+  "local_only": true,
+  "summary_output_only": true,
+  "hardware_access": false,
+  "network_calls": false,
+  "serial_access": false,
+  "mqtt_udp_listener": false,
+  "packet_capture": false,
+  "monitor_mode": false,
+  "wifi_network_probing": false,
+  "live_capture": false,
+  "raw_csi_data_collected": false,
+  "raw_csi_data_exported": false,
+  "clinical_interpretation": false,
+  "medical_or_clinical_claim": false
+}

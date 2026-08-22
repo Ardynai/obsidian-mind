@@ -1,0 +1,5 @@
+compound,dose,response,replicate
+mock-a,0,10.0,1
+mock-a,1,12.5,1
+mock-a,3,18.0,1
+mock-a,10,25.0,1

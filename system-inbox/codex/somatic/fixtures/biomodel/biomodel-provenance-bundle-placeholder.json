@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "id": "biomodel-provenance-placeholder",
+  "phase": "6D",
+  "workflow_id": "valid-in-silico-screening",
+  "provider_id": "boltz2-biomodel-provider",
+  "provider_version": "boltz2",
+  "provider_scaffold_status": "scaffolded",
+  "source": {
+    "source_path": "C:\\AI\\external-sources\\somatic\\boltz",
+    "inspected_commit": "b1ebfc46ecf57f5414e0d1a6f9027bbb122c53bc",
+    "license": "MIT",
+    "source_staged": true,
+    "optional_dependency_available": false
+  },
+  "artifact_refs": [
+    {
+      "id": "biomodel_request",
+      "relative_path": "artifacts/biomodel_request.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "request",
+      "content_type": "application/json",
+      "local_only": true,
+      "research_only": true
+    },
+    {
+      "id": "biomodel_readiness_report",
+      "relative_path": "artifacts/biomodel_readiness_report.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "readiness",
+      "content_type": "application/json",
+      "local_only": true,
+      "research_only": true
+    },
+    {
+      "id": "biomodel_consent_record",
+      "relative_path": "artifacts/biomodel_consent_record.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "consent",
+      "content_type": "application/json",
+      "local_only": true,
+      "research_only": true
+    },
+    {
+      "id": "biomodel_plan",
+      "relative_path": "artifacts/biomodel_plan.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "plan",
+      "content_type": "application/json",
+      "local_only": true,
+      "research_only": true
+    },
+    {
+      "id": "biomodel_result",
+      "relative_path": "artifacts/biomodel_result.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "result",
+      "content_type": "application/json",
+      "local_only": true,
+      "research_only": true
+    },
+    {
+      "id": "biomodel_evidence_record",
+      "relative_path": "artifacts/biomodel_evidence_record.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "evidence-record",
+      "content_type": "application/json",
+      "local_only": true,
+      "research_only": true
+    },
+    {
+      "id": "biomodel_raw_evidence",
+      "relative_path": "artifacts/biomodel_raw_evidence.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "raw-evidence",
+      "content_type": "application/json",
+      "local_only": true,
+      "research_only": true
+    },
+    {
+      "id": "biomodel_structured_verdict",
+      "relative_path": "artifacts/biomodel_structured_verdict.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "role": "structured-verdict",
+      "content_type": "application/json",
+      "local_only": true,
+      "research_only": true
+    }
+  ],
+  "assumptions": [
+    "Mock mode emits metadata only and does not predict structures or affinity."
+  ],
+  "limitations": [
+    "No protein structure, binding affinity, efficacy, safety, lab, or clinical conclusion is produced."
+  ],
+  "mock": true,
+  "offline": true,
+  "research_only": true,
+  "runtime_execution": false,
+  "model_downloads": false,
+  "msa_server": false,
+  "network_calls": false,
+  "gpu_execution": false,
+  "fabric_publish_enabled": false,
+  "fabric_transport_enabled": false,
+  "fabric_install_enabled": false,
+  "metadata": {
+    "phase": "6D",
+    "provenance_scope": "fake-backed-biomodel-planning-artifacts",
+    "fabric_packaging": "planning-only",
+    "no_fabric_publish": true,
+    "no_fabric_transport": true,
+    "no_fabric_install": true
+  }
+}

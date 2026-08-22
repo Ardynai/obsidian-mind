@@ -1,0 +1,210 @@
+{
+  "adapter_execution_granted": false,
+  "authorization_phase": "record-candidate-only",
+  "authorization_status": "not-authorized",
+  "decision_status": "not-submitted",
+  "execution_permitted": false,
+  "grant_status": "no-grant",
+  "jules_review_required_for_validator_or_authorization_semantics": true,
+  "model_execution_granted": false,
+  "passed_future_gate_count": 0,
+  "phase12b_records_are_approvals_grants_or_permissions": false,
+  "provider_execution_granted": false,
+  "real_mode_runtime_enabled": false,
+  "record_candidate_status": "phase-12b-record-candidate-not-approval-grant-or-permission",
+  "record_id": "p12b-record-3cc57e7c02909f17",
+  "record_kind": "phase-12b-runtime-authorization-record-candidate",
+  "requested_domain_count": 2,
+  "requested_domains": [
+    {
+      "domain_label": "document-ingestion",
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "request_status": "record-candidate-only"
+    },
+    {
+      "domain_label": "wifi-csi-rf-booth",
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false,
+      "request_status": "record-candidate-only"
+    }
+  ],
+  "required_future_gate_count": 8,
+  "required_future_gates": [
+    {
+      "execution_permitted": false,
+      "gate_id": "explicit-human-authorization-record",
+      "gate_status": "future-review-required-not-passed",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_runtime_authorization": true,
+      "reviewer_role": "human-runtime-authorizer",
+      "satisfied_by_phase12b": false,
+      "submitted_by_phase12b": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "scoped-runtime-domain-selection",
+      "gate_status": "future-review-required-not-passed",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_runtime_authorization": true,
+      "reviewer_role": "human-runtime-authorizer",
+      "satisfied_by_phase12b": false,
+      "submitted_by_phase12b": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "adapter-specific-safety-review",
+      "gate_status": "future-review-required-not-passed",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_runtime_authorization": true,
+      "reviewer_role": "adapter-safety-reviewer",
+      "satisfied_by_phase12b": false,
+      "submitted_by_phase12b": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "privacy-data-boundary-review",
+      "gate_status": "future-review-required-not-passed",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_runtime_authorization": true,
+      "reviewer_role": "privacy-boundary-reviewer",
+      "satisfied_by_phase12b": false,
+      "submitted_by_phase12b": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "fixture-to-real-data-transition-review",
+      "gate_status": "future-review-required-not-passed",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_runtime_authorization": true,
+      "reviewer_role": "fixture-transition-reviewer",
+      "satisfied_by_phase12b": false,
+      "submitted_by_phase12b": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "rollback-disable-plan",
+      "gate_status": "future-review-required-not-passed",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_runtime_authorization": true,
+      "reviewer_role": "audit-log-reviewer",
+      "satisfied_by_phase12b": false,
+      "submitted_by_phase12b": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "audit-log-requirements",
+      "gate_status": "future-review-required-not-passed",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_runtime_authorization": true,
+      "reviewer_role": "audit-log-reviewer",
+      "satisfied_by_phase12b": false,
+      "submitted_by_phase12b": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "jules-human-review-for-validator-authorization-semantics",
+      "gate_status": "future-review-required-not-passed",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_runtime_authorization": true,
+      "reviewer_role": "jules-validator-semantics-reviewer",
+      "satisfied_by_phase12b": false,
+      "submitted_by_phase12b": false
+    }
+  ],
+  "required_future_reviewer_role_count": 6,
+  "required_future_reviewer_roles": [
+    {
+      "execution_permitted": false,
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "review_status": "future-review-required",
+      "reviewer_role": "human-runtime-authorizer",
+      "satisfied_by_phase12b": false
+    },
+    {
+      "execution_permitted": false,
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "review_status": "future-review-required",
+      "reviewer_role": "privacy-boundary-reviewer",
+      "satisfied_by_phase12b": false
+    },
+    {
+      "execution_permitted": false,
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "review_status": "future-review-required",
+      "reviewer_role": "adapter-safety-reviewer",
+      "satisfied_by_phase12b": false
+    },
+    {
+      "execution_permitted": false,
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "review_status": "future-review-required",
+      "reviewer_role": "fixture-transition-reviewer",
+      "satisfied_by_phase12b": false
+    },
+    {
+      "execution_permitted": false,
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "review_status": "future-review-required",
+      "reviewer_role": "audit-log-reviewer",
+      "satisfied_by_phase12b": false
+    },
+    {
+      "execution_permitted": false,
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "review_status": "future-review-required",
+      "reviewer_role": "jules-validator-semantics-reviewer",
+      "satisfied_by_phase12b": false
+    }
+  ],
+  "runtime_authorization_record_candidate_contract_version": 1,
+  "runtime_stage": "not-implemented",
+  "satisfied_future_gate_count": 0,
+  "source_design_charter": {
+    "artifact_kind": "phase-12a-runtime-authorization-design-charter",
+    "authorization_phase": "design-only",
+    "authorization_status": "not-authorized",
+    "charter_id": "p12a-charter-24ac2ec2e83eeca6",
+    "charter_status": "phase-12a-satisfies-no-future-runtime-gates",
+    "contract_version": 1,
+    "execution_permitted": false,
+    "future_required_gate_count": 8,
+    "passed_future_gate_count": 0,
+    "real_mode_runtime_enabled": false,
+    "runtime_stage": "not-implemented",
+    "satisfied_future_gate_count": 0,
+    "source_phase_range": "11L-11M"
+  },
+  "source_phase": "12A",
+  "submitted_future_gate_count": 0
+}

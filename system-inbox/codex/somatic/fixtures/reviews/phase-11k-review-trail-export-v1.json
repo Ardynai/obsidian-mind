@@ -1,0 +1,32 @@
+{
+  "covered_phase_count": 10,
+  "domain_closeouts": [
+    {
+      "blocker_count": 9,
+      "domain_label": "document-ingestion",
+      "final_closeout_decision": "needs-new-review",
+      "final_closeout_status": "incomplete",
+      "stale_count": 0,
+      "unresolved_review_count": 21
+    },
+    {
+      "blocker_count": 1,
+      "domain_label": "wifi-csi-rf-booth",
+      "final_closeout_decision": "deferred",
+      "final_closeout_status": "incomplete",
+      "stale_count": 1,
+      "unresolved_review_count": 0
+    }
+  ],
+  "domain_labels": [
+    "document-ingestion",
+    "wifi-csi-rf-booth"
+  ],
+  "execution_permitted": false,
+  "export_id": "p11k-export-c10f5f073f321da4",
+  "phase_range": "11A-11J",
+  "readiness_gap_summary": "real-mode-authorization-missing",
+  "real_mode_runtime_enabled": false,
+  "review_trail_export_contract_version": 1,
+  "runtime_stage": "not-implemented"
+}

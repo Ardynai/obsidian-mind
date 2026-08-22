@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "sandbox-sensor-provider-placeholder",
+  "provider_id": "sandbox-sensor-provider",
+  "class": "sensor",
+  "mode": "sandbox",
+  "mock": true,
+  "offline": true,
+  "fake_backed": true,
+  "research_only": true,
+  "sandbox_only": true,
+  "data_locality": "local-only",
+  "determinism": "deterministic",
+  "modalities": ["csi", "video", "video3d", "thermal", "audio", "wearable", "environmental"],
+  "features": [
+    "respiratory_rate",
+    "movement_score",
+    "posture_state",
+    "sleep_state_estimate",
+    "audio_event_placeholder",
+    "environmental_context_placeholder"
+  ],
+  "csi_planning_features": [
+    "respiratory_rate",
+    "heart_rate_placeholder",
+    "hrv_placeholder",
+    "motion_score",
+    "posture_state",
+    "sleep_state_estimate",
+    "fall_risk_placeholder",
+    "pose3d_placeholder",
+    "confidence"
+  ],
+  "limits": {
+    "live_sensor_access_allowed": false,
+    "hardware_access_allowed": false,
+    "network_calls_allowed": false,
+    "packet_capture_allowed": false,
+    "wifi_network_probing_allowed": false,
+    "monitor_mode_allowed": false,
+    "driver_access_allowed": false,
+    "remote_upload_allowed": false,
+    "background_capture_allowed": false,
+    "hidden_surveillance_allowed": false,
+    "clinical_claims_allowed": false,
+    "diagnosis_treatment_allowed": false,
+    "emergency_triage_allowed": false,
+    "real_monitoring_allowed": false
+  },
+  "csi": {
+    "status": "placeholder-metadata-only",
+    "reference_inventory_ref": "fixtures/sensors/csi/csi-reference-inventory.json",
+    "capture_plan_ref": "fixtures/sensors/csi/csi-capture-plan-placeholder.json",
+    "feature_set_ref": "fixtures/sensors/csi/csi-feature-set-placeholder.json",
+    "ruview_dependency": "conditional-reference-only",
+    "ruview_reference_status": "conditional-reference-only",
+    "booth_profile": "booth-first-single-subject-v1",
+    "source_adapter_boundary": "metadata-wifi-csi-source-adapter"
+  },
+  "auth": {
+    "type": "none",
+    "secrets_required": []
+  },
+  "notes": [
+    "Simulated offline placeholder only.",
+    "No CSI, camera, microphone, wearable, BLE, WiFi, thermal, environmental, or hardware access.",
+    "No ESP32, RTL8812AU, router, adapter, driver, monitor mode, packet capture, or WiFi device probing.",
+    "RuView is conditional reference-only and not copied, imported, executed, or depended on.",
+    "Booth-first CSI planning is future metadata only for a single-subject controlled booth.",
+    "No diagnosis, treatment, emergency triage, clinical interpretation, or real monitoring."
+  ]
+}

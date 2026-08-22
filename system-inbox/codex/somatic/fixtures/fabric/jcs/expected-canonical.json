@@ -1,0 +1,8 @@
+{
+  "basic-object.json": "{\"a\":1,\"m\":true,\"n\":null,\"z\":\"last\"}",
+  "nested-object.json": "{\"class\":\"data\",\"schemaVersion\":\"1.0.0\",\"unknownField\":{\"a\":[3,{\"a\":\"aye\",\"b\":\"bee\"}],\"z\":2}}",
+  "utf16-key-order.json": "{\"a\":\"ascii\",\"\ud7ff\":\"before-surrogate\",\"\ud83d\ude00\":\"emoji\",\"\ue000\":\"private-use\"}",
+  "string-escaping.json": "{\"control\":\"\\u0000\\b\\t\\n\\f\\r\\u001f\",\"quote\":\"\\\"\",\"slash\":\"\\\\\",\"unicode\":\"\u03a9\"}",
+  "signatures-field.json": "{\"extra\":{\"a\":2,\"z\":1},\"id\":\"jcs-signature-vector\",\"signatures\":[{\"algo\":\"ed25519\",\"keyId\":\"zzz\",\"sig\":\"not-used\"}]}",
+  "integer-boundary.json": "{\"array\":[9007199254740991,0],\"max\":9007199254740991,\"zero\":0}"
+}

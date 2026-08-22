@@ -1,0 +1,64 @@
+{
+  "id": "boltz2-provider-mock-config",
+  "provider_id": "boltz2-biomodel-provider",
+  "class": "biomodel",
+  "mode": "mock",
+  "enabled": true,
+  "fake_backed": true,
+  "disabled_by_default": true,
+  "offline_supported": true,
+  "external_runtime_enabled": false,
+  "staged_source_path": "C:\\AI\\external-sources\\somatic\\boltz",
+  "inspected_commit": "b1ebfc46ecf57f5414e0d1a6f9027bbb122c53bc",
+  "license": "MIT",
+  "default_model": "boltz2",
+  "output_format": "mmcif",
+  "optional_dependency": {
+    "package": "boltz",
+    "required_for_basic_install": false,
+    "availability_detection": "importlib.util.find_spec"
+  },
+  "limits": {
+    "network_calls_allowed": false,
+    "runtime_import_allowed": false,
+    "basic_install_dependency": false,
+    "model_download_allowed": false,
+    "msa_server_allowed": false,
+    "gpu_execution_allowed": false,
+    "prediction_execution_allowed": false,
+    "clinical_or_lab_claims_allowed": false
+  },
+  "readiness": {
+    "safety_gate_scaffold": true,
+    "runtime_boundary": "future-real-runtime-only",
+    "execution_permitted": false,
+    "default_block_reasons": [
+      "runtime-execution-disabled",
+      "model-downloads-disabled",
+      "msa-server-disabled",
+      "network-calls-disabled",
+      "gpu-execution-disabled",
+      "missing-resource-review",
+      "missing-provenance-plan",
+      "missing-user-consent",
+      "research-only-boundary-not-acknowledged"
+    ]
+  },
+  "mock_outputs": {
+    "plan": "deterministic BiomodelPlan metadata",
+    "result": "deterministic BiomodelResult metadata",
+    "evidence": "RawEvidence and StructuredVerdict metadata using EvidenceSource modality sim with submodality biomodel"
+  },
+  "blocked_runtime_actions": [
+    "import boltz",
+    "execute boltz predict",
+    "download Boltz checkpoints or molecule cache",
+    "call MMseqs2 or ColabFold MSA server",
+    "use GPU or TPU runtime",
+    "run training, evaluation, or processing scripts"
+  ],
+  "safety_notes": [
+    "Mock mode is metadata-only and does not produce real structures or affinity predictions.",
+    "Future real mode requires explicit opt-in, model provenance, resource review, and consent gates."
+  ]
+}

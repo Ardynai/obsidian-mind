@@ -1,0 +1,282 @@
+{
+  "adapter_execution_granted": false,
+  "authorization_status": "not-authorized",
+  "camera_capture_execution_granted": false,
+  "capability_categories": [
+    {
+      "authorization_granted_by_phase12d": false,
+      "capability_category": "screen-observation",
+      "category_status": "metadata-only-no-consent-satisfied",
+      "consent_granted_by_phase12d": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "authorization_granted_by_phase12d": false,
+      "capability_category": "ocr-observation",
+      "category_status": "metadata-only-no-consent-satisfied",
+      "consent_granted_by_phase12d": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "authorization_granted_by_phase12d": false,
+      "capability_category": "dashboard-observation",
+      "category_status": "metadata-only-no-consent-satisfied",
+      "consent_granted_by_phase12d": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "authorization_granted_by_phase12d": false,
+      "capability_category": "terminal-observation",
+      "category_status": "metadata-only-no-consent-satisfied",
+      "consent_granted_by_phase12d": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "authorization_granted_by_phase12d": false,
+      "capability_category": "ci-review-status-observation",
+      "category_status": "metadata-only-no-consent-satisfied",
+      "consent_granted_by_phase12d": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "authorization_granted_by_phase12d": false,
+      "capability_category": "notification-policy",
+      "category_status": "metadata-only-no-consent-satisfied",
+      "consent_granted_by_phase12d": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "authorization_granted_by_phase12d": false,
+      "capability_category": "overlay-policy",
+      "category_status": "metadata-only-no-consent-satisfied",
+      "consent_granted_by_phase12d": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "authorization_granted_by_phase12d": false,
+      "capability_category": "click-input-automation-policy",
+      "category_status": "metadata-only-no-consent-satisfied",
+      "consent_granted_by_phase12d": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "authorization_granted_by_phase12d": false,
+      "capability_category": "clipboard-policy",
+      "category_status": "metadata-only-no-consent-satisfied",
+      "consent_granted_by_phase12d": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "authorization_granted_by_phase12d": false,
+      "capability_category": "camera-policy",
+      "category_status": "metadata-only-no-consent-satisfied",
+      "consent_granted_by_phase12d": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "authorization_granted_by_phase12d": false,
+      "capability_category": "microphone-policy",
+      "category_status": "metadata-only-no-consent-satisfied",
+      "consent_granted_by_phase12d": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "authorization_granted_by_phase12d": false,
+      "capability_category": "recording-policy",
+      "category_status": "metadata-only-no-consent-satisfied",
+      "consent_granted_by_phase12d": false,
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    }
+  ],
+  "capability_category_count": 12,
+  "click_input_automation_execution_granted": false,
+  "clipboard_capture_execution_granted": false,
+  "consent_gate_profile_contract_version": 1,
+  "consent_gate_profile_id": "p12d-consent-profile-202b54f6df2e31ab",
+  "consent_gate_status": "phase-12d-consent-gate-requirements-only-non-executing",
+  "consent_phase": "gate-requirements-only",
+  "execution_permitted": false,
+  "grant_status": "no-grant",
+  "jules_review_required_for_validator_or_authorization_semantics": true,
+  "microphone_capture_execution_granted": false,
+  "model_execution_granted": false,
+  "network_call_execution_granted": false,
+  "notification_sending_execution_granted": false,
+  "ocr_execution_granted": false,
+  "overlay_display_execution_granted": false,
+  "passed_consent_gate_count": 0,
+  "phase12d_profiles_are_consents_approvals_grants_or_permissions": false,
+  "phase12d_satisfies_consent_gates": false,
+  "profile_kind": "phase-12d-visual-desktop-consent-gate-requirements",
+  "provider_execution_granted": false,
+  "real_mode_runtime_enabled": false,
+  "recording_execution_granted": false,
+  "required_future_gate_count": 9,
+  "required_future_gates": [
+    {
+      "execution_permitted": false,
+      "gate_id": "explicit-human-consent-record",
+      "gate_status": "future-consent-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_visual_desktop_runtime": true,
+      "satisfied_by_phase12d": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "scoped-capability-selection",
+      "gate_status": "future-consent-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_visual_desktop_runtime": true,
+      "satisfied_by_phase12d": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "visible-indicator-requirement",
+      "gate_status": "future-consent-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_visual_desktop_runtime": true,
+      "satisfied_by_phase12d": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "retention-redaction-policy",
+      "gate_status": "future-consent-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_visual_desktop_runtime": true,
+      "satisfied_by_phase12d": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "disable-rollback-plan",
+      "gate_status": "future-consent-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_visual_desktop_runtime": true,
+      "satisfied_by_phase12d": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "audit-log-requirement",
+      "gate_status": "future-consent-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_visual_desktop_runtime": true,
+      "satisfied_by_phase12d": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "no-hidden-background-monitoring-declaration",
+      "gate_status": "future-consent-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_visual_desktop_runtime": true,
+      "satisfied_by_phase12d": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "per-capability-review-requirement",
+      "gate_status": "future-consent-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_visual_desktop_runtime": true,
+      "satisfied_by_phase12d": false
+    },
+    {
+      "execution_permitted": false,
+      "gate_id": "jules-human-review-for-validator-authorization-semantics",
+      "gate_status": "future-consent-gate-required-not-satisfied",
+      "metadata_only": true,
+      "passed": false,
+      "real_mode_runtime_enabled": false,
+      "required_before_visual_desktop_runtime": true,
+      "satisfied_by_phase12d": false
+    }
+  ],
+  "runtime_adapter_execution_granted": false,
+  "runtime_stage": "not-implemented",
+  "satisfied_consent_gate_count": 0,
+  "screen_capture_execution_granted": false,
+  "source_capability_profile": {
+    "authorization_status": "not-authorized",
+    "capability_label_count": 7,
+    "contract_version": 1,
+    "execution_permitted": false,
+    "grant_status": "no-grant",
+    "profile_id": "p12c-profile-f14562c8bee7f2cf",
+    "profile_kind": "phase-12c-visual-supervision-capability-profile",
+    "profile_status": "phase-12c-capability-profile-only-non-executing",
+    "real_mode_runtime_enabled": false,
+    "runtime_stage": "not-implemented",
+    "source_phase": "12B",
+    "supervision_phase": "capability-profile-only"
+  },
+  "source_design_charter": {
+    "artifact_kind": "phase-12a-runtime-authorization-design-charter",
+    "authorization_phase": "design-only",
+    "authorization_status": "not-authorized",
+    "charter_id": "p12a-charter-24ac2ec2e83eeca6",
+    "charter_status": "phase-12a-satisfies-no-future-runtime-gates",
+    "contract_version": 1,
+    "execution_permitted": false,
+    "future_required_gate_count": 8,
+    "passed_future_gate_count": 0,
+    "real_mode_runtime_enabled": false,
+    "runtime_stage": "not-implemented",
+    "satisfied_future_gate_count": 0,
+    "source_phase_range": "11L-11M"
+  },
+  "source_phase_range": "12A-12C",
+  "source_record_candidate": {
+    "authorization_phase": "record-candidate-only",
+    "authorization_status": "not-authorized",
+    "contract_version": 1,
+    "decision_status": "not-submitted",
+    "execution_permitted": false,
+    "grant_status": "no-grant",
+    "real_mode_runtime_enabled": false,
+    "record_candidate_status": "phase-12b-record-candidate-not-approval-grant-or-permission",
+    "record_id": "p12b-record-3cc57e7c02909f17",
+    "record_kind": "phase-12b-runtime-authorization-record-candidate",
+    "requested_domain_count": 2,
+    "required_future_gate_count": 8,
+    "required_future_reviewer_role_count": 6,
+    "runtime_stage": "not-implemented",
+    "source_phase": "12A"
+  }
+}

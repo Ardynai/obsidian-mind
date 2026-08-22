@@ -1,0 +1,48 @@
+{
+  "expires": "2027-06-01T00:00:00Z",
+  "publishers": [
+    {
+      "displayName": "Somatic Shared Fixture Publisher",
+      "keys": [
+        {
+          "algo": "ed25519",
+          "keyId": "1325b850c2871916eae203f0efc3c8987f64e5e3cdb27679e6d1fa97808357e6",
+          "publicKey": "oJql9HpnWYAv+VX43C0qFKXJnSO+l/hkEn/5ODRVpPA=",
+          "status": "active",
+          "validFrom": "2026-01-01T00:00:00Z",
+          "validUntil": null
+        }
+      ],
+      "namespace": "somatic",
+      "threshold": 1
+    }
+  ],
+  "rootKeys": [
+    {
+      "algo": "ed25519",
+      "keyId": "10ba682c8ad13513971e8b56881aab8bd702bb807796eca81932c735a94d6e6d",
+      "publicKey": "0EqyMnQrtKs6E2i9RhXk5tAiSrcaAWuvhSCjMsl3hzc=",
+      "status": "active",
+      "validFrom": "2026-01-01T00:00:00Z",
+      "validUntil": null
+    }
+  ],
+  "rootThreshold": 1,
+  "schemaVersion": "1.0.0",
+  "signatures": [
+    {
+      "algo": "ed25519",
+      "keyId": "10ba682c8ad13513971e8b56881aab8bd702bb807796eca81932c735a94d6e6d",
+      "sig": "GkB24DgBzceZwnk1Yrbt3a5VFQ8rQIhlAmb/cTw4ClYYoqikM8rssKww5QEf/fhzWq868dFnZTK1xYKFaydDCQ=="
+    }
+  ],
+  "version": 2,
+  "xInteropUnknown": {
+    "purpose": "verify unknown keyring fields survive canonical signing payloads",
+    "utf16OrderProbe": {
+      "퟿": "before-surrogate",
+      "": "private-use",
+      "😀": "emoji"
+    }
+  }
+}

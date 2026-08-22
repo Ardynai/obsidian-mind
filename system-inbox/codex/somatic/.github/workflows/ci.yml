@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run standard-library tests
+        run: python -m unittest
+      - name: Check CLI doctor
+        run: python -m somatic doctor
+      - name: Run mock workflow
+        run: python -m somatic run fixtures/workflows/valid-literature-only.yaml --run-id ci-mock-run

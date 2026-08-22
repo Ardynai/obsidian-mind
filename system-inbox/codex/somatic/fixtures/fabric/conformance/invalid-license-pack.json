@@ -1,0 +1,32 @@
+{
+  "class": "data",
+  "createdAt": "2026-05-28T17:04:09Z",
+  "files": [
+    {
+      "executable": false,
+      "installTarget": "somatic/restricted/records.json",
+      "path": "records.json",
+      "sha256": "6666666666666666666666666666666666666666666666666666666666666666",
+      "size": 128
+    }
+  ],
+  "harnesses": [
+    "*"
+  ],
+  "id": "somatic/restricted-dataset",
+  "license": "LicenseRef-NoRedistribution",
+  "name": "Invalid License Pack",
+  "publisher": {
+    "displayName": "Somatic Fixtures",
+    "keyId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "namespace": "somatic"
+  },
+  "schemaVersion": "1.0.0",
+  "signatures": [],
+  "transport": {
+    "infohash": "6666666666666666666666666666666666666666",
+    "magnet": "magnet:?xt=urn:btih:6666666666666666666666666666666666666666&dn=somatic%2Frestricted-dataset%400.1.0&ws=https%3A%2F%2Fexample.invalid%2Ffabric%2F&tr=wss%3A%2F%2Ftracker.example.invalid"
+  },
+  "type": "dataset",
+  "version": "0.1.0"
+}

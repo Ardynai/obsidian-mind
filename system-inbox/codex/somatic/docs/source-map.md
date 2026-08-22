@@ -1,0 +1,367 @@
+# Source Map
+
+This file maps the Somatic repository through the Phase 10J evidence/adapters checkpoint plus the Phase 4G.3 Fabric shared fixture certification pass.
+
+## Root
+
+- `README.md`: project positioning, safety posture, and repository map.
+- `LICENSE-DISCUSSION.md`: license goals and unresolved decisions.
+- `SECURITY.md`: vulnerability reporting and planned security boundaries.
+- `.gitignore`: local runtime, generated output, and secret exclusions.
+- `pyproject.toml`: Python project metadata, console script, tooling config, and optional extras.
+- `docker-compose.yml`: local no-network test service scaffold.
+- `.env.example`: local offline environment defaults.
+- `.github/workflows/ci.yml`: standard-library CI checks.
+
+## Docs
+
+- `docs/ARCHITECTURE.md`: plain-English architecture map and main data flows.
+- `docs/ONBOARDING.md`: first-read guide for a new human contributor.
+- `docs/how-it-works/`: one-page subsystem guides for human editors (`local-ui.md` for `python -m somatic ui`).
+- `docs/hardware/esp32-csi.md`: ESP32 WiFi-CSI firmware, traffic source, UDP/serial schema, booth topology, subject consent. Sandbox-verified; needs a real ESP32 to validate live.
+- `docs/workflow-modes.md`: supported workflow mode definitions.
+- `docs/safety-boundaries.md`: clinical, lab, sensor, fabric, and report safety boundaries.
+- `docs/regulatory-notes.md`: non-legal regulatory orientation.
+- `docs/source-map.md`: this repository map.
+- `docs/roadmap.md`: phase plan.
+- `docs/cli.md`: local mock CLI usage, including Phase 9F sensor-evidence provider discovery/workflow validation, the Phase 9G provider manifest JSON contract, Phase 10H real-mode readiness gate status, and Phase 10I shared safety invariant surfaces.
+- `docs/hypothesis-tournament.md`: Phase 2 deterministic offline hypothesis tournament.
+- `docs/team-orchestrator.md`: Phase 2.5 deterministic mock team scaffold.
+- `docs/robin-loop.md`: Phase 3A deterministic Robin-shaped sandbox loop.
+- `docs/finch-toolbelt.md`: Phase 5D standard-library Finch table, dose-response, and provenance analysis boundary.
+- `docs/finch-extras.md`: Phase 5G disabled Finch optional-extras provider scaffold boundary.
+- `docs/evidence-bus-sandbox.md`: sandbox EvidenceSource contract and boundary.
+- `docs/master-plan.md`: Phase 1C master foundation architecture.
+- `docs/evidence-bus.md`: Evidence Bus interfaces and modalities.
+- `docs/capability-roadmap.md`: current, scaffolded, planned, and deferred capabilities.
+- `docs/sensor-roadmap.md`: local-first sensor roadmap including Phase 7B WiFi CSI planning and Phase 8A source staging.
+- `docs/sensor-provider-boundary.md`: Phase 7A/7B sensor provider dataclasses, sandbox provider, CSI scaffold, and runtime boundary.
+- `docs/sensor-evidence-extension-template.md`: Phase 9E/9F/9G public template for adding sanitized fixture-only evidence providers through the registry, validating them through CLI preflight commands, and updating the manifest snapshot.
+- `docs/phase-9h-release-summary.md`: Phase 9H through 11M release summary for the Phase 8C through 11M sensor-evidence subsystem, public commands, providers, artifact names, compatibility contracts, privacy boundary, extension path, real-mode readiness gate, invariant audit, checkpoint, p11a contract specs, p11b review-record fixtures, p11c preflight dossiers, p11d lifecycle audit records, p11e audit-index/change-control records, p11f audit handoff records, p11g handoff acceptance records, p11h follow-up/remediation records, p11i follow-up queue indexes, p11j decision closeouts, p11k review-trail export, p11l runtime gap ledger, and p11m planning/governance closeout.
+- `docs/phase-10-checkpoint.md`: Phase 10A through 10J checkpoint, current evidence-domain matrix, implemented versus blocked status, and Phase 11A safe-lane roadmap.
+- `docs/phase-11a-real-mode-contract-specs.md`: Phase 11A contract/spec-only planning layer for future document ingestion and RF booth / WiFi CSI review requirements.
+- `docs/phase-11b-review-record-fixtures.md`: Phase 11B review-record fixture and validator layer for consent, license/source, privacy, hardware, model artifact, dependency, and network policy review records without runtime execution.
+- `docs/phase-11c-preflight-dossiers.md`: Phase 11C sanitized preflight dossier packet layer for Phase 11A specs and Phase 11B review records without runtime execution.
+- `docs/phase-11d-dossier-lifecycle.md`: Phase 11D dossier lifecycle audit layer for sanitized comparisons, reviewer signoff metadata, and explicit audit decisions without runtime execution.
+- `docs/phase-11e-audit-index-change-control.md`: Phase 11E audit-index/change-control layer for deterministic ordering, supersession chains, reviewer-scope coverage, and local export/retention policy metadata without runtime execution.
+- `docs/phase-11f-audit-handoff-reporting.md`: Phase 11F compact audit handoff/reporting layer over Phase 11E audit-index metadata without runtime execution.
+- `docs/phase-11g-handoff-acceptance.md`: Phase 11G compact handoff acceptance/check layer over Phase 11F handoff metadata without runtime execution.
+- `docs/phase-11h-followup-remediation.md`: Phase 11H compact follow-up/remediation planning queues over Phase 11G acceptance metadata without runtime execution.
+- `docs/phase-11i-followup-queue-index.md`: Phase 11I compact follow-up queue indexes and acceptance checks over Phase 11H follow-up metadata without runtime execution.
+- `docs/phase-11j-decision-closeout.md`: Phase 11J compact reviewer decision-closeout records over Phase 11I queue metadata without runtime execution.
+- `docs/phase-11k-review-trail-export.md`: Phase 11K compact review-trail export over Phase 11A through 11J metadata without runtime execution.
+- `docs/phase-11l-runtime-authorization-gap-ledger.md`: Phase 11L compact runtime-authorization gap ledger over Phase 11A through 11K metadata without runtime execution.
+- `docs/phase-11m-planning-governance-closeout.md`: Phase 11M final planning/governance closeout index over Phase 11A through 11L metadata without runtime execution.
+- `docs/n-of-1-workflow.md`: Phase 7A fake-backed n-of-1 workflow artifacts plus Phase 7B CSI metadata, Phase 8G CSI evidence-pack export, Phase 7C personal baseline artifacts, Phase 7D mock intervention artifacts, Phase 7E response evaluation artifacts, Phase 7F report packet consolidation, and Phase 7G Fabric pack planning.
+- `docs/n-of-1-intervention-tags.md`: Phase 7D mock intervention tags, response evaluation future-planning boundary, disabled medication/clinician placeholders, no recommendation, no prescription, no reminders, and real-use consent requirements.
+- `docs/n-of-1-response-evaluation.md`: Phase 7E fake-backed response evaluation, follow-up snapshot, fixture trend labels only, no effectiveness claim, and future real-use review gates.
+- `docs/n-of-1-report-packet.md`: Phase 7F consolidated n-of-1 report packet, artifact refs, SHA-256 provenance hashes, loop-stage summary, not-medical-record boundary, and future real-use review gates.
+- `docs/n-of-1-fabric-pack-plan.md`: Phase 7G planning-only private n-of-1 Fabric data-pack candidate, report-packet refs, hash reuse, no signing/publication/transport/install/execution boundary, and future consent/redaction/review gates.
+- `docs/sensor-privacy-boundary.md`: Phase 7A/7B/8B/8E/8G/7C/7D/7E/7G local-first sensor, baseline, mock intervention, response evaluation, CSI parser/scoring/evidence-pack, and Fabric pack-planning privacy, consent, raw RF/CSI, and future real-mode requirements.
+- `docs/personal-baseline-graph.md`: Phase 7C fake-backed personal profile, baseline graph, and comparison artifact scaffold.
+- `docs/baseline-privacy-boundary.md`: Phase 7C local-only personal baseline privacy and consent boundary.
+- `docs/wifi-csi-scaffold.md`: Phase 7B fake-backed WiFi CSI planning scaffold plus Phase 8A source-staging, Phase 8B parser, Phase 8D replay, Phase 8E scoring, Phase 8F batch readiness, Phase 8G evidence-pack boundaries, Phase 10G source-adapter/booth-first metadata, Phase 10H real-mode readiness gate status, Phase 10I invariant audit context, Phase 11A RF booth contract specs, Phase 11B review-record status, Phase 11C preflight dossier status, Phase 11D lifecycle audit status, Phase 11E audit-index status, Phase 11F audit handoff status, Phase 11G handoff acceptance status, Phase 11H follow-up/remediation status, Phase 11I queue-index status, Phase 11J decision-closeout status, Phase 11K review-trail export status, Phase 11L runtime gap ledger status, and Phase 11M planning/governance closeout status.
+- `docs/wifi-csi-data-formats.md`: Phase 8B local fake/sample CSI CSV and JSONL fixture format notes plus excluded live/source formats.
+- `docs/wifi-csi-parser.md`: Phase 8B/8C/8D/8E/8F/8G standard-library CSI parser, replay provider, sanitized scoring, batch readiness, evidence-pack contracts, generated n-of-1 artifacts, tournament readiness artifacts, and no-live-capture boundary.
+- `docs/wifi-csi-public-examples.md`: Phase 8H public CSI parser, n-of-1 replay, tournament readiness, quick verification, and release-readiness examples.
+- `docs/wifi-csi-source-staging.md`: Phase 8A WiFi CSI staged-source inventory with paths, commits, license status, hardware assumptions, capture paths, data formats, dependencies, safe-use notes, and non-adoption rules.
+- `docs/wifi-csi-reference-map.md`: Phase 8A staged WiFi CSI reference map and Phase 10G RuView conditional reference status.
+- `docs/orchestration-roadmap.md`: CLI and orchestration sequencing.
+- `docs/integration-status.md`: external integration classification.
+- `docs/install-modes.md`: basic, dev, lane-specific, and all-extras install modes.
+- `docs/development.md`: contributor checks and boundaries.
+- `docs/phase-review-checklist.md`: review gates for future phases.
+- `docs/fabric-integration.md`: future verified pack system.
+- `docs/content-fabric.md`: normative Content Fabric v1.0.0 Somatic copy.
+- `docs/fabric-conformance.md`: Somatic Fabric conformance targets, checklist, and scaffold status.
+- `docs/fabric-locus-interop.md`: Locus interop preparation status, shared fixture status, and fixture exchange plan.
+- `docs/fabric-mutual-verification-report.md`: Phase 4F and Phase 4G.3 Locus/Somatic fixture verification commands, results, boundaries, and gaps.
+- `docs/fabric-implementation-gap-analysis.md`: Locus vs Somatic implementation gap matrix and remaining recommendations.
+- `docs/external-science-integrations.md`: Phase 5A external science target map and local inspection result.
+- `docs/external-source-staging.md`: Phase 5A.1 staged external source inventory, commits, licenses, entrypoints, and non-adoption notes.
+- `docs/paperqa2-source-inspection.md`: Phase 5B read-only inspection notes for the staged PaperQA2 source.
+- `docs/paperqa2-adapter.md`: Phase 5B disabled optional PaperQA2 provider scaffold boundary.
+- `docs/scientific-agent-skills-source-inspection.md`: Phase 5C read-only inspection notes for staged scientific-agent-skills source.
+- `docs/scientific-agent-skills-adapter.md`: Phase 5C disabled metadata-only scientific-agent-skills provider scaffold boundary.
+- `docs/autoscientists-source-inspection.md`: Phase 5E read-only inspection notes for staged AutoScientists source and unresolved license status.
+- `docs/autoscientists-mapping.md`: Phase 5E mapping from AutoScientists concepts into Somatic-owned deterministic TeamOrchestrator artifacts.
+- `docs/robin-source-inspection.md`: Phase 5F read-only inspection notes for staged FutureHouse Robin source.
+- `docs/aviary-source-inspection.md`: Phase 5F read-only inspection notes for staged Aviary source.
+- `docs/ldp-source-inspection.md`: Phase 5F read-only inspection notes for staged LDP source.
+- `docs/futurehouse-robin-mapping.md`: Phase 5F map from Robin/Aviary/LDP concepts into Somatic-owned interfaces.
+- `docs/boltz-source-inspection.md`: Phase 6A read-only inspection of staged Boltz source, CLI, dependencies, downloads, MSA, inputs, outputs, and compute boundaries.
+- `docs/biomodel-provider-boundary.md`: Phase 6A-6D biomodel provider contract, result mapping, consent, readiness, provenance, Fabric pack planning, resource, and safety boundary.
+- `docs/boltz-adapter.md`: Phase 6A-6D disabled fake-backed Boltz provider scaffold, readiness gates, provenance packaging, and future real-mode requirements.
+- `docs/in-silico-screening.md`: Phase 6B/6C/6D fake-backed biomodel workflow, run artifacts, Evidence Bus mapping, readiness artifacts, provenance pack planning, and disabled runtime boundary.
+- `docs/biomodel-safety-gates.md`: Phase 6C biomodel runtime policy, consent record, readiness report, block reasons, and Boltz integration boundary.
+- `docs/biomodel-provenance.md`: Phase 6D biomodel artifact provenance bundle and planning-only Fabric `data` pack mapping boundary.
+- `docs/adapter-boundaries.md`: Somatic-owned provider boundaries for external science adapters, including Phase 10H fixture, reference-only, metadata-only, and future real-mode vocabulary plus Phase 10J checkpoint constraints, Phase 11A contract/spec planning, Phase 11B review-record fixtures, Phase 11C preflight dossiers, Phase 11D lifecycle audit records, Phase 11E audit-index/change-control records, Phase 11F audit handoff records, Phase 11G handoff acceptance records, Phase 11H follow-up/remediation records, Phase 11I follow-up queue indexes, Phase 11J decision closeouts, Phase 11K review-trail exports, Phase 11L runtime gap ledgers, and Phase 11M planning/governance closeouts.
+- `docs/science-provider-roadmap.md`: phased plan for PaperQA2, scientific-agent-skills, Robin, AutoScientists, and Boltz-2.
+- `docs/workflow-schema.md`: canonical workflow manifest contract.
+- `docs/provider-contracts.md`: provider lifecycle, capabilities, permissions, and mock expectations.
+- `docs/evidence-model.md`: evidence record and provenance contract.
+- `docs/safety-gate-contract.md`: safety gate request and response contract.
+- `docs/report-packet.md`: reproducible report packet contract.
+- `docs/run-artifacts.md`: run directory layout and replay expectations.
+- `docs/fabric-pack-schema.md`: canonical Fabric `pack.json` schema direction.
+
+## Python Package
+
+- `somatic/__main__.py`: `python -m somatic` entrypoint.
+- `somatic/cli/`: standard-library CLI package, including sensor-evidence provider discovery and validation subcommands.
+- `somatic/contracts.py`: supported modes, required fields, and mock provider fixture mapping, including biomodel mock provider metadata.
+- `somatic/workflow_loader.py`: conservative workflow YAML fixture loader and validator.
+- `somatic/mock_runtime.py`: offline mock runtime that assembles fixture outputs, including Finch toolbelt artifacts for Robin mode, TeamOrchestrator report sections, Phase 6B/6C/6D in-silico biomodel artifacts, Phase 7A n-of-1 sensor planning artifacts, Phase 7B CSI metadata, Phase 8B CSI parser summary artifacts, Phase 7C personal baseline artifacts, Phase 7D intervention tag artifacts, Phase 7E response evaluation artifacts, Phase 7F n-of-1 report packet artifacts, and Phase 7G Fabric pack-plan artifacts.
+- `somatic/run_writer.py`: run artifact writer.
+- `somatic/analysis/`: standard-library local analysis helpers and disabled Finch optional-extras metadata.
+- `somatic/analysis/tables.py`: CSV parsing and deterministic table profiling.
+- `somatic/analysis/statistics.py`: numeric parsing, descriptive stats, and group-by summaries.
+- `somatic/analysis/dose_response.py`: preliminary dose-response table summaries.
+- `somatic/analysis/provenance.py`: deterministic SHA-256 file and artifact provenance hashing.
+- `somatic/analysis/extras.py`: Phase 5G lazy optional package availability metadata.
+- `somatic/analysis/provider.py`: Phase 5G disabled fake-backed Finch optional-extras provider scaffold.
+- `somatic/core/`: core orchestration boundary.
+- `somatic/core/scoring.py`: deterministic mock score validation, final-score calculation, and ranking helpers.
+- `somatic/evidence_bus/`: Evidence Bus dataclasses and modality constants.
+- `somatic/agents/`: agent lane scaffold.
+- `somatic/agents/crow.py`: deterministic mock literature-context scaffold for Robin mode.
+- `somatic/agents/falcon.py`: deterministic mock measurement-plan scaffold for Robin mode.
+- `somatic/agents/finch.py`: deterministic mock analysis and StructuredVerdict scaffold for Robin mode.
+- `somatic/agents/finch_toolbelt.py`: standard-library local table and dose-response analysis bridge for Robin mode.
+- `somatic/agents/batch_scorer.py`: batch scorer interface and local mock scorer.
+- `somatic/agents/team_orchestrator.py`: deterministic mock TeamOrchestrator scaffold with Phase 5E lifecycle, confidence, critique gate, stall, blackboard contribution, evidence budget, reorganization trigger, next action, and reference hook metadata.
+- `somatic/agents/tournament.py`: deterministic offline tournament candidate, review, bracket, refinement, and ranking logic.
+- `somatic/engines/`: research engine lane scaffold.
+- `somatic/sensors/`: local-first sensor lane scaffold, common dataclass re-exports, deterministic sandbox sensor provider, WiFi CSI planning metadata helpers, Phase 8B fixture parser helpers, Phase 8D fixture replay provider seam, Phase 8E sanitized CSI evidence scoring helpers, Phase 8F batch replay readiness helpers, Phase 9C neutral environment fixture evidence helpers, Phase 9E toy counter extension-template helpers, and Phase 9F/9G registry validation and manifest diagnostics.
+- `somatic/sensors/csi.py`: Phase 7B standard-library WiFi CSI planning dataclasses, deterministic fake feature helpers, and public sanitized parser capability metadata.
+- `somatic/sensors/csi_formats.py`: Phase 8B standard-library CSI parser dataclasses and parser capability metadata.
+- `somatic/sensors/csi_parser.py`: Phase 8B/8C local fake/sample CSI CSV and JSONL parser scaffold plus sanitized aggregate report/summary builder for Phase 8D replay and Phase 8E scoring metadata.
+- `somatic/sensors/csi_scoring.py`: Phase 8E deterministic sanitized CSI replay evidence scoring and tournament readiness metadata.
+- `somatic/sensors/csi_batch.py`: Phase 8F deterministic sanitized CSI fixture-group batch evaluation and tournament readiness metadata.
+- `somatic/sensors/csi_evidence_pack.py`: Phase 8G deterministic sanitized CSI evidence-pack export contract, compact artifact metadata references, and Phase 8I v1 compatibility/fingerprint classifier.
+- `somatic/sensors/environment.py`: Phase 9C fixture-only neutral environment CSV reader that emits sanitized row/count/status evaluation metadata only.
+- `somatic/sensors/environment_evidence_pack.py`: Phase 9C deterministic sanitized environment evidence-pack contract built on the generic sensor-evidence primitives.
+- `somatic/sensors/toy_counter.py`: Phase 9E fixture-only toy counter CSV reader that emits sanitized count/status evaluation metadata only.
+- `somatic/sensors/toy_counter_evidence_pack.py`: Phase 9E deterministic sanitized toy counter evidence-pack contract used as the public extension template proof.
+- `somatic/sensors/registry.py`: Phase 9D/9F/9G fixture-only sensor-evidence provider registry, sanitized workflow config validation, validation error-category vocabulary, deterministic public provider manifest, and manifest compatibility classifier for CSI, environment, and toy providers.
+- `somatic/safety/`: safety gate lane scaffold, including Phase 6C biomodel runtime policy, consent, readiness report, gate error, Phase 10H shared real-mode readiness gate, Phase 11A contract/spec planning helpers, Phase 11B review-record validators, Phase 11C preflight dossier validators, Phase 11D lifecycle audit validators, Phase 11E audit-index/change-control validators, Phase 11F audit handoff validators, Phase 11G handoff acceptance validators, Phase 11H follow-up/remediation validators, Phase 11I queue-index validators, Phase 11J decision-closeout validators, Phase 11K review-trail export validators, Phase 11L runtime gap ledger validators, and Phase 11M planning/governance closeout validators.
+- `somatic/memory/`: local-first memory lane scaffold with Phase 7C personal baseline graph helpers, Phase 7D intervention tag helpers, and Phase 7E response evaluation helpers.
+- `somatic/memory/baseline.py`: Phase 7C standard-library personal profile, baseline graph, privacy boundary, and deterministic comparison helpers.
+- `somatic/memory/intervention.py`: Phase 7D standard-library intervention tag, intervention context, response evaluation plan, and mock ledger helpers.
+- `somatic/memory/response_evaluation.py`: Phase 7E standard-library follow-up window, follow-up snapshot, response comparison, and response evaluation summary helpers.
+- `somatic/memory/profile.py`: Phase 7C profile helper re-export for the memory lane.
+- `somatic/presence/`: render-only presence lane scaffold.
+- `somatic/fabric/`: Fabric lane scaffold.
+- `somatic/fabric/spec.py`: Content Fabric v1.0.0 constants, classes, types, harness names, and license allowlist.
+- `somatic/fabric/canonical.py`: raw JSON numeric lexeme rejection, duplicate object-name rejection, integer-only JSON validation, Fabric-supported RFC 8785/JCS canonicalization, and signing payload construction.
+- `somatic/fabric/digests.py`: SHA-256 helpers and scaffold manifest digests.
+- `somatic/fabric/pathing.py`: path and install-target confinement prechecks.
+- `somatic/fabric/crypto.py`: optional Ed25519 helpers, raw key conversion, key id derivation, and signature byte verification.
+- `somatic/fabric/signing.py`: signature shape checks, code signature threshold precheck, local signing, and object signature verification.
+- `somatic/fabric/manifest.py`: Content Fabric pack manifest shape validation and context license policy decisions.
+- `somatic/fabric/keyring.py`: keyring shape validation, signed root-threshold checks, keyring replacement continuity, and signed pack publisher-threshold checks.
+- `somatic/fabric/catalog.py`: catalog shape validation and signed catalog threshold verification.
+- `somatic/fabric/conformance.py`: compatibility wrapper for dependency-free prechecks.
+- `somatic/fabric/fixtures.py`: fixture discovery and loading helpers for conformance tests.
+- `somatic/fabric/interop.py`: dependency-free interop fixture location and metadata comparison helpers.
+- `somatic/bench/`: benchmark lane scaffold.
+- `somatic/reports/`: report lane scaffold and Phase 7F/7G n-of-1 report packet and Fabric plan helpers.
+- `somatic/reports/n_of_1_packet.py`: Phase 7F standard-library n-of-1 artifact refs, deterministic SHA-256 payload hashing, loop-stage summaries, fail-closed missing artifact handling, and report packet dataclasses.
+- `somatic/reports/n_of_1_fabric_plan.py`: Phase 7G standard-library n-of-1 Fabric pack-planning dataclasses, deterministic file plans, report-packet hash refs, and no publish/sign/transport/install boundary.
+- `somatic/simulator/`: simulation lane scaffold.
+- `somatic/simulator/sandbox_source.py`: deterministic offline sandbox EvidenceSource for Robin mode, with local CSV table refs for Phase 5D Finch analysis.
+- `somatic/providers/`: Phase 5A provider interface scaffolds for external science adapters.
+- `somatic/providers/literature.py`: `LiteratureProvider` protocol and document/query dataclasses for PaperQA2-style adapters.
+- `somatic/providers/paperqa2.py`: Phase 5B disabled optional PaperQA2 literature provider scaffold with deterministic mock mode.
+- `somatic/providers/robin.py`: Phase 5F disabled reference-only FutureHouse Robin/Aviary/LDP provider scaffold.
+- `somatic/providers/science_skills.py`: `ScienceSkillProvider` protocol plus skill and database connector metadata dataclasses.
+- `somatic/providers/scientific_agent_skills.py`: Phase 5C disabled metadata-only scientific-agent-skills provider scaffold with deterministic mock skill/database catalog.
+- `somatic/providers/biomodel.py`: `BiomodelProvider` protocol, biomodel request/plan/result/evidence dataclasses, and Evidence Bus mapping helper.
+- `somatic/providers/sensors.py`: Phase 7A `SensorProvider` protocol, sensor stream plan, observation, feature-set, evidence-record, privacy-policy dataclasses, and Phase 8D CSI fixture replay contract hook.
+- `somatic/providers/biomodel_provenance.py`: Phase 6D standard-library biomodel artifact refs, provenance bundle, file/payload hashing, and planning-only Fabric `data` pack plan helpers.
+- `somatic/providers/boltz.py`: Phase 6A-6C disabled Boltz-2 provider scaffold with deterministic fake-backed plan/result readiness metadata, package-name locking, and fail-closed real mode.
+- `somatic/providers/team_orchestration.py`: `TeamOrchestrationProvider` protocol, plan dataclasses, and Phase 5E disabled reference-only AutoScientists provider scaffold.
+
+## Workflows
+
+- `workflows/literature-only.yaml`: research summary mode.
+- `workflows/hypothesis-tournament.yaml`: proposal, critique, ranking, and refinement mode.
+- `workflows/robin-loop.yaml`: Crow/Falcon/Finch loop placeholder.
+- `workflows/in-silico-screening.yaml`: biomodel and cheminformatics mode.
+- `workflows/wet-lab-manual.yaml`: human-operated lab planning mode.
+- `workflows/sandbox-lab.yaml`: simulated lab mode.
+- `workflows/wifi-csi-observation.yaml`: WiFi CSI planning-only observation placeholder; no capture or hardware path.
+- `workflows/hybrid-clinical.yaml`: local-first baseline and decision-support mode.
+- `workflows/fabric-pack-ingest.yaml`: verified pack ingest mode.
+
+## Packages
+
+- `packages/core`: workflow orchestration contracts.
+- `packages/provider-sdk`: adapter SDK contracts.
+- `packages/literature-engine`: literature and evidence engine.
+- `packages/hypothesis-tournament`: tournament engine.
+- `packages/experiment-planner`: experiment planning engine.
+- `packages/finch-analysis`: analysis and feedback engine.
+- `packages/biomodel-adapters`: in-silico model adapters.
+- `packages/lab-adapters`: manual, wet-lab, and cloud-lab adapters.
+- `packages/sensor-adapters`: general sensor adapters.
+- `packages/wifi-csi`: WiFi CSI-specific planning scaffold; live adapters and analysis are future work.
+- `packages/patient-baseline`: Phase 7C fake-backed local personal baseline graph scaffold plus Phase 7D mock intervention metadata boundary; real storage and intervention use remain future work.
+- `packages/safety-gate`: safety policy evaluation.
+- `packages/simulator`: sandbox lab simulation.
+- `packages/fabric`: verified pack and catalog system.
+- `packages/reports`: safety-gated report generation.
+
+## Examples
+
+- `examples/damd-robin-demo`: disease-associated molecular discovery loop placeholder.
+- `examples/literature-only-demo`: literature-only workflow placeholder.
+- `examples/sandbox-lab-demo`: simulated lab workflow placeholder.
+- `examples/wifi-csi-demo`: WiFi CSI public examples for parser CLI review, n-of-1 replay evidence-pack export, and tournament batch readiness metadata.
+- `examples/sensor-evidence-demo`: Phase 9E/9F/9G public sensor-evidence extension example for `toy-counter-fixture`, including discovery, validation, and provider-manifest preflight commands.
+- `examples/hybrid-clinical-demo`: baseline graph and decision-support report placeholder.
+- `examples/fabric-pack-demo`: content fabric ingest placeholder.
+
+## Fixtures
+
+- `fixtures/workflows/valid-literature-only.yaml`: valid literature-only workflow contract example.
+- `fixtures/workflows/valid-hypothesis-tournament.yaml`: valid offline hypothesis tournament workflow contract example with CSI and neutral environment fixture readiness metadata.
+- `fixtures/workflows/valid-robin-loop.yaml`: valid Robin-style sandbox Evidence Bus workflow contract example.
+- `fixtures/workflows/valid-in-silico-screening.yaml`: valid fake-backed Boltz biomodel planning workflow contract example.
+- `fixtures/workflows/valid-n-of-1.yaml`: valid fake-backed sensor n-of-1 planning workflow contract example with Phase 7D mock intervention tags, Phase 7E response evaluation, Phase 7F report packet consolidation, Phase 7G Fabric pack planning, Phase 9C neutral environment evidence pack refs, no recommendation, no prescription, no effectiveness claim, and no reminders/automation/scheduling.
+- `fixtures/workflows/valid-wifi-csi-observation.yaml`: valid WiFi CSI planning-only workflow contract example.
+- `fixtures/workflows/invalid-missing-mode.yaml`: invalid workflow fixture for schema validation.
+- `fixtures/providers/mock-llm-provider.json`: mock LLM provider capability declaration.
+- `fixtures/providers/mock-literature-provider.json`: mock literature provider capability declaration.
+- `fixtures/providers/mock-report-provider.json`: mock report provider capability declaration.
+- `fixtures/providers/mock-sensor-provider.json`: mock sensor provider capability declaration.
+- `fixtures/providers/sensor-evidence-provider-manifest-v1.json`: Phase 9G deterministic sanitized provider manifest snapshot for registry drift detection.
+- `fixtures/providers/paperqa2-provider-placeholder.json`: disabled metadata for the Phase 5B PaperQA2 adapter scaffold.
+- `fixtures/providers/paperqa2-provider-mock-config.json`: deterministic fake-backed PaperQA2 provider config fixture.
+- `fixtures/providers/scientific-agent-skills-provider-placeholder.json`: disabled placeholder metadata for a future scientific-agent-skills adapter.
+- `fixtures/providers/scientific-agent-skills-provider-mock-config.json`: deterministic fake-backed scientific-agent-skills provider config fixture.
+- `fixtures/providers/scientific-agent-skills-sample-catalog.json`: deterministic sample skill and database connector catalog fixture.
+- `fixtures/providers/finch-extras-provider-placeholder.json`: disabled placeholder metadata for future Finch optional analysis extras.
+- `fixtures/providers/finch-extras-provider-mock-config.json`: deterministic fake-backed Finch optional-extras provider config fixture.
+- `fixtures/providers/robin-provider-placeholder.json`: disabled placeholder metadata for a future Robin-style planner/analyzer adapter.
+- `fixtures/providers/aviary-provider-placeholder.json`: disabled reference-only metadata for a future Aviary-like execution environment boundary.
+- `fixtures/providers/ldp-provider-placeholder.json`: disabled reference-only metadata for a future LDP-like agent rollout boundary.
+- `fixtures/providers/autoscientists-provider-placeholder.json`: disabled reference-only metadata for the Phase 5E AutoScientists team adapter scaffold.
+- `fixtures/providers/boltz2-provider-placeholder.json`: disabled placeholder metadata for future Boltz-2 biomodel planning.
+- `fixtures/providers/boltz2-provider-mock-config.json`: deterministic fake-backed Boltz-2 provider config fixture.
+- `fixtures/biomodel/`: Phase 6A biomodel request, plan, and result placeholder metadata fixtures, Phase 6B mock Boltz input/MSA-placeholder refs, Phase 6C runtime policy, consent, readiness, and dangerous-enabled negative fixtures, and Phase 6D provenance-bundle and pack-plan placeholder fixtures.
+- `fixtures/sensors/`: Phase 7A sandbox sensor provider, privacy policy, baseline, and feature-set placeholder fixtures, Phase 7B CSI planning fixtures and the Phase 8A CSI reference inventory under `fixtures/sensors/csi/`, Phase 9C neutral environment CSV fixtures under `fixtures/sensors/environment/`, and Phase 9E toy counter CSV fixtures under `fixtures/sensors/toy-counter/`.
+- `fixtures/baseline/`: Phase 7C fake-backed personal profile, baseline graph, baseline comparison, and baseline privacy boundary fixtures plus Phase 7D intervention tag/context/response-plan/mock-ledger fixtures and Phase 7E follow-up/response-comparison/response-summary fixtures.
+- `fixtures/providers/external-source-inventory.json`: machine-readable Phase 5A.1 local source inventory that does not require external repos in CI.
+- `fixtures/evidence/sample-evidence-record.json`: sample evidence and provenance record.
+- `fixtures/evidence/tables/`: deterministic local CSV fixtures for Finch table profiling, missing values, non-numeric handling, and dose-response summaries.
+- `fixtures/safety/sample-safety-request.json`: sample safety gate request.
+- `fixtures/safety/sample-safety-response.json`: sample safety gate response.
+- `fixtures/reports/sample-report-packet.json`: sample reproducible report packet.
+- `fixtures/reports/n-of-1-report-packet-placeholder.json`: Phase 7F consolidated n-of-1 report packet placeholder fixture.
+- `fixtures/reports/n-of-1-fabric-pack-plan-placeholder.json`: Phase 7G planning-only private n-of-1 Fabric pack-plan placeholder fixture.
+- `fixtures/reports/csi-evidence-pack-placeholder.json`: Phase 8G sanitized CSI evidence-pack placeholder fixture.
+- `fixtures/reports/csi-evidence-pack-v1-parsed.json`: Phase 8I sanitized v1 evidence-pack compatibility fixture for parsed replay metadata.
+- `fixtures/reports/csi-evidence-pack-v1-partial-batch.json`: Phase 8I sanitized v1 evidence-pack compatibility fixture for partial batch metadata.
+- `fixtures/reports/sensor-evidence-subsystem-summary-v1.json`: Phase 9H through 11M machine-readable summary for the sensor-evidence subsystem, adapter boundaries, invariant audit surface, checkpoint doc, contract specs, review-record fixtures, preflight dossiers, lifecycle audit records, audit-index/change-control records, audit handoff records, handoff acceptance records, follow-up/remediation records, queue-index records, decision-closeout records, review-trail export records, runtime gap ledger records, and planning/governance closeout records.
+- `fixtures/reviews/phase-11b-review-records-v1.json`: Phase 11B deterministic sanitized review-record fixture bundle for planning gates.
+- `fixtures/reviews/phase-11c-preflight-dossiers-v1.json`: Phase 11C deterministic sanitized preflight dossier fixture bundle for planning packets.
+- `fixtures/reviews/phase-11d-dossier-lifecycle-records-v1.json`: Phase 11D deterministic sanitized lifecycle audit fixture bundle for planning packets.
+- `fixtures/reviews/phase-11e-audit-index-v1.json`: Phase 11E deterministic sanitized audit-index/change-control fixture bundle for planning packets.
+- `fixtures/reviews/phase-11f-audit-handoff-v1.json`: Phase 11F deterministic sanitized audit handoff fixture bundle for planning/reporting packets.
+- `fixtures/reviews/phase-11g-handoff-acceptance-v1.json`: Phase 11G deterministic sanitized handoff acceptance fixture bundle for planning/check packets.
+- `fixtures/reviews/phase-11h-followup-remediation-v1.json`: Phase 11H deterministic sanitized follow-up/remediation fixture bundle for planning queues.
+- `fixtures/reviews/phase-11i-followup-queue-index-v1.json`: Phase 11I deterministic sanitized follow-up queue index and acceptance-check fixture bundle for reviewer navigation.
+- `fixtures/reviews/phase-11j-decision-closeout-v1.json`: Phase 11J deterministic sanitized decision-closeout fixture bundle for reviewer planning closeout.
+- `fixtures/reviews/phase-11k-review-trail-export-v1.json`: Phase 11K deterministic sanitized review-trail export fixture for Phase 11A through 11J reviewer navigation.
+- `fixtures/reviews/phase-11l-runtime-authorization-gap-ledger-v1.json`: Phase 11L deterministic sanitized runtime gap ledger fixture for Phase 11A through 11K reviewer navigation.
+- `fixtures/reviews/phase-11m-planning-governance-closeout-index-v1.json`: Phase 11M deterministic sanitized planning/governance closeout fixture for Phase 11A through 11L reviewer navigation.
+- `fixtures/runs/sample-run-manifest.json`: sample run manifest.
+- `fixtures/fabric/sample-data-pack.json`: sample Fabric data pack manifest.
+- `fixtures/fabric/sample-code-pack.json`: sample Fabric code pack manifest.
+- `fixtures/fabric/conformance/`: Content Fabric v1.0.0 conformance fixture scaffold with placeholder signatures and Phase 4B scaffold digests.
+- `fixtures/fabric/raw-json/`: raw Fabric JSON numeric acceptance and rejection fixtures.
+- `fixtures/fabric/jcs/`: local JCS canonical text and signing-payload digest vectors for Fabric-supported JSON.
+- `fixtures/fabric/crypto/`: deterministic signed keyring, signed pack, signed catalog, invalid signature, and test-only key fixtures.
+- `fixtures/fabric/crypto/rotation/`: keyring replacement continuity fixtures.
+- `fixtures/fabric/interop/`: placeholder folder, Somatic-generated fixture exchange metadata, Phase 4F verification status, and Phase 4G.3 Locus-certified Somatic-origin shared fixtures.
+
+## Tests
+
+- `tests/test_workflow_loader.py`: workflow parser, validation, and provider metadata tests.
+- `tests/test_run_writer.py`: run artifact writer tests.
+- `tests/test_mock_runtime.py`: local mock runtime tests.
+- `tests/test_tournament.py`: Phase 2.5 offline tournament scoring, pairwise debate, Elo, artifacts, ranking, and report-boundary tests.
+- `tests/test_team_orchestrator.py`: TeamOrchestrator artifacts, Phase 5E field coverage, determinism, mock/offline budget, report sections, and boundary tests.
+- `tests/test_team_orchestration_provider_scaffold.py`: Phase 5E AutoScientists provider scaffold, fixture, disabled live runtime, and no-network import tests.
+- `tests/test_robin_loop.py`: Robin loop artifact, determinism, compatibility, and no-network boundary tests.
+- `tests/test_sandbox_source.py`: sandbox EvidenceSource modality, determinism, and no-network boundary tests.
+- `tests/test_cli_commands.py`: CLI command tests, including Phase 9F/9G sensor-evidence provider discovery/validation output, manifest JSON equality, and privacy boundaries.
+- `tests/test_evidence_bus.py`: Evidence Bus contract tests.
+- `tests/test_package_layout.py`: master-plan package boundary tests.
+- `tests/test_fabric_conformance_scaffold.py`: Fabric conformance fixture, precheck, and workflow compatibility tests.
+- `tests/test_fabric_canonical.py`: canonicalization, signing payload, and digest helper tests.
+- `tests/test_fabric_manifest.py`: manifest, path, license, and code-signature threshold tests.
+- `tests/test_fabric_keyring_catalog.py`: keyring and catalog shape validation tests.
+- `tests/test_fabric_cli.py`: local Fabric CLI and no-network-surface tests.
+- `tests/test_fabric_crypto.py`: optional Ed25519 helper tests.
+- `tests/test_fabric_signing.py`: signing payload and local object signing tests.
+- `tests/test_fabric_keyring_crypto.py`: signed keyring and publisher-threshold verification tests.
+- `tests/test_fabric_raw_json.py`: raw JSON numeric lexeme validation tests and fixtures.
+- `tests/test_fabric_jcs_vectors.py`: local Fabric-supported JCS canonicalization and signing payload vector tests.
+- `tests/test_fabric_keyring_rotation.py`: keyring replacement continuity tests.
+- `tests/test_fabric_catalog_signatures.py`: signed catalog threshold tests.
+- `tests/test_fabric_interop_placeholders.py`: interop docs, placeholder fixture folder, and helper tests.
+- `tests/test_fabric_interop_metadata.py`: Phase 4F interop metadata, report, and digest consistency tests.
+- `tests/test_fabric_shared_interop_fixtures.py`: Phase 4G.3 shared fixture shape, digest, signature, catalog, rejection, and Locus evidence metadata tests.
+- `tests/test_science_provider_scaffolds.py`: Phase 5A provider placeholder fixtures, import boundaries, no-network/API surfaces, and workflow compatibility tests.
+- `tests/test_external_source_inventory.py`: Phase 5A.1 inventory fixture shape, source status, commit metadata, and no-runtime-action tests.
+- `tests/test_paperqa2_provider_scaffold.py`: Phase 5B PaperQA2 scaffold import, optional dependency, fake mode, fixture, and no-network tests.
+- `tests/test_scientific_agent_skills_provider_scaffold.py`: Phase 5C scientific-agent-skills scaffold import, fake catalog, database connector, fixture, doctor, and no-network tests.
+- `tests/test_finch_toolbelt_tables.py`: Phase 5D CSV parsing, table profiling, missing value, stats, group-by, provenance, and no-network tests.
+- `tests/test_finch_toolbelt_dose_response.py`: Phase 5D preliminary dose-response and provenance tests.
+- `tests/test_finch_toolbelt_robin_integration.py`: Phase 5D Robin artifact integration, workflow compatibility, provider scaffold import, and no-network tests.
+- `tests/test_finch_extras_provider.py`: Phase 5G optional extras provider, fixtures, doctor output, Robin summary metadata, and no-network tests.
+- `tests/test_futurehouse_robin_mapping.py`: Phase 5F docs, fixtures, Robin scaffold, workflow compatibility, Fabric check, and no-network tests.
+- `tests/test_biomodel_provider_boundary.py`: Phase 6A biomodel dataclasses, Evidence Bus mapping, and fixture metadata tests.
+- `tests/test_biomodel_safety_gates.py`: Phase 6C biomodel readiness policy, consent, fixture, dangerous-policy, unsafe workflow, package lock, and no-network tests.
+- `tests/test_boltz_provider_scaffold.py`: Phase 6A/6C Boltz scaffold import, fake plan/result readiness metadata, fail-closed real mode, doctor, fixture, and no-network/runtime-import tests.
+- `tests/test_biomodel_provenance.py`: Phase 6D biomodel provenance bundle, deterministic hashes, planning-only Fabric data pack plan, fixtures, and no-network/runtime tests.
+- `tests/test_in_silico_workflow.py`: Phase 6B/6C/6D in-silico workflow fixture, readiness artifacts, provenance pack planning, report boundaries, compatibility, Fabric check, and no-network/runtime tests.
+- `tests/test_sensor_provider_scaffold.py`: Phase 7A/7B sensor provider dataclasses, deterministic sandbox provider, fixtures, CSI metadata, and no hardware/network import tests.
+- `tests/test_sensor_evidence_registry.py`: Phase 9D/9F registry discovery, config validation diagnostics, deterministic providers, Fabric refs, tournament stability, and privacy tests.
+- `tests/test_sensor_evidence_provider_manifest.py`: Phase 9G provider manifest snapshot, compatibility classification, CLI equality, safe additive metadata, privacy boundary, and tournament no-regression tests.
+- `tests/test_sensor_evidence_release_summary.py`: Phase 9H through 11M release-summary docs and JSON alignment, command coverage, privacy boundary, provider-manifest alignment, and artifact-ref shape tests.
+- `tests/test_n_of_1_workflow.py`: Phase 7A/7B/7C/7D/7E/7F/7G n-of-1 workflow fixture, artifacts, CSI metadata, baseline/intervention/response/report-packet/Fabric-plan boundaries, packet hash refs, determinism, compatibility, Fabric check, and no hardware/network/import-surface tests.
+- `tests/test_n_of_1_intervention_tags.py`: Phase 7D intervention tag helpers, fixtures, response evaluation plan boundaries, mock ledger, and no network/hardware/database/automation import-surface tests.
+- `tests/test_n_of_1_response_evaluation.py`: Phase 7E follow-up generation, response comparison, response evaluation summary, fixtures, determinism, and no network/hardware/database/scheduling import-surface tests.
+- `tests/test_n_of_1_report_packet.py`: Phase 7F report packet fixture, deterministic artifact hashing, loop-stage summaries, fail-closed missing-artifact behavior, and no network/hardware/database/scheduling import-surface tests.
+- `tests/test_n_of_1_fabric_pack_plan.py`: Phase 7G Fabric pack-plan fixture, deterministic report-packet/file refs, disabled publish/sign/transport/install/execution surfaces, and no network/hardware/database/publish import-surface tests.
+- `tests/test_wifi_csi_scaffold.py`: Phase 7B CSI dataclasses, fixtures, docs, and no hardware/network/import-surface tests.
+- `tests/test_wifi_csi_reference_inventory.py`: Phase 8A CSI staged-source inventory, RuView conditional reference status, booth-first profile metadata, no-runtime-action policy, and workflow/Fabric compatibility tests.
+- `tests/test_wifi_csi_ruview_booth_boundary.py`: Phase 10G RuView reassessment, booth-first profile, CSI source-adapter fail-closed validation, and public-surface privacy tests.
+- `tests/test_phase10i_shared_safety_invariants.py`: Phase 10I provider manifest, doctor, workflow report, artifact inspect, and release-summary fixture invariant audit for document and WiFi CSI surfaces.
+- `tests/test_phase11a_contract_spec_planning_surfaces.py`: Phase 11A real-mode contract/spec planning surfaces, fail-closed validation, and runtime-disabled status tests.
+- `tests/test_phase11b_review_record_fixtures.py`: Phase 11B deterministic review-record fixture bundle tests.
+- `tests/test_phase11b_review_record_validator.py`: Phase 11B review-record conformance and unsafe-input fail-closed tests.
+- `tests/test_phase11c_review_packet_builder.py`: Phase 11C preflight dossier builder, deterministic packet, and fail-closed validation tests.
+- `tests/test_phase11c_preflight_dossier_fixtures.py`: Phase 11C checked-in dossier fixture and public status-surface tests.
+- `tests/test_phase11d_dossier_lifecycle_audit.py`: Phase 11D lifecycle record, signoff, decision, comparison, and fail-closed validation tests.
+- `tests/test_phase11d_dossier_lifecycle_fixtures.py`: Phase 11D checked-in lifecycle audit fixture and public status-surface tests.
+- `tests/test_phase11e_audit_index_change_control.py`: Phase 11E audit-index, change-control, supersession, retention-policy, and public status-surface tests.
+- `tests/test_phase11f_audit_handoff_reporting.py`: Phase 11F audit handoff, compact reporting, fail-closed validation, and runtime-disabled status tests.
+- `tests/test_phase11g_handoff_acceptance_checks.py`: Phase 11G handoff acceptance checks, stale/hash mismatch validation, compact reporting, fail-closed validation, and runtime-disabled status tests.
+- `tests/test_phase11h_followup_remediation.py`: Phase 11H follow-up/remediation queues, compact reporting, fail-closed validation, and runtime-disabled resolved-for-planning tests.
+- `tests/test_phase11i_followup_queue_index.py`: Phase 11I follow-up queue indexes, queue acceptance checks, compact reporting, fail-closed validation, and runtime-disabled accepted-for-planning queue tests.
+- `tests/test_phase11j_decision_closeout.py`: Phase 11J reviewer decision closeouts, compact reporting, fail-closed validation, and runtime-disabled closed-for-planning queue tests.
+- `tests/test_phase11k_review_trail_export.py`: Phase 11K review-trail export, compact reporting, fail-closed validation, and runtime-disabled exported/closed trail tests.
+- `tests/test_phase11l_runtime_gap_ledger.py`: Phase 11L runtime gap ledger, compact reporting, fail-closed validation, and runtime-disabled ready/complete/closed/exported/ledgered tests.
+- `tests/test_phase11m_planning_governance_closeout.py`: Phase 11M planning/governance closeout, compact reporting, fail-closed validation, and runtime-disabled complete/closed/finalized/indexed/governance-complete tests.
+- `tests/test_wifi_csi_evidence_scoring.py`: Phase 8E sanitized replay evidence scoring, rejected/partial fail-closed behavior, tournament readiness, and privacy tests.
+- `tests/test_wifi_csi_batch_replay.py`: Phase 8F sanitized CSI fixture-group batch evaluation, fail-closed aggregation, unsafe-ref redaction, and tournament readiness privacy tests.
+- `tests/test_wifi_csi_evidence_pack.py`: Phase 8G deterministic sanitized evidence-pack export, n-of-1/Fabric references, tournament readiness artifact, and privacy/import-surface tests.
+- `tests/test_wifi_csi_public_examples.py`: Phase 8H public example manifest loading, CLI/workflow smoke checks, evidence-pack emission, and public artifact privacy tests.
+- `tests/test_wifi_csi_evidence_pack_compatibility.py`: Phase 8I evidence-pack v1 compatibility classification, deterministic fingerprint, additive-field, fail-closed malformed/version, and privacy tests.
+- `tests/test_environment_evidence_pack.py`: Phase 9C neutral environment fixture evidence-pack determinism, generic compatibility validation, fail-closed fixture refs, privacy, and no-network/hardware import tests.
+- `tests/test_toy_counter_evidence_pack.py`: Phase 9E toy counter provider determinism, generic artifact refs, workflow validation, privacy, and no-network/hardware import tests.
+- `tests/test_personal_baseline_graph.py`: Phase 7C personal baseline graph helpers, fixtures, deterministic comparison statuses, and no network/hardware/database import-surface tests.

@@ -1,0 +1,501 @@
+{
+  "dossiers": {
+    "document_ingestion_reviewed": {
+      "blocking_reasons": [],
+      "contract_spec_label": "document-ingestion-p11a-contract-v1",
+      "contract_spec_version": 1,
+      "domain": "document-ingestion",
+      "execution_permitted": false,
+      "gates": [
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "consent",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "license-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "privacy-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "hardware-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "model-artifact-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "dependency-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "network-policy-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        }
+      ],
+      "included_record_fingerprints": {
+        "contract_spec_sha256": "660ea27dec219d7a2824f6f5ea511701c47eae563929d1ff75539491719e7a06",
+        "review_record_sha256": "2b5be8d492b27e0bf111111732a8523d0b4b35aa21b26dfaefb10f5b59330998"
+      },
+      "metadata_only": true,
+      "missing_gate_count": 0,
+      "packet_fingerprint": "c5790dbc321ebd67cc0e8b4b448e8c8dc83fab1a3efc6221d23ee1bbd7346702",
+      "packet_id": "p11c-preflight-document-ingestion-c5790dbc321ebd67",
+      "planning_only": true,
+      "preflight_dossier_contract_version": 1,
+      "preflight_dossier_kind": "phase-11c-real-mode-preflight-dossier",
+      "real_mode_runtime_enabled": false,
+      "rejected_gate_count": 0,
+      "required_gates": [
+        "consent",
+        "license-review",
+        "privacy-review",
+        "hardware-review",
+        "model-artifact-review",
+        "dependency-review",
+        "network-policy-review"
+      ],
+      "review_record_contract_version": 1,
+      "review_record_label": "document-ingestion-p11b-review-record-v1",
+      "reviewed_gate_count": 7,
+      "runtime_stage": "not-implemented",
+      "sanitized": true,
+      "schema_version": 1,
+      "status": "reviewed-runtime-disabled"
+    },
+    "incomplete_review_record": {
+      "blocking_reasons": [
+        "review-record-incomplete",
+        "missing:model-artifact-review",
+        "missing:dependency-review",
+        "missing:network-policy-review"
+      ],
+      "contract_spec_label": "document-ingestion-p11a-contract-v1",
+      "contract_spec_version": 1,
+      "domain": "document-ingestion",
+      "execution_permitted": false,
+      "gates": [
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "consent",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "license-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "privacy-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "hardware-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "missing:model-artifact-review",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "model-artifact-review",
+          "preflight_status": "missing",
+          "review_status": "missing"
+        },
+        {
+          "blocking_reason": "missing:dependency-review",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "dependency-review",
+          "preflight_status": "missing",
+          "review_status": "missing"
+        },
+        {
+          "blocking_reason": "missing:network-policy-review",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "network-policy-review",
+          "preflight_status": "missing",
+          "review_status": "missing"
+        }
+      ],
+      "included_record_fingerprints": {
+        "contract_spec_sha256": "841570c0e21a3781c7d31c8b6c225170f7871befe46374570020e8fd3d894dad",
+        "review_record_sha256": "1935c4203bd9dbb754010352ad08263290fc47b8caf381573347b28878f30be5"
+      },
+      "metadata_only": true,
+      "missing_gate_count": 3,
+      "packet_fingerprint": "2bab1fe6d90119beac5ccfaa1bc3cdd269bcb38b8eb5c956fd87bfd1cdc43424",
+      "packet_id": "p11c-preflight-document-ingestion-2bab1fe6d90119be",
+      "planning_only": true,
+      "preflight_dossier_contract_version": 1,
+      "preflight_dossier_kind": "phase-11c-real-mode-preflight-dossier",
+      "real_mode_runtime_enabled": false,
+      "rejected_gate_count": 0,
+      "required_gates": [
+        "consent",
+        "license-review",
+        "privacy-review",
+        "hardware-review",
+        "model-artifact-review",
+        "dependency-review",
+        "network-policy-review"
+      ],
+      "review_record_contract_version": 1,
+      "review_record_label": "document-ingestion-p11b-review-record-v1",
+      "reviewed_gate_count": 4,
+      "runtime_stage": "not-implemented",
+      "sanitized": true,
+      "schema_version": 1,
+      "status": "missing-required-records"
+    },
+    "missing_review_record": {
+      "blocking_reasons": [
+        "review-record-incomplete",
+        "missing:consent",
+        "missing:license-review",
+        "missing:privacy-review",
+        "missing:hardware-review",
+        "missing:model-artifact-review",
+        "missing:dependency-review",
+        "missing:network-policy-review"
+      ],
+      "contract_spec_label": "document-ingestion-p11a-contract-v1",
+      "contract_spec_version": 1,
+      "domain": "document-ingestion",
+      "execution_permitted": false,
+      "gates": [
+        {
+          "blocking_reason": "missing:consent",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "consent",
+          "preflight_status": "missing",
+          "review_status": "missing"
+        },
+        {
+          "blocking_reason": "missing:license-review",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "license-review",
+          "preflight_status": "missing",
+          "review_status": "missing"
+        },
+        {
+          "blocking_reason": "missing:privacy-review",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "privacy-review",
+          "preflight_status": "missing",
+          "review_status": "missing"
+        },
+        {
+          "blocking_reason": "missing:hardware-review",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "hardware-review",
+          "preflight_status": "missing",
+          "review_status": "missing"
+        },
+        {
+          "blocking_reason": "missing:model-artifact-review",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "model-artifact-review",
+          "preflight_status": "missing",
+          "review_status": "missing"
+        },
+        {
+          "blocking_reason": "missing:dependency-review",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "dependency-review",
+          "preflight_status": "missing",
+          "review_status": "missing"
+        },
+        {
+          "blocking_reason": "missing:network-policy-review",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "network-policy-review",
+          "preflight_status": "missing",
+          "review_status": "missing"
+        }
+      ],
+      "included_record_fingerprints": {
+        "contract_spec_sha256": "ec4c63dad3e6bba51ad9a844f326a53fbbf48eb5318838d64d1026cd551fbe3d",
+        "review_record_sha256": "7a3654f543c3f2b6acde47c3dd34438fbe0d2143fdf057e51d0863df461d8731"
+      },
+      "metadata_only": true,
+      "missing_gate_count": 7,
+      "packet_fingerprint": "fdb377d4d01a4f532dfa5e5c0c5a8dbbbd76aac4cc3c2c2eafe4c6e6bb4368f5",
+      "packet_id": "p11c-preflight-document-ingestion-fdb377d4d01a4f53",
+      "planning_only": true,
+      "preflight_dossier_contract_version": 1,
+      "preflight_dossier_kind": "phase-11c-real-mode-preflight-dossier",
+      "real_mode_runtime_enabled": false,
+      "rejected_gate_count": 0,
+      "required_gates": [
+        "consent",
+        "license-review",
+        "privacy-review",
+        "hardware-review",
+        "model-artifact-review",
+        "dependency-review",
+        "network-policy-review"
+      ],
+      "review_record_contract_version": 1,
+      "review_record_label": "document-ingestion-p11b-review-record-missing",
+      "reviewed_gate_count": 0,
+      "runtime_stage": "not-implemented",
+      "sanitized": true,
+      "schema_version": 1,
+      "status": "missing-required-records"
+    },
+    "rejected_review_record": {
+      "blocking_reasons": [
+        "review-record-rejected",
+        "rejected:license-review"
+      ],
+      "contract_spec_label": "document-ingestion-p11a-contract-v1",
+      "contract_spec_version": 1,
+      "domain": "document-ingestion",
+      "execution_permitted": false,
+      "gates": [
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "consent",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "rejected:license-review",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "license-review",
+          "preflight_status": "rejected",
+          "review_status": "rejected"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "privacy-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "hardware-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "model-artifact-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "dependency-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "network-policy-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        }
+      ],
+      "included_record_fingerprints": {
+        "contract_spec_sha256": "3d57eb7d5cae026c2291564568eb8c00fba3f77168b51efdcbbf143f3d136a12",
+        "review_record_sha256": "61d8aedf16a5a99d6ff154f379ee7f79793ecb529a4365f35ed776ab2255dce8"
+      },
+      "metadata_only": true,
+      "missing_gate_count": 0,
+      "packet_fingerprint": "5c91f61bd7a432f4dc9eddf965f90a984987fde33b03eebbf6428d9515f04a70",
+      "packet_id": "p11c-preflight-document-ingestion-5c91f61bd7a432f4",
+      "planning_only": true,
+      "preflight_dossier_contract_version": 1,
+      "preflight_dossier_kind": "phase-11c-real-mode-preflight-dossier",
+      "real_mode_runtime_enabled": false,
+      "rejected_gate_count": 1,
+      "required_gates": [
+        "consent",
+        "license-review",
+        "privacy-review",
+        "hardware-review",
+        "model-artifact-review",
+        "dependency-review",
+        "network-policy-review"
+      ],
+      "review_record_contract_version": 1,
+      "review_record_label": "document-ingestion-p11b-review-record-v1",
+      "reviewed_gate_count": 6,
+      "runtime_stage": "not-implemented",
+      "sanitized": true,
+      "schema_version": 1,
+      "status": "rejected-fail-closed"
+    },
+    "wifi_csi_rf_booth_reviewed": {
+      "blocking_reasons": [],
+      "contract_spec_label": "wifi-csi-rf-booth-p11a-contract-v1",
+      "contract_spec_version": 1,
+      "domain": "wifi-csi-rf-booth",
+      "execution_permitted": false,
+      "gates": [
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "consent",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "license-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "privacy-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "hardware-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "model-artifact-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "dependency-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        },
+        {
+          "blocking_reason": "",
+          "contract_required": true,
+          "execution_permitted": false,
+          "gate_id": "network-policy-review",
+          "preflight_status": "reviewed",
+          "review_status": "reviewed"
+        }
+      ],
+      "included_record_fingerprints": {
+        "contract_spec_sha256": "75b019df7d0bb19d4a7788ffa936d5a0c0269e9dd89ff41514ab6e1de282e5ab",
+        "review_record_sha256": "e1c4a04efaefd3d897558c8110bc27c816ccb5d334a57ef6705b6f82755cd1ca"
+      },
+      "metadata_only": true,
+      "missing_gate_count": 0,
+      "packet_fingerprint": "c2764519f97365514bb818955683eb8e18b2d81cd37cbdb0b5804a2eb6c2bb5f",
+      "packet_id": "p11c-preflight-wifi-csi-rf-booth-c2764519f9736551",
+      "planning_only": true,
+      "preflight_dossier_contract_version": 1,
+      "preflight_dossier_kind": "phase-11c-real-mode-preflight-dossier",
+      "real_mode_runtime_enabled": false,
+      "rejected_gate_count": 0,
+      "required_gates": [
+        "consent",
+        "license-review",
+        "privacy-review",
+        "hardware-review",
+        "model-artifact-review",
+        "dependency-review",
+        "network-policy-review"
+      ],
+      "review_record_contract_version": 1,
+      "review_record_label": "wifi-csi-rf-booth-p11b-review-record-v1",
+      "reviewed_gate_count": 7,
+      "runtime_stage": "not-implemented",
+      "sanitized": true,
+      "schema_version": 1,
+      "status": "reviewed-runtime-disabled"
+    }
+  },
+  "execution_permitted": false,
+  "fixture_contract_version": 1,
+  "fixture_kind": "phase-11c-preflight-dossiers",
+  "metadata_only": true,
+  "planning_only": true,
+  "real_mode_runtime_enabled": false,
+  "runtime_stage": "not-implemented",
+  "sanitized": true,
+  "schema_version": 1,
+  "status": "preflight-dossiers-runtime-disabled"
+}

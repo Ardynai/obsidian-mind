@@ -1,0 +1,2 @@
+{"type":"CSI_DATA","frame_id":"json-frame-001","timestamp":0.0,"source":"jsonl-fixture","rssi":-52,"samples":[{"subcarrier":1,"amplitude":1.0,"phase":0.0},{"subcarrier":2,"amplitude":0.9,"phase":-0.2}],"activity_label":"fixture-still"}
+{"type":"CSI_DATA","frame_id":"json-frame-002","timestamp":0.1,"source":"jsonl-fixture","rssi":-51,"samples":[{"subcarrier":1,"amplitude":1.4,"phase":0.4}],"activity_label":"fixture-motion"}

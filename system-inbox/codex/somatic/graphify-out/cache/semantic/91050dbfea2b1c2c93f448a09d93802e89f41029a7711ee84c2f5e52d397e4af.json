@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [], "hyperedges": [{"id": "phase_11_governance_chain", "label": "Phase 11 Planning Governance Chain", "nodes": ["somatic_safety_phase11_contracts", "somatic_safety_adapter_readiness", "somatic_evidence_framework"], "relation": "participate_in", "confidence": "EXTRACTED", "confidence_score": 0.95, "source_file": "docs/phase-9h-release-summary.md"}]}

@@ -1,0 +1,54 @@
+{
+  "id": "paperqa2-provider-placeholder",
+  "class": "literature",
+  "name": "PaperQA2 Provider Placeholder",
+  "version": "0.1.0",
+  "description": "Disabled metadata for the Phase 5B PaperQA2 literature adapter scaffold. The scaffold is optional-import-only and does not execute PaperQA2.",
+  "status": "scaffolded",
+  "external_runtime_enabled": false,
+  "disabled_by_default": true,
+  "fake_backed_mode": true,
+  "provider_module": "somatic.providers.paperqa2",
+  "provider_class": "PaperQA2LiteratureProvider",
+  "optional_dependency": {
+    "package": "paperqa",
+    "required_for_basic_install": false,
+    "imported_at_module_import_time": false
+  },
+  "local_repo_inspected": true,
+  "local_path": "C:\\AI\\external-sources\\somatic\\paper-qa",
+  "inspected_commit": "d2c3c698fdf06986aa021812ab3186d3696438d8",
+  "capabilities": [
+    {
+      "id": "literature.query",
+      "input_types": ["text", "corpus-ref"],
+      "output_types": ["document-list", "answer-draft"]
+    },
+    {
+      "id": "literature.evidence_extract",
+      "input_types": ["document-list"],
+      "output_types": ["evidence-record-draft"]
+    }
+  ],
+  "modes_supported": ["literature-only", "hypothesis-tournament", "robin-loop"],
+  "data_locality": "unknown",
+  "determinism": "best-effort",
+  "offline_supported": false,
+  "permissions_required": ["read:workflow", "read:input", "write:evidence", "write:artifact"],
+  "auth": {
+    "type": "none",
+    "secrets_required": []
+  },
+  "limits": {
+    "network_calls_allowed": false,
+    "runtime_import_allowed": false,
+    "basic_install_dependency": false
+  },
+  "artifacts_emitted": ["literature-search-plan", "evidence-record-draft"],
+  "evidence_emitted": ["paper", "document"],
+  "safety_notes": [
+    "Adapter must not receive private health data unless configured and consented.",
+    "The Phase 5B scaffold has deterministic fake-backed mode only unless a future real adapter is explicitly configured.",
+    "Future implementation must keep PaperQA2 optional and behind Somatic literature interfaces."
+  ]
+}

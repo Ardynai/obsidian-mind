@@ -1,0 +1,21 @@
+schema_version: 0
+id: fabric-pack-ingest
+status: placeholder
+title: Fabric Pack Ingest
+mode: content_fabric
+description: Verifies pack manifests, hashes, signatures, licenses, and quarantine state before cataloging content.
+adapters:
+  fabric: required
+inputs:
+  - pack_manifest
+  - transport_source
+outputs:
+  - verification_report
+  - catalog_record
+gates:
+  sha256_verification_required: true
+  ed25519_signature_required: true
+  license_gate_required: true
+  code_pack_quarantine_required: true
+notes:
+  - Transport may use BitTorrent v1 magnets and WebSeed URLs in future phases.

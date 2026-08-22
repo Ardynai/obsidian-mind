@@ -1,0 +1,2 @@
+type,frame_id,timestamp,source,rssi,csi_data,label
+CSI_DATA,esp32-short-001,0.0,esp32-fixture,-55,"[1]",fixture-short

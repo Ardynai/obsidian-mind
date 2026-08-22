@@ -1,0 +1,1 @@
+{"nodes": [{"id": "bridge_static_index", "label": "Somatic Web Interface", "file_type": "document", "source_file": "somatic/bridge/static/index.html", "rationale": "Entry point for the local informational health engine UI."}], "edges": [], "hyperedges": []}

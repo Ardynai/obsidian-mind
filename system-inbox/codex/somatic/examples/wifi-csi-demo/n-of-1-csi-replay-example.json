@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "example_id": "wifi-csi-n-of-1-replay-evidence-pack",
+  "title": "N-of-1 CSI replay with evidence pack",
+  "entrypoint": "python -m somatic",
+  "workflow_path": "fixtures/workflows/valid-n-of-1.yaml",
+  "runs_dir": "runs/examples",
+  "run_id": "run-csi-n-of-1-example",
+  "cli_args": [
+    "run",
+    "fixtures/workflows/valid-n-of-1.yaml",
+    "--runs-dir",
+    "runs/examples",
+    "--run-id",
+    "run-csi-n-of-1-example"
+  ],
+  "workflow_outputs": [
+    "artifacts/csi_parser_report.json",
+    "artifacts/csi_parsed_summary.json",
+    "artifacts/csi_evidence_pack.json",
+    "artifacts/n_of_1_report_packet.json",
+    "artifacts/n_of_1_fabric_pack_plan.json"
+  ],
+  "public_artifacts_to_inspect": [
+    "artifacts/csi_evidence_pack.json"
+  ],
+  "primary_portable_artifact": "artifacts/csi_evidence_pack.json",
+  "privacy_boundary": {
+    "fixture_only": true,
+    "offline": true,
+    "metadata_only": true,
+    "portable_export_has_fixture_refs": false,
+    "portable_export_has_private_paths": false,
+    "portable_export_has_signal_values": false
+  }
+}

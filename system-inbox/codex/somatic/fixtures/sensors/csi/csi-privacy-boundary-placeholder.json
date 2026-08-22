@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "csi-privacy-boundary-placeholder",
+  "mock": true,
+  "offline": true,
+  "fake_backed": true,
+  "research_only": true,
+  "local_first": true,
+  "private_by_default": true,
+  "raw_rf_data_leaves_machine": false,
+  "raw_csi_data_leaves_machine": false,
+  "raw_rf_retention": "not-collected",
+  "raw_csi_retention": "not-collected",
+  "personal_data_exported": false,
+  "explicit_consent_required": true,
+  "remote_upload_allowed": false,
+  "export_allowed": false,
+  "packet_capture_allowed": false,
+  "wifi_network_probing_allowed": false,
+  "monitor_mode_allowed": false,
+  "clinical_interpretation_allowed": false,
+  "diagnosis_allowed": false,
+  "treatment_allowed": false,
+  "emergency_triage_allowed": false,
+  "notes": [
+    "Raw RF/CSI data is local-first and private by default.",
+    "Phase 7B collects no raw RF/CSI data, retains no raw RF/CSI data, and exports no raw RF/CSI data.",
+    "No clinical conclusions, diagnosis, treatment, or emergency triage are allowed.",
+    "Booth-first CSI planning remains future metadata only and requires a separate consent and safety review before any real sensing."
+  ]
+}

@@ -1,0 +1,11 @@
+%% Somatic data flow and safety gates — Bioluminescence (simplified Mermaid alternate)
+%% The authored figure is docs/diagrams/somatic-data-flow-gates.svg
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#12261E', 'primaryTextColor': '#EAF5EF', 'primaryBorderColor': '#35E7A6', 'lineColor': '#35E7A6', 'secondaryColor': '#0a1812', 'tertiaryColor': '#08150F', 'fontFamily': 'IBM Plex Sans, Segoe UI, sans-serif'}}}%%
+flowchart TD
+  UI["UI action"] --> Consent["require_consent<br/>scope default-OFF"]
+  Consent -->|granted| Emergency["emergency_screen<br/>on input and output"]
+  Consent -->|off| Blocked["403 · blocked<br/>until you grant it"]
+  Emergency -->|ok| Engine["engine + framing<br/>citation-bind · biosec"]
+  Emergency -->|red flag| Clinician["see a clinician now"]
+  Engine -->|bound| Response["Response<br/>framed · features only"]
+  Engine -->|no source| Null["honest-null<br/>consult a professional"]

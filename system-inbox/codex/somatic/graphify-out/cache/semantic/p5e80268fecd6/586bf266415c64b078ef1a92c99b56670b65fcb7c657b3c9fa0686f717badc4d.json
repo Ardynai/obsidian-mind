@@ -1,0 +1,1 @@
+{"nodes": [{"id": "somatic_insights_engine_grade_metric", "label": "grade_metric", "file_type": "code", "source_file": "somatic/insights/engine.py", "rationale": "Grades a single reading against caller-provided reference ranges or personal history baselines."}], "edges": [], "hyperedges": []}

@@ -1,0 +1,1 @@
+{"nodes": [{"id": "docs_wifi_csi_source_staging", "label": "WiFi CSI Source Staging", "file_type": "document", "source_file": "docs/wifi-csi-source-staging.md", "rationale": "Records the read-only staging policy for external CSI references."}], "edges": [], "hyperedges": []}

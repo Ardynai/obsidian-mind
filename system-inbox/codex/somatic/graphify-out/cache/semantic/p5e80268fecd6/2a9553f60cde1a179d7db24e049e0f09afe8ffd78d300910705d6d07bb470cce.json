@@ -1,0 +1,1 @@
+{"nodes": [{"id": "docs_fabric_conformance", "label": "Fabric Conformance", "file_type": "document", "source_file": "docs/fabric-conformance.md", "rationale": "Tracks RFC 8785/JCS canonicalization and Ed25519 signing targets for Content Fabric interop."}], "edges": [], "hyperedges": []}

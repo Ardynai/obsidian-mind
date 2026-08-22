@@ -1,0 +1,182 @@
+schema_version: 1
+id: valid-in-silico-screening
+title: Valid In-Silico Screening Fixture
+mode: in-silico-screening
+description: Offline fixture for fake-backed Boltz biomodel planning and Evidence Bus mapping.
+version: 0.6.0
+status: fixture
+stages:
+  - id: prepare-biomodel-request
+    kind: biomodel-request
+    requires: []
+    provider_refs:
+      - biomodel
+    inputs:
+      - target_complex
+      - target_protein
+      - ligand_candidate
+      - boltz_yaml_input
+      - precomputed_msa_placeholder
+    outputs:
+      - biomodel_request
+  - id: plan-boltz-run
+    kind: biomodel-plan
+    requires:
+      - prepare-biomodel-request
+    provider_refs:
+      - biomodel
+    inputs:
+      - biomodel_request
+    outputs:
+      - biomodel_plan
+  - id: record-mock-biomodel-result
+    kind: biomodel-result
+    requires:
+      - plan-boltz-run
+    provider_refs:
+      - biomodel
+    inputs:
+      - biomodel_plan
+    outputs:
+      - biomodel_result
+      - biomodel_evidence_record
+      - biomodel_raw_evidence
+      - biomodel_structured_verdict
+  - id: render-in-silico-report
+    kind: report
+    requires:
+      - record-mock-biomodel-result
+    provider_refs:
+      - report
+    inputs:
+      - biomodel_evidence_record
+    outputs:
+      - report_packet
+inputs:
+  - id: target_complex
+    kind: target-ref
+    required: true
+    sensitivity: public
+    ref: target://mock-protein-complex
+    description: Mock protein complex reference for local planning only.
+  - id: target_protein
+    kind: protein-ref
+    required: true
+    sensitivity: public
+    ref: protein://mock-kinase-alpha
+    description: Mock protein reference; no sequence is sent to a runtime.
+  - id: ligand_candidate
+    kind: ligand-ref
+    required: true
+    sensitivity: public
+    ref: ligand://mock-ligand-001
+    description: Mock ligand reference for planning metadata only.
+  - id: boltz_yaml_input
+    kind: artifact-ref
+    required: true
+    sensitivity: public
+    ref: fixture://biomodel/mock-boltz-input.yaml
+    description: Placeholder Boltz YAML input reference; file is not executed.
+  - id: precomputed_msa_placeholder
+    kind: artifact-ref
+    required: false
+    sensitivity: public
+    ref: fixture://biomodel/precomputed-msa-placeholder.a3m
+    description: Placeholder for future local MSA provenance; no MSA server is called.
+providers:
+  - ref: biomodel
+    class: biomodel
+    capabilities:
+      - biomodel.plan
+      - biomodel.result_metadata
+      - biomodel.evidence_record
+    required: true
+    constraints:
+      offline_required: true
+      mock_only: true
+      fake_backed: true
+      allow_runtime_execution: false
+      allow_model_download: false
+      allow_model_downloads: false
+      allow_msa_server: false
+      allow_network_calls: false
+      allow_gpu_execution: false
+      research_only: true
+  - ref: report
+    class: report
+    capabilities:
+      - report.packet.create
+    required: true
+artifacts:
+  - id: biomodel_request
+    kind: plan
+    format: json
+    retention: run
+    hash_required: true
+  - id: biomodel_plan
+    kind: plan
+    format: json
+    retention: run
+    hash_required: true
+  - id: biomodel_result
+    kind: simulation-result
+    format: json
+    retention: run
+    hash_required: true
+  - id: biomodel_evidence_record
+    kind: evidence-table
+    format: json
+    retention: run
+    hash_required: true
+  - id: biomodel_raw_evidence
+    kind: evidence-table
+    format: json
+    retention: run
+    hash_required: true
+  - id: biomodel_structured_verdict
+    kind: simulation-result
+    format: json
+    retention: run
+    hash_required: true
+  - id: in_silico_summary
+    kind: report-packet
+    format: json
+    retention: run
+    hash_required: true
+  - id: report_packet
+    kind: report-packet
+    format: markdown
+    retention: user-export
+    hash_required: true
+safety_profile:
+  risk_class: low
+  domain: research-only-in-silico-planning
+  human_review_required: true
+  external_actions_allowed: false
+  real_lab_action_requires_approval: false
+  clinical_safety_gate_required: false
+  code_pack_quarantine_required: false
+  notes:
+    - Fake-backed Boltz biomodel planning only.
+    - No model runtime, downloads, MSA server, GPU execution, or external API calls.
+    - No medical, lab, clinical, efficacy, safety, structure, or affinity conclusion.
+evidence_requirements:
+  min_records: 1
+  accepted_source_types:
+    - simulation-metadata
+  citation_required: false
+  provenance_required: true
+  hash_required: true
+  limitations_required: true
+  counterevidence_required: false
+output_packet:
+  kind: report-packet
+  schema_ref: docs/report-packet.md
+  required_sections:
+    - workflow
+    - biomodel_plan
+    - evidence_mapping
+    - limitations
+    - safety_review
+    - future_real_mode_requirements
+  review_state: human-review-required

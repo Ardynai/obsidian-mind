@@ -1,0 +1,1 @@
+{"nodes": [{"id": "ui_src_api", "label": "API Client", "file_type": "code", "source_file": "ui/src/api.ts", "rationale": "Typed fetch wrapper for communicating with the local Python bridge."}], "edges": [], "hyperedges": []}

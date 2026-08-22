@@ -1,0 +1,68 @@
+{
+  "id": "autoscientists-provider-placeholder",
+  "class": "team-orchestration",
+  "name": "AutoScientists Provider Placeholder",
+  "version": "0.1.0",
+  "description": "Placeholder metadata for a future AutoScientists team-orchestration adapter. No AutoScientists package is imported or executed.",
+  "status": "planned-reference-only",
+  "provider_id": "autoscientists-reference",
+  "provider_module": "somatic.providers.team_orchestration",
+  "provider_class": "AutoScientistsTeamOrchestrationProvider",
+  "reference_only": true,
+  "fake_backed": true,
+  "disabled_by_default": true,
+  "external_runtime_enabled": false,
+  "runtime_import_allowed": false,
+  "live_execution_allowed": false,
+  "local_repo_inspected": true,
+  "local_path": "C:\\AI\\external-sources\\somatic\\AutoScientists",
+  "inspected_commit": "c71a92343b9a488ed10134be805845b9473ad18f",
+  "license_status": {
+    "status": "unresolved-no-license-file-found",
+    "license_file_found": false,
+    "current_allowed_use": "static reference mapping only",
+    "blocked_until_clarified": [
+      "copying code",
+      "vendoring code",
+      "importing runtime",
+      "executing runtime",
+      "dependency installation",
+      "networked orchestration"
+    ]
+  },
+  "capabilities": [
+    {
+      "id": "team_orchestration.plan",
+      "input_types": ["hypothesis-list", "evidence-list", "role-list"],
+      "output_types": ["team-plan"]
+    },
+    {
+      "id": "team_orchestration.summarize",
+      "input_types": ["team-plan"],
+      "output_types": ["orchestration-summary"]
+    }
+  ],
+  "modes_supported": ["hypothesis-tournament", "robin-loop"],
+  "data_locality": "unknown",
+  "determinism": "best-effort",
+  "offline_supported": false,
+  "permissions_required": ["read:workflow", "read:input", "read:evidence", "write:artifact"],
+  "auth": {
+    "type": "none",
+    "secrets_required": []
+  },
+  "limits": {
+    "network_calls_allowed": false,
+    "runtime_import_allowed": false,
+    "live_execution_allowed": false,
+    "basic_install_dependency": false,
+    "copied_source_allowed": false,
+    "vendored_source_allowed": false
+  },
+  "artifacts_emitted": ["team-plan", "orchestration-summary"],
+  "evidence_emitted": [],
+  "safety_notes": [
+    "Team orchestration must critique before evidence budget planning.",
+    "Future implementation must keep live agents disabled until explicitly configured."
+  ]
+}

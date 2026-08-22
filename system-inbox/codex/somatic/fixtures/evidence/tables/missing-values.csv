@@ -1,0 +1,5 @@
+sample_id,group,signal,response,notes
+s1,control,0.10,1.2,complete
+s2,control,,1.1,
+s3,treatment,0.30,,observed
+s4,,0.35,1.8,observed

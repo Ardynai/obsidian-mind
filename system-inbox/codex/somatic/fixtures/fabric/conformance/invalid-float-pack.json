@@ -1,0 +1,32 @@
+{
+  "class": "data",
+  "createdAt": "2026-05-28T17:04:09Z",
+  "files": [
+    {
+      "executable": false,
+      "installTarget": "somatic/sample-dataset/records.json",
+      "path": "records.json",
+      "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "size": 128.5
+    }
+  ],
+  "harnesses": [
+    "somatic"
+  ],
+  "id": "somatic/sample-dataset",
+  "license": "CC-BY-4.0",
+  "name": "Invalid Float Pack",
+  "publisher": {
+    "displayName": "Somatic Fixtures",
+    "keyId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "namespace": "somatic"
+  },
+  "schemaVersion": "1.0.0",
+  "signatures": [],
+  "transport": {
+    "infohash": "1111111111111111111111111111111111111111",
+    "magnet": "magnet:?xt=urn:btih:1111111111111111111111111111111111111111&dn=somatic%2Fsample-dataset%400.1.0&ws=https%3A%2F%2Fexample.invalid%2Ffabric%2F"
+  },
+  "type": "dataset",
+  "version": "0.1.0"
+}

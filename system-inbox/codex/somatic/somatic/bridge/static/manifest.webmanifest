@@ -1,0 +1,12 @@
+{
+  "name": "Somatic",
+  "short_name": "Somatic",
+  "description": "Local informational health engine. Nothing leaves this machine.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1f6b45",
+  "lang": "en",
+  "scope": "/",
+  "icons": []
+}

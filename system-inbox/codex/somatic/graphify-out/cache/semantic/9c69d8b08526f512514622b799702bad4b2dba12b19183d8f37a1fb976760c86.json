@@ -1,0 +1,1 @@
+{"nodes": [{"id": "phase_11_contracts", "label": "Phase 11 Contracts", "file_type": "document", "source_file": "docs/phase-11b-review-record-fixtures.md"}], "edges": [{"source": "phase_11_contracts", "target": "somatic_safety", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/phase-11b-review-record-fixtures.md"}], "hyperedges": []}

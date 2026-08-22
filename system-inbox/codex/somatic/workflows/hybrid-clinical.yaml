@@ -1,0 +1,25 @@
+schema_version: 0
+id: hybrid-clinical
+status: placeholder
+title: Hybrid Clinical Decision Support
+mode: health_research
+description: Combines literature, baseline graphs, and observations into safety-gated decision-support reports.
+adapters:
+  literature: required
+  patient_baseline: optional
+  sensor: optional
+  reports: required
+inputs:
+  - research_question
+  - baseline_graph
+  - observations
+outputs:
+  - safety_gated_report
+  - evidence_table
+  - human_review_packet
+gates:
+  human_review_required: true
+  clinical_safety_gate_required: true
+  emergency_triage_allowed: false
+notes:
+  - Does not diagnose, treat, cure, or replace clinicians.

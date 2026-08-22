@@ -1,0 +1,14 @@
+{
+  "id": "jcs-signature-vector",
+  "extra": {
+    "z": 1,
+    "a": 2
+  },
+  "signatures": [
+    {
+      "keyId": "zzz",
+      "sig": "not-used",
+      "algo": "ed25519"
+    }
+  ]
+}

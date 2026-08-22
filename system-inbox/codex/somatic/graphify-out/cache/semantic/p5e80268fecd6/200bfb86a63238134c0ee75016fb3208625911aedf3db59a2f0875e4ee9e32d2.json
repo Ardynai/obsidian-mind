@@ -1,0 +1,1 @@
+{"nodes": [{"id": "somatic_fabric_mutual_verification_report", "label": "Fabric Mutual Verification Report", "file_type": "document", "source_file": "docs/fabric-mutual-verification-report.md", "rationale": "Records verified local fixture compatibility between Somatic and Locus for checked vectors."}], "edges": [], "hyperedges": []}

@@ -1,0 +1,1 @@
+{"nodes": [{"id": "provenance_cas", "label": "Content-Addressed Storage", "file_type": "code", "source_file": "somatic/provenance/cas.py", "rationale": "Provides deterministic fingerprinting and verification for evidence artifacts."}], "edges": [], "hyperedges": []}

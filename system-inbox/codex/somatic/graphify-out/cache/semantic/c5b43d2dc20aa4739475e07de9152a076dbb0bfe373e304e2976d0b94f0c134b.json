@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [{"source": "somatic_mock_runtime", "target": "somatic_fabric", "relation": "references", "confidence": "INFERRED", "confidence_score": 0.8, "source_file": "docs/ARCHITECTURE.md"}], "hyperedges": []}

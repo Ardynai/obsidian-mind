@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "baseline-graph-placeholder",
+  "workflow_id": "valid-n-of-1",
+  "profile_id": "personal-profile-placeholder",
+  "profile_ref": "artifacts/personal_profile.json",
+  "privacy_boundary_ref": "fixtures/baseline/baseline-privacy-boundary-placeholder.json",
+  "mock": true,
+  "offline": true,
+  "research_only": true,
+  "sandbox_only": true,
+  "fake_backed": true,
+  "local_only": true,
+  "real_health_data_loaded": false,
+  "real_profile_storage": false,
+  "personal_data_exported": false,
+  "baseline_data_exported": false,
+  "live_sensor_access": false,
+  "hardware_access": false,
+  "network_calls": false,
+  "database_access": false,
+  "diagnosis": false,
+  "treatment_recommendation": false,
+  "emergency_triage": false,
+  "real_monitoring": false,
+  "clinical_interpretation": false,
+  "categories": [
+    "respiratory_rate",
+    "movement_score",
+    "sleep_state_estimate",
+    "posture_state",
+    "csi_confidence",
+    "environmental_context",
+    "notes_placeholder"
+  ],
+  "metrics": [
+    {
+      "id": "baseline-metric-respiratory-rate",
+      "category": "respiratory_rate",
+      "value_kind": "numeric",
+      "min_value": 12,
+      "max_value": 18,
+      "unit": "breaths-per-minute-placeholder"
+    },
+    {
+      "id": "baseline-metric-movement-score",
+      "category": "movement_score",
+      "value_kind": "numeric",
+      "min_value": 0.05,
+      "max_value": 0.15,
+      "unit": "unitless-placeholder"
+    },
+    {
+      "id": "baseline-metric-sleep-state-estimate",
+      "category": "sleep_state_estimate",
+      "value_kind": "categorical",
+      "expected_values": [
+        "awake-placeholder",
+        "resting-placeholder"
+      ]
+    },
+    {
+      "id": "baseline-metric-posture-state",
+      "category": "posture_state",
+      "value_kind": "categorical",
+      "expected_values": [
+        "upright-placeholder"
+      ]
+    },
+    {
+      "id": "baseline-metric-csi-confidence",
+      "category": "csi_confidence",
+      "value_kind": "categorical",
+      "expected_values": [
+        "not-applicable"
+      ]
+    },
+    {
+      "id": "baseline-metric-environmental-context",
+      "category": "environmental_context",
+      "value_kind": "categorical",
+      "expected_values": [
+        "room-context-placeholder"
+      ]
+    },
+    {
+      "id": "baseline-metric-notes-placeholder",
+      "category": "notes_placeholder",
+      "value_kind": "text",
+      "baseline_status": "placeholder-without-window"
+    }
+  ],
+  "limitations": [
+    "Fake-backed local baseline scaffold only.",
+    "No real health data is loaded.",
+    "No real profile storage is performed.",
+    "No diagnosis, treatment, or emergency triage is produced."
+  ]
+}

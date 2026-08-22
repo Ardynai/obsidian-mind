@@ -1,0 +1,1 @@
+{"nodes": [{"id": "fixtures_providers_robin_provider_placeholder", "label": "FutureHouse Robin Provider Placeholder", "file_type": "code", "source_file": "fixtures/providers/robin-provider-placeholder.json", "rationale": "Placeholder metadata for a future Robin-style planner/analyzer adapter."}], "edges": [], "hyperedges": []}

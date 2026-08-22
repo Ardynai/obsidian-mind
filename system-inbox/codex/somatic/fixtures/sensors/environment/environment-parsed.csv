@@ -1,0 +1,4 @@
+category,status,quality_bucket,diagnostic_code
+indoor,parsed,high,none
+outdoor,parsed,high,none
+transit,parsed,medium,none

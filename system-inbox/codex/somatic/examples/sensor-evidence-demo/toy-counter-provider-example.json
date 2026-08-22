@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "example_id": "toy-counter-fixture-provider-extension",
+  "entrypoint": "python -m somatic run",
+  "workflow_path": "examples/sensor-evidence-demo/toy-counter-fixture-workflow.yaml",
+  "runs_dir": "runs/examples",
+  "run_id": "run-toy-counter-provider-example",
+  "preflight_cli_args": [
+    [
+      "sensor-evidence",
+      "providers"
+    ],
+    [
+      "sensor-evidence",
+      "providers",
+      "--format",
+      "json"
+    ],
+    [
+      "sensor-evidence",
+      "validate",
+      "--workflow",
+      "examples/sensor-evidence-demo/toy-counter-fixture-workflow.yaml"
+    ],
+    [
+      "sensor-evidence",
+      "validate",
+      "--workflow",
+      "examples/sensor-evidence-demo/toy-counter-fixture-workflow.yaml",
+      "--format",
+      "json"
+    ]
+  ],
+  "cli_args": [
+    "run",
+    "examples/sensor-evidence-demo/toy-counter-fixture-workflow.yaml",
+    "--runs-dir",
+    "runs/examples",
+    "--run-id",
+    "run-toy-counter-provider-example"
+  ],
+  "workflow_outputs": [
+    "artifacts/toy_counter_evidence_pack.json",
+    "artifacts/team_orchestrator_summary.json",
+    "manifest.json",
+    "reports/report.md"
+  ],
+  "public_artifacts_to_inspect": [
+    "artifacts/toy_counter_evidence_pack.json",
+    "manifest.json"
+  ],
+  "primary_portable_artifact": "artifacts/toy_counter_evidence_pack.json",
+  "privacy_boundary": {
+    "metadata_only": true,
+    "fixture_only": true,
+    "run_relative_refs_only": true,
+    "sha256_refs_required": true,
+    "portable_content_label": "sanitized-count-status-metadata-only",
+    "hardware_access": false,
+    "network_calls": false,
+    "live_capture": false,
+    "ranking_input": false
+  }
+}

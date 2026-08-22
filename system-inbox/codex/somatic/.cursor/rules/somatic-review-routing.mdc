@@ -1,0 +1,23 @@
+---
+description: Somatic PR review routing + auto-approval policy (consent + medical-safety)
+alwaysApply: true
+---
+# Somatic review routing
+
+HIGH-RISK paths — ALWAYS require human/planner review, NEVER auto-approve:
+- somatic/safety/**          (safety core: emergency screen, advisory framing, consent gate; + the phase12_contracts monolith)
+- somatic/consent/**         (consent scopes + ledger — default-OFF is load-bearing)
+- somatic/advisory/**        (AI adapter — network egress + SAFE_FALLBACK)
+- somatic/insights/**        (no-hardcoded-medical-normals guard)
+- somatic/flows/**           (the consent-gated end-to-end flows)
+- somatic/fabric/** and any fabric JCS/Merkle conformance vectors   (frozen byte-interop)
+- pyproject.toml dependencies   (MUST stay [])
+- .github/workflows/**       (CI / release)
+
+AUTO-APPROVE eligible (only if Bugbot + Security review are clean AND risk = Low):
+- docs-only (**/*.md, docs/**, planning/**), test-only (tests/**), comment/format-only
+
+ROUTING:
+- Any PR touching a high-risk path -> Security Reviewer + human/planner review, never auto-approved. (The Fable 5 planner's host-verification IS that human review.)
+- General code PRs -> Bugbot review; auto-approve if clean + Low risk.
+- Bugbot is a limited resource: do not request it on PRs already auto-approvable by policy.

@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "somatic.fixture.csi-sample-pack",
+  "name": "Somatic Fixture CSI Sample Pack",
+  "version": "0.1.0",
+  "description": "Offline fixture manifest for a data pack containing synthetic CSI sample metadata.",
+  "pack_type": "data",
+  "publisher": {
+    "id": "somatic-fixtures",
+    "name": "Somatic Fixtures",
+    "signing_key_id": "ed25519:somatic-fixtures:test"
+  },
+  "license": {
+    "id": "CC-BY-4.0",
+    "label": "Creative Commons Attribution 4.0",
+    "gates": ["attribution-required"],
+    "satisfied": true
+  },
+  "files": [
+    {
+      "path": "data/csi/sample-window.json",
+      "size_bytes": 2048,
+      "sha256": "3333333333333333333333333333333333333333333333333333333333333333",
+      "media_type": "application/json",
+      "role": "csi-sample",
+      "required": true
+    }
+  ],
+  "signatures": [
+    {
+      "algorithm": "Ed25519",
+      "key_id": "ed25519:somatic-fixtures:test",
+      "signature": "ed25519-fixture-signature-data-pack",
+      "signed_at": "2026-01-01T00:00:00Z",
+      "scope": "pack-manifest"
+    }
+  ],
+  "transport": {
+    "bittorrent_v1": {
+      "magnet": "magnet:?xt=urn:btih:3333333333333333333333333333333333333333&dn=somatic-fixture-csi-sample-pack",
+      "info_hash": "3333333333333333333333333333333333333333"
+    },
+    "webseeds": ["https://example.invalid/somatic/fixtures/csi-sample-pack/"],
+    "local_fixture": true
+  },
+  "safety": {
+    "quarantine_required": false,
+    "explicit_enablement_required": false,
+    "risk_notes": ["Synthetic data pack fixture only."]
+  },
+  "compatibility": {
+    "somatic_min_version": "0.1.0",
+    "workflow_modes": ["wifi-csi-observation"]
+  },
+  "catalog": {
+    "remote_catalogs": [],
+    "federation_allowed": true,
+    "local_catalog_state": "fixture"
+  }
+}

@@ -1,0 +1,21 @@
+schema_version: 0
+id: hypothesis-tournament
+status: placeholder
+title: Hypothesis Tournament
+mode: research
+description: Runs proposal, critique, ranking, and refinement loops for candidate hypotheses.
+adapters:
+  llm: required
+  literature: optional
+inputs:
+  - research_question
+  - evidence_context
+outputs:
+  - ranked_hypotheses
+  - critique_log
+  - next_step_options
+gates:
+  human_review_required: true
+  external_actions_allowed: false
+notes:
+  - Inspired by Co-Scientist-style hypothesis tournaments.

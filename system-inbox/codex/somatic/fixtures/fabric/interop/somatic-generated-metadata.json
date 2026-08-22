@@ -1,0 +1,50 @@
+{
+  "digests": {
+    "signedCatalogSigningPayloadSha256": "c1aee1b7cfb78107e77a48ce0b30323886bcfd80d32cebf7df843e6cdb3241a9",
+    "signedCodePackManifestDigest": "sha256:5690816743f63a8ecdf3ea8209ba998ec73d710ae25a70fc773491240b8cf465",
+    "signedCodePackSigningPayloadSha256": "6236ece6053407088933ed2b9a7fd59fa171885a1e94d16d7c68e65229cd4e4b"
+  },
+  "fixtureFiles": [
+    "somatic-generated-pack.json",
+    "somatic-generated-keyring.json",
+    "somatic-generated-catalog.json"
+  ],
+  "generatedBy": "somatic",
+  "locusVerification": {
+    "catalogSigningPayloadSha256FromLocus": "c1aee1b7cfb78107e77a48ce0b30323886bcfd80d32cebf7df843e6cdb3241a9",
+    "commandsAttempted": [
+      "npm run test:connectivity",
+      "npm run test:content",
+      "npm run test:security",
+      "node -e <verify Somatic interop fixtures with Locus compiled Fabric modules>",
+      "python -m somatic fabric check C:\\AI\\locus\\tests\\fixtures\\somatic-fabric\\pack.json --keyring C:\\AI\\locus\\tests\\fixtures\\somatic-fabric\\keyring.json",
+      "python -m somatic fabric payload C:\\AI\\locus\\tests\\fixtures\\somatic-fabric\\pack.json"
+    ],
+    "commit": "79f480d592ec82e879b7588a25bad6b4ea2536ca",
+    "locusOwnedFixturePackManifestDigestFromLocus": "sha256:e6bb73a7c7ab08b4019a7a5c1cc6323bc5b71c0e59ffc4e7d4e44020dcbf4788",
+    "locusOwnedFixtureSigningPayloadSha256FromLocus": "04ec1d7c8217a563f880aefa3b0f65b84b730ed14dbb6e00364e854a2f044ce6",
+    "overallResult": "verified-partial-not-certified",
+    "path": "C:\\AI\\locus\\electron\\content-fabric\\",
+    "somaticCatalogSignatureVerification": "verified-with-locus-ed25519-primitive-no-high-level-catalog-verifier",
+    "somaticCatalogValidation": "verified-shape",
+    "somaticKeyringVerification": "verified",
+    "somaticPackVerification": "verified",
+    "somaticPackManifestDigestFromLocus": "sha256:5690816743f63a8ecdf3ea8209ba998ec73d710ae25a70fc773491240b8cf465",
+    "somaticPackSigningPayloadSha256FromLocus": "6236ece6053407088933ed2b9a7fd59fa171885a1e94d16d7c68e65229cd4e4b",
+    "verifiedAt": "2026-06-01"
+  },
+  "notes": [
+    "Fixtures use deterministic checked-in test keys only.",
+    "Locus verified the Somatic-generated pack and keyring through local compiled Fabric modules.",
+    "Locus validated the Somatic-generated catalog shape and verified its signature with the exported Ed25519 primitive, but Locus does not expose a high-level catalog signature threshold verifier.",
+    "These fixtures do not imply full RFC 8785 conformance or Locus-certified interoperability."
+  ],
+  "sourceFixtures": {
+    "catalog": "fixtures/fabric/crypto/signed-catalog.json",
+    "keyring": "fixtures/fabric/crypto/keyring-signed.json",
+    "pack": "fixtures/fabric/crypto/signed-code-pack.json"
+  },
+  "sourceSomaticCommit": "ec74d1b31edc0e52e02f1a73cb65b61fa6484931",
+  "status": "mutual-verification-attempted-not-certified",
+  "testOnlyKeys": true
+}

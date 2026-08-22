@@ -1,0 +1,23 @@
+schema_version: 0
+id: robin-loop
+status: placeholder
+title: Robin Loop
+mode: research
+description: Coordinates Crow-style literature gathering, Falcon-style planning, and Finch-style analysis.
+adapters:
+  literature: required
+  planner: required
+  analysis: required
+inputs:
+  - research_goal
+  - evidence_context
+  - observation_results
+outputs:
+  - literature_brief
+  - experiment_plan
+  - analysis_report
+gates:
+  human_review_required: true
+  real_lab_action_requires_approval: true
+notes:
+  - Real-world actions are not automatic.

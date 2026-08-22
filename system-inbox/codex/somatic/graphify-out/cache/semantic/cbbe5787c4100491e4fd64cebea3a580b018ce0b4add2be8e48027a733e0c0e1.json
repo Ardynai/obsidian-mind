@@ -1,0 +1,1 @@
+{"nodes": [{"id": "docs_finch_extras", "label": "Finch Optional Extras", "file_type": "document", "source_file": "docs/finch-extras.md", "rationale": "Scaffolds future package-backed analysis (pandas, scipy) while keeping basic path stdlib-only."}], "edges": [], "hyperedges": []}

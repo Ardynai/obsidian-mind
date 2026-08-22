@@ -1,0 +1,1 @@
+{"nodes": [{"id": "sample_run_manifest_json", "label": "Sample Run Manifest", "file_type": "document", "source_file": "fixtures/runs/sample-run-manifest.json", "rationale": "A fixture representing a completed workflow run, including provider references and artifact hashes."}], "edges": [], "hyperedges": []}

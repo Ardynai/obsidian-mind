@@ -1,0 +1,1 @@
+{"nodes": [{"id": "somatic_providers_biomodel_biomodel_result_to_evidence_record", "label": "biomodel_result_to_evidence_record", "file_type": "code", "source_file": "somatic/providers/biomodel.py", "rationale": "Maps biomodel scaffold metadata into StructuredVerdict and RawEvidence records for the Evidence Bus."}], "edges": [], "hyperedges": []}

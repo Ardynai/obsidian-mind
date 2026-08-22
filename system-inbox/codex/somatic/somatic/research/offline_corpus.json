@@ -1,0 +1,63 @@
+{
+  "schema": "somatic.offline-corpus.v1",
+  "notes": [
+    "Fixture literature for offline/mock research only. Not clinical guidance.",
+    "Live PubMed retrieval is out of scope while autonomous-research says offline/mock only."
+  ],
+  "passages": [
+    {
+      "id": "P1",
+      "title": "Fixture: magnesium as a nutrient",
+      "text": "Magnesium is an essential dietary mineral that participates in many enzymatic reactions. This offline fixture is not clinical guidance and does not recommend supplementation or dosing.",
+      "source_id": "fixture:nutrient-magnesium",
+      "year": 2020,
+      "study_type": "narrative",
+      "url": ""
+    },
+    {
+      "id": "P2",
+      "title": "Fixture: sleep duration observational note",
+      "text": "Observational summaries often describe associations between self-reported sleep duration and next-day alertness. Association is not causation. This fixture is not a diagnosis.",
+      "source_id": "fixture:sleep-observational",
+      "year": 2018,
+      "study_type": "observational",
+      "url": ""
+    },
+    {
+      "id": "P3",
+      "title": "Fixture: hydration basics",
+      "text": "Water is required for human physiology. Individual fluid needs vary with context. This fixture does not set a numeric intake target.",
+      "source_id": "fixture:hydration",
+      "year": 2015,
+      "study_type": "narrative",
+      "url": ""
+    },
+    {
+      "id": "P4",
+      "title": "Fixture: further research language",
+      "text": "Authors of this fixture note that further research would be needed before any general claim about personal experiments could be made. No dosing or diagnostic conclusion is offered.",
+      "source_id": "fixture:further-research",
+      "year": 2021,
+      "study_type": "unknown",
+      "url": ""
+    },
+    {
+      "id": "P5",
+      "title": "Fixture: parasite questions are not identification",
+      "text": "This offline fixture does not identify parasites from symptoms, photos, stool descriptions, or travel history. Suspected infection is a reason to consult a licensed clinician. This is not a diagnosis.",
+      "source_id": "fixture:parasite-routing",
+      "year": 2024,
+      "study_type": "narrative",
+      "url": ""
+    },
+    {
+      "id": "P6",
+      "title": "Fixture: remedy library caution",
+      "text": "Entries in this offline remedy library are informational only. Absence of a retrieved passage is reported as no evidence available. This fixture is not a prescription and does not recommend dosing.",
+      "source_id": "fixture:remedy-caution",
+      "year": 2024,
+      "study_type": "narrative",
+      "url": ""
+    }
+  ]
+}

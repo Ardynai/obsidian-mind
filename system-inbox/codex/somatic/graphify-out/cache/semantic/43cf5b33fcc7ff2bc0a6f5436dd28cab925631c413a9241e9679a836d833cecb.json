@@ -1,0 +1,1 @@
+{"nodes": [{"id": "n_of_1_workflow", "label": "N-of-1 Workflow", "file_type": "document", "source_file": "docs/n-of-1-workflow.md"}], "edges": [{"source": "n_of_1_workflow", "target": "evidence_bus", "relation": "references", "confidence": "EXTRACTED", "source_file": "docs/n-of-1-workflow.md"}], "hyperedges": []}

@@ -1,0 +1,23 @@
+schema_version: 0
+id: in-silico-screening
+status: placeholder
+title: In-Silico Screening
+mode: research
+description: Coordinates biomodel and cheminformatics adapters for computational screening.
+adapters:
+  biomodel: optional
+  cheminformatics: optional
+  literature: optional
+inputs:
+  - target_context
+  - candidate_set
+  - model_selection
+outputs:
+  - screening_results
+  - model_assumptions
+  - provenance_record
+gates:
+  human_review_required: true
+  external_actions_allowed: false
+notes:
+  - Example future adapters include Boltz, ESM, Chai, AlphaFold-optional, and RDKit.

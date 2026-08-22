@@ -1,0 +1,1 @@
+{"nodes": [{"id": "adversarial_corpus_json", "label": "Adversarial Corpus", "file_type": "document", "source_file": "fixtures/safety/adversarial_corpus.json", "rationale": "A collection of test cases for safety screening, including framing errors, emergency medical triggers, and benign passes in multiple languages."}], "edges": [], "hyperedges": []}

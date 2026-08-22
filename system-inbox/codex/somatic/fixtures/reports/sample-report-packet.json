@@ -1,0 +1,76 @@
+{
+  "id": "report-phase1a-sample-001",
+  "schema_version": 1,
+  "workflow_id": "valid-literature-only",
+  "run_id": "run-phase1a-sample",
+  "created_at": "2026-01-01T00:15:00Z",
+  "title": "Sample Phase 1A Report Packet",
+  "mode": "literature-only",
+  "summary": {
+    "text": "This fixture report summarizes one synthetic evidence record for contract validation.",
+    "review_state": "human-review-required"
+  },
+  "evidence_table": [
+    {
+      "evidence_id": "ev-phase1a-sample-001",
+      "source_type": "paper",
+      "claim_supported": "Fixture evidence records can carry provenance, limitations, and hashes.",
+      "confidence": "medium",
+      "limitations": ["Synthetic fixture data."],
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "hyp-phase1a-001",
+      "statement": "A shared evidence contract can support multiple Somatic workflow modes.",
+      "supporting_evidence_refs": ["ev-phase1a-sample-001"],
+      "counterevidence_refs": [],
+      "confidence": "medium",
+      "assumptions": ["Future validators will enforce the documented contract."],
+      "tests_or_next_steps": ["Add schema validation in Phase 1B."]
+    }
+  ],
+  "counterevidence": [],
+  "methods": {
+    "workflow_manifest": "fixtures/workflows/valid-literature-only.yaml",
+    "providers": ["mock-literature-provider"],
+    "stages": ["collect-literature", "draft-summary"],
+    "parameters": {
+      "fixture_seed": "somatic-phase-1a"
+    }
+  },
+  "artifacts": [
+    {
+      "id": "evidence_table",
+      "kind": "evidence-table",
+      "path_or_uri": "runs/run-phase1a-sample/evidence/evidence-table.json",
+      "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "created_by_stage": "collect-literature",
+      "retention": "run"
+    }
+  ],
+  "safety_review": {
+    "request_id": "safety-request-phase1a-001",
+    "response_id": "safety-response-phase1a-001",
+    "decision": "require-human-review",
+    "checks_performed": ["medical-boundary", "unsupported-claim", "evidence-sufficiency"],
+    "warnings": ["Fixture evidence is synthetic."],
+    "human_review_required": true,
+    "blocked_actions": ["Do not present fixture output as real-world findings."]
+  },
+  "limitations": [
+    "Offline fixture only.",
+    "No external literature search was performed.",
+    "No provider runtime exists in Phase 1A."
+  ],
+  "next_step_recommendations": [
+    "Non-clinical planning note: implement local schema validation in Phase 1B.",
+    "Non-clinical planning note: add additional mock evidence records for counterevidence tests."
+  ],
+  "review_state": "human-review-required",
+  "hashes": {
+    "sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "hash_scope": "payload"
+  }
+}

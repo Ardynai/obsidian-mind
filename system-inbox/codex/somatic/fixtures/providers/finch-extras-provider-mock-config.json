@@ -1,0 +1,72 @@
+{
+  "id": "finch-extras-provider-mock-config",
+  "class": "analysis-extras",
+  "name": "Finch Optional Extras Provider Mock Config",
+  "version": "0.1.0",
+  "description": "Deterministic fake-backed Finch optional extras config for provider status metadata.",
+  "status": "scaffolded",
+  "provider_id": "finch-extras-provider",
+  "provider_module": "somatic.analysis.provider",
+  "provider_class": "FinchExtrasProvider",
+  "external_runtime_enabled": false,
+  "disabled_by_default": true,
+  "fake_backed": true,
+  "local_repo_inspected": false,
+  "config": {
+    "enabled": false,
+    "mode": "mock",
+    "selected_extra": null,
+    "allow_real_computation": false,
+    "standard_library_fallback_active": true
+  },
+  "optional_extras": [
+    {
+      "id": "pandas",
+      "package": "pandas",
+      "status": "optional/disabled/fake",
+      "required_for_basic_install": false
+    },
+    {
+      "id": "scipy",
+      "package": "scipy",
+      "status": "optional/disabled/fake",
+      "required_for_basic_install": false
+    },
+    {
+      "id": "numpy",
+      "package": "numpy",
+      "status": "optional/disabled/fake",
+      "required_for_basic_install": false
+    },
+    {
+      "id": "scanpy",
+      "package": "scanpy",
+      "status": "optional/disabled/fake",
+      "required_for_basic_install": false
+    },
+    {
+      "id": "biopython",
+      "package": "Bio",
+      "status": "optional/disabled/fake",
+      "required_for_basic_install": false
+    }
+  ],
+  "auth": {
+    "type": "none",
+    "secrets_required": []
+  },
+  "capabilities": [
+    "finch.extras.status"
+  ],
+  "limits": {
+    "network_calls_allowed": false,
+    "runtime_import_allowed": false,
+    "basic_install_dependency": false,
+    "live_execution_allowed": false
+  },
+  "safety_notes": [
+    "Mock mode returns deterministic status metadata only.",
+    "Real package-backed Finch analysis is future work and must be explicitly configured.",
+    "This config does not enable external API calls, network access, or clinical interpretation."
+  ]
+}

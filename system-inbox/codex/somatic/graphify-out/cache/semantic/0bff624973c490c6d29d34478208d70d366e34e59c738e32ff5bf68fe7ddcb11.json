@@ -1,0 +1,1 @@
+{"nodes": [{"id": "somatic_fabric", "label": "somatic/fabric/", "file_type": "code", "source_file": "somatic/fabric/conformance.py", "rationale": "Content Fabric interop layer for verified datasets and code packs."}], "edges": [], "hyperedges": []}

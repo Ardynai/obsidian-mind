@@ -1,0 +1,119 @@
+{
+  "id": "mock-sensor-provider",
+  "class": "sensor",
+  "name": "Mock Sensor Provider",
+  "version": "0.1.0",
+  "description": "Offline fixture provider for consent-aware WiFi CSI planning metadata and sandbox n-of-1 planning. It never performs live capture.",
+  "capabilities": [
+    {
+      "id": "wifi-csi.plan",
+      "input_types": ["workflow", "file"],
+      "output_types": ["csi-capture-plan"]
+    },
+    {
+      "id": "wifi-csi.summarize",
+      "input_types": ["csi-capture-plan"],
+      "output_types": ["csi-feature-set"]
+    },
+    {
+      "id": "wifi-csi.parse-fixture",
+      "input_types": ["local-fixture-file"],
+      "output_types": ["csi-parser-report", "csi-parsed-summary", "csi-evidence-scoring"]
+    },
+    {
+      "id": "wifi-csi.replay-fixture",
+      "input_types": ["local-fixture-file"],
+      "output_types": ["sanitized-csi-replay-provider-output", "csi-parser-report", "csi-parsed-summary", "csi-evidence-scoring"]
+    },
+    {
+      "id": "wifi-csi.batch-replay-evaluation",
+      "input_types": ["local-fixture-group-list"],
+      "output_types": ["csi-batch-replay-evaluation", "csi-tournament-readiness-metadata"]
+    },
+    {
+      "id": "wifi-csi.source-boundary",
+      "input_types": ["workflow"],
+      "output_types": ["metadata-wifi-csi-source-adapter", "booth-first-csi-profile"]
+    },
+    {
+      "id": "sensor.sandbox.plan",
+      "input_types": ["workflow", "baseline-placeholder"],
+      "output_types": ["sensor-stream-plan"]
+    },
+    {
+      "id": "sensor.sandbox.observe",
+      "input_types": ["sensor-stream-plan"],
+      "output_types": ["sensor-observations"]
+    },
+    {
+      "id": "sensor.sandbox.features",
+      "input_types": ["sensor-observations"],
+      "output_types": ["sensor-feature-set"]
+    },
+    {
+      "id": "sensor.evidence_record",
+      "input_types": ["sensor-feature-set"],
+      "output_types": ["evidence-record"]
+    },
+    {
+      "id": "environment-fixture.evidence-pack",
+      "input_types": ["local-fixture-file"],
+      "output_types": ["environment-tabular-evidence-pack"]
+    }
+  ],
+  "modes_supported": ["wifi-csi-observation", "n-of-1", "hypothesis-tournament"],
+  "data_locality": "local-only",
+  "determinism": "deterministic",
+  "offline_supported": true,
+  "permissions_required": ["read:workflow", "read:input", "read:fixture", "write:evidence", "write:artifact"],
+  "permissions_future_only": ["observe:sensor"],
+  "auth": {
+    "type": "none",
+    "secrets_required": []
+  },
+  "limits": {
+    "live_sensor_access_allowed": false,
+    "hardware_access_allowed": false,
+    "network_calls_allowed": false,
+    "packet_capture_allowed": false,
+    "wifi_network_probing_allowed": false,
+    "monitor_mode_allowed": false,
+    "driver_access_allowed": false,
+    "remote_upload_allowed": false,
+    "background_capture_allowed": false,
+    "real_monitoring_allowed": false,
+    "clinical_claims_allowed": false,
+    "diagnosis_treatment_allowed": false,
+    "emergency_triage_allowed": false
+  },
+  "artifacts_emitted": ["csi-capture-plan", "csi-feature-set", "csi-parser-report", "csi-parsed-summary", "csi-batch-replay-evaluation", "environment-tabular-evidence-pack", "sensor-stream-plan", "sensor-observations", "sensor-feature-set"],
+  "evidence_emitted": ["csi-planning-placeholder", "environment-readiness-metadata", "fabric-pack", "sensor-planning-placeholder"],
+  "mock": {
+    "fixture_pack": "fixtures/sensors/csi/csi-capture-plan-placeholder.json",
+    "requires_consent_record": true,
+    "sandbox_provider_fixture": "fixtures/sensors/sandbox-sensor-provider-placeholder.json",
+    "privacy_policy_fixture": "fixtures/sensors/sensor-privacy-policy-placeholder.json",
+    "csi_reference_inventory_fixture": "fixtures/sensors/csi/csi-reference-inventory.json",
+    "csi_parser_fixture_pack": [
+      "fixtures/sensors/csi/sample-esp32-csi.csv",
+      "fixtures/sensors/csi/csi-tabular-fixture.csv",
+      "fixtures/sensors/csi/sample-csi-jsonl.jsonl"
+    ],
+    "environment_fixture_pack": [
+      "fixtures/sensors/environment/environment-parsed.csv",
+      "fixtures/sensors/environment/environment-mixed.csv"
+    ],
+    "fake_backed": true,
+    "offline_required": true
+  },
+  "notes": [
+    "observe:sensor is future permission vocabulary only; this fixture reads local sample packs and sandbox placeholders.",
+    "No CSI, camera, microphone, wearable, BLE, WiFi, thermal, environmental, or hardware capture is performed.",
+    "No ESP32, RTL8812AU, router, adapter, driver, monitor mode, packet capture, or WiFi device probing is performed.",
+    "CSI parser, replay, batch evaluation, and evidence scoring support is local fake/sample fixtures only; no serial, MQTT, UDP, pcap, monitor mode, live capture, hardware, vital-sign inference, signal-quality claim, or medical claim is performed.",
+    "Raw RF/CSI data is local-first and private by default; this fixture collects, retains, and exports none.",
+    "RuView is conditional reference-only and not copied, imported, executed, or depended on.",
+    "Booth-first CSI planning is future metadata only for a single-subject controlled booth with fixed AP plus receiver nodes.",
+    "No diagnosis, treatment, emergency triage, clinical interpretation, or real monitoring is performed."
+  ]
+}

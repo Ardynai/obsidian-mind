@@ -1,0 +1,1 @@
+{"nodes": [{"id": "somatic_run_writer_py", "label": "somatic/run_writer.py", "file_type": "code", "source_file": "somatic/run_writer.py", "rationale": "Writes run artifacts and manifests with SHA-256 hashes."}], "edges": [], "hyperedges": []}

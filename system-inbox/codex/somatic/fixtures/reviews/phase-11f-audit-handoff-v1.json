@@ -1,0 +1,120 @@
+{
+  "execution_permitted": false,
+  "fixture_contract_version": 1,
+  "fixture_kind": "phase-11f-audit-handoff-reporting",
+  "handoffs": [
+    {
+      "audit_handoff_contract_version": 1,
+      "audit_handoff_kind": "phase-11f-compact-audit-handoff",
+      "audit_index_entry_count": 5,
+      "audit_index_fingerprint": "89196ec1fea8b51bd727e43bd098e56067cace1af98623e7bb6bc8de0d317b23",
+      "audit_index_label": "p11e-index-89196ec1fea8b51b",
+      "audit_index_status": "audit-index-runtime-disabled",
+      "blocking_count": 10,
+      "contract_versions": {
+        "phase11a_contract_spec": 1,
+        "phase11b_review_record": 1,
+        "phase11c_preflight_dossier": 1,
+        "phase11d_lifecycle_audit": 1,
+        "phase11e_audit_index": 1,
+        "phase11f_audit_handoff": 1
+      },
+      "domain": "document-ingestion",
+      "execution_permitted": false,
+      "handoff_fingerprint": "22e2b31dd738517f7b873645211d37914342c064cf0b8bfa66a509d5297b9462",
+      "handoff_id": "p11f-handoff-22e2b31dd738517f",
+      "lifecycle_status_counts": {
+        "archived": 1,
+        "created": 1,
+        "decision-recorded": 0,
+        "rejected": 1,
+        "reviewed": 1,
+        "superseded": 1
+      },
+      "metadata_only": true,
+      "planning_only": true,
+      "real_mode_runtime_enabled": false,
+      "rejection_count": 1,
+      "retention_export_policy_summary": {
+        "deterministic_fixture_export_allowed": true,
+        "export_class": "local-metadata-only",
+        "external_upload_prohibited": true,
+        "metadata_export_allowed": true,
+        "network_export_prohibited": true,
+        "retention_label": "audit-metadata-only"
+      },
+      "reviewer_scope_coverage_summary": {
+        "coverage_complete": true,
+        "covered_gate_count": 7,
+        "missing_gate_count": 0,
+        "required_gate_count": 7,
+        "reviewer_scope_label": "planning-audit"
+      },
+      "runtime_stage": "not-implemented",
+      "sanitized": true,
+      "schema_version": 1,
+      "status": "audit-handoff-runtime-disabled",
+      "unresolved_review_count": 8
+    },
+    {
+      "audit_handoff_contract_version": 1,
+      "audit_handoff_kind": "phase-11f-compact-audit-handoff",
+      "audit_index_entry_count": 1,
+      "audit_index_fingerprint": "89196ec1fea8b51bd727e43bd098e56067cace1af98623e7bb6bc8de0d317b23",
+      "audit_index_label": "p11e-index-89196ec1fea8b51b",
+      "audit_index_status": "audit-index-runtime-disabled",
+      "blocking_count": 0,
+      "contract_versions": {
+        "phase11a_contract_spec": 1,
+        "phase11b_review_record": 1,
+        "phase11c_preflight_dossier": 1,
+        "phase11d_lifecycle_audit": 1,
+        "phase11e_audit_index": 1,
+        "phase11f_audit_handoff": 1
+      },
+      "domain": "wifi-csi-rf-booth",
+      "execution_permitted": false,
+      "handoff_fingerprint": "c6680c1a7f6681f8e8266d683b9702f9715df782adc04823f3882b92b71db038",
+      "handoff_id": "p11f-handoff-c6680c1a7f6681f8",
+      "lifecycle_status_counts": {
+        "archived": 0,
+        "created": 0,
+        "decision-recorded": 1,
+        "rejected": 0,
+        "reviewed": 0,
+        "superseded": 0
+      },
+      "metadata_only": true,
+      "planning_only": true,
+      "real_mode_runtime_enabled": false,
+      "rejection_count": 0,
+      "retention_export_policy_summary": {
+        "deterministic_fixture_export_allowed": true,
+        "export_class": "local-metadata-only",
+        "external_upload_prohibited": true,
+        "metadata_export_allowed": true,
+        "network_export_prohibited": true,
+        "retention_label": "audit-metadata-only"
+      },
+      "reviewer_scope_coverage_summary": {
+        "coverage_complete": true,
+        "covered_gate_count": 7,
+        "missing_gate_count": 0,
+        "required_gate_count": 7,
+        "reviewer_scope_label": "planning-audit"
+      },
+      "runtime_stage": "not-implemented",
+      "sanitized": true,
+      "schema_version": 1,
+      "status": "audit-handoff-runtime-disabled",
+      "unresolved_review_count": 0
+    }
+  ],
+  "metadata_only": true,
+  "planning_only": true,
+  "real_mode_runtime_enabled": false,
+  "runtime_stage": "not-implemented",
+  "sanitized": true,
+  "schema_version": 1,
+  "status": "audit-handoff-reporting-runtime-disabled"
+}

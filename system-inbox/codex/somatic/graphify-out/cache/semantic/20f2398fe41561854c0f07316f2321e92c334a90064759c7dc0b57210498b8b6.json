@@ -1,0 +1,1 @@
+{"nodes": [{"id": "planning_sensor_viz_and_csi", "label": "Somatic \u2014 Autonomous Build: sensor visualization + ESP32-CSI", "file_type": "document", "source_file": "planning/SENSOR-VIZ-AND-CSI.md", "rationale": "Plan for building the sensor roster visualization and real ESP32 WiFi-CSI ingest lane."}], "edges": [], "hyperedges": []}

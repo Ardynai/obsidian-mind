@@ -1,0 +1,1 @@
+{"nodes": [{"id": "docs_master_plan", "label": "Master Plan", "file_type": "document", "source_file": "docs/master-plan.md", "rationale": "Defines the monorepo scaffold and foundation lanes (core, evidence_bus, sensors, etc.)."}], "edges": [], "hyperedges": []}

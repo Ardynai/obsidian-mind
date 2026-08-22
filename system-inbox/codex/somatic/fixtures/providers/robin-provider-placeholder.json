@@ -1,0 +1,59 @@
+{
+  "id": "robin-provider-placeholder",
+  "class": "robin-planner",
+  "name": "FutureHouse Robin Provider Placeholder",
+  "version": "0.1.0",
+  "description": "Placeholder metadata for a future Robin-style planner/analyzer adapter. The current Somatic Robin loop remains local mock code.",
+  "status": "reference-only",
+  "provider_id": "futurehouse-robin-reference",
+  "provider_module": "somatic.providers.robin",
+  "provider_class": "RobinProvider",
+  "reference_only": true,
+  "fake_backed": true,
+  "disabled_by_default": true,
+  "external_runtime_enabled": false,
+  "runtime_import_allowed": false,
+  "live_execution_allowed": false,
+  "local_repo_inspected": true,
+  "local_path": "C:\\AI\\external-sources\\somatic\\robin",
+  "inspected_commit": "4a5cce310f3bc7663a67117db88af43b84733ffe",
+  "license": {
+    "identifier": "Apache-2.0",
+    "license_file_found": true
+  },
+  "capabilities": [
+    {
+      "id": "robin.plan",
+      "input_types": ["hypothesis", "literature-context"],
+      "output_types": ["measurement-plan"]
+    },
+    {
+      "id": "robin.analyze",
+      "input_types": ["raw-evidence"],
+      "output_types": ["structured-verdict"]
+    }
+  ],
+  "modes_supported": ["robin-loop"],
+  "data_locality": "local-fixture-only",
+  "determinism": "fake-backed",
+  "offline_supported": true,
+  "permissions_required": ["read:workflow", "read:input", "read:evidence", "write:evidence", "write:artifact"],
+  "auth": {
+    "type": "none",
+    "secrets_required": []
+  },
+  "limits": {
+    "network_calls_allowed": false,
+    "runtime_import_allowed": false,
+    "live_execution_allowed": false,
+    "edison_calls_allowed": false,
+    "external_llm_calls_allowed": false,
+    "basic_install_dependency": false
+  },
+  "artifacts_emitted": ["measurement-plan", "structured-verdict"],
+  "evidence_emitted": ["literature", "sim", "wetlab"],
+  "safety_notes": [
+    "Future Robin integration must wrap planner and analyzer roles behind Somatic Evidence Bus contracts.",
+    "No real lab action, provider spend, or external data release is allowed by this placeholder."
+  ]
+}

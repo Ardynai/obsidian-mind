@@ -1,0 +1,1 @@
+{"nodes": [{"id": "boltz_adapter", "label": "Boltz Adapter Scaffold", "file_type": "document", "source_file": "docs/boltz-adapter.md"}], "edges": [{"source": "boltz_adapter", "target": "biomodel_provider_boundary", "relation": "implements", "confidence": "EXTRACTED", "source_file": "docs/boltz-adapter.md"}], "hyperedges": []}

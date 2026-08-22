@@ -1,0 +1,50 @@
+{
+  "adapter_execution_granted": false,
+  "authorization_status": "not-authorized",
+  "covered_phase_count": 11,
+  "domain_gap_summaries": [
+    {
+      "blocker_count": 9,
+      "domain_label": "document-ingestion",
+      "missing_future_gate_count": 9,
+      "source_closeout_decision": "needs-new-review",
+      "source_closeout_status": "incomplete",
+      "stale_count": 0,
+      "unresolved_review_count": 21
+    },
+    {
+      "blocker_count": 1,
+      "domain_label": "wifi-csi-rf-booth",
+      "missing_future_gate_count": 9,
+      "source_closeout_decision": "deferred",
+      "source_closeout_status": "incomplete",
+      "stale_count": 1,
+      "unresolved_review_count": 0
+    }
+  ],
+  "domain_labels": [
+    "document-ingestion",
+    "wifi-csi-rf-booth"
+  ],
+  "execution_permitted": false,
+  "ledger_id": "p11l-ledger-e270e536d5e9fa82",
+  "missing_future_gate_count": 9,
+  "missing_future_gates": [
+    "explicit-runtime-decision-record",
+    "consent-review",
+    "privacy-review",
+    "license-source-review",
+    "hardware-review",
+    "model-artifact-review",
+    "dependency-review",
+    "network-policy-review",
+    "operator-safety-review"
+  ],
+  "model_execution_granted": false,
+  "provider_execution_granted": false,
+  "readiness_gap": "real-mode-authorization-missing",
+  "real_mode_runtime_enabled": false,
+  "runtime_authorization_gap_ledger_contract_version": 1,
+  "runtime_stage": "not-implemented",
+  "source_phase_range": "11A-11K"
+}

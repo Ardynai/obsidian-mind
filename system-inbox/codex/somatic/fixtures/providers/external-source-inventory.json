@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "phase": "5A.1",
+  "staging_root": "C:\\AI\\external-sources\\somatic",
+  "generated_date": "2026-06-01",
+  "policy": {
+    "clone_or_source_stage_only": true,
+    "dependencies_installed": false,
+    "package_managers_run": false,
+    "setup_scripts_run": false,
+    "model_weights_or_datasets_downloaded": false,
+    "external_apis_called": false,
+    "external_repos_modified": false,
+    "vendored_into_somatic": false
+  },
+  "entries": [
+    {
+      "repo": "Future-House/paper-qa",
+      "status": "staged",
+      "local_path": "C:\\AI\\external-sources\\somatic\\paper-qa",
+      "remote_url": "https://github.com/Future-House/paper-qa.git",
+      "inspected_commit": "d2c3c698fdf06986aa021812ab3186d3696438d8",
+      "branch": "main",
+      "license": {
+        "file": "LICENSE",
+        "identifier": "Apache-2.0"
+      },
+      "language_ecosystem": "Python; pyproject.toml; uv.lock",
+      "top_level_files": [
+        "docs",
+        "packages",
+        "src",
+        "tests",
+        "CITATION.cff",
+        "CONTRIBUTING.md",
+        "LICENSE",
+        "pyproject.toml",
+        "README.md",
+        "uv.lock"
+      ],
+      "likely_entrypoints": [
+        "project script: pqa = paperqa.agents:main",
+        "src/paperqa/agents/__init__.py main() argparse CLI",
+        "src/paperqa/agents/tools.py PaperSearch, GatherEvidence, GenerateAnswer",
+        "src/paperqa/clients/* metadata providers"
+      ],
+      "dependency_heaviness_notes": [
+        "Depends on fhaviary[llm], fhlmi, httpx, numpy, pydantic, tantivy, tiktoken, and document-reader extras.",
+        "Optional groups include docling, image, ldp, local, memory, openreview, qdrant, and zotero."
+      ],
+      "somatic_should_wrap": [
+        "Document search and answer/evidence drafting behind LiteratureProvider.",
+        "Citation, context, and source metadata into Somatic evidence records."
+      ],
+      "somatic_should_not_adopt_wholesale": [
+        "PaperQA agent loop as Somatic core runtime.",
+        "Default network-backed metadata clients, LLM configuration, or document-index storage."
+      ],
+      "failure_reason": null
+    },
+    {
+      "repo": "Future-House/robin",
+      "status": "staged",
+      "local_path": "C:\\AI\\external-sources\\somatic\\robin",
+      "remote_url": "https://github.com/Future-House/robin.git",
+      "inspected_commit": "4a5cce310f3bc7663a67117db88af43b84733ffe",
+      "branch": "main",
+      "license": {
+        "file": "LICENSE",
+        "identifier": "Apache-2.0"
+      },
+      "language_ecosystem": "Python; pyproject.toml; uv.lock",
+      "top_level_files": [
+        "examples",
+        "robin",
+        "robin_output",
+        "CITATION.cff",
+        "Dockerfile",
+        "LICENSE",
+        "pyproject.toml",
+        "README.md",
+        "robin_demo.ipynb",
+        "robin_full.ipynb",
+        "uv.lock"
+      ],
+      "likely_entrypoints": [
+        "robin/*.py modules for assays, analyses, candidates, configuration, experimentation, literature, ranking, and tools",
+        "notebook examples: robin_demo.ipynb and robin_full.ipynb",
+        "pyproject dependencies reference fhaviary, fhlmi, openai, anthropic, edison-client, pandas, and pydantic"
+      ],
+      "dependency_heaviness_notes": [
+        "Python 3.12+ project with OpenAI, Anthropic, edison-client, fhaviary, fhlmi, pandas, and tqdm dependencies.",
+        "Configuration references provider API keys; examples include generated output data."
+      ],
+      "somatic_should_wrap": [
+        "Planner/analyzer concepts into Somatic Crow/Falcon/Finch and Evidence Bus artifacts.",
+        "Assay, candidate, literature, ranking, and structured-analysis outputs as provider reports."
+      ],
+      "somatic_should_not_adopt_wholesale": [
+        "Robin runtime orchestration, provider configuration, notebooks, or example outputs as Somatic core behavior.",
+        "Any API-key or provider-calling path by default."
+      ],
+      "failure_reason": null
+    },
+    {
+      "repo": "K-Dense-AI/scientific-agent-skills",
+      "status": "staged",
+      "local_path": "C:\\AI\\external-sources\\somatic\\scientific-agent-skills",
+      "remote_url": "https://github.com/K-Dense-AI/scientific-agent-skills.git",
+      "inspected_commit": "effb57c5699c1d400ef461a7aa80fc6693939805",
+      "branch": "main",
+      "license": {
+        "file": "LICENSE.md",
+        "identifier": "MIT"
+      },
+      "language_ecosystem": "Agent Skills repository with Python helper scripts; pyproject.toml; uv.lock",
+      "top_level_files": [
+        "docs",
+        "skills",
+        "CONTRIBUTING.md",
+        "LICENSE.md",
+        "pyproject.toml",
+        "README.md",
+        "scan_pr_skills.py",
+        "scan_skills.py",
+        "SECURITY.md",
+        "uv.lock"
+      ],
+      "likely_entrypoints": [
+        "skills/*/SKILL.md skill definitions",
+        "scan_skills.py main() security scan helper",
+        "scan_pr_skills.py main() PR subset scan helper"
+      ],
+      "dependency_heaviness_notes": [
+        "Repository declares cisco-ai-skill-scanner, firecrawl-py, python-dotenv, and a git dependency on skills-ref.",
+        "Individual skills may reference many scientific packages, public APIs, cloud platforms, or lab systems."
+      ],
+      "somatic_should_wrap": [
+        "Static skill discovery and metadata extraction behind ScienceSkillProvider.",
+        "Skill category, inputs, outputs, safety notes, and package/API requirements as planning metadata."
+      ],
+      "somatic_should_not_adopt_wholesale": [
+        "Installing or executing the entire skill collection.",
+        "Any skill that calls APIs, installs packages, or controls lab/cloud resources without explicit configuration and review."
+      ],
+      "failure_reason": null
+    },
+    {
+      "repo": "mims-harvard/AutoScientists",
+      "status": "staged",
+      "local_path": "C:\\AI\\external-sources\\somatic\\AutoScientists",
+      "remote_url": "https://github.com/mims-harvard/AutoScientists.git",
+      "inspected_commit": "c71a92343b9a488ed10134be805845b9473ad18f",
+      "branch": "main",
+      "license": {
+        "file": null,
+        "identifier": "not-found"
+      },
+      "language_ecosystem": "Python scripts and markdown templates; requirements.txt",
+      "top_level_files": [
+        "system",
+        "task-autoresearch",
+        "task-biomlbench",
+        "task-protein-gym",
+        "launch.py",
+        "README.md",
+        "requirements.txt",
+        "runbook.md"
+      ],
+      "likely_entrypoints": [
+        "launch.py argparse CLI for launching experiments",
+        "system/templates/* role, heartbeat, monitor, and team prompt templates",
+        "task-* directories for task-specific research workloads"
+      ],
+      "dependency_heaviness_notes": [
+        "requirements.txt lists requests and pyyaml, but launch.py and templates rely heavily on a local ClawInstitute/AnonAPI service.",
+        "Task directories may have separate hardware and dependency requirements."
+      ],
+      "somatic_should_wrap": [
+        "Team roster, critique, queue, result, monitor, and reorganization concepts behind TeamOrchestrationProvider.",
+        "Plan-only orchestration summaries and evidence-budget metadata."
+      ],
+      "somatic_should_not_adopt_wholesale": [
+        "Launch process, AnonAPI API trail, agent workspaces, external service assumptions, or task execution templates.",
+        "Any workflow requiring API keys or local workshop services by default."
+      ],
+      "failure_reason": null
+    },
+    {
+      "repo": "Future-House/aviary",
+      "status": "staged",
+      "local_path": "C:\\AI\\external-sources\\somatic\\aviary",
+      "remote_url": "https://github.com/Future-House/aviary.git",
+      "inspected_commit": "826577f332a02ec2f5883cdb042fb12f14b4c7b3",
+      "branch": "main",
+      "license": {
+        "file": "LICENSE",
+        "identifier": "Apache-2.0"
+      },
+      "language_ecosystem": "Python; pyproject.toml; uv.lock",
+      "top_level_files": [
+        "docs",
+        "packages",
+        "src",
+        "tests",
+        "tutorials",
+        "CITATION.cff",
+        "CONTRIBUTING.md",
+        "LICENSE",
+        "pyproject.toml",
+        "README.md",
+        "uv.lock"
+      ],
+      "likely_entrypoints": [
+        "project script: aviary = aviary.main:cli",
+        "src/aviary/env.py Environment and TaskDataset",
+        "src/aviary/tools/base.py Tool and ToolCall models",
+        "src/aviary/main.py click CLI for serving environments"
+      ],
+      "dependency_heaviness_notes": [
+        "Core dependencies are moderate, but optional groups include cloud, llm, notebook, server, and benchmark/task packages.",
+        "Robin and PaperQA2 both reference fhaviary types."
+      ],
+      "somatic_should_wrap": [
+        "Environment, task dataset, message, and tool-call shapes as references for future benchmark/provider adapters."
+      ],
+      "somatic_should_not_adopt_wholesale": [
+        "Aviary environment server as Somatic runtime.",
+        "Tool execution or environment hosting by default."
+      ],
+      "failure_reason": null
+    },
+    {
+      "repo": "Future-House/ldp",
+      "status": "staged",
+      "local_path": "C:\\AI\\external-sources\\somatic\\ldp",
+      "remote_url": "https://github.com/Future-House/ldp.git",
+      "inspected_commit": "d49850ff3addb8369df062d345ea99991b7b200c",
+      "branch": "main",
+      "license": {
+        "file": "LICENSE",
+        "identifier": "Apache-2.0"
+      },
+      "language_ecosystem": "Python; pyproject.toml; uv.lock",
+      "top_level_files": [
+        "docs",
+        "packages",
+        "src",
+        "tests",
+        "tutorials",
+        "CITATION.cff",
+        "LICENSE",
+        "pyproject.toml",
+        "README.md",
+        "uv.lock"
+      ],
+      "likely_entrypoints": [
+        "src/ldp/main.py argparse entry helper",
+        "src/ldp/agent/* Agent, ReActAgent, SimpleAgent, MemoryAgent, TreeofThoughtsAgent",
+        "src/ldp/alg/* rollout, optimizer, callbacks, tree search",
+        "pyproject optional groups for monitor, nn, rich, server, visualization"
+      ],
+      "dependency_heaviness_notes": [
+        "Depends on fhaviary, fhlmi, httpx-aiohttp, numpy, pydantic, tenacity, and tqdm.",
+        "Optional neural, monitoring, server, and visualization lanes can be heavy."
+      ],
+      "somatic_should_wrap": [
+        "Learning or agent-process abstractions only as future optional references.",
+        "Rollout and optimizer concepts as benchmark-provider metadata if needed."
+      ],
+      "somatic_should_not_adopt_wholesale": [
+        "LDP agent/optimizer runtime as Somatic orchestration.",
+        "Monitoring, server, or LLM-backed agent paths by default."
+      ],
+      "failure_reason": null
+    },
+    {
+      "repo": "jwohlwend/boltz",
+      "status": "staged",
+      "local_path": "C:\\AI\\external-sources\\somatic\\boltz",
+      "remote_url": "https://github.com/jwohlwend/boltz.git",
+      "inspected_commit": "b1ebfc46ecf57f5414e0d1a6f9027bbb122c53bc",
+      "branch": "main",
+      "license": {
+        "file": "LICENSE",
+        "identifier": "MIT"
+      },
+      "language_ecosystem": "Python; pyproject.toml",
+      "top_level_files": [
+        "docs",
+        "examples",
+        "scripts",
+        "src",
+        "tests",
+        "LICENSE",
+        "pyproject.toml",
+        "README.md"
+      ],
+      "likely_entrypoints": [
+        "project script: boltz = boltz.main:cli",
+        "src/boltz/main.py click CLI with predict command",
+        "docs/prediction.md documents boltz predict input and options",
+        "scripts/train, scripts/process, and scripts/eval for non-adapter workflows"
+      ],
+      "dependency_heaviness_notes": [
+        "Heavy biomodel stack: torch, pytorch-lightning, rdkit, scipy, numba, fairscale, wandb, biopython, and CUDA optional dependencies.",
+        "Prediction code can download CCD, molecule archives, and model checkpoints into a cache.",
+        "Optional MSA server path can call a remote server and accept credentials."
+      ],
+      "somatic_should_wrap": [
+        "Run planning, input validation, output artifact registration, assumptions, and limitations behind BiomodelProvider.",
+        "Boltz predict inputs and result metadata as Somatic evidence-linked biomodel artifacts."
+      ],
+      "somatic_should_not_adopt_wholesale": [
+        "Automatic model/data downloads, MSA server calls, training/evaluation scripts, wandb logging, or GPU runtime by default.",
+        "Any private health or molecular data release without explicit configuration and consent."
+      ],
+      "failure_reason": null
+    }
+  ]
+}

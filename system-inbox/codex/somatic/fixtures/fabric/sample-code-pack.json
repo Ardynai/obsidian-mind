@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "somatic.fixture.adapter-code-pack",
+  "name": "Somatic Fixture Adapter Code Pack",
+  "version": "0.1.0",
+  "description": "Offline fixture manifest for a quarantined adapter/plugin code pack.",
+  "pack_type": "plugin",
+  "publisher": {
+    "id": "somatic-fixtures",
+    "name": "Somatic Fixtures",
+    "signing_key_id": "ed25519:somatic-fixtures:test"
+  },
+  "license": {
+    "id": "Apache-2.0",
+    "label": "Apache License 2.0",
+    "gates": ["notice-required"],
+    "satisfied": true
+  },
+  "files": [
+    {
+      "path": "plugins/mock-adapter/index.js",
+      "size_bytes": 1024,
+      "sha256": "4444444444444444444444444444444444444444444444444444444444444444",
+      "media_type": "text/javascript",
+      "role": "plugin-entrypoint",
+      "required": true
+    }
+  ],
+  "signatures": [
+    {
+      "algorithm": "Ed25519",
+      "key_id": "ed25519:somatic-fixtures:test",
+      "signature": "ed25519-fixture-signature-code-pack",
+      "signed_at": "2026-01-01T00:00:00Z",
+      "scope": "pack-manifest"
+    }
+  ],
+  "transport": {
+    "bittorrent_v1": {
+      "magnet": "magnet:?xt=urn:btih:4444444444444444444444444444444444444444&dn=somatic-fixture-adapter-code-pack",
+      "info_hash": "4444444444444444444444444444444444444444"
+    },
+    "webseeds": ["https://example.invalid/somatic/fixtures/adapter-code-pack/"],
+    "local_fixture": true
+  },
+  "safety": {
+    "quarantine_required": true,
+    "explicit_enablement_required": true,
+    "enabled": false,
+    "requested_permissions": ["read:workflow", "read:input", "write:artifact"],
+    "network_access_requested": false,
+    "filesystem_write_requested": true,
+    "lab_access_requested": false,
+    "sensor_access_requested": false,
+    "risk_notes": ["Executable code pack fixture; must remain quarantined until reviewed."]
+  },
+  "compatibility": {
+    "somatic_min_version": "0.1.0",
+    "workflow_modes": ["literature-only", "robin-loop"]
+  },
+  "catalog": {
+    "remote_catalogs": [],
+    "federation_allowed": true,
+    "local_catalog_state": "quarantined"
+  }
+}

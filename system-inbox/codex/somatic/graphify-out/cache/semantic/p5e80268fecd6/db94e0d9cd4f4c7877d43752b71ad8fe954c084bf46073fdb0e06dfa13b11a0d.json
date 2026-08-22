@@ -1,0 +1,1 @@
+{"nodes": [{"id": "examples_document_evidence_demo_document_fixture_workflow", "label": "Document Fixture Provider Example", "file_type": "code", "source_file": "examples/document-evidence-demo/document-fixture-workflow.yaml", "rationale": "Phase 10A example for the first non-sensor evidence domain using sanitized artifact-ref pattern."}], "edges": [], "hyperedges": []}

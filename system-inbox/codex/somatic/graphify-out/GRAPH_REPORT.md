@@ -1,12 +1,13 @@
-# Graph Report - .  (2026-08-21)
+# Graph Report - somatic  (2026-08-22)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 677 files · ~1,034,272 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 6569 nodes · 15943 edges · 425 communities (168 shown, 257 thin omitted)
-- Extraction: 86% EXTRACTED · 14% INFERRED · 0% AMBIGUOUS · INFERRED: 2190 edges (avg confidence: 0.72)
-- Token cost: 22,267 input · 5,198 output
+- 8566 nodes · 25166 edges · 402 communities (181 shown, 221 thin omitted)
+- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 2834 edges (avg confidence: 0.86)
+- Token cost: 0 input · 0 output
 
 ## Graph Freshness
 - Built from commit: `c1a3da5d`
@@ -14,1118 +15,1229 @@
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- App UI and State
-- Vector and Math Utilities
-- Phase 12 Authorization Finalization
-- Sensor Hardware Ingestion
-- Authorization Design Profiles
-- Event Handling and Controls
-- Consent Ledger Management
-- CSI Data Parsing
-- Workflow Safety Gate Audit
-- Phase 11 Preflight Dossiers
-- Literature Evidence Providers
-- Dossier Lifecycle Management
-- UI Layout and Events
-- Consent and Experiment Storage
-- Obfuscated Utility Functions
-- Biomodel Evidence Processing
-- Benchmarking and Scoring
-- Sensor Evidence Framework
-- Live CSI Adapter
-- Evidence Measurement Planning
-- Phase 11 Governance Review
-- Canvas and Path Drawing
-- User Data Analysis
-- Phase 11 Contract Review
-- Workflow Evidence Analysis
-- Presence and Research Rendering
-- Sensor Evidence Provider Validation
-- 3D Scene Object Binding
-- Health Data Ingestion
-- Phase 11 Audit Records
-- Phase 12 Model Registry
-- Advisory Model Client
-- N-of-1 Report Planning
-- Phase 11 Audit Status
-- Fabric Canonical JSON
-- Phase 11 Decision Closeout
-- Environment Evidence Provider
-- Phase 12 Knowledge Profile
-- Preflight Dossier Validation
-- Toy Counter Evidence Validation
-- UI Bridge Security Tests
-- Production Readiness Matrix
-- Phase 11 Audit Validation
-- Field GUI Components
-- Phase 11 Followup Validation
-- Phase 12 Safety Matrix
-- Document Evidence Validation
-- Fabric Communication Errors
-- Sensor Evidence Records
-- Production Ownership Matrix
-- Document Evidence Pack Construction
-- Keyring Signature Verification
-- Shader and Render Passes
-- Fabric Cryptography Utilities
-- Intervention Context Management
-- Material and Texture Management
-- Fabric Conformance Testing
-- Adapter Readiness Evaluation
-- N-of-1 Experiment Design
-- Biomodel Artifact Management
-- CSI Evidence Pack Validation
-- Data Pack Metadata
-- Safety Invariant Tests
-- Invalid Signature Pack Metadata
-- Consent Ledger Operations
-- CSI Capture Planning
-- Provider Manifest Validation
-- TypeScript Configuration
-- Shared Pack Metadata
-- Team Orchestration Provider
-- CSI Adapter Validation
-- Workflow Integration Tests
-- Citation and Result UI
-- Workflow Contract Loading
-- Animation and Interpolation
-- Remedy Library Lookup
-- Phase 12 Interop Profile
-- Blackboard Build Logic
-- Finch Extras Provider
-- Fabric Configuration Validation
-- Follow-up Observation Management
-- Phase 12 Orchestration Profile
-- Phase 12 Closeout Summary
-- CSI Booth Boundary Planning
-- Fabric Federation Client
-- Geometry and Component Management
-- Frontend Development Dependencies
-- Network Safety and SSRF
-- License Policy Evaluation
-- CSI Evidence Pack Construction
-- Sandbox Sensor Provider
-- Evidence Bus Sandbox
-- Fabric Federation Configuration
-- Project Documentation and UI
-- Animation and Action Control
-- Rotation and Transformation Math
-- Document Adapter Readiness
-- Personal Baseline Profiling
-- Log Secret Prevention
-- Baseline Feature Comparison
-- CSI Packet Feature Extraction
-- Frontend Library Dependencies
-- Phase Documentation Files
-- Variable Definitions
-- URL Safety and Redirection
-- Content-Addressed Artifact Verification
-- Citation Binding and Grading
-- CSI Replay Evaluation
-- Sensor Evidence Validation
-- Identifier Suffixes
-- Hypothesis Tournament Management
-- Dose-Response Analysis
-- Local UI HTTP Server
-- Fabric Registry Client
-- Lexical Retrieval and Claims
-- Fabric CLI Integration Tests
-- Workflow Orchestration Capability Profiles
-- Accessibility and DOM Testing
-- UI Components and Overlays
-- Catalog Manifest Validation
-- CSI Batch Readiness
-- Cross-Domain Evidence Contracts
-- Specialized Model Capability Profiles
-- Public CSI Example Sanitization
-- Toy Counter Evidence Pack
-- Response Evaluation Tests
-- Fabric Interop Audit Boundaries
-- CSI Evidence Pack Tests
-- Team Orchestrator Mocking
-- HTTP Bridge Request Handler
-- Document Evidence Fixtures
-- Nutrition Knowledge Capability Profiles
-- Quantum Backend Capability Profiles
-- Workflow Safety Gate Matrix
-- Activation Request Review Packets
-- Review Decision Records
-- Hypothesis Tournament Validation
-- API and Status Pages
-- Optional Analysis Extras
-- Document Adapter Contract Validation
-- Belief Ledger Posteriors
-- Review Chain Closeout Summaries
-- CSI Reference Inventory
-- Local Mock Batch Scorer
-- Table Statistics and Profiling
-- Phase-12 Series Invariants
-- Review Audit Trail Index
-- Sensor Evidence Release Summary
-- Project Package Configuration
-- UI Charts and Banners
-- Fabric Environment Integration
-- Biosecurity Screening Harness
-- Workflow Adapter Scaffolds
-- Path Confinement Validation
-- Run Artifact Writer
-- CSI Scaffold Validation
-- Shell Script Generation
-- UI Tools and Terminal
-- Batch Scoring Interfaces
-- Provenance and Table Analysis
-- Loopback Origin Validation
-- Interop Fixture Metadata
-- Live Literature Research
-- Provider Mapping Scaffolds
-- Dossier Lifecycle Fixtures
-- App Routing and Navigation
-- CSI UDP Forwarder
-- Builder Cache Memoization
-- Authorization Charter Validation
-- Authorization Record Validation
-- Visual Supervision Validation
-- Consent Gate Validation
-- Physiological Sensor Validation
-- Phase 12 Boundary Validation
-- Network Isolation Checks
-- Keyring Rotation Fixtures
-- Shared Interop Fixtures
-- Fixture Round-Trip Validation
-- Metadata Document Adapter
-- CSI Compatibility Classification
-- External Source Inventory
-- Runtime Boundary Enforcement
-- Toolbelt Table Tests
-- Robin Loop Workflow Tests
-- Science Provider Scaffolds
-- UI Screenshot Capture
-- Workflow Orchestration Contracts
-- Safety-Aware Item Ranking
-- Fabric Interop Metadata
-- Robin Toolbelt Integration
-- Fabric Signing Cryptography
-- UI Bridge Isolation
-- Project Documentation
-- Phase Review Summaries
-- System Architecture Diagrams
-- Scientific Agent Skills
-- Static Assets and Types
-- Doctor Output Capture
-- Mock Runtime Execution
-- Package Layout Validation
-- Agent Lane Scaffolding
-- Somatic Sandbox Helpers
-- Research Engine Scaffolding
-- Evidence Domain Modules
-- Fabric Federation Utilities
-- Somatic Mock Runner
-- Simulation Lane Scaffolding
-- Typography Assets
-- Smooth Scrolling Library
-- Math Utilities
-- Visual Post-processing
-- React DOM Rendering
-- React Three Fiber Helpers
-- React Three Fiber Core
-- 3D Post-processing
-- Animation Orchestration
-- Project Roadmap
-- Safety and Governance
-- Sensor Evidence
-- Safety Reporting Schema
-- UI Screenshots
-- Extension Demos
-- Somatic Safety Constraints
-- Agent Systems
-- File Path Handling
-- Dynamic Type Handling
-- Runtime Error Handling
-- URL Parsing Results
-- Value Validation Errors
-- Runtime Error Handling
-- File Path Handling
-- Dynamic Type Handling
-- File Path Handling
-- Dynamic Type Handling
-- File Path Handling
-- Interface Protocols
-- Runtime Error Handling
-- Interface Protocols
-- File Path Handling
-- Dynamic Type Handling
-- File Path Handling
-- Value Validation Errors
-- Runtime Error Handling
-- Value Validation Errors
-- Dynamic Type Handling
-- Exception Handling
-- File Path Handling
-- Value Validation Errors
-- Dynamic Type Handling
-- Dynamic Type Handling
-- File Path Handling
-- File Path Handling
-- Dynamic Type Handling
-- File Path Handling
-- URL Parsing Results
-- Value Validation Errors
-- Dynamic Type Handling
-- File Path Handling
-- Dynamic Type Handling
-- File Path Handling
-- Interface Protocols
-- Runtime Error Handling
-- Value Validation Errors
-- Interface Protocols
-- Runtime Error Handling
-- Runtime Error Handling
-- Interface Protocols
-- Runtime Error Handling
-- File Path Handling
-- Interface Protocols
-- Interface Protocols
-- Runtime Error Handling
-- Dynamic Type Handling
-- File Path Handling
-- Dynamic Type Handling
-- Dynamic Type Handling
-- File Path Handling
-- Dynamic Type Handling
-- Runtime Error Handling
-- Dynamic Type Handling
-- Dynamic Type Handling
-- Runtime Error Handling
-- Dynamic Type Handling
-- Dynamic Type Handling
-- Value Validation Errors
-- File Path Handling
-- File Path Handling
-- File Path Handling
-- Dynamic Type Handling
-- Value Validation Errors
-- Dynamic Type Handling
-- File Path Handling
-- Dynamic Type Handling
-- File Path Handling
-- Value Validation Errors
-- Adapter Boundary Documentation
-- AutoScientists Data Mapping
-- AutoScientists Code Inspection
-- Aviary Code Inspection
-- Privacy Boundary Standards
-- Biomodel Provenance Packaging
-- Biomodel Safety Gates
-- Boltz Code Inspection
-- Capability Development Roadmap
+- app.js
+- n
+- phase12_contracts.py
+- copy
+- U5
+- ConsentLedger
+- OG
+- push
+- test_live_audio.py
+- live.py
+- phase12a_runtime_authorization_design_charter
+- IY
+- phase11_contracts.py
+- t
+- api.py
+- csi_adapter.py
+- _safe_domain
+- constructor
+- SensorHardwareDisabled
+- dispatchEvent
+- memory/__init__.py
+- live_csi.py
+- Somatic history (pre-pivot archive)
+- addEventListener
+- MeasurementPlan
+- getPoint
+- mock_runtime.py
+- gG
+- BoltzProvider
+- _privacy_violation_count
+- phase11_audit_index_status_summary
+- evidence.py
+- registry.py
+- summarize_dose_response
+- jt
+- test_encryption_at_rest.py
+- tournament.py
+- csi_parser.py
+- validate_phase12g_production_readiness_coverage_matrix
+- phase11_dossier_lifecycle_status_summary
+- keyring.py
+- _privacy_violation_count
+- fm
+- manifest.py
+- rd
+- signing_payload
+- main.py
+- validate_phase12p_workflow_mode_activation_request_review_packet_boundary
+- n_of_1_packet.py
+- providers/__init__.py
+- server.py
+- save_ledger
+- n_of_1.py
+- Any
+- environment.py
+- Ps
+- ScientificAgentSkillsProvider
+- cg
+- identify.py
+- phase11_runtime_authorization_gap_ledger_status_summary
+- getContext
+- C
+- sensor_evidence_provider_manifest
+- InSilicoWorkflowTests
+- csi_evidence_pack.py
+- csi.py
+- toy_counter.py
+- crypto.py
+- SandboxSensorProvider
+- WifiCsiEvidencePackCompatibilityTests
+- getAttribute
+- validate_phase12h_somatic_standalone_production_readiness_ownership_map
+- FabricFederationClient
+- csi_batch.py
+- FieldScene.tsx
+- Biomodel Provenance Helpers
+- y
+- phase11_review_trail_export_status_summary
+- a
+- shared-data-pack.json
+- validate_phase12m_specialized_model_option_registry_capability_profile
+- DocumentFixtureEvidenceProvider
+- Document Evidence Pack
+- AutoScientistsTeamOrchestrationProvider
+- validate_phase12l_fabric_interop_a2a_audit_boundary_capability_profile
+- shared-invalid-signature-pack.json
+- compilerOptions
+- shared-pack.json
+- canonical.py
+- _safe_gate_id
+- WifiCsiParserTests
+- Phase10ISharedSafetyInvariantTests
+- App.tsx
+- test_fabric_federation_connect.py
+- useAppStore
+- catalog.py
+- devDependencies
+- validate_phase12o_workflow_mode_safety_gate_runtime_prerequisite_matrix
+- load_conformance_fixture
+- test_fabric_federation_security_invariants.py
+- dependencies
+- .from_env
+- api.ts
+- Somatic
+- environment_evidence_pack.py
+- research/loop.py
+- test_bench_and_provenance.py
+- a11y-check.mjs
+- States.tsx
+- ln
+- validate_document_adapter_output
+- build_sensor_evidence_artifact_ref
+- NOf1WorkflowTests
+- Dn
+- document_fixture.py
+- Phase12NWorkflowOrchestrationModeRegistryCapabilityProfileTests
+- WifiCsiPublicExamplesTests
+- DataPages.tsx
+- _doctor
+- team_orchestrator.py
+- CrossDomainEvidenceFrameworkTests
+- Phase12MSpecializedModelOptionRegistryCapabilityProfileTests
+- Phase 11C Preflight Dossiers
+- Phase12LFabricInteropA2AAuditBoundaryCapabilityProfileTests
+- Phase12OWorkflowModeSafetyGateRuntimePrerequisiteMatrixTests
+- Phase12PWorkflowModeActivationRequestReviewPacketBoundaryTests
+- Phase12QWorkflowModeReviewDecisionRecordTests
+- ui.tsx
+- Phase 11C Preflight Dossiers
+- Phase12IIntegrativeHerbalNutritionKnowledgeCapabilityProfileTests
+- Phase12KExternalComputeQuantumBackendCapabilityProfileTests
+- Phase12SWorkflowModeReviewChainCloseoutSummaryTests
+- csi_scoring.py
+- WifiCsiReferenceInventoryTests
+- Report Packet Contract
+- Phase 12B Runtime Authorization Record Candidate
+- harness.py
+- run_research_loop
+- federation.py
+- Phase12SeriesInvariantTests
+- Phase12RWorkflowModeReviewAuditTrailIndexTests
+- package.json
+- DocumentAdapterOutputValidationResult
+- HISTORY.md
+- Phase 9H / 11M Release Summary
+- FieldPage
+- write-shell.mjs
+- Baseline Comparison Placeholder
+- FabricFederationError
+- interop.py
+- install_builder_cache
+- retrieve_live
+- library.py
+- FutureHouseRobinMappingTests
+- Phase 12N Workflow Orchestration Mode Registry Capability Profile
+- MetadataOnlyDocumentAdapter
+- Phase12ARuntimeAuthorizationDesignCharterValidationResult
+- Phase12BRuntimeAuthorizationRecordCandidateValidationResult
+- Phase12CVisualSupervisionCapabilityProfileValidationResult
+- Phase12DConsentGateRequirementsValidationResult
+- Phase12EPhysiologicalSensorCapabilityProfileValidationResult
+- Phase12FSecureDropConsumerBoundaryValidationResult
+- WifiCsiEvidencePackTests
+- StdlibAndOutOfProcessTests
+- Per-Source Notes
+- Phase12FixtureValidatorRoundTripTests
+- setFromEuler
+- MachinePages.tsx
+- Phase 11A Real-Mode Contract Specs
+- Integration Status
+- CsiSourceAdapterOutputValidationResult
+- ExternalSourceInventoryTests
+- UI-BOLD-DIRECTION.md
+- RobinProvider
+- Future Financial Repo Workflow Plan
+- ✨ Features
+- Hypothesis Tournament
+- Biomodel Plan Placeholder
+- Phase 12O Workflow Mode Safety Gate Runtime Prerequisite Matrix
+- In-Silico Screening Workflow
+- PaperQA2 Adapter Scaffold
+- somatic/somatic/advisory/adapter.py
+- somatic/somatic/mock_runtime.py
+- vite-env.d.ts
+- csi_udp_forward.py
+- Somatic Architecture
+- Autonomous Build Log
+- Workflow Schema
+- N-of-1 CSI Replay Example
+- Mock Sensor Provider
+- Valid N-of-1 Sensor Planning Workflow
+- Somatic — Planning (Index)
+- Somatic — Current Plan (the pivot)
+- Development
+- Phase11FollowupQueueAcceptanceValidationResult
+- Phase11FollowupQueueValidationResult
+- load_shared_fixture
+- PackageLayoutTests
+- Literature Only
+- N-of-1 Report Packet
+- Manifests
+- CSI Capture Plan Placeholder
 - CLI Documentation
-- Content Fabric Release
-- Content Fabric Specification
-- Development Environment
-- Evidence Bus Documentation
-- Evidence Bus Sandbox
-- Evidence Data Model
-- Science Integration Services
-- External Source Staging
-- Fabric Conformance Testing
-- Fabric Gap Analysis
-- Fabric Integration Documentation
-- Fabric Verification Reporting
-- Fabric Pack Schema
-- Finch Optional Features
-- Finch Utility Toolbelt
-- Robin Stack Mapping
-- N-of-1 Reporting
-- Hypothesis Tournament Workflow
-- In-Silico Screening
-- Installation Modes
-- Integration Status Tracking
-- LDP Code Inspection
-- N-of-1 Fabric Planning
-- Intervention Tagging
-- N-of-1 Report Packets
-- Response Evaluation
-- Onboarding Documentation
+- Somatic Data Flow and Safety Gates Diagram
+- tables/README.md
+- conformance/README.md
+- Phase 12G Production Readiness Matrix
+- locus-fixtures-placeholder.md
+- CLI Companions UI
+- DAMD Robin Demo
+- Toy Counter Provider Example
+- Intervention Tag Placeholder
+- Biomodel Consent Record Placeholder
+- Mock Boltz Input YAML
+- Boltz-2 Provider Placeholder
+- Scientific Agent Skills Provider Mock Config
+- Sensor Evidence Provider Registry Manifest
+- N-of-1 Fabric Pack Plan Placeholder
+- CSI Feature Set Placeholder
+- @fontsource/space-grotesk
+- gsap
+- interop/README.md
+- lenis
+- maath
+- Phase 11 Contracts
+- Phase 12R Workflow Mode Review Audit Trail Index
+- UI-READINESS.md
+- react
+- react-dom
+- @react-three/drei
+- @react-three/postprocessing
+- Sample Safety Request
+- shared/README.md
+- agents/__init__.py
+- analysis/__init__.py
+- engines/__init__.py
+- evidence/__init__.py
+- fabric/__init__.py
+- Fabric Integration
+- Fabric Locus Interop
+- somatic/__init__.py
+- somatic-fixtures-placeholder.md
+- simulator/__init__.py
+- Somatic Bioluminescence Design System
+- ToolsPage
+- @theatre/core
+- Somatic UI Package
+- Language Port Evolution Workflow
+- Locus User Workflow Hardening
+- jcs/README.md
+- Adversarial Corpus
+- Agents and Systems Roles
+- biomodel-adapters/README.md
+- Bioluminescence UI
+- core/README.md
+- experiment-planner/README.md
+- Somatic Web Interface
+- Bugbot Review Contract
+- fabric/README.md
+- Content Fabric v1.0.0
+- Contributing Guide
+- Somatic Docker Service
+- finch-analysis/README.md
+- Capability Roadmap
+- Somatic Local Architecture Diagram
+- Evidence Model
+- Finch Toolbelt
+- Agents and Analysis
+- CLI and Runner
+- Content Fabric
+- Evidence and Documents
+- Fixtures and Tests
+- Master-plan Runtime (Sandbox)
+- N-of-1 and Reports
+- Safety and Governance
+- Install Modes
+- Master Plan
 - Orchestration Roadmap
-- PaperQA2 Code Inspection
-- Personal Baseline Graph
-- Project Phase Checkpoint
-- Provider Lifecycle Management
-- Regulatory Compliance Notes
-- Federation Security Review
-- Robin Code Inspection
-- Safety Boundary Definitions
-- Science Provider Roadmap
-- Agent Skills Adapter
-- Bioluminescence UI Mockup
-- Presence Interface Screenshot
-- Consent Management UI
-- Blocked Analysis UI
-- Privacy and Erasure UI
-- Sensor Roster UI
-- Blocked Sharing UI
-- Blocked Ingestion UI
-- Blocked Experiments UI
-- Blocked Research UI
-- Blocked Remedy Library UI
-- Blocked Parasite Q&A UI
-- Blocked Science Harness UI
-- Blocked Presence UI
-- Blocked Science Bench UI
-- Blocked Suggestions UI
-- CLI Companion UI
-- Replay Interface UI
-- Blocked Field UI
-- Robin Demo Documentation
-- Document Fixture Workflow
+- Phase 12C Visual Supervision Profile
+- Phase 12D Visual Consent Gates
+- Phase 12E Physiological Sensor Profile
+- Phase 12F Secure Drop Boundary
+- Phase 12I Integrative Knowledge Profile
+- Phase 12K Quantum Backend Profile
+- Phase 12M Specialized Model Option Registry Capability Profile
+- Phase Review Checklist
+- Provider Contracts
+- Regulatory Notes
+- hypothesis-tournament/README.md
+- lab-adapters/README.md
+- literature-engine/README.md
+- Sensor Roadmap
+- provider-sdk/README.md
+- reports/README.md
+- Somatic Bold Mockup
+- UI Screenshot: Privacy and Erasure
+- UI Screenshot: Sensor Roster
+- UI Screenshot: Share Blocked
+- UI Screenshot: Ingest Blocked
+- UI Screenshot: Experiments Blocked
+- UI Screenshot: Research Blocked
+- UI Screenshot: Remedy Blocked
+- UI Screenshot: Parasite Blocked
+- UI Screenshot: Science Blocked
+- UI Screenshot: Presence Blocked
+- UI Screenshot: Bench Blocked
+- Proactive Suggestions UI
+- Field UI
+- UI Screenshot: Command Palette
+- UI Screenshot: Status Dashboard (Dark)
+- UI Screenshot: Consent Management (Dark)
+- UI Screenshot: Analyze Screen (Blocked/Off)
+- UI Screenshot: Privacy and Erasure (Dark)
+- UI Screenshot: Sensor Roster (Dark)
+- UI Screenshot: Share Screen (Blocked/Off)
+- UI Screenshot: Data Ingestion Screen (Blocked/Off)
+- UI Screenshot: Experiments Screen (Blocked/Off)
+- UI Screenshot: Research Screen (Blocked/Off)
+- UI Screenshot: Remedy Library Screen (Blocked/Off)
+- UI Screenshot: Parasite Q&A Screen (Blocked/Off)
+- UI Screenshot: Science Harness Screen (Blocked/Off)
+- UI Screenshot: Presence Screen (Blocked/Off)
+- UI Screenshot: Science Bench Screen (Blocked/Off)
+- UI Screenshot: Proactive Suggestions Screen (Blocked/Off)
+- UI Screenshot: CLI Companions (Dark)
+- UI Screenshot: Replay Screen (Dark)
+- UI Screenshot: Field Screen (Blocked/Off)
+- Presence UI
+- Command Palette UI
+- README Preview HTML
+- UI Screenshot: Rendered README with Architecture Diagram
+- safety-gate/README.md
+- sensor-adapters/README.md
+- simulator/README.md
+- Document Fixture Provider Example
 - Fabric Pack Demo
-- CSI Forwarder Documentation
-- Clinical Demo Documentation
-- Literature Demo Documentation
+- Host-side CSI forwarder README
+- Hybrid Clinical Demo
+- Literature Only Demo
 - Sandbox Lab Demo
-- WiFi CSI Demo
-- Boltz Input Fixtures
-- Table Evidence Fixtures
-- Conformance Test Fixtures
-- Fabric Interoperability Fixtures
-- Shared Interoperability Fixtures
-- Fabric Vector Documentation
-- Invalid Workflow Fixtures
-- Valid Literature Fixtures
-- License Discussion
-- Manifest Documentation
-- Biomodel Adapter Package
-- Somatic Core Package
-- Experiment Planner Package
-- Somatic Fabric Package
-- Finch Analysis Package
-- Hypothesis Tournament Package
-- Lab Adapter Package
-- Literature Engine Package
-- Patient Baseline Package
-- Provider SDK Package
-- Reports Package
-- Safety Gate Package
-- Sensor Adapter Documentation
-- Somatic Simulator Documentation
-- WiFi CSI Documentation
-- Real-Mode Contract Specifications
-- Review Record Fixtures
-- Preflight Dossier Specifications
-- Dossier Lifecycle Management
-- Audit Index Change Control
-- Audit Handoff Reporting
-- Handoff Acceptance Process
-- Follow-up Remediation Procedures
-- Follow-up Queue Indexing
-- Decision Closeout Documentation
-- Review Trail Export
-- Somatic Core Project
-- Advisory Review and Planning
-- Security Protocols
-- Local UI Index
-- Doctor CLI Tool
-- Design-Skill Audit Trail
-- Hypothesis Tournament Workflow
-- WiFi CSI Observation Workflow
-- Fabric Pack Ingest Workflow
-- Clinical Decision Support Workflow
+- Sensor Evidence Extension Demo README
+- Tournament CSI Readiness Example
+- Personal Profile Placeholder
+- Response Evaluation Plan Placeholder
+- Biomodel Pack Plan Placeholder
+- Biomodel Runtime Policy (Dangerous Enabled)
+- Biomodel Runtime Policy (Safe Default)
+- Sample Evidence Record
+- Shared Interop Expected Digests
+- Somatic Generated Interop Metadata
+- Sample Code Pack
+- Sample Data Pack
+- PaperQA2 Provider Placeholder
+- FutureHouse Robin Provider Placeholder
+- Scientific Agent Skills Provider Placeholder
+- CSI Sanitized Evidence Pack Placeholder
+- CSI Sanitized Evidence Pack (Parsed)
+- CSI Sanitized Evidence Pack (Partial Batch)
+- Sample Phase 1A Report Packet
+- Sensor Feature Set Placeholder
+- Valid Literature Only Workflow
+- Onboarding Guide
+- Patient Baseline Package README
+- WiFi CSI Package README
+- Phase 12M Specialized Model Option Registry Capability Profile
+- somatic
+- ClinFusion — reuse assessment for Somatic
+- Somatic — Final Review Loop
+- Somatic — Phase 12T Review & Architecture Plan
+- Somatic — Finish the README to the Kortex-Audio bar
+- Somatic — Autonomous Build: sensor visualization + ESP32-CSI
+- Recommended Next Phases.md
+- Somatic Phase Map
+- Sample Run Manifest
+- CSI_PARSER_CONTRACT
+- run_evidence_loop
+- Run Research Loop
+- Somatic Product Register
+- AnalyzePage
+- ExperimentsPage
+- IngestPage
+- SharePage
+- ConsentPage
+- PrivacyPage
+- StatusPage
+- ParasitePage
+- RemedyPage
+- ResearchPage
+- ReplayPage
+- SciencePage
+- AvatarScene
+- Status Summaries V1
+- Bioluminescence Design Notes
+- Valid Hypothesis Tournament Workflow
+- Fabric Pack Ingest
+- Hypothesis Tournament
+- In-Silico Screening
+- Sandbox Lab
+- User and AI Install Guidance Workflow
+- Wet Lab Manual
 
 ## God Nodes (most connected - your core abstractions)
-1. `ConsentLedger` - 147 edges
-2. `constructor()` - 138 edges
-3. `_safe_gate_id()` - 83 edges
-4. `push()` - 74 edges
-5. `_safe_domain()` - 72 edges
-6. `copy()` - 69 edges
-7. `require_consent()` - 62 edges
-8. `e()` - 56 edges
-9. `_doctor()` - 52 edges
-10. `_safe_category()` - 52 edges
+1. `U5()` - 610 edges
+2. `OG()` - 479 edges
+3. `constructor()` - 283 edges
+4. `IY()` - 265 edges
+5. `ConsentLedger` - 207 edges
+6. `n()` - 153 edges
+7. `push()` - 140 edges
+8. `i()` - 134 edges
+9. `get()` - 120 edges
+10. `na()` - 105 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Field UI Screenshot (Dark)` --conceptually_related_to--> `UI Bioluminescence Re-skin Charter`  [INFERRED]
-  docs/ui-screenshots/dark/19-field.png → planning/UI-BOLD.md
-- `Presence UI Screenshot (Dark)` --conceptually_related_to--> `UI Bioluminescence Re-skin Charter`  [INFERRED]
-  docs/ui-screenshots/dark/20-presence.png → planning/UI-BOLD.md
-- `Command Palette UI Screenshot (Dark)` --conceptually_related_to--> `UI Bioluminescence Re-skin Charter`  [INFERRED]
-  docs/ui-screenshots/dark/21-palette.png → planning/UI-BOLD.md
-- `main()` --calls--> `start_background_server()`  [INFERRED]
-  docs/ui-screenshots/capture.py → somatic/bridge/server.py
-- `main()` --calls--> `load_ledger()`  [INFERRED]
-  docs/ui-screenshots/capture.py → somatic/consent/store.py
+- `Replay UI` --references--> `N-of-1 CSI Replay Example`  [INFERRED]
+  docs/ui-screenshots/17-replay.png → examples/wifi-csi-demo/n-of-1-csi-replay-example.json
+- `N-of-1 CSI Replay Example` --references--> `Valid Robin Loop Workflow`  [INFERRED]
+  examples/wifi-csi-demo/n-of-1-csi-replay-example.json → fixtures/workflows/valid-robin-loop.yaml
+- `CLI Companions UI` --references--> `CSI Parser CLI Example`  [INFERRED]
+  docs/ui-screenshots/16-tools.png → examples/wifi-csi-demo/csi-parser-cli-example.json
+- `DAMD Robin Demo` --conceptually_related_to--> `Ripasudil dAMD Task`  [INFERRED]
+  examples/damd-robin-demo/README.md → fixtures/bench/ripasudil-damd.json
+- `UI Screenshot: Field` --semantically_similar_to--> `Sensors and CSI`  [INFERRED] [semantically similar]
+  docs/ui-screenshots/19-field.png → docs/how-it-works/sensors-and-csi.md
 
 ## Import Cycles
 - None detected.
 
 ## Hyperedges (group relationships)
-- **Phase 11 Governance & Audit Trail** — phase_11a_specs_md, phase_11b_fixtures_md, phase_11c_dossiers_md, phase_11d_lifecycle_md, phase_11e_audit_md, phase_11f_handoff_md, phase_11g_acceptance_md, phase_11h_followup_md, phase_11i_queue_md, phase_11j_closeout_md, phase_11k_trail_md, phase_11l_ledger_md, phase_11m_governance_md [EXTRACTED 1.00]
-- **Phase 12 Capability & Readiness Profiles** — phase_12a_charter_md, phase_12b_candidate_md, phase_12c_supervision_md, phase_12d_consent_md, phase_12e_physiological_md, phase_12f_securedrop_md, phase_12g_readiness_md, phase_12h_ownership_md, phase_12i_integrative_md, phase_12k_quantum_md, phase_12l_interop_md, phase_12m_registry_md, phase_12n_orchestration_md, phase_12o_matrix_md, phase_12p_packet_md [EXTRACTED 1.00]
-- **Workflow Mode Review Chain (Phases 12N-12S)** — docs_phase_12q_non_authorizing_workflow_mode_review_decision_record, docs_phase_12r_workflow_mode_review_audit_trail_index, docs_phase_12s_workflow_mode_review_chain_closeout_summary [EXTRACTED 1.00]
-- **Somatic Local Architecture** — somatic_ui, stdlib_bridge, somatic_engine [EXTRACTED 1.00]
-- **UI Navigation Structure** — docs_ui_screenshots_dark_01_status, docs_ui_screenshots_dark_02_consent, docs_ui_screenshots_dark_04_privacy, docs_ui_screenshots_dark_05_sensors, docs_ui_screenshots_dark_16_tools [INFERRED 0.80]
-- **Somatic Package Ecosystem** — packages_core_readme, packages_fabric_readme, packages_safety_gate_readme, packages_provider_sdk_readme, packages_literature_engine_readme, packages_hypothesis_tournament_readme, packages_finch_analysis_readme, packages_sensor_adapters_readme, packages_biomodel_adapters_readme, packages_lab_adapters_readme, packages_experiment_planner_readme, packages_simulator_readme, packages_reports_readme, packages_patient_baseline_readme, packages_wifi_csi_readme [EXTRACTED 1.00]
-- **Autonomous Build Workflow** — planning_autonomous_build_mode, planning_autonomous_log, planning_backlog, planning_current_plan [EXTRACTED 1.00]
-- **UI Evolution Track** — planning_ui_build, planning_ui_readiness, planning_ui_rich, planning_ui_bold, planning_ui_bold_direction [EXTRACTED 1.00]
-- **Autonomous Science Loop** — somatic_evidence_bus, somatic_belief_ledger, planning_somatic_master_plan [EXTRACTED 0.85]
+- **Real-Mode Safety and Readiness Gates** — somatic_safety_phase11_contracts, somatic_safety_adapter_readiness, somatic_safety_biomodel [EXTRACTED 0.85]
+- **Sensor Evidence System** — somatic_sensors_csi_formats_csi_parser_contract, somatic_sensors_environment_evidence_pack_build_environment_evidence_pack [EXTRACTED 0.85]
+- **Consent-Gated Analysis Flow** — somatic_flows_analyze_analyze_user_data, somatic_insights_engine_grade_metric, somatic_flows_share_render_professional_summary [EXTRACTED 0.90]
+- **CSI Metadata Extraction and Scoring Pipeline** — somatic_sensors_csi_parser_parse_csi_fixture, somatic_sensors_csi_scoring_score_csi_replay_evidence, somatic_sensors_csi_batch_evaluate_csi_replay_batch, somatic_sensors_csi_evidence_pack_build_csi_evidence_pack [EXTRACTED 0.90]
+- **Evidence Sanitization Flow** — somatic_evidence_document_adapter, somatic_sensors_audio_features, somatic_sensors_live_features [EXTRACTED 0.90]
+- **External Science Provider Scaffolds** — somatic_providers_paperqa2, somatic_providers_boltz, somatic_providers_robin [EXTRACTED 0.90]
+- **External Source Wrapping Pattern** — fixtures_providers_external_source_inventory, fixtures_providers_boltz2_provider_placeholder [EXTRACTED 0.90]
+- **Fabric Security and Integrity** — somatic_fabric_crypto, somatic_fabric_keyring, somatic_fabric_manifest, somatic_fabric_canonical, somatic_fabric_catalog [EXTRACTED 0.90]
+- **N-of-1 Research Subsystem** — docs_n_of_1_report_packet, docs_n_of_1_fabric_pack_plan, docs_sensor_privacy_boundary, docs_wifi_csi_scaffold [EXTRACTED 0.90]
+- **Robin Loop Agents** — somatic_agents_crow_build_literature_context, somatic_agents_falcon_build_measurement_plan, somatic_agents_finch_analyze_raw_evidence [EXTRACTED 0.90]
+- **Sensor Evidence Framework** — somatic_sensors_toy_counter_evidence_pack_toy_counter_evidence_pack_contract, somatic_sensors_video_processor_videoprocessor, somatic_simulator_sandbox_source_sandboxevidencesource [EXTRACTED 0.90]
+- **Multi-modal Sensor Fusion Flow** — somatic_sensors_fusion_fuse_rf_vision, somatic_sensors_fusion_fuse_csi_units, somatic_sensors_pose_model_infer_pose [EXTRACTED 0.90]
+- **UI Visual Evolution** — quiet_instrument_identity, bioluminescence_identity, planning_ui_rich_md [EXTRACTED 0.90]
+- **Bioluminescence UI System** — ui_design_notes, ui_src_app, ui_src_field_field_scene, ui_src_store [EXTRACTED 0.95]
+- **Biomodel Scaffold System** — somatic_providers_biomodel_biomodel_result_to_evidence_record, somatic_providers_boltz_boltzprovider [EXTRACTED 0.95]
+- **Fabric Security Invariants** — somatic_fabric_canonical_canonical_dumps, somatic_fabric_federation_fabricfederationclient [EXTRACTED 0.95]
+- **Local Persistence Pattern** — somatic_consent_store, somatic_experiments_store, somatic_sensors_live_consent [EXTRACTED 0.95]
+- **N-of-1 Memory and Evaluation Loop** — somatic_memory_baseline, somatic_memory_intervention, somatic_memory_response_evaluation [EXTRACTED 0.95]
+- **Phase 11 Planning Governance Chain** — somatic_safety_phase11_contracts, somatic_safety_adapter_readiness, somatic_evidence_framework [EXTRACTED 0.95]
+- **Safety and Governance Framework** — docs_safety_boundaries, docs_safety_gate_contract, docs_report_packet [EXTRACTED 0.95]
+- **Somatic Phase 12 Authorization and Capability Chain** — phase_12a_charter, phase_12b_record_candidate, phase_12c_visual_supervision_profile, phase_12d_visual_desktop_consent, phase_12e_physiological_sensor_profile, phase_12f_secure_drop_boundary, phase_12g_production_readiness_matrix, phase_12h_standalone_ownership_map [EXTRACTED 0.95]
+- **WiFi CSI Planning & Reference Stack** — fixtures_sensors_csi_csi_capture_plan_placeholder_json, fixtures_sensors_csi_csi_reference_inventory_json, fixtures_workflows_valid_n_of_1_yaml, fixtures_workflows_valid_hypothesis_tournament_yaml [EXTRACTED 0.95]
+- **Workflow Mode Governance and Review Stack** — phase_12n_workflow_mode_registry, phase_12o_workflow_safety_gate_matrix, phase_12p_workflow_activation_packet, phase_12q_workflow_review_decision [EXTRACTED 0.95]
+- **Biomodel Planning Flow** — fixtures_biomodel_biomodel_request_placeholder, fixtures_biomodel_biomodel_plan_placeholder, fixtures_biomodel_biomodel_result_placeholder, fixtures_biomodel_biomodel_readiness_report_placeholder [EXTRACTED 1.00]
+- **CSI Hardware Integration Flow** — docs_hardware_esp32_csi, somatic_sensors_live_csi, docs_how_it_works_sensors_and_csi [EXTRACTED 1.00]
+- **External Source Inspection Suite** — docs_autoscientists_source_inspection, docs_aviary_source_inspection, docs_boltz_source_inspection, docs_ldp_source_inspection, docs_paperqa2_source_inspection, docs_robin_source_inspection, docs_scientific_agent_skills_source_inspection [EXTRACTED 1.00]
+- **Fabric Federation Security & Review** — docs_how_it_works_fabric_connect, docs_reviews_fabric_federation_security_review, somatic_fabric_federation [EXTRACTED 1.00]
+- **Fabric Interop Certification Flow** — fixtures_fabric_interop_shared_shared_expected, fixtures_fabric_interop_shared_shared_pack [EXTRACTED 1.00]
+- **Fabric Interoperability Stack** — somatic_fabric_integration, somatic_fabric_locus_interop, somatic_fabric_mutual_verification_report, somatic_fabric_pack_schema [EXTRACTED 1.00]
+- **Fabric Interop Verification** — fixtures_fabric_interop_somatic_generated_metadata, fixtures_fabric_interop_shared_shared_expected, fixtures_fabric_sample_code_pack, fixtures_fabric_sample_data_pack [EXTRACTED 1.00]
+- **N-of-1 Workflow Artifact Chain** — docs_personal_baseline_graph, docs_n_of_1_intervention_tags, docs_n_of_1_response_evaluation, docs_n_of_1_report_packet, docs_n_of_1_fabric_pack_plan [EXTRACTED 1.00]
+- **Patient Baseline Scaffold** — fixtures_baseline_personal_profile_placeholder, fixtures_baseline_baseline_graph_placeholder, fixtures_baseline_baseline_comparison_placeholder, fixtures_baseline_response_comparison_placeholder [EXTRACTED 1.00]
+- **Phase 11 Audit and Governance Trail** — docs_phase_11c_preflight_dossiers, docs_phase_11d_dossier_lifecycle, docs_phase_11e_audit_index_change_control, docs_phase_11f_audit_handoff_reporting, docs_phase_11g_handoff_acceptance, docs_phase_11h_followup_remediation, docs_phase_11i_followup_queue_index, docs_phase_11j_decision_closeout, docs_phase_11k_review_trail_export, docs_phase_11l_runtime_authorization_gap_ledger, docs_phase_11m_planning_governance_closeout [EXTRACTED 1.00]
+- **Phase 11 Safety Governance Flow** — fixtures_reviews_phase_11b_review_records_v1, fixtures_reviews_phase_11c_preflight_dossiers_v1, fixtures_reviews_phase_11d_dossier_lifecycle_records_v1, fixtures_reviews_phase_11e_audit_index_v1, fixtures_reviews_phase_11f_audit_handoff_v1, fixtures_reviews_phase_11g_handoff_acceptance_v1, fixtures_reviews_phase_11h_followup_remediation_v1, fixtures_reviews_phase_11i_followup_queue_index_v1, fixtures_reviews_phase_11j_decision_closeout_v1, fixtures_reviews_phase_11k_review_trail_export_v1, fixtures_reviews_phase_11l_runtime_authorization_gap_ledger_v1, fixtures_reviews_phase_11m_planning_governance_closeout_index_v1 [EXTRACTED 1.00]
+- **Phase 12 Safety Contract Validation Suite** — tests_test_phase12i_integrative_herbal_nutrition_knowledge_capability_profile, tests_test_phase12k_external_compute_quantum_backend_capability_profile, tests_test_phase12l_fabric_interop_a2a_audit_boundary_capability_profile, tests_test_phase12m_specialized_model_option_registry_capability_profile, tests_test_phase12n_workflow_orchestration_mode_registry_capability_profile, tests_test_phase12o_workflow_mode_safety_gate_runtime_prerequisite_matrix, tests_test_phase12p_workflow_mode_activation_request_review_packet_boundary, tests_test_phase12q_non_authorizing_workflow_mode_review_decision_record, tests_test_phase12r_workflow_mode_review_audit_trail_index, tests_test_phase12s_workflow_mode_review_chain_closeout_summary [EXTRACTED 1.00]
+- **Safety Gate Execution Chain** — somatic_safety_core_py, somatic_consent_ledger_py, somatic_advisory_adapter_py [EXTRACTED 1.00]
+- **Consent & Safety Spine** — somatic_consent, somatic_safety_core, somatic_advisory, somatic_insights_engine [EXTRACTED 1.00]
+- **Scientific Agent Skills Scaffold** — fixtures_providers_scientific_agent_skills_provider_mock_config, fixtures_providers_scientific_agent_skills_provider_placeholder, fixtures_providers_scientific_agent_skills_sample_catalog [EXTRACTED 1.00]
+- **Somatic Analysis Suite** — somatic_analysis_dose_response_summarize_dose_response, somatic_analysis_provenance_build_analysis_provenance, somatic_analysis_provider_finchextrasprovider [EXTRACTED 1.00]
+- **UI Design System Implementation** — somatic_ui_design, somatic_ui_product, somatic_ui_src_viz_capabilityring [EXTRACTED 1.00]
+- **Workflow Mode Governance Chain** — docs_phase_12n_workflow_orchestration_mode_registry_capability_profile, docs_phase_12o_workflow_mode_safety_gate_runtime_prerequisite_matrix, docs_phase_12p_workflow_mode_activation_request_review_packet_boundary, docs_phase_12q_non_authorizing_workflow_mode_review_decision_record, docs_phase_12r_workflow_mode_review_audit_trail_index, docs_phase_12s_workflow_mode_review_chain_closeout_summary [EXTRACTED 1.00]
+- **Biomodel Integration Stack** — docs_biomodel_provider_boundary, docs_boltz_adapter, docs_biomodel_provenance [EXTRACTED]
+- **Provider Scaffold Pattern** — somatic_providers_paperqa2_paperqa2literatureprovider, somatic_providers_robin_robinprovider, somatic_providers_scientific_agent_skills_scientificagentskillsprovider, somatic_providers_team_orchestration_autoscientiststeamorchestrationprovider [EXTRACTED]
+- **Research Loop Flow** — somatic_research_retrieve_retrieve, somatic_research_bind_bind_claims, somatic_research_grade_grade_from_passages, somatic_research_loop_run_research_loop [EXTRACTED]
+- **Safety and Governance Lifecycle** — phase_11_contracts, phase_12_charter [EXTRACTED]
+- **Science Cycle Flow** — somatic_science_belief_beliefledger, somatic_science_falsifier_propose_next_measurement, somatic_science_harness_run_science_loop [EXTRACTED]
+- **UI Authoring and Build Stack** — ui_readme, ui_scripts_a11y_check, ui_src_theme, ui_src_routes [EXTRACTED]
+- **CSI Evidence Pack Variants** — fixtures_reports_csi_evidence_pack_placeholder, fixtures_reports_csi_evidence_pack_v1_parsed, fixtures_reports_csi_evidence_pack_v1_partial_batch [INFERRED 0.80]
+- **External Science Adapter Roadmap** — docs_science_provider_roadmap, docs_robin_loop, docs_workflow_modes [INFERRED 0.80]
+- **Fabric Content Distribution** — somatic_fabric_canonical_canonical_dumps, somatic_fabric_federation_fabricfederationclient [INFERRED 0.85]
+- **Content Fabric Interop Flow** — somatic_fabric, somatic_safety_phase12_contracts, somatic_mock_runtime [INFERRED 0.85]
+- **Live Sensor Feature Ingest Pattern** — somatic_sensors_live_csi_livecsiingest, somatic_sensors_live_audio_audiobiomarkeringest, somatic_sensors_live_video_livevideoingest [INFERRED 0.85]
+- **Safety and Governance Review Chain** — fixtures_reviews_phase_12r_workflow_mode_review_audit_trail_index_v1_json, fixtures_reviews_phase_12s_workflow_mode_review_chain_closeout_summary_v1_json, fixtures_snapshots_status_summaries_v1_json, fixtures_safety_sample_safety_response_json [INFERRED 0.85]
+- **Sensor Evidence Contract & Manifest Validation** — tests_test_sensor_evidence_contract, tests_test_sensor_evidence_provider_manifest, tests_test_real_mode_readiness_gate [INFERRED 0.85]
+- **Somatic Planning & Review Lifecycle** — planning_somatic_master_plan, planning_current_plan, planning_phase_13_advisory_review, planning_final_review [INFERRED 0.90]
+- **Somatic UI Documentation and Mockups** — docs_how_it_works_local_ui, docs_ui_mockups_somatic_bold_mockup, docs_ui_screenshots_readme, docs_ui_screenshots_capture [INFERRED 0.90]
 
-## Communities (425 total, 257 thin omitted)
+## Communities (402 total, 221 thin omitted)
 
-### Community 0 - "App UI and State"
+### Community 0 - "app.js"
 Cohesion: 0.00
-Nodes (107): a_(), aA(), addFolder(), aj(), aR(), area(), B8(), bk() (+99 more)
+Nodes (232): AA(), _activateAction(), addFolder(), _addInactiveAction(), _addInactiveBinding(), addInstance(), adoptCameraSettings(), applyAxisAngle() (+224 more)
 
-### Community 1 - "Vector and Math Utilities"
-Cohesion: 0.03
-Nodes (211): accumulate(), accumulateAdditive(), add(), addLevel(), addScalar(), addScaledSH(), addScaledVector(), addVectors() (+203 more)
-
-### Community 2 - "Phase 12 Authorization Finalization"
-Cohesion: 0.03
-Nodes (140): _capability_label_errors(), _finalize_phase12a_runtime_authorization_design_charter(), _finalize_phase12b_runtime_authorization_record_candidate(), _finalize_phase12c_visual_supervision_capability_profile(), _finalize_phase12d_visual_desktop_consent_gate_requirements(), _finalize_phase12e_physiological_sensor_capability_profile(), _finalize_phase12f_secure_drop_consumer_boundary(), _finalize_phase12g_production_readiness_coverage_matrix() (+132 more)
-
-### Community 3 - "Sensor Hardware Ingestion"
-Cohesion: 0.04
-Nodes (76): RawEvidence, Raised when a caller asks for live hardware that the core will not open., SensorHardwareDisabled, DATA_INGESTION + ANALYSIS_INSIGHT + explicit live-csi grant with subject consent, require_live_csi(), start_ingest(), _isolate(), Sensor roster sandbox live-scan, privacy rails, and RF↔vision fusion. (+68 more)
-
-### Community 4 - "Authorization Design Profiles"
-Cohesion: 0.05
-Nodes (49): _authorization_wording_count(), _is_non_negative_int(), phase12a_runtime_authorization_design_charter(), phase12b_runtime_authorization_record_candidate(), phase12b_runtime_authorization_record_candidate_status_summary(), phase12c_visual_supervision_capability_profile(), _phase12d_source_design_charter_errors(), _phase12d_source_record_candidate_errors() (+41 more)
-
-### Community 5 - "Event Handling and Controls"
+### Community 1 - "n"
 Cohesion: 0.02
-Nodes (130): addEventListener(), addInstance(), adoptCameraSettings(), advance(), _arrowKeyMultiplier(), autoReset(), bind(), BX() (+122 more)
+Nodes (204): Af(), apply(), w(), x(), _B(), i(), M(), De() (+196 more)
 
-### Community 6 - "Consent Ledger Management"
+### Community 2 - "phase12_contracts.py"
 Cohesion: 0.03
-Nodes (46): ConsentLedger, Return currently granted scopes in catalog order., Serialize ledger state for local JSON persistence., Restore a ledger from :meth:`to_dict` output.          Any schema, type, times, Right-to-erasure hook: clear all grants and event history., In-memory consent ledger with JSON round-trip helpers.      All catalog scopes, ask_parasite(), ParasiteReport (+38 more)
+Nodes (143): _finalize_phase12a_runtime_authorization_design_charter(), _finalize_phase12b_runtime_authorization_record_candidate(), _finalize_phase12c_visual_supervision_capability_profile(), _finalize_phase12d_visual_desktop_consent_gate_requirements(), _finalize_phase12e_physiological_sensor_capability_profile(), _finalize_phase12f_secure_drop_consumer_boundary(), _finalize_phase12h_standalone_ownership_matrix(), _finalize_phase12i_knowledge_capability_profile() (+135 more)
 
-### Community 7 - "CSI Data Parsing"
-Cohesion: 0.05
-Nodes (52): CsiFrame, CsiParsedFile, CsiParseError, CsiParserReport, CsiSample, _json_ready(), _aggregate_status_counts(), build_csi_parser_artifacts() (+44 more)
-
-### Community 8 - "Workflow Safety Gate Audit"
+### Community 3 - "copy"
 Cohesion: 0.03
-Nodes (125): _finalize_phase12o_workflow_mode_safety_gate_matrix(), _finalize_phase12p_review_packet(), _finalize_phase12q_decision_record(), _finalize_phase12r_audit_trail_index(), _finalize_phase12s_closeout_summary(), _future_gate_errors(), _invalid_phase12p_packet_result(), _invalid_phase12q_decision_record_result() (+117 more)
+Nodes (204): accumulate(), accumulateAdditive(), add(), addLevel(), addScalar(), addScaledSH(), addScaledVector(), addVectors() (+196 more)
 
-### Community 9 - "Phase 11 Preflight Dossiers"
-Cohesion: 0.05
-Nodes (87): _finalize_phase11_preflight_dossier(), _finalize_phase11f_record(), _finalize_phase11g_record(), _finalize_phase11h_record(), _finalize_phase11i_acceptance_check(), _finalize_phase11i_queue_index(), _invalid_phase11h_result(), _invalid_phase11i_acceptance_result() (+79 more)
+### Community 4 - "U5"
+Cohesion: 0.02
+Nodes (209): Mt(), au(), Bg(), br(), cT(), Cv(), Cy(), da() (+201 more)
 
-### Community 10 - "Literature Evidence Providers"
-Cohesion: 0.05
-Nodes (32): Provider adapter interface scaffolds.  These modules define Somatic-owned prot, LiteratureDocument, LiteratureEvidenceDraft, LiteratureProvider, LiteratureQuery, Return provider-scoped document metadata without leaking raw secrets., Map documents into Somatic evidence records or evidence-record drafts., PaperQA2LiteratureProvider (+24 more)
+### Community 5 - "ConsentLedger"
+Cohesion: 0.02
+Nodes (167): Pattern, PermissionError, Somatic — Advisory Review & Re-Plan (post-pivot), somatic/advisory/, AdvisoryConfigError, AdvisoryHttpError, AdvisoryModelClient, AdvisoryModelConfig (+159 more)
 
-### Community 11 - "Dossier Lifecycle Management"
-Cohesion: 0.05
-Nodes (60): _default_phase11d_decision_for_stage(), _default_phase11d_verdict_for_stage(), _default_preflight_dossier_for_domain(), _finalize_phase11d_record(), _looks_like_phase11_preflight_dossier(), _ordered_gate_subset(), phase11_compare_preflight_dossiers(), phase11_document_ingestion_preflight_dossier() (+52 more)
+### Community 6 - "OG"
+Cohesion: 0.02
+Nodes (184): abort(), Eo(), Pt(), ba(), bc(), cd(), Cl(), Cp() (+176 more)
 
-### Community 12 - "UI Layout and Events"
-Cohesion: 0.05
-Nodes (81): Af(), B5(), baseHeight(), baseWidth(), blendFunction(), BY(), bz(), clear() (+73 more)
-
-### Community 13 - "Consent and Experiment Storage"
-Cohesion: 0.08
-Nodes (80): default_consent_path(), erase_stored_ledger(), load_ledger(), Return the on-disk ledger path (env override or ``~/.somatic/consent.json``)., Load a ledger from disk. Missing or invalid files return all-OFF., Right-to-erasure: delete the on-disk ledger file if it exists., InterventionTag, User-authored tag for a personal experiment. Not a treatment plan. (+72 more)
-
-### Community 14 - "Obfuscated Utility Functions"
-Cohesion: 0.04
-Nodes (103): a, _8(), AB(), AG(), aH(), apply(), aX(), aY() (+95 more)
-
-### Community 15 - "Biomodel Evidence Processing"
-Cohesion: 0.06
-Nodes (33): biomodel_result_to_evidence_record(), BiomodelEvidenceRecord, BiomodelPlan, BiomodelProvider, BiomodelRequest, BiomodelResult, Describe a model run before any execution, download, or data release., Execute only when explicitly configured by a future integration phase. (+25 more)
-
-### Community 16 - "Benchmarking and Scoring"
-Cohesion: 0.06
-Nodes (61): Benchmark lane: sandbox runner plus metadata scaffold., BenchScore, _board(), load_bench_task(), Sandbox somatic-bench: score a harness on the ripasudil/dAMD canonical task., Score the sandbox science harness on a closed-loop fixture task., run_bench(), CliCommandTests (+53 more)
-
-### Community 17 - "Sensor Evidence Framework"
-Cohesion: 0.07
-Nodes (55): Shared sanitized evidence-pack helpers across evidence domains.  The legacy na, _artifact_ref_result(), _boundary_flag_violation_count(), build_sensor_evidence_artifact_ref(), classify_sensor_evidence_artifact_ref(), classify_sensor_evidence_contract(), _compatibility_result(), compute_sensor_evidence_fingerprint() (+47 more)
-
-### Community 18 - "Live CSI Adapter"
-Cohesion: 0.04
-Nodes (40): default_bind_host(), default_udp_port(), drain_serial_lines(), get_ingest(), is_loopback_bind(), LiveCsiAdapter, LiveCsiIngest, LoopbackBindError (+32 more)
-
-### Community 19 - "Evidence Measurement Planning"
-Cohesion: 0.04
-Nodes (41): build_measurement_plan(), EvidenceAdapter, EvidenceCost, HypothesisSpec, Evidence Bus adapters: one contract, many modalities.  The existing :class:`Ev, A testable claim the Evidence Bus can plan a measurement for., Sandbox cost is always zero dollars; compute_units are relative., Runnable evidence provider. Implementations must be sandbox-safe by default. (+33 more)
-
-### Community 20 - "Phase 11 Governance Review"
-Cohesion: 0.05
-Nodes (43): _execution_implying_wording_count(), _finalize_phase11k_review_trail_export(), _finalize_phase11l_runtime_gap_ledger(), _finalize_phase11m_governance_closeout(), _invalid_phase11k_export_result(), _invalid_phase11l_runtime_gap_result(), _invalid_phase11m_governance_result(), phase11_planning_governance_closeout_index() (+35 more)
-
-### Community 21 - "Canvas and Path Drawing"
+### Community 7 - "push"
 Cohesion: 0.03
-Nodes (89): a3(), absarc(), absellipse(), aM(), appendChildToContainer(), arc(), bG(), bp() (+81 more)
+Nodes (159): addGroup(), aX(), A(), D(), De(), Fe(), ke(), Le() (+151 more)
 
-### Community 22 - "User Data Analysis"
-Cohesion: 0.05
-Nodes (46): AnalysisReport, analyze_user_data(), _as_numeric_series(), _normalize_baselines(), _normalize_references(), Consent-gated end-to-end analyze flow.  Runs emergency screening, optional det, Return ``fn(...)`` or None when engine text cannot be framed., Aggregated informational advisory results and skip notes. (+38 more)
-
-### Community 23 - "Phase 11 Contract Review"
-Cohesion: 0.05
-Nodes (39): _common_spec_fields(), _default_contract_spec_for_domain(), _invalid_result(), _invalid_review_record_result(), _looks_like_phase11_review_record(), _missing_phase11_review_record_result(), phase11_document_ingestion_contract_spec(), _phase11_preflight_blocking_reasons() (+31 more)
-
-### Community 24 - "Workflow Evidence Analysis"
-Cohesion: 0.06
-Nodes (64): build_literature_context(), build_measurement_plan_artifact(), analyze_raw_evidence(), build_structured_verdict_artifact(), _add_sensor_evidence_pack_artifacts(), _artifact_payload_sha256(), _assert_in_silico_workflow_gates(), _assert_n_of_1_workflow_gates() (+56 more)
-
-### Community 25 - "Presence and Research Rendering"
-Cohesion: 0.05
-Nodes (47): PresenceRender, Render-only presence: Scientist and Doctor personas over a gated verdict.  Nev, Rephrase a gated verdict. Requires AI_ADVISORY. Render-only., render_presence(), Presence lane scaffold.  Presence and avatars are render-only and are never pa, Citation-bound informational research result., ResearchReport, AdvisoryFramingError (+39 more)
-
-### Community 26 - "Sensor Evidence Provider Validation"
+### Community 8 - "test_live_audio.py"
 Cohesion: 0.07
-Nodes (55): assert_sensor_evidence_workflow_config(), _capability_errors(), _entry_supports_fixture_mode(), _explicit_provider_id(), _fixture_mode_value(), _fixture_ref_error_code(), _forbidden_key_error_code(), _forbidden_key_errors() (+47 more)
+Nodes (43): Audio Feature Derivation, _as_floats(), derive_audio_features(), detect_cough_events(), envelope_stats_local(), frame_envelope(), _median(), Stdlib audio-biomarker feature derivation. Raw PCM never leaves this module.… (+35 more)
 
-### Community 27 - "3D Scene Object Binding"
-Cohesion: 0.06
-Nodes (48): a8(), addGroup(), bindLightTargets(), bindSkeletons(), BW(), computeLineDistances(), createMaterialFromType(), dH() (+40 more)
-
-### Community 28 - "Health Data Ingestion"
-Cohesion: 0.06
-Nodes (33): _readings_for_metric(), ingest_apple_health(), _metric_for_hk_type(), Apple Health export importer (local XML or zip). Stdlib only., Parse a local Apple Health ``export.xml`` or export zip. Requires DATA_INGESTION, _to_snake(), _xml_from_zip(), ingest_csv() (+25 more)
-
-### Community 29 - "Phase 11 Audit Records"
-Cohesion: 0.05
-Nodes (68): _finalize_phase11e_record(), _invalid_phase11d_result(), _invalid_phase11e_result(), _looks_like_phase11_lifecycle_record(), _looks_phase11d_timestamp(), _looks_sha256(), phase11_audit_index(), _phase11_audit_index_entry() (+60 more)
-
-### Community 30 - "Phase 12 Model Registry"
-Cohesion: 0.09
-Nodes (52): _finalize_phase12m_specialized_model_option_registry_profile(), _finalize_phase12n_workflow_orchestration_mode_registry_profile(), _invalid_phase12m_profile_result(), _phase12a_future_required_gates(), _phase12b_requested_domains(), _phase12b_required_future_gates(), _phase12b_required_reviewer_roles(), _phase12c_capability_labels() (+44 more)
-
-### Community 31 - "Advisory Model Client"
-Cohesion: 0.07
-Nodes (29): AdvisoryConfigError, AdvisoryHttpError, AdvisoryModelClient, AdvisoryModelConfig, _extract_assistant_text(), _join_base_url(), _NoRedirectHandler, _parse_evidence_grade() (+21 more)
-
-### Community 32 - "N-of-1 Report Planning"
-Cohesion: 0.08
-Nodes (26): Report lane scaffold for safety-gated research outputs., _artifact_ref_names(), build_n_of_1_fabric_pack_plan(), _file_plans(), _json_ready(), NOf1FabricFilePlan, NOf1FabricPackPlan, _ordered_artifact_hashes() (+18 more)
-
-### Community 33 - "Phase 11 Audit Status"
+### Community 9 - "live.py"
 Cohesion: 0.11
-Nodes (48): document_fixture_adapter_status(), Return public status for the fixture-backed metadata adapter., _sensor_evidence_readiness_metadata(), _looks_like_phase11_audit_index(), phase11_audit_handoff_record(), phase11_audit_handoff_status_summary(), phase11_audit_index_status_summary(), phase11_contract_status_summary() (+40 more)
+Nodes (28): IPv4Address, IPv6Address, _assert_model_host_allowed(), SplitResult, Optional network helpers. Stdlib only. No default egress., assert_host_allowlisted(), assert_resolved_public(), _canonical_ip() (+20 more)
 
-### Community 34 - "Fabric Canonical JSON"
+### Community 10 - "phase12a_runtime_authorization_design_charter"
+Cohesion: 0.06
+Nodes (55): _authorization_wording_count(), _is_non_negative_int(), phase12a_runtime_authorization_design_charter(), phase12b_runtime_authorization_record_candidate(), phase12b_runtime_authorization_record_candidate_status_summary(), phase12c_visual_supervision_capability_profile(), phase12c_visual_supervision_capability_profile_status_summary(), _phase12d_source_design_charter_errors() (+47 more)
+
+### Community 11 - "IY"
+Cohesion: 0.04
+Nodes (122): IY(), $0(), A5(), B(), bd(), bt(), D5(), dI() (+114 more)
+
+### Community 12 - "phase11_contracts.py"
+Cohesion: 0.03
+Nodes (86): Phase 12 Capability Index, _default_phase11d_decision_for_stage(), _default_phase11d_verdict_for_stage(), _finalize_phase11_preflight_dossier(), _finalize_phase11h_record(), _invalid_phase11h_result(), _invalid_phase11j_closeout_result(), _invalid_preflight_dossier_result() (+78 more)
+
+### Community 13 - "t"
+Cohesion: 0.05
+Nodes (59): bV(), center(), clearUpdateRanges(), createBuffer(), cV(), dV(), ea(), eV() (+51 more)
+
+### Community 14 - "api.py"
+Cohesion: 0.07
+Nodes (70): _analyze(), _as_bool(), _as_scope_ids(), _assert_no_raw(), _avatar(), _bench(), _biosecurity_or_emergency(), BridgeError (+62 more)
+
+### Community 15 - "csi_adapter.py"
+Cohesion: 0.04
+Nodes (70): Document Adapter Boundary, _adapter_privacy_violation_count(), _adapter_string_privacy_violation_count(), document_adapter_real_mode_readiness_gate(), document_fixture_adapter_status(), Metadata-only document adapter boundary. The adapter contract is intentionally…, Return public status for the fixture-backed metadata adapter., Return the shared real-mode gate for the document adapter boundary. (+62 more)
+
+### Community 16 - "_safe_domain"
+Cohesion: 0.07
+Nodes (67): _execution_implying_wording_count(), _finalize_phase11i_acceptance_check(), _finalize_phase11i_queue_index(), _finalize_phase11j_closeout(), _is_phase11j_count(), phase11_acceptance_followup_fixture_bundle(), phase11_decision_closeout_fixture_bundle(), phase11_decision_closeout_record() (+59 more)
+
+### Community 17 - "constructor"
+Cohesion: 0.04
+Nodes (86): bind(), _callOnChange(), componentDidCatch(), constructor(), ae(), Cn(), dt(), Er() (+78 more)
+
+### Community 18 - "SensorHardwareDisabled"
+Cohesion: 0.03
+Nodes (113): Random, _print_masterplan_status(), _sensor_roster(), Evidence Bus Adapter Protocol, HypothesisSpec, Evidence Bus adapters: one contract, many modalities. The existing…, A testable claim the Evidence Bus can plan a measurement for., Evidence Bus public surface. Record types stay import-compatible (`from… (+105 more)
+
+### Community 19 - "dispatchEvent"
+Cohesion: 0.06
+Nodes (63): _5(), baseHeight(), baseWidth(), blendFunction(), BY(), bz(), Ck(), ne() (+55 more)
+
+### Community 20 - "memory/__init__.py"
+Cohesion: 0.05
+Nodes (54): baseline_status_counts(), BaselineComparison, BaselineGraph, BaselineMetric, BaselinePrivacyBoundary, BaselineWindow, build_baseline_graph(), build_personal_profile() (+46 more)
+
+### Community 21 - "live_csi.py"
+Cohesion: 0.04
+Nodes (60): _as_float_list(), _as_heatmap(), field_snapshot(), _joints_from_pose(), Any, Viz-ready Field snapshot: derived features only, never raw CSI. The Field/Body…, Return a UI-safe Field payload. Live CSI never copies a skeleton., fuse_csi_units() (+52 more)
+
+### Community 22 - "Somatic history (pre-pivot archive)"
+Cohesion: 0.05
+Nodes (44): License, Phase 0 Scope, Phase 1A Contracts, Phase 1B Local Mock Run, Phase 1C Master Foundation, Phase 2 Offline Hypothesis Tournament, Phase 3A Robin Sandbox Loop, Phase 3B Content Fabric Conformance Scaffold (+36 more)
+
+### Community 23 - "addEventListener"
+Cohesion: 0.04
+Nodes (77): addEventListener(), advance(), _arrowKeyMultiplier(), autoReset(), Et(), he(), _callOnFinishChange(), _callOnOpenClose() (+69 more)
+
+### Community 24 - "MeasurementPlan"
+Cohesion: 0.06
+Nodes (22): EvidenceAdapter, EvidenceCost, Protocol, Sandbox cost is always zero dollars; compute_units are relative., Runnable evidence provider. Implementations must be sandbox-safe by default., EvidenceSource, MeasurementPlan, RawEvidence (+14 more)
+
+### Community 25 - "getPoint"
+Cohesion: 0.05
+Nodes (43): absarc(), absellipse(), arc(), yt(), CB(), closePath(), createDerivedMaterial(), customProgramCacheKey() (+35 more)
+
+### Community 26 - "mock_runtime.py"
+Cohesion: 0.04
+Nodes (68): build_literature_context(), build_measurement_plan(), build_measurement_plan_artifact(), analyze_raw_evidence(), build_structured_verdict_artifact(), somatic/fabric/, _add_sensor_evidence_pack_artifacts(), _artifact_payload_sha256() (+60 more)
+
+### Community 27 - "gG"
+Cohesion: 0.06
+Nodes (43): appendChildToContainer(), bG(), bp(), cM(), commitUpdate(), convertArray(), EG(), ek() (+35 more)
+
+### Community 28 - "BoltzProvider"
+Cohesion: 0.06
+Nodes (37): Consent Ledger, biomodel_result_to_evidence_record(), BiomodelEvidenceRecord, BiomodelPlan, BiomodelProvider, BiomodelRequest, BiomodelResult, Protocol (+29 more)
+
+### Community 29 - "_privacy_violation_count"
+Cohesion: 0.03
+Nodes (94): _finalize_phase12q_decision_record(), _finalize_phase12r_audit_trail_index(), _finalize_phase12s_closeout_summary(), _invalid_phase12q_decision_record_result(), _invalid_phase12r_audit_trail_index_result(), _invalid_phase12s_closeout_summary_result(), _phase12o_source_profile_errors(), _phase12p_mode_review_packet_errors() (+86 more)
+
+### Community 30 - "phase11_audit_index_status_summary"
+Cohesion: 0.05
+Nodes (54): _sensor_evidence_readiness_metadata(), _finalize_phase11f_record(), _finalize_phase11g_record(), _invalid_phase11f_result(), _invalid_phase11g_result(), _looks_like_phase11_audit_handoff(), _looks_like_phase11_audit_index(), phase11_audit_handoff_fixture_bundle() (+46 more)
+
+### Community 31 - "evidence.py"
+Cohesion: 0.08
+Nodes (48): Finch Toolbelt, Shared sanitized evidence-pack helpers across evidence domains. The legacy…, _artifact_ref_result(), _boundary_flag_violation_count(), classify_sensor_evidence_artifact_ref(), classify_sensor_evidence_contract(), _compatibility_result(), compute_sensor_evidence_fingerprint() (+40 more)
+
+### Community 32 - "registry.py"
+Cohesion: 0.05
+Nodes (72): _launch(), _workflow_environment_fixture_refs(), Sensor lane scaffold. Sensors are local-first and private by default. The…, assert_sensor_evidence_workflow_config(), _capability_errors(), _entry_supports_fixture_mode(), _explicit_provider_id(), _fixture_mode_value() (+64 more)
+
+### Community 33 - "summarize_dose_response"
+Cohesion: 0.06
+Nodes (46): analyze_robin_tables(), _collect_table_refs(), Analyze local CSV fixture references embedded in sandbox raw evidence., _dose_response_points(), _effect_direction(), _interpretation(), _quality_score(), _round() (+38 more)
+
+### Community 34 - "jt"
+Cohesion: 0.04
+Nodes (80): bindLightTargets(), bindSkeletons(), clone(), computeLineDistances(), Bt(), createMaterialFromType(), extractBasis(), extractUrlBase() (+72 more)
+
+### Community 35 - "test_encryption_at_rest.py"
+Cohesion: 0.04
+Nodes (82): _ingest(), Consent Store, On-disk consent ledger store. Persists…, Data Ingestion, ingest_apple_health(), ingest_apple_health_xml(), _metric_for_hk_type(), Path (+74 more)
+
+### Community 36 - "tournament.py"
+Cohesion: 0.08
+Nodes (24): BatchScorer, FutureTeamOrchestratorHook, LocalMockBatchScorer, Disabled attachment point for a future Phase 2.5 team orchestrator., Deterministic local scorer used by the offline fixture tournament., Interface for batch scoring and pairwise comparison providers., _apply_refinement_delta(), build_tournament_bracket() (+16 more)
+
+### Community 37 - "csi_parser.py"
+Cohesion: 0.11
+Nodes (41): CsiFrame, CsiParsedFile, CsiParseError, CsiParserReport, CsiSample, _json_ready(), _aggregate_status_counts(), build_csi_parser_artifacts() (+33 more)
+
+### Community 38 - "validate_phase12g_production_readiness_coverage_matrix"
+Cohesion: 0.08
+Nodes (51): _finalize_phase12g_production_readiness_coverage_matrix(), _finalize_phase12m_specialized_model_option_registry_profile(), _finalize_phase12n_workflow_orchestration_mode_registry_profile(), _invalid_phase12g_matrix_result(), _phase12a_future_required_gates(), _phase12b_requested_domains(), _phase12b_required_future_gates(), _phase12b_required_reviewer_roles() (+43 more)
+
+### Community 39 - "phase11_dossier_lifecycle_status_summary"
+Cohesion: 0.06
+Nodes (50): _default_preflight_dossier_for_domain(), _finalize_phase11d_record(), _looks_like_phase11_lifecycle_record(), _looks_like_phase11_preflight_dossier(), phase11_compare_preflight_dossiers(), phase11_document_ingestion_preflight_dossier(), phase11_document_ingestion_review_record(), phase11_dossier_decision_record() (+42 more)
+
+### Community 40 - "keyring.py"
+Cohesion: 0.12
+Nodes (26): _find_key(), _find_publisher(), _key_usable_for_manifest(), KeyringValidationResult, _manifest_namespace(), _parse_utc(), _root_key_active(), SignatureVerificationResult (+18 more)
+
+### Community 41 - "_privacy_violation_count"
+Cohesion: 0.05
+Nodes (73): _finalize_phase11e_record(), _invalid_phase11d_result(), _invalid_phase11e_result(), _looks_sha256(), phase11_audit_index(), _phase11_audit_index_entry(), phase11_audit_index_fixture_bundle(), phase11_change_control_record() (+65 more)
+
+### Community 42 - "fm"
+Cohesion: 0.07
+Nodes (51): getSelection(), Ec(), F(), fm(), J0(), Ka(), _m(), Hi() (+43 more)
+
+### Community 43 - "manifest.py"
+Cohesion: 0.09
+Nodes (35): catalog_entry_from_manifest(), basic_conformance_precheck(), FabricPrecheckResult, integer_only_json_errors(), _allowed(), _blocked(), evaluate_license_policy(), FabricValidationResult (+27 more)
+
+### Community 44 - "rd"
+Cohesion: 0.09
+Nodes (35): $a(), fi(), qr(), rd(), rn(), Wg(), xc(), bn() (+27 more)
+
+### Community 45 - "signing_payload"
+Cohesion: 0.13
+Nodes (16): _fabric(), _fabric_check_keyring_rotation(), _fabric_check_shared_fixtures(), _fabric_digest(), _fabric_payload(), _shared_fixture_errors(), canonical_bytes(), canonical_dumps() (+8 more)
+
+### Community 46 - "main.py"
+Cohesion: 0.04
+Nodes (65): _analyze(), _avatar(), _bus(), _csi_parse(), _format_document_adapter_boundary(), _format_sensor_evidence_count_summary(), _ledger_for_run(), _load_json_object_arg() (+57 more)
+
+### Community 47 - "validate_phase12p_workflow_mode_activation_request_review_packet_boundary"
+Cohesion: 0.07
+Nodes (33): _finalize_phase12p_review_packet(), _invalid_phase12p_packet_result(), _phase12p_evidence_inventory_placeholder_errors(), _phase12p_evidence_inventory_placeholders(), _phase12p_future_gate_errors(), _phase12p_prerequisite_matrix_reference(), _phase12p_required_future_gates(), _phase12p_required_reviewer_classes() (+25 more)
+
+### Community 48 - "n_of_1_packet.py"
+Cohesion: 0.08
+Nodes (30): Report lane scaffold for safety-gated research outputs., _artifact_ref_names(), build_n_of_1_fabric_pack_plan(), build_n_of_1_fabric_pack_plan, _file_plans(), _json_ready(), NOf1FabricFilePlan, NOf1FabricPackPlan (+22 more)
+
+### Community 49 - "providers/__init__.py"
+Cohesion: 0.13
+Nodes (16): Provider adapter interface scaffolds. These modules define Somatic-owned…, LiteratureDocument, LiteratureEvidenceDraft, LiteratureProvider, LiteratureQuery, Protocol, Return provider-scoped document metadata without leaking raw secrets., Map documents into Somatic evidence records or evidence-record drafts. (+8 more)
+
+### Community 50 - "server.py"
+Cohesion: 0.09
+Nodes (29): BaseHTTPRequestHandler, _browser(), main(), Path, Refresh docs/ui-screenshots/*.png from the local loopback UI. Requires Google…, _shot(), Local-only UI bridge: stdlib HTTP on 127.0.0.1 plus static assets. This package…, bind_host_is_allowed() (+21 more)
+
+### Community 51 - "save_ledger"
+Cohesion: 0.07
+Nodes (8): Write ``ledger`` as JSON and chmod ``0600``. Creates parent dirs., save_ledger(), BridgePayloadTests, Bridge payload additions from the closeout: encryption flag, grant flags,…, _isolate_stores(), Gate tests for the local-only UI bridge (stdlib, loopback)., _request(), UiBridgeTests
+
+### Community 52 - "n_of_1.py"
+Cohesion: 0.11
+Nodes (27): InterventionTag, _experiment(), Consent-gated n-of-1 experiment designer (own-baseline only)., evaluate_n_of_1(), ExperimentReport, InterventionTag, _movement_label(), _movement_sentence() (+19 more)
+
+### Community 53 - "Any"
 Cohesion: 0.10
-Nodes (26): canonical_bytes(), canonical_dumps(), FabricIntegerError, FabricJsonError, loads_fabric_json(), _quote_string(), Raised when Fabric JSON contains a non-integer or out-of-range number., Raised when a value cannot be represented as Fabric JSON. (+18 more)
+Nodes (27): _append_query(), _domain_leaf_hash(), _domain_node_hash(), FabricAuthError, FabricContentReference, FabricDescriptorError, FabricHttpError, FabricIntegrityError (+19 more)
 
-### Community 35 - "Phase 11 Decision Closeout"
-Cohesion: 0.08
-Nodes (34): _finalize_phase11j_closeout(), _invalid_phase11j_closeout_result(), _is_phase11j_count(), phase11_decision_closeout_fixture_bundle(), phase11_decision_closeout_record(), phase11_decision_closeout_status_summary(), phase11_followup_queue_acceptance_check(), phase11_followup_queue_index_record() (+26 more)
+### Community 54 - "environment.py"
+Cohesion: 0.12
+Nodes (19): _aggregate_status(), EnvironmentFixtureSensorProvider, evaluate_environment_fixture_refs(), classify_environment_evidence_pack_compatibility(), compute_environment_evidence_pack_fingerprint(), Compute the v1 fingerprint over a persisted environment pack., Classify an environment evidence pack with fail-closed semantics., Validate a persisted v1 environment evidence pack. (+11 more)
 
-### Community 36 - "Environment Evidence Provider"
-Cohesion: 0.08
-Nodes (30): _aggregate_status(), EnvironmentFixtureSensorProvider, evaluate_environment_fixture_refs(), build_environment_evidence_pack(), classify_environment_evidence_pack_compatibility(), compute_environment_evidence_pack_fingerprint(), _counts(), _diagnostic_counts() (+22 more)
-
-### Community 37 - "Phase 12 Knowledge Profile"
+### Community 55 - "Ps"
 Cohesion: 0.09
-Nodes (22): _invalid_phase12i_profile_result(), _phase12i_future_gate_errors(), phase12i_integrative_herbal_nutrition_knowledge_capability_profile_status_summary(), _phase12i_runtime_false_fields(), _phase12i_source_class_errors(), _phase12i_source_phase_references(), _phase12i_source_reference_errors(), _phase12i_specialist_profile_errors() (+14 more)
+Nodes (42): Fd(), Mm(), OS(), pm(), Rr(), Sv(), _T(), wI() (+34 more)
 
-### Community 38 - "Preflight Dossier Validation"
-Cohesion: 0.17
-Nodes (8): _invalid_preflight_dossier_result(), Phase11PreflightDossierValidationResult, Sanitized validation result for Phase 11C preflight dossiers., Return sanitized rejected preflight metadata without echoing input., Return sanitized rejected decision metadata without echoing input., rejected_phase11_dossier_decision_record(), rejected_phase11_preflight_dossier(), rejected_phase11_reviewer_signoff_metadata()
+### Community 56 - "ScientificAgentSkillsProvider"
+Cohesion: 0.10
+Nodes (15): DatabaseConnectorRecord, Protocol, Find Somatic-compatible skills without executing external tools., Return static skill metadata for planning and review., ScienceSkillProvider, ScienceSkillRecord, SkillLookupRequest, RuntimeError (+7 more)
 
-### Community 39 - "Toy Counter Evidence Validation"
+### Community 57 - "cg"
 Cohesion: 0.09
+Nodes (34): $8(), aH(), cg(), cH(), Eb(), eH(), fE(), GN() (+26 more)
+
+### Community 58 - "identify.py"
+Cohesion: 0.33
+Nodes (4): ParasiteReport, Any, Informational parasite Q&A. Source-grounded; never a diagnosis., Informational, source-grounded parasite Q&A.
+
+### Community 59 - "phase11_runtime_authorization_gap_ledger_status_summary"
+Cohesion: 0.06
+Nodes (37): _finalize_phase11l_runtime_gap_ledger(), _finalize_phase11m_governance_closeout(), _invalid_phase11l_runtime_gap_result(), _invalid_phase11m_governance_result(), phase11_planning_governance_closeout_index(), phase11_planning_governance_closeout_status_summary(), phase11_runtime_authorization_gap_ledger(), phase11_runtime_authorization_gap_ledger_status_summary() (+29 more)
+
+### Community 60 - "getContext"
+Cohesion: 0.08
+Nodes (31): addPass(), blitDepthBuffer(), convertSRGBToLinear(), copySRGBToLinear(), createDepthTexture(), deleteDepthTexture(), eN(), M() (+23 more)
+
+### Community 61 - "C"
+Cohesion: 0.12
+Nodes (42): C(), ce(), Hg(), kt(), Mv(), Rc(), Ut(), Er() (+34 more)
+
+### Community 62 - "sensor_evidence_provider_manifest"
+Cohesion: 0.10
+Nodes (10): classify_sensor_evidence_provider_manifest_compatibility(), Sanitized compatibility result for provider registry manifests., Return the public, deterministic provider registry manifest., Validate a public provider manifest without echoing private values., _sensor_evidence_manifest_shape_errors(), sensor_evidence_provider_manifest(), SensorEvidenceProviderManifestCompatibilityResult, validate_sensor_evidence_provider_manifest() (+2 more)
+
+### Community 64 - "csi_evidence_pack.py"
+Cohesion: 0.16
+Nodes (24): build_csi_evidence_pack(), _counts(), csi_evidence_pack_artifact_metadata(), _diagnostic_counts(), _dict(), _float(), _group_summaries(), _int() (+16 more)
+
+### Community 65 - "csi.py"
+Cohesion: 0.07
+Nodes (30): booth_first_csi_planning_profile(), _booth_profile_contract_errors(), fixture_csi_source_adapter_output(), Return sanitized RuView reassessment metadata., Return a future booth-first CSI architecture profile as metadata only., Return deterministic CSI source metadata for the current fixture boundary., Validate and sanitize metadata-only CSI source adapter output., ruview_reference_metadata() (+22 more)
+
+### Community 66 - "toy_counter.py"
+Cohesion: 0.12
 Nodes (18): _aggregate_status(), evaluate_toy_counter_fixture_refs(), classify_toy_counter_evidence_pack_compatibility(), compute_toy_counter_evidence_pack_fingerprint(), Compute the v1 fingerprint over a persisted toy counter pack., Classify a toy counter evidence pack with fail-closed semantics., Validate a persisted v1 toy counter evidence pack., validate_toy_counter_evidence_pack_v1() (+10 more)
 
-### Community 40 - "UI Bridge Security Tests"
-Cohesion: 0.10
-Nodes (4): Write ``ledger`` as JSON and chmod ``0600``. Creates parent dirs., save_ledger(), _request(), UiBridgeTests
+### Community 67 - "crypto.py"
+Cohesion: 0.15
+Nodes (30): _verify_catalog_signature(), CryptoUnavailableError, _decode_base64(), FabricCryptoError, key_id_for_public_key(), key_id_for_public_key_bytes(), private_key_from_raw_bytes(), private_key_raw_bytes() (+22 more)
 
-### Community 41 - "Production Readiness Matrix"
-Cohesion: 0.09
-Nodes (22): _invalid_phase12g_matrix_result(), _phase12g_area_entry_errors(), _phase12g_production_readiness_areas(), phase12g_production_readiness_coverage_matrix(), _phase12g_production_readiness_coverage_matrix_payload(), phase12g_production_readiness_coverage_matrix_status_summary(), _phase12g_responsibility_counts(), _phase12g_source_secure_drop_boundary_errors() (+14 more)
-
-### Community 42 - "Phase 11 Audit Validation"
+### Community 68 - "SandboxSensorProvider"
 Cohesion: 0.08
-Nodes (15): _invalid_phase11f_result(), _invalid_phase11g_result(), phase11_audit_handoff_fixture_bundle(), phase11_handoff_acceptance_fixture_bundle(), Phase11AuditHandoffValidationResult, _phase11g_reason_list_valid(), Phase11HandoffAcceptanceValidationResult, Sanitized validation result for Phase 11F audit handoff records. (+7 more)
+Nodes (18): Path, Protocol, Return the local-first privacy policy before planning any stream., Describe a sensor stream without touching hardware., Return deterministic observations from fixtures or sandbox data., Return deterministic feature metadata derived from observations., Map feature metadata into Evidence Bus records., Return sanitized parser report/summary metadata for local CSI fixtures. (+10 more)
 
-### Community 43 - "Field GUI Components"
+### Community 69 - "WifiCsiEvidencePackCompatibilityTests"
+Cohesion: 0.16
+Nodes (10): classify_csi_evidence_pack_compatibility(), compute_csi_evidence_pack_fingerprint(), _csi_compatibility_result(), CsiEvidencePackCompatibilityResult, Sanitized compatibility decision for an already-exported CSI pack., Compute the v1 fingerprint over a persisted CSI evidence pack payload., Classify an exported CSI evidence pack without exposing private fields., Validate a persisted v1 CSI evidence pack with fail-closed semantics. (+2 more)
+
+### Community 70 - "getAttribute"
 Cohesion: 0.10
-Nodes (26): FieldSnapshot, BrailleSpinner(), FieldReadout(), OccupancyStrip(), StagePoster(), TemplateBodySvg(), defaults, FieldGui() (+18 more)
+Nodes (30): addGeometry(), addUpdateRange(), applyClipRect(), computeTangents(), deleteAttribute(), detail(), getAttribute(), getIndex() (+22 more)
 
-### Community 44 - "Phase 11 Followup Validation"
-Cohesion: 0.10
-Nodes (12): _invalid_phase11i_queue_result(), phase11_acceptance_followup_fixture_bundle(), phase11_followup_queue_index_fixture_bundle(), Phase11FollowupQueueValidationResult, _phase11i_ordering_errors(), Sanitized validation result for Phase 11I queue index records., Return deterministic Phase 11H follow-up/remediation fixtures., Return deterministic Phase 11I queue index and acceptance fixtures. (+4 more)
-
-### Community 45 - "Phase 12 Safety Matrix"
-Cohesion: 0.13
-Nodes (16): _invalid_phase12o_matrix_result(), _phase12o_future_gate_errors(), _phase12o_mode_gate_requirement_errors(), _phase12o_runtime_false_fields(), _phase12o_source_profile_errors(), _phase12o_status_label_errors(), _phase12o_unsafe_semantics_count(), _phase12o_workflow_mode_prerequisite_errors() (+8 more)
-
-### Community 46 - "Document Evidence Validation"
-Cohesion: 0.12
-Nodes (11): classify_document_evidence_pack_compatibility(), document_evidence_pack_artifact_metadata(), Return a compact sanitized reference to a document evidence pack., Classify a document evidence pack with fail-closed semantics., Validate a persisted v1 document evidence pack., validate_document_evidence_pack_v1(), DocumentFixtureEvidenceProvider, Reads local JSON document fixtures and returns sanitized pack metadata. (+3 more)
-
-### Community 47 - "Fabric Communication Errors"
-Cohesion: 0.10
-Nodes (34): _append_query(), _domain_leaf_hash(), _domain_node_hash(), FabricAuthError, FabricContentReference, FabricDescriptorError, FabricFederationError, FabricHttpError (+26 more)
-
-### Community 48 - "Sensor Evidence Records"
-Cohesion: 0.10
-Nodes (13): Return the local-first privacy policy before planning any stream., Describe a sensor stream without touching hardware., Return deterministic observations from fixtures or sandbox data., Return deterministic feature metadata derived from observations., Map feature metadata into Evidence Bus records., Return sanitized parser report/summary metadata for local CSI fixtures., SensorEvidenceRecord, SensorFeatureSet (+5 more)
-
-### Community 49 - "Production Ownership Matrix"
-Cohesion: 0.09
-Nodes (19): _invalid_phase12h_ownership_map_result(), _phase12h_optional_integration_peers(), _phase12h_optional_peer_count(), phase12h_somatic_standalone_production_readiness_ownership_map(), phase12h_somatic_standalone_production_readiness_ownership_map_status_summary(), _phase12h_source_matrix_summary(), _phase12h_standalone_contradiction_count(), _phase12h_standalone_ownership_entries() (+11 more)
-
-### Community 50 - "Document Evidence Pack Construction"
+### Community 71 - "validate_phase12h_somatic_standalone_production_readiness_ownership_map"
 Cohesion: 0.11
-Nodes (30): build_document_evidence_pack(), compute_document_evidence_pack_fingerprint(), _counts(), _diagnostic_counts(), Sanitized document-fixture evidence-pack contract.  Phase 10A non-sensor evide, Build deterministic portable document count/status metadata only., Compute the v1 fingerprint over a persisted document evidence pack., _safe_adapter_status_metadata() (+22 more)
+Nodes (15): _invalid_phase12h_ownership_map_result(), phase12h_somatic_standalone_production_readiness_ownership_map(), phase12h_somatic_standalone_production_readiness_ownership_map_status_summary(), _phase12h_source_production_readiness_matrix_errors(), _phase12h_standalone_contradiction_count(), _phase12h_status_label_errors(), Phase12HSomaticStandaloneProductionReadinessOwnershipMapValidationResult, Sanitized validation result for Phase 12H standalone ownership maps. (+7 more)
 
-### Community 51 - "Keyring Signature Verification"
-Cohesion: 0.16
-Nodes (22): verify_catalog_signature_threshold(), _find_key(), _find_publisher(), _key_usable_for_manifest(), KeyringValidationResult, _manifest_namespace(), _parse_utc(), _root_key_active() (+14 more)
-
-### Community 52 - "Shader and Render Passes"
+### Community 72 - "FabricFederationClient"
 Cohesion: 0.08
-Nodes (40): addPass(), _allocateTargets(), _applyGGXFilter(), _applyPMREM(), blitDepthBuffer(), _blur(), bU(), cA() (+32 more)
+Nodes (26): FabricFederationClient, FabricFederationConfig, High-level send and receive facade for Somatic fabric federation., Runtime configuration for the out-of-process fabric connector., AllowlistRejectBothWaysTests, CiphertextPreservedTests, IntegrityReverifyTests, NoSecretsInLogsTests (+18 more)
 
-### Community 53 - "Fabric Cryptography Utilities"
-Cohesion: 0.16
-Nodes (24): _verify_catalog_signature(), CryptoUnavailableError, _decode_base64(), FabricCryptoError, key_id_for_public_key(), key_id_for_public_key_bytes(), private_key_from_raw_bytes(), private_key_raw_bytes() (+16 more)
+### Community 73 - "csi_batch.py"
+Cohesion: 0.17
+Nodes (18): _batch_payload(), _batch_status(), build_csi_batch_tournament_readiness(), evaluate_csi_replay_batch(), _float(), _group_refs(), _group_summary(), _int() (+10 more)
 
-### Community 54 - "Intervention Context Management"
-Cohesion: 0.15
-Nodes (15): build_intervention_context(), build_intervention_tag(), build_mock_intervention_ledger(), build_response_evaluation_plan(), _category_statuses(), InterventionContext, InterventionTag, InterventionWindow (+7 more)
+### Community 74 - "FieldScene.tsx"
+Cohesion: 0.09
+Nodes (25): PoseJoints, AudioReadout(), FieldReadout(), namedJoints(), OccupancyStrip(), StagePoster(), TemplateBodySvg(), defaults (+17 more)
 
-### Community 55 - "Material and Texture Management"
-Cohesion: 0.08
-Nodes (31): cloneMaterial(), connect(), curveRadius(), deleteAttribute(), deleteDepthTexture(), disconnect(), dispose(), disposeMaterials() (+23 more)
+### Community 75 - "Biomodel Provenance Helpers"
+Cohesion: 0.17
+Nodes (17): Biomodel Provenance Helpers, _artifact_refs_from_payloads(), BiomodelArtifactRef, BiomodelPackPlan, BiomodelProvenanceBundle, build_biomodel_pack_plan(), build_biomodel_provenance_bundle(), build_biomodel_provenance_bundle_from_run() (+9 more)
 
-### Community 56 - "Fabric Conformance Testing"
-Cohesion: 0.10
-Nodes (9): basic_conformance_precheck(), FabricPrecheckResult, integer_only_json_errors(), conformance_fixture_root(), load_conformance_fixture(), code_signature_threshold_errors(), FabricConformanceScaffoldTests, FabricKeyringCatalogTests (+1 more)
+### Community 76 - "y"
+Cohesion: 0.09
+Nodes (42): AS(), CS(), me(), Is(), Ls(), rI(), si(), _u() (+34 more)
 
-### Community 57 - "Adapter Readiness Evaluation"
+### Community 77 - "phase11_review_trail_export_status_summary"
 Cohesion: 0.12
-Nodes (15): evaluate_real_mode_readiness(), Shared real-mode readiness gates for future adapter runtimes.  The gate is des, Sanitized adapter real-mode readiness report., Evaluate shared real-mode readiness without enabling a runtime., Return a compact public manifest/report summary for a gate payload., Explicit review acknowledgements for future real adapter mode., real_mode_readiness_gate_summary(), RealModeReadinessReport (+7 more)
+Nodes (18): _finalize_phase11k_review_trail_export(), _invalid_phase11k_export_result(), phase11_review_trail_export_bundle(), phase11_review_trail_export_status_summary(), _phase11k_domain_closeout_for(), _phase11k_export_id(), _phase11k_export_payload_hash(), _phase11k_privacy_violation_count() (+10 more)
 
-### Community 58 - "N-of-1 Experiment Design"
-Cohesion: 0.12
-Nodes (14): Consent-gated n-of-1 experiment designer (own-baseline only)., evaluate_n_of_1(), ExperimentReport, _frame_experiment(), _movement_label(), _movement_sentence(), N-of-1 experiment designer: own-baseline return-to-baseline tracking.  Uses th, Informational n-of-1 comparison against the user's own pre-tag baseline. (+6 more)
+### Community 78 - "a"
+Cohesion: 0.09
+Nodes (24): a(), a2(), aG(), B5(), t(), Ez(), F5(), getRGB() (+16 more)
 
-### Community 59 - "Biomodel Artifact Management"
-Cohesion: 0.15
-Nodes (14): _artifact_refs_from_payloads(), BiomodelArtifactRef, BiomodelPackPlan, BiomodelProvenanceBundle, build_biomodel_pack_plan(), build_biomodel_provenance_bundle(), build_biomodel_provenance_bundle_from_run(), collect_run_artifact_refs() (+6 more)
-
-### Community 60 - "CSI Evidence Pack Validation"
-Cohesion: 0.21
-Nodes (5): compute_csi_evidence_pack_fingerprint(), Compute the v1 fingerprint over a persisted CSI evidence pack payload., Validate a persisted v1 CSI evidence pack with fail-closed semantics., validate_csi_evidence_pack_v1(), WifiCsiEvidencePackCompatibilityTests
-
-### Community 61 - "Data Pack Metadata"
+### Community 79 - "shared-data-pack.json"
 Cohesion: 0.07
-Nodes (26): class, createdAt, dependencies, description, files, harnesses, id, license (+18 more)
+Nodes (27): class, createdAt, dependencies, description, files, harnesses, id, somatic (+19 more)
 
-### Community 63 - "Invalid Signature Pack Metadata"
-Cohesion: 0.08
-Nodes (25): class, createdAt, dependencies, description, files, harnesses, id, license (+17 more)
-
-### Community 64 - "Consent Ledger Operations"
-Cohesion: 0.12
-Nodes (18): User-owned granular consent catalog and local ledger., Local, user-owned consent ledger.  Grants and revocations are recorded with UT, Revoke ``scope`` if present and append a revoke event., Return True only when ``scope`` is currently granted., Grant ``scope`` and append a grant event with a UTC timestamp., _utc_now_iso(), _valid_utc_timestamp(), _validated_actor() (+10 more)
-
-### Community 65 - "CSI Capture Planning"
-Cohesion: 0.16
-Nodes (17): build_csi_capture_plan(), build_csi_evidence_metadata(), build_csi_feature_plan(), build_csi_feature_set(), build_csi_hardware_profile(), build_csi_metadata(), build_csi_privacy_boundary(), build_csi_summary_metadata() (+9 more)
-
-### Community 66 - "Provider Manifest Validation"
-Cohesion: 0.13
-Nodes (11): classify_sensor_evidence_provider_manifest_compatibility(), _manifest_provider_count(), Sanitized compatibility result for provider registry manifests., Return the public, deterministic provider registry manifest., Validate a public provider manifest without echoing private values., _real_mode_gate_entry_fields(), sensor_evidence_provider_manifest(), _sensor_evidence_provider_manifest_entry() (+3 more)
-
-### Community 67 - "TypeScript Configuration"
-Cohesion: 0.08
-Nodes (25): compilerOptions, allowImportingTsExtensions, isolatedModules, jsx, lib, module, moduleDetection, moduleResolution (+17 more)
-
-### Community 68 - "Shared Pack Metadata"
-Cohesion: 0.08
-Nodes (24): class, createdAt, dependencies, description, files, harnesses, id, license (+16 more)
-
-### Community 69 - "Team Orchestration Provider"
-Cohesion: 0.15
-Nodes (12): AutoScientistsRuntimeNotEnabledError, AutoScientistsTeamOrchestrationProvider, AutoScientistsTeamOrchestrationProviderConfig, Return a reviewable plan without starting live agents or providers., Return artifact-ready orchestration metadata for Somatic runs., Raised when a caller tries to enable the reference-only adapter., Reference-only placeholder for future team orchestration.      This class reco, TeamMemberSpec (+4 more)
-
-### Community 70 - "CSI Adapter Validation"
-Cohesion: 0.13
-Nodes (20): _adapter_privacy_violation_count(), _adapter_string_privacy_violation_count(), _booth_profile_contract_errors(), CsiSourceAdapterOutputValidationResult, _invalid_result(), Metadata-only WiFi CSI source adapter boundary.  The boundary is for future CS, Sanitized fail-closed validation result for CSI source metadata., Return the shared real-mode gate for the WiFi CSI source boundary. (+12 more)
-
-### Community 72 - "Citation and Result UI"
-Cohesion: 0.12
-Nodes (24): api(), CitationList(), Blocked(), Empty(), FRAMES, HonestNull(), ResultBlock(), Skeleton() (+16 more)
-
-### Community 73 - "Workflow Contract Loading"
-Cohesion: 0.14
-Nodes (14): load_mock_provider_metadata(), load_workflow(), _looks_like_key_value(), _parse_block(), _parse_dict(), _parse_list(), _parse_scalar(), parse_simple_yaml() (+6 more)
-
-### Community 74 - "Animation and Interpolation"
-Cohesion: 0.13
-Nodes (16): copySampleValue_(), evaluate(), getSettings_(), interpolate_(), intervalChanged_(), multiplyQuaternionsFlat(), setDuration(), setEffectiveTimeScale() (+8 more)
-
-### Community 75 - "Remedy Library Lookup"
-Cohesion: 0.11
-Nodes (14): Consent-gated evidence-graded remedy library (informational)., _cap_grade(), _grade_for_claim(), lookup_remedy(), Evidence-graded informational remedy library. Default grade NONE., Folk-remedy surface never inflates above LIMITED., One citation-bound library row. Grade defaults to NONE when unbound., Look up a remedy topic against the offline corpus. Requires REMEDY_LIBRARY. (+6 more)
-
-### Community 76 - "Phase 12 Interop Profile"
+### Community 80 - "validate_phase12m_specialized_model_option_registry_capability_profile"
 Cohesion: 0.09
-Nodes (20): _invalid_phase12l_profile_result(), _phase12l_fabric_capability_label_errors(), phase12l_fabric_interop_a2a_audit_boundary_capability_profile_status_summary(), _phase12l_forbidden_out_of_scope_label_errors(), _phase12l_future_gate_errors(), _phase12l_runtime_false_fields(), _phase12l_source_phase_references(), _phase12l_source_reference_errors() (+12 more)
+Nodes (20): _invalid_phase12m_profile_result(), _phase12m_candidate_label_errors(), _phase12m_future_gate_errors(), _phase12m_model_option_category_errors(), _phase12m_runtime_false_fields(), _phase12m_source_reference_errors(), phase12m_specialized_model_option_registry_capability_profile_status_summary(), _phase12m_status_label_errors() (+12 more)
 
-### Community 77 - "Blackboard Build Logic"
+### Community 81 - "DocumentFixtureEvidenceProvider"
+Cohesion: 0.13
+Nodes (9): compute_document_evidence_pack_fingerprint(), document_evidence_pack_artifact_metadata(), Return a compact sanitized reference to a document evidence pack., Compute the v1 fingerprint over a persisted document evidence pack., DocumentFixtureEvidenceProvider, Reads local JSON document fixtures and returns sanitized pack metadata., DocumentEvidencePackTests, Phase 10A document-fixture evidence-pack tests. Tests prove: - deterministic… (+1 more)
+
+### Community 82 - "Document Evidence Pack"
+Cohesion: 0.14
+Nodes (29): Document Evidence Pack, build_document_evidence_pack(), _counts(), _diagnostic_counts(), Sanitized document-fixture evidence-pack contract. Phase 10A non-sensor…, Build deterministic portable document count/status metadata only., _safe_adapter_status_metadata(), _safe_adapter_validation_metadata() (+21 more)
+
+### Community 83 - "AutoScientistsTeamOrchestrationProvider"
+Cohesion: 0.16
+Nodes (14): AutoScientistsRuntimeNotEnabledError, AutoScientistsTeamOrchestrationProvider, AutoScientistsTeamOrchestrationProviderConfig, Protocol, RuntimeError, Return a reviewable plan without starting live agents or providers., Return artifact-ready orchestration metadata for Somatic runs., Raised when a caller tries to enable the reference-only adapter. (+6 more)
+
+### Community 84 - "validate_phase12l_fabric_interop_a2a_audit_boundary_capability_profile"
+Cohesion: 0.09
+Nodes (20): _invalid_phase12l_profile_result(), _phase12l_fabric_capability_label_errors(), phase12l_fabric_interop_a2a_audit_boundary_capability_profile_status_summary(), _phase12l_forbidden_out_of_scope_label_errors(), _phase12l_future_gate_errors(), _phase12l_source_phase_references(), _phase12l_source_reference_errors(), _phase12l_status_label_errors() (+12 more)
+
+### Community 85 - "shared-invalid-signature-pack.json"
+Cohesion: 0.08
+Nodes (25): class, createdAt, dependencies, description, files, harnesses, id, somatic (+17 more)
+
+### Community 86 - "compilerOptions"
+Cohesion: 0.08
+Nodes (25): DOM, DOM.Iterable, ES2022, scripts, src, vite/client, vite.config.ts, compilerOptions (+17 more)
+
+### Community 87 - "shared-pack.json"
+Cohesion: 0.08
+Nodes (24): class, createdAt, dependencies, description, files, harnesses, id, somatic (+16 more)
+
+### Community 88 - "canonical.py"
+Cohesion: 0.20
+Nodes (15): FabricIntegerError, FabricJsonError, loads_fabric_json(), ValueError, _quote_string(), Raised when Fabric JSON contains a non-integer or out-of-range number., Raised when a value cannot be represented as Fabric JSON., _reject_duplicate_object_pairs() (+7 more)
+
+### Community 89 - "_safe_gate_id"
+Cohesion: 0.03
+Nodes (61): _capability_label_errors(), _future_gate_errors(), _invalid_phase12k_profile_result(), _invalid_phase12n_profile_result(), _phase12b_future_gate_errors(), _phase12d_capability_category_errors(), _phase12d_future_gate_errors(), _phase12e_future_gate_errors() (+53 more)
+
+### Community 92 - "App.tsx"
+Cohesion: 0.16
+Nodes (19): App(), inspectorFor(), markNav(), pages, CitationList(), IngestPage(), CiteForm(), ParasitePage() (+11 more)
+
+### Community 93 - "test_fabric_federation_connect.py"
+Cohesion: 0.18
+Nodes (9): _descriptor_for_payload(), FabricFederationConnectTests, _make_registry_handler(), _make_sidecar_handler(), _merkle_root(), _server_url(), _start_server(), _stop_server() (+1 more)
+
+### Community 94 - "useAppStore"
+Cohesion: 0.17
+Nodes (15): ConsentPayload, StatusPayload, AlertHost(), NoticeHost(), CommandPalette(), Item, ShortcutsPanel(), InspectorPanel() (+7 more)
+
+### Community 95 - "catalog.py"
+Cohesion: 0.22
+Nodes (13): _fabric_check(), _fabric_check_catalog(), CatalogValidationResult, _find_catalog_key(), _parse_utc(), _publisher_key_active(), _validate_catalog_entry(), validate_catalog_shape() (+5 more)
+
+### Community 96 - "devDependencies"
+Cohesion: 0.10
+Nodes (21): axe-core, jsdom, tailwindcss, @tailwindcss/vite, @types/react, @types/react-dom, @types/three, typescript (+13 more)
+
+### Community 97 - "validate_phase12o_workflow_mode_safety_gate_runtime_prerequisite_matrix"
+Cohesion: 0.09
+Nodes (27): _finalize_phase12o_workflow_mode_safety_gate_matrix(), _invalid_phase12o_matrix_result(), _phase12o_future_gate_errors(), _phase12o_mode_gate_requirement_errors(), _phase12o_mode_gate_requirements(), _phase12o_required_future_gates(), _phase12o_runtime_false_fields(), _phase12o_source_phase12n_profile() (+19 more)
+
+### Community 98 - "load_conformance_fixture"
+Cohesion: 0.18
+Nodes (5): conformance_fixture_root(), load_conformance_fixture(), FabricKeyringCatalogTests, FabricManifestTests, FabricSigningPayloadTests
+
+### Community 99 - "test_fabric_federation_security_invariants.py"
+Cohesion: 0.16
+Nodes (12): _descriptor_for_payload(), _make_registry_handler(), _make_sidecar_handler(), _merkle_root(), PreRuntimeBoundaryTests, Regression tests that LOCK the fabric federation security invariants (I3-I7).…, I8 — somatic doctor must keep real-mode runtime blocked., I8 — doctor output mentions the out-of-process sidecar connector. (+4 more)
+
+### Community 100 - "dependencies"
+Cohesion: 0.11
+Nodes (19): @fontsource/ibm-plex-mono, lil-gui, postprocessing, @react-three/fiber, three, troika-three-text, dependencies, @fontsource/ibm-plex-mono (+11 more)
+
+### Community 101 - ".from_env"
+Cohesion: 0.17
+Nodes (6): _split_csv(), FailClosedConfigTests, Missing sidecar URL / token / DID / allowlist => connector inert., I6 — an empty env dict must produce a config that fails validation., I6 — FabricFederationClient constructor calls validate() and fails closed., I6 — from_env({}) cannot produce a client that transmits anything.
+
+### Community 102 - "api.ts"
+Cohesion: 0.20
+Nodes (15): api(), FieldSnapshot, LiveConsentPayload, Scope, SensorsPayload, Meter(), pad2(), Field Scene (R3F) (+7 more)
+
+### Community 103 - "Somatic"
+Cohesion: 0.12
+Nodes (17): 🧭 Architecture, Command palette, ⚙️ Configuration, Consent, 🧪 Development, Field (sandbox / synthetic), 📜 License, 🚀 Quickstart (+9 more)
+
+### Community 104 - "environment_evidence_pack.py"
+Cohesion: 0.12
+Nodes (30): build_environment_evidence_pack, _counts(), _diagnostic_counts(), _int(), Sanitized neutral environment fixture evidence-pack contract., Build deterministic portable environment fixture metadata only., _safe_artifact_refs(), _safe_category() (+22 more)
+
+### Community 105 - "research/loop.py"
+Cohesion: 0.13
+Nodes (25): bind_claims, BoundClaim, claims_from_passages(), Any, Citation-binding: claims may only cite retrieved passage ids. It is…, A user-facing claim that cites only retrieved passages., Keep claims whose every cite resolves; drop the rest., Build cite-by-id extracts. Claims are slices of retrieved text only. (+17 more)
+
+### Community 106 - "test_bench_and_provenance.py"
+Cohesion: 0.21
+Nodes (13): _evidence_verify(), Content-Addressed Storage, address_record(), hash_payload(), Path, Content-addressed evidence artifacts: hash is the id; verify from disk., Return ``payload`` with a content id equal to its canonical SHA-256., verify_file() (+5 more)
+
+### Community 107 - "a11y-check.mjs"
+Cohesion: 0.13
+Nodes (16): Somatic UI Documentation, channel(), contrastFails, contrastRatio(), css, dom, fixturePath, here (+8 more)
+
+### Community 108 - "States.tsx"
+Cohesion: 0.19
+Nodes (12): Blocked(), BrailleSpinner(), Empty(), FRAMES, HonestNull(), Skeleton(), prefersReducedMotion(), revealMain() (+4 more)
+
+### Community 109 - "ln"
+Cohesion: 0.06
+Nodes (43): _allocateTargets(), _applyGGXFilter(), _applyPMREM(), je(), K(), lt(), Mt(), Qe() (+35 more)
+
+### Community 110 - "validate_document_adapter_output"
+Cohesion: 0.25
+Nodes (7): Validate and sanitize metadata-only document adapter output., Return safe adapter metadata, rejecting unsafe output fail-closed., sanitize_document_adapter_output(), validate_document_adapter_output(), Validate a persisted v1 document evidence pack., validate_document_evidence_pack_v1(), DocumentAdapterContractTests
+
+### Community 111 - "build_sensor_evidence_artifact_ref"
+Cohesion: 0.13
+Nodes (18): load_workflow(), Core orchestration contracts for the local Somatic scaffold., run_mock_workflow(), write_run_artifacts(), _sensor_evidence_ref_marker(), _artifact_hashes(), _sensor_evidence_artifact_refs(), _sha256() (+10 more)
+
+### Community 113 - "Dn"
+Cohesion: 0.06
+Nodes (45): cf(), ei(), Et(), Id(), nh(), nr(), On(), sn() (+37 more)
+
+### Community 114 - "document_fixture.py"
+Cohesion: 0.23
+Nodes (12): _aggregate_status(), evaluate_document_fixture_refs(), _fixture_ref_tuple(), _increment(), _int(), Path, Fixture-only document evidence provider. Phase 10A non-sensor evidence domain.…, Read a single JSON fixture file and extract sanitized metadata. (+4 more)
+
+### Community 117 - "DataPages.tsx"
+Cohesion: 0.21
+Nodes (12): ApiError, numericSeries(), packetCharts(), seriesChart(), ResultBlock(), parseJsonObject(), AnalyzePage(), onSubmit() (+4 more)
+
+### Community 118 - "_doctor"
+Cohesion: 0.09
+Nodes (23): _doctor(), phase12a_runtime_authorization_design_charter_status_summary(), _phase12a_source_governance_closeout(), _phase12a_source_runtime_gap_ledger(), _phase12b_source_design_charter(), phase12e_physiological_sensor_capability_profile_status_summary(), phase12f_secure_drop_consumer_boundary_status_summary(), _phase12f_source_physiological_sensor_profile_errors() (+15 more)
+
+### Community 119 - "team_orchestrator.py"
 Cohesion: 0.26
 Nodes (16): _build_blackboard(), _build_csi_readiness(), _build_evidence_budget(), _build_reorganization_log(), _build_summary(), _build_team_critiques(), _build_team_record(), _build_team_roster() (+8 more)
 
-### Community 78 - "Finch Extras Provider"
-Cohesion: 0.13
-Nodes (10): _definition_for(), FinchExtrasProvider, FinchExtrasProviderConfig, FinchExtrasRuntimeNotEnabledError, Disabled Finch optional-extras provider scaffold., Raised when package-backed Finch analysis is requested before enablement., Configuration for the disabled Finch optional-extras scaffold., Provider-shaped metadata for future package-backed Finch analysis. (+2 more)
-
-### Community 79 - "Fabric Configuration Validation"
-Cohesion: 0.18
-Nodes (10): FabricConfigError, _float_env(), _int_env(), Raised when required local configuration is absent or unsafe., _split_csv(), FailClosedConfigTests, Missing sidecar URL / token / DID / allowlist => connector inert., I6 — an empty env dict must produce a config that fails validation. (+2 more)
-
-### Community 80 - "Follow-up Observation Management"
-Cohesion: 0.20
-Nodes (18): build_follow_up_observation_window(), build_follow_up_sensor_snapshot(), build_response_comparison(), build_response_evaluation_summary(), _compare_metric(), _feature_values(), _first_window(), FollowUpObservationWindow (+10 more)
-
-### Community 81 - "Phase 12 Orchestration Profile"
-Cohesion: 0.10
-Nodes (19): _invalid_phase12n_profile_result(), _phase12n_fusion_concept_errors(), _phase12n_future_gate_errors(), _phase12n_runtime_false_fields(), _phase12n_scientist_evolution_concept_errors(), _phase12n_source_reference_errors(), _phase12n_status_label_errors(), _phase12n_unsafe_semantics_count() (+11 more)
-
-### Community 82 - "Phase 12 Closeout Summary"
-Cohesion: 0.08
-Nodes (27): _invalid_phase12s_closeout_summary_result(), phase12a_runtime_authorization_design_charter_status_summary(), _phase12a_source_governance_closeout(), _phase12a_source_runtime_gap_ledger(), phase12c_visual_supervision_capability_profile_status_summary(), phase12f_secure_drop_consumer_boundary_status_summary(), _phase12f_source_physiological_sensor_profile(), _phase12f_source_physiological_sensor_profile_errors() (+19 more)
-
-### Community 83 - "CSI Booth Boundary Planning"
-Cohesion: 0.13
-Nodes (9): booth_first_csi_planning_profile(), fixture_csi_source_adapter_output(), Return sanitized RuView reassessment metadata., Return a future booth-first CSI architecture profile as metadata only., Return deterministic CSI source metadata for the current fixture boundary., ruview_reference_metadata(), build_csi_reference_inventory(), _load_csi_reference_inventory_fixture() (+1 more)
-
-### Community 84 - "Fabric Federation Client"
-Cohesion: 0.17
-Nodes (11): FabricFederationClient, High-level send and receive facade for Somatic fabric federation., _descriptor_for_payload(), FabricFederationConnectTests, _make_registry_handler(), _make_sidecar_handler(), _merkle_root(), _server_url() (+3 more)
-
-### Community 85 - "Geometry and Component Management"
-Cohesion: 0.11
-Nodes (26): $2(), addGeometry(), detail(), getComponent(), getIndex(), hasAttribute(), iH(), _initializeGeometry() (+18 more)
-
-### Community 86 - "Frontend Development Dependencies"
-Cohesion: 0.10
-Nodes (21): axe-core, devDependencies, axe-core, jsdom, tailwindcss, @tailwindcss/vite, @types/react, @types/react-dom (+13 more)
-
-### Community 87 - "Network Safety and SSRF"
-Cohesion: 0.17
-Nodes (15): _assert_model_host_allowed(), Optional network helpers. Stdlib only. No default egress., assert_resolved_public(), _canonical_ip(), is_blocked_ip(), parse_host_ip(), _parse_ipv4_alternate(), URL safety helpers for optional network egress (stdlib only). (+7 more)
-
-### Community 88 - "License Policy Evaluation"
-Cohesion: 0.19
-Nodes (20): _allowed(), _blocked(), evaluate_license_policy(), FabricValidationResult, license_gate_errors(), _obligation_for(), _parse_magnet_params(), _percent_decode() (+12 more)
-
-### Community 89 - "CSI Evidence Pack Construction"
-Cohesion: 0.20
-Nodes (19): build_csi_evidence_pack(), _counts(), _diagnostic_counts(), _dict(), _float(), _group_summaries(), _int(), _list() (+11 more)
-
-### Community 91 - "Evidence Bus Sandbox"
-Cohesion: 0.11
-Nodes (13): _payload_for_modality(), Deterministic offline EvidenceSource for the Robin-shaped loop., SandboxEvidenceSource, _stable_hash(), EvidenceBusTests, SandboxEvidenceSourceTests, Master-plan runtime (sandbox), Master Plan (+5 more)
-
-### Community 92 - "Fabric Federation Configuration"
-Cohesion: 0.08
-Nodes (27): FabricFederationConfig, Runtime configuration for the out-of-process fabric connector., AllowlistRejectBothWaysTests, CiphertextPreservedTests, _descriptor_for_payload(), IntegrityReverifyTests, _make_registry_handler(), _make_sidecar_handler() (+19 more)
-
-### Community 93 - "Project Documentation and UI"
-Cohesion: 0.11
-Nodes (21): Field UI Screenshot (Dark), Presence UI Screenshot (Dark), Command Palette UI Screenshot (Dark), Autonomous Build Master Plan, Autonomous Build Log, Backlog, ClinFusion Assessment, Professional Closeout Plan (+13 more)
-
-### Community 94 - "Animation and Action Control"
-Cohesion: 0.07
-Nodes (32): _activateAction(), _addInactiveAction(), _addInactiveBinding(), addUpdateRange(), _bindAction(), clipAction(), _deactivateAction(), existingAction() (+24 more)
-
-### Community 95 - "Rotation and Transformation Math"
-Cohesion: 0.10
-Nodes (21): applyAxisAngle(), applyEuler(), applyQuaternion(), compose(), makeRotationFromQuaternion(), makeRotationX(), makeRotationY(), makeRotationZ() (+13 more)
-
-### Community 96 - "Document Adapter Readiness"
-Cohesion: 0.13
-Nodes (13): _adapter_privacy_violation_count(), _adapter_string_privacy_violation_count(), document_adapter_real_mode_readiness_gate(), DocumentAdapterOutputValidationResult, _invalid_result(), Metadata-only document adapter boundary.  The adapter contract is intentionall, Sanitized fail-closed validation result for adapter output., Return the shared real-mode gate for the document adapter boundary. (+5 more)
-
-### Community 97 - "Personal Baseline Profiling"
-Cohesion: 0.17
-Nodes (8): BaselineGraph, BaselinePrivacyBoundary, build_baseline_graph(), build_personal_profile(), load_fake_baseline_graph(), load_fake_personal_profile(), PersonalProfile, PersonalBaselineGraphTests
-
-### Community 98 - "Log Secret Prevention"
+### Community 120 - "CrossDomainEvidenceFrameworkTests"
 Cohesion: 0.25
-Nodes (5): NoSecretsInLogsTests, Tokens, DID keys, and bearer values must never be printed or logged., I7 — federation.py must not contain print() or logging calls., I7 — exception messages must not contain the raw token value., I7 — f-strings used in raise/exception messages must not embed tokens.
+Nodes (3): classify_document_evidence_pack_compatibility(), Classify a document evidence pack with fail-closed semantics., CrossDomainEvidenceFrameworkTests
 
-### Community 99 - "Baseline Feature Comparison"
-Cohesion: 0.18
-Nodes (12): baseline_status_counts(), BaselineComparison, BaselineMetric, BaselineWindow, _compare_expected(), compare_feature_set_to_baseline(), _compare_metric(), _compare_numeric() (+4 more)
-
-### Community 100 - "CSI Packet Feature Extraction"
-Cohesion: 0.18
-Nodes (18): _normalize_packet(), parse_csi_packet(), _parse_csv_packet(), _parse_numeric_vector(), Parse one UDP/serial line into an in-memory packet. Returns None if invalid., _split_csv_line(), _as_floats(), breathing_rate_per_min() (+10 more)
-
-### Community 101 - "Frontend Library Dependencies"
-Cohesion: 0.11
-Nodes (19): dependencies, @fontsource/ibm-plex-mono, gsap, lil-gui, react, three, troika-three-text, @xterm/xterm (+11 more)
-
-### Community 102 - "Phase Documentation Files"
-Cohesion: 0.16
-Nodes (18): docs/phase-11l-runtime-authorization-gap-ledger.md, docs/phase-11m-planning-governance-closeout.md, docs/phase-12-capability-index.md, docs/phase-12a-runtime-authorization-design-charter.md, docs/phase-12b-runtime-authorization-record-candidate.md, docs/phase-12c-visual-supervision-capability-profile.md, docs/phase-12d-visual-desktop-consent-gate-requirements.md, docs/phase-12e-physiological-sensor-capability-profile.md (+10 more)
-
-### Community 103 - "Variable Definitions"
-Cohesion: 0.22
-Nodes (18): aV(), cV(), DU(), dV(), ea(), eM(), fV(), gV() (+10 more)
-
-### Community 104 - "URL Safety and Redirection"
-Cohesion: 0.33
-Nodes (8): assert_host_allowlisted(), Raised when a URL is not safe to request., split_http_url(), UnsafeUrlError, _http_get(), LiveResearchError, _NoRedirectHandler, Live lookup failed closed (caller should fall back to offline corpus).
-
-### Community 105 - "Content-Addressed Artifact Verification"
-Cohesion: 0.17
-Nodes (11): address_record(), hash_payload(), Content-addressed evidence artifacts: hash is the id; verify from disk., Return ``payload`` with a content id equal to its canonical SHA-256., verify_file(), verify_record(), Content-addressed provenance helpers (stdlib). P2P distribution stays disabled., BenchAndProvenanceTests (+3 more)
-
-### Community 106 - "Citation Binding and Grading"
-Cohesion: 0.17
-Nodes (12): claims_from_passages(), Citation-binding: claims may only cite retrieved passage ids.  It is structura, Build cite-by-id extracts. Claims are slices of retrieved text only., Offline literature passages for citation-bound research.  v1 is corpus-only. L, grade_from_passages(), grade_study_type(), Evidence-grade rubric from source metadata. Default NONE when unbound., Grade cited passages only. No citations → NONE. (+4 more)
-
-### Community 107 - "CSI Replay Evaluation"
-Cohesion: 0.25
-Nodes (4): evaluate_csi_replay_batch(), Evaluate CSI fixture groups through sanitized provider replay metadata only., _ref_limit_group_summary(), WifiCsiBatchReplayTests
-
-### Community 109 - "Identifier Suffixes"
-Cohesion: 0.25
-Nodes (9): dW(), fW(), gW(), kW(), mW(), pW(), q_(), YR() (+1 more)
-
-### Community 110 - "Hypothesis Tournament Management"
-Cohesion: 0.23
-Nodes (14): _apply_refinement_delta(), build_tournament_bracket(), _bye(), calculate_elo_ratings(), _elo_expected(), generate_candidate_hypotheses(), generate_pairwise_debates(), _match() (+6 more)
-
-### Community 111 - "Dose-Response Analysis"
-Cohesion: 0.23
-Nodes (10): _dose_response_points(), _effect_direction(), _interpretation(), _quality_score(), _round(), summarize_dose_response(), _trend_direction(), _unavailable_summary() (+2 more)
-
-### Community 112 - "Local UI HTTP Server"
-Cohesion: 0.17
-Nodes (14): Local-only UI bridge: stdlib HTTP on 127.0.0.1 plus static assets.  This packa, bind_host_is_allowed(), True when the requested bind address is loopback-only., BridgeHTTPServer, make_server(), _query_dict(), Stdlib loopback HTTP server for the local Somatic UI., Bind 127.0.0.1 and serve the local UI until interrupted. (+6 more)
-
-### Community 113 - "Fabric Registry Client"
-Cohesion: 0.19
-Nodes (7): _allowlist_dids_from_response(), FabricAllowlistError, FabricRegistryClient, Client for the Multiverse registry HTTP API., Raised when a DID is not authenticated through the sibling allowlist., _validate_http_base_url(), _validate_loopback_http_base_url()
-
-### Community 114 - "Lexical Retrieval and Claims"
+### Community 122 - "Phase 11C Preflight Dossiers"
 Cohesion: 0.15
-Nodes (11): bind_claims(), BoundClaim, A user-facing claim that cites only retrieved passages., Keep claims whose every cite resolves; drop the rest., load_corpus(), Passage, One retrieved text unit that may be cited by id., Stdlib BM25 lexical retrieval. No runtime ranking dependency. (+3 more)
+Nodes (13): Phase 10 Checkpoint, Phase 11C Preflight Dossiers, Phase 11D Dossier Lifecycle, Phase 11E Audit Index, Phase 11F Audit Handoff, Phase 11G Handoff Acceptance, Phase 11H Follow-Up Remediation, Phase 11I Follow-Up Queue Index (+5 more)
 
-### Community 117 - "Accessibility and DOM Testing"
-Cohesion: 0.14
-Nodes (15): channel(), contrastFails, contrastRatio(), css, dom, fixturePath, here, html (+7 more)
-
-### Community 118 - "UI Components and Overlays"
-Cohesion: 0.25
-Nodes (10): ConsentPayload, StatusPayload, CommandPalette(), Item, ShortcutsPanel(), InspectorPanel(), TopStatus(), AppState (+2 more)
-
-### Community 119 - "Catalog Manifest Validation"
-Cohesion: 0.20
-Nodes (10): catalog_entry_from_manifest(), CatalogValidationResult, _find_catalog_key(), _parse_utc(), _publisher_key_active(), _validate_catalog_entry(), validate_catalog_shape(), FabricCatalogSignatureFixtureTests (+2 more)
-
-### Community 120 - "CSI Batch Readiness"
-Cohesion: 0.36
-Nodes (14): _batch_payload(), _batch_status(), build_csi_batch_tournament_readiness(), _float(), _group_refs(), _group_summary(), _int(), _list() (+6 more)
-
-### Community 124 - "Toy Counter Evidence Pack"
-Cohesion: 0.26
-Nodes (13): build_toy_counter_evidence_pack(), _counts(), _diagnostic_counts(), _int(), Sanitized toy counter fixture evidence-pack contract., Build deterministic portable toy counter metadata only., Return a compact sanitized reference to a toy counter evidence pack., _safe_artifact_refs() (+5 more)
-
-### Community 130 - "Document Evidence Fixtures"
-Cohesion: 0.26
-Nodes (11): _aggregate_status(), evaluate_document_fixture_refs(), _fixture_ref_tuple(), _increment(), _int(), Fixture-only document evidence provider.  Phase 10A non-sensor evidence domain, Read a single JSON fixture file and extract sanitized metadata., Evaluate document fixture refs and return sanitized count/status metadata. (+3 more)
-
-### Community 137 - "API and Status Pages"
-Cohesion: 0.26
-Nodes (9): ApiError, Scope, Meter(), pad2(), ConsentPage(), StatusPage(), CapabilityRing(), CountUp() (+1 more)
-
-### Community 138 - "Optional Analysis Extras"
+### Community 127 - "ui.tsx"
 Cohesion: 0.23
-Nodes (10): all_optional_extra_statuses(), FinchExtraDefinition, is_extra_available(), optional_extra_status(), Lazy optional-analysis dependency status for Finch.  The helpers in this modul, Metadata for a future package-backed Finch analysis lane., Return True when an optional package can be found without importing it., Build deterministic status metadata for a single optional extra. (+2 more)
+Nodes (10): boot(), mountChrome(), Link(), currentPath(), navigate(), ROUTES, initTheme(), setTheme() (+2 more)
 
-### Community 139 - "Document Adapter Contract Validation"
-Cohesion: 0.35
-Nodes (3): Validate and sanitize metadata-only document adapter output., validate_document_adapter_output(), DocumentAdapterContractTests
+### Community 128 - "Phase 11C Preflight Dossiers"
+Cohesion: 0.17
+Nodes (12): Phase 11B Review Records, Phase 11C Preflight Dossiers, Phase 11D Dossier Lifecycle Records, Phase 11E Audit Index, Phase 11F Audit Handoff, Phase 11G Handoff Acceptance, Phase 11H Followup Remediation, Phase 11I Followup Queue Index (+4 more)
 
-### Community 140 - "Belief Ledger Posteriors"
-Cohesion: 0.27
-Nodes (4): BeliefLedger, HypothesisBelief, Stdlib belief ledger: Beta posteriors over hypotheses. No NumPyro in core., Independent Beta posteriors; each modality update is a weighted coin-flip.
-
-### Community 144 - "Table Statistics and Profiling"
-Cohesion: 0.42
-Nodes (9): descriptive_stats(), detect_numeric_columns(), group_by_summary(), is_missing(), numeric_values(), _round(), to_float(), profile_csv_table() (+1 more)
-
-### Community 145 - "Phase-12 Series Invariants"
+### Community 132 - "csi_scoring.py"
 Cohesion: 0.18
-Nodes (6): Phase12SeriesInvariantTests, Cross-phase regression guard for Phase-12 capability profiles.  This test suit, Every Phase-12 capability profile must report a runtime-blocked posture., Phase-12 series must cover at least 15 sub-phase summaries., Sanity check: execution_permitted must appear in >50% of summaries., Each Phase-12 profile must lock the runtime-blocked posture.
+Nodes (10): _bounded_score(), build_csi_tournament_readiness(), _int(), _list(), Score sanitized CSI replay metadata without reading frame or sample values., score_csi_replay_evidence(), _score_int(), _scoring_status() (+2 more)
 
-### Community 148 - "Project Package Configuration"
+### Community 134 - "Report Packet Contract"
+Cohesion: 0.33
+Nodes (6): Report Packet Contract, Robin Sandbox Loop, Run Artifacts Layout, Safety Boundaries, Safety Gate Contract, Sensor Privacy Boundary
+
+### Community 135 - "Phase 12B Runtime Authorization Record Candidate"
+Cohesion: 0.18
+Nodes (11): Phase 12A Runtime Authorization Design Charter, Phase 12B Runtime Authorization Record Candidate, Phase 12C Visual Supervision Capability Profile, Phase 12D Visual Desktop Consent Gate Requirements, Phase 12E Physiological Sensor Capability Profile, Phase 12F Secure Drop Consumer Boundary, Phase 12G Production Readiness Coverage Matrix, Phase 12H Somatic Standalone Production Readiness Ownership Map (+3 more)
+
+### Community 136 - "harness.py"
+Cohesion: 0.08
+Nodes (29): Benchmark lane: sandbox runner plus metadata scaffold., BenchScore, _board(), load_bench_task(), Path, Sandbox somatic-bench: score a harness on the ripasudil/dAMD canonical task., Score the sandbox science harness on a closed-loop fixture task., run_bench() (+21 more)
+
+### Community 137 - "run_research_loop"
+Cohesion: 0.17
+Nodes (8): _emergency_result(), _frame_research(), Any, Retrieve, bind, and frame. Offline corpus only. No model memory., run_research_loop, _isolate_consent(), Tests for offline citation-bound research (honest null, no model memory)., ResearchLoopTests
+
+### Community 138 - "federation.py"
+Cohesion: 0.16
+Nodes (20): Fabric Connect, Fabric Federation Security Review, _allowlist_dids_from_response(), FabricAllowlistError, FabricConfigError, FabricSendResult, _float_env(), _int_env() (+12 more)
+
+### Community 139 - "Phase12SeriesInvariantTests"
+Cohesion: 0.18
+Nodes (6): Phase12SeriesInvariantTests, Cross-phase regression guard for Phase-12 capability profiles. This test suite…, Every Phase-12 capability profile must report a runtime-blocked posture., Phase-12 series must cover at least 15 sub-phase summaries., Sanity check: execution_permitted must appear in >50% of summaries., Each Phase-12 profile must lock the runtime-blocked posture.
+
+### Community 141 - "package.json"
 Cohesion: 0.18
 Nodes (10): description, name, private, scripts, a11y, build, dev, preview (+2 more)
 
-### Community 149 - "UI Charts and Banners"
-Cohesion: 0.27
-Nodes (8): numericSeries(), packetCharts(), seriesChart(), AlertHost(), NoticeHost(), alertSlot, main, noticeSlot
-
-### Community 150 - "Fabric Environment Integration"
-Cohesion: 0.31
-Nodes (9): _fabric(), _fabric_canonicalize(), _fabric_check_catalog(), _fabric_check_keyring_rotation(), _fabric_check_shared_fixtures(), _fabric_receive_once(), _fabric_register(), _fabric_send() (+1 more)
-
-### Community 151 - "Biosecurity Screening Harness"
-Cohesion: 0.22
-Nodes (6): BiosecurityResult, Biosecurity screen: refuse molecules-of-concern by public name. No uplift., Return a refuse+log result when ``text`` names a molecule-of-concern., screen_biosecurity(), Falsifier: pick the cheapest unused sandbox modality by expected information gai, Autonomous-science harness package (sandbox, stdlib).
-
-### Community 152 - "Workflow Adapter Scaffolds"
+### Community 142 - "DocumentAdapterOutputValidationResult"
 Cohesion: 0.20
-Nodes (10): Boltz Adapter Scaffold, Provider Classes, Crow Agent, Falcon Agent, Finch Agent, Workflow Modes, Valid Hypothesis Tournament Workflow, Valid In-Silico Screening Workflow (+2 more)
+Nodes (5): DocumentAdapterOutputValidationResult, _invalid_result(), Sanitized fail-closed validation result for adapter output., Return a deterministic rejected metadata-only adapter output., rejected_document_adapter_output()
 
-### Community 153 - "Path Confinement Validation"
-Cohesion: 0.47
-Nodes (7): FabricPathError, path_confinement_errors(), path_error(), Raised when a Fabric payload path escapes its allowed shape., type_install_root(), validate_install_target_for_type(), validate_payload_path()
+### Community 143 - "HISTORY.md"
+Cohesion: 0.06
+Nodes (40): Adapter Boundaries, AutoScientists Mapping, AutoScientists Source Inspection, Aviary Source Inspection, Baseline Privacy Boundary, Biomodel Provenance Packaging, Biomodel Provider Boundary, Biomodel Safety Gates (+32 more)
 
-### Community 154 - "Run Artifact Writer"
-Cohesion: 0.39
-Nodes (8): _artifact_hashes(), make_run_id(), _sensor_evidence_artifact_refs(), _sha256(), _utc_now(), _write_json(), write_run_artifacts(), _write_text()
+### Community 144 - "Phase 9H / 11M Release Summary"
+Cohesion: 0.12
+Nodes (15): Compatibility Contracts, Completed Scope, Extension Path, Phase 10A — First Non-Sensor Evidence Domain, Phase 10E — Cross-Domain Evidence Framework, Phase 10F — Document Adapter Boundary, Phase 10G — WiFi CSI Source Boundary, Phase 10H — Shared Real-Mode Readiness Gate (+7 more)
 
-### Community 156 - "Shell Script Generation"
+### Community 145 - "FieldPage"
+Cohesion: 0.25
+Nodes (9): AudioReadout, FieldReadout, namedJoints, OccupancyStrip, StagePoster, TemplateBodySvg, FieldGui, FieldPage (+1 more)
+
+### Community 146 - "write-shell.mjs"
 Cohesion: 0.22
 Nodes (8): appJs, css, dest, here, html, js, repo, src
 
-### Community 157 - "UI Tools and Terminal"
-Cohesion: 0.29
-Nodes (6): Heading(), Link(), ReplayPage(), ToolsPage(), navigate(), CliTerminal()
-
-### Community 158 - "Batch Scoring Interfaces"
+### Community 147 - "Baseline Comparison Placeholder"
 Cohesion: 0.25
-Nodes (4): BatchScorer, FutureTeamOrchestratorHook, Disabled attachment point for a future Phase 2.5 team orchestrator., Interface for batch scoring and pairwise comparison providers.
+Nodes (8): Baseline Comparison Placeholder, Baseline Graph Placeholder, Baseline Privacy Boundary Placeholder, Follow-up Observation Window Placeholder, Follow-up Sensor Snapshot Placeholder, Intervention Context Placeholder, Response Comparison Placeholder, Response Evaluation Summary Placeholder
 
-### Community 159 - "Provenance and Table Analysis"
-Cohesion: 0.36
-Nodes (6): analyze_robin_tables(), _collect_table_refs(), Analyze local CSV fixture references embedded in sandbox raw evidence., build_analysis_provenance(), hash_file(), hash_payload()
+### Community 148 - "FabricFederationError"
+Cohesion: 0.33
+Nodes (8): _fabric_canonicalize(), _fabric_receive_once(), _fabric_register(), _fabric_send(), _write_stdout_utf8_line(), FabricFederationError, Exception, Base error for fail-closed federation connector failures.
 
-### Community 160 - "Loopback Origin Validation"
-Cohesion: 0.29
-Nodes (7): hostname_from_host_header(), is_loopback_hostname(), origin_is_loopback(), Loopback-only origin and Host checks for the local UI bridge., Return the hostname from an HTTP Host header (no port)., True when ``hostname`` is a loopback name we will serve., True when Origin is absent or a loopback http(s) origin.      Missing Origin i
-
-### Community 161 - "Interop Fixture Metadata"
-Cohesion: 0.32
+### Community 149 - "interop.py"
+Cohesion: 0.43
 Nodes (4): compare_fixture_metadata(), describe_interop_fixture_locations(), _posix(), FabricInteropPlaceholderTests
 
-### Community 162 - "Live Literature Research"
-Cohesion: 0.17
-Nodes (9): _europe_pmc_url(), live_enabled(), _passages_from_europe_pmc(), Optional live literature lookup. Stdlib urllib. Off unless env-enabled.  CI an, Search Europe PMC and return passages. Empty on failure or miss., retrieve_live(), LiveResearchTests, Live literature lookup stays off by default and never hits the network in CI. (+1 more)
+### Community 150 - "install_builder_cache"
+Cohesion: 0.36
+Nodes (7): install_builder_cache(), memoize_hashable_calls(), Any, Memoize hashable-arg Phase 11/12 builder and status-summary calls. Default…, Cache ``fn`` when every argument is hashable; deepcopy the cached value., Wrap public builders and ``*_status_summary`` functions in ``module_globals``., _should_memoize()
 
-### Community 165 - "App Routing and Navigation"
-Cohesion: 0.24
-Nodes (14): App(), boot(), inspectorFor(), markNav(), pages, mountChrome(), revealMain(), startLenis() (+6 more)
+### Community 151 - "retrieve_live"
+Cohesion: 0.16
+Nodes (9): FetchFn, _europe_pmc_url(), live_enabled(), _passages_from_europe_pmc(), Any, Search Europe PMC and return passages. Empty on failure or miss., retrieve_live, LiveResearchTests (+1 more)
 
-### Community 166 - "CSI UDP Forwarder"
-Cohesion: 0.52
-Nodes (6): _bind_host(), demo_lines(), main(), Host-side CSI line forwarder: stdin/serial/demo -> UDP 127.0.0.1.  The ESP32 c, send_line(), socket
+### Community 152 - "library.py"
+Cohesion: 0.21
+Nodes (9): Consent-gated evidence-graded remedy library (informational)., _grade_for_claim(), Any, Evidence-graded informational remedy library. Default grade NONE., One citation-bound library row. Grade defaults to NONE when unbound., RemedyEntry, RemedyReport, Citation-bound informational research result. (+1 more)
 
-### Community 167 - "Builder Cache Memoization"
-Cohesion: 0.38
-Nodes (6): install_builder_cache(), memoize_hashable_calls(), Memoize hashable-arg Phase 11/12 builder and status-summary calls.  Default (z, Cache ``fn`` when every argument is hashable; deepcopy the cached value., Wrap public builders and ``*_status_summary`` functions in ``module_globals``., _should_memoize()
+### Community 154 - "Phase 12N Workflow Orchestration Mode Registry Capability Profile"
+Cohesion: 0.29
+Nodes (7): Phase 12N Workflow Orchestration Mode Registry Capability Profile, Phase 12O Workflow Mode Safety Gate Runtime Prerequisite Matrix, Phase 12P Workflow Mode Activation Request Review Packet Boundary, Phase 12Q Non-Authorizing Workflow Mode Review Decision Record, Phase 12R Workflow Mode Review Audit Trail Index, Phase 12S Workflow Mode Review Chain Closeout Summary, UI Screenshot: Analyze Blocked
 
-### Community 168 - "Authorization Charter Validation"
+### Community 155 - "MetadataOnlyDocumentAdapter"
+Cohesion: 0.29
+Nodes (5): MetadataOnlyDocumentAdapter, Protocol, Interface for document providers that emit sanitized metadata only., Return sanitized adapter/provider status metadata., Return a sanitized document evidence pack.
+
+### Community 156 - "Phase12ARuntimeAuthorizationDesignCharterValidationResult"
 Cohesion: 0.29
 Nodes (3): _invalid_phase12a_charter_result(), Phase12ARuntimeAuthorizationDesignCharterValidationResult, Sanitized validation result for Phase 12A design-only charters.
 
-### Community 169 - "Authorization Record Validation"
+### Community 157 - "Phase12BRuntimeAuthorizationRecordCandidateValidationResult"
 Cohesion: 0.29
 Nodes (3): _invalid_phase12b_record_result(), Phase12BRuntimeAuthorizationRecordCandidateValidationResult, Sanitized validation result for Phase 12B record candidates.
 
-### Community 170 - "Visual Supervision Validation"
+### Community 158 - "Phase12CVisualSupervisionCapabilityProfileValidationResult"
 Cohesion: 0.29
 Nodes (3): _invalid_phase12c_profile_result(), Phase12CVisualSupervisionCapabilityProfileValidationResult, Sanitized validation result for Phase 12C capability profiles.
 
-### Community 171 - "Consent Gate Validation"
+### Community 159 - "Phase12DConsentGateRequirementsValidationResult"
 Cohesion: 0.29
 Nodes (3): _invalid_phase12d_profile_result(), Phase12DConsentGateRequirementsValidationResult, Sanitized validation result for Phase 12D consent gate requirements.
 
-### Community 172 - "Physiological Sensor Validation"
+### Community 160 - "Phase12EPhysiologicalSensorCapabilityProfileValidationResult"
 Cohesion: 0.29
 Nodes (3): _invalid_phase12e_profile_result(), Phase12EPhysiologicalSensorCapabilityProfileValidationResult, Sanitized validation result for Phase 12E physiological sensor profiles.
 
-### Community 173 - "Phase 12 Boundary Validation"
-Cohesion: 0.09
-Nodes (16): _invalid_phase12f_boundary_result(), _phase12d_source_capability_profile_errors(), _phase12e_source_consent_gate_profile_errors(), _phase12f_allowed_artifact_label_errors(), _phase12f_prohibited_autonomous_source_errors(), _phase12f_source_consent_gate_profile_errors(), _phase12f_source_content_fabric_secure_drop_contract_errors(), _phase12f_source_record_candidate_errors() (+8 more)
+### Community 161 - "Phase12FSecureDropConsumerBoundaryValidationResult"
+Cohesion: 0.29
+Nodes (3): _invalid_phase12f_boundary_result(), Phase12FSecureDropConsumerBoundaryValidationResult, Sanitized validation result for Phase 12F Secure Drop consumer boundaries.
 
-### Community 174 - "Network Isolation Checks"
+### Community 163 - "StdlibAndOutOfProcessTests"
 Cohesion: 0.29
 Nodes (4): Additional I1/I2 checks that complement the existing connect test., I2 — no raw socket, subprocess, or third-party network imports., I2 — no DHT, swarm, bittorrent, or content-chunking implementation., StdlibAndOutOfProcessTests
 
-### Community 175 - "Keyring Rotation Fixtures"
-Cohesion: 0.43
-Nodes (3): FabricKeyringRotationFixtureTests, FabricKeyringRotationTests, load_rotation_fixture()
+### Community 164 - "Per-Source Notes"
+Cohesion: 0.17
+Nodes (11): AutoScientists, Aviary, Boltz, External Source Staging, FutureHouse Robin, LDP, PaperQA2, Per-Source Notes (+3 more)
 
-### Community 177 - "Fixture Round-Trip Validation"
+### Community 165 - "Phase12FixtureValidatorRoundTripTests"
 Cohesion: 0.29
-Nodes (3): Phase12FixtureValidatorRoundTripTests, Lock every committed Phase-12 review fixture to validate as compatible.  This, Every Phase-12 fixture must validate as *compatible* through its validator.
+Nodes (3): Phase12FixtureValidatorRoundTripTests, Lock every committed Phase-12 review fixture to validate as compatible. This…, Every Phase-12 fixture must validate as *compatible* through its validator.
 
-### Community 178 - "Metadata Document Adapter"
+### Community 166 - "setFromEuler"
+Cohesion: 0.18
+Nodes (12): applyEuler(), applyQuaternion(), compose(), r(), makeRotationFromQuaternion(), reorder(), setFromEuler(), setFromQuaternion() (+4 more)
+
+### Community 167 - "MachinePages.tsx"
 Cohesion: 0.33
-Nodes (4): MetadataOnlyDocumentAdapter, Interface for document providers that emit sanitized metadata only., Return sanitized adapter/provider status metadata., Return a sanitized document evidence pack.
+Nodes (4): Heading(), ReplayPage(), ToolsPage(), CliTerminal()
 
-### Community 179 - "CSI Compatibility Classification"
-Cohesion: 0.40
-Nodes (5): classify_csi_evidence_pack_compatibility(), _csi_compatibility_result(), CsiEvidencePackCompatibilityResult, Sanitized compatibility decision for an already-exported CSI pack., Classify an exported CSI evidence pack without exposing private fields.
+### Community 168 - "Phase 11A Real-Mode Contract Specs"
+Cohesion: 0.18
+Nodes (10): Document Ingestion Contracts, Non-Goals, Phase 11A Real-Mode Contract Specs, Phase 11B Continuation, Phase 11C Continuation, Phase 11D Continuation, RF Booth / WiFi CSI Contracts, Shared Contract Layer (+2 more)
 
-### Community 181 - "Runtime Boundary Enforcement"
-Cohesion: 0.33
-Nodes (4): PreRuntimeBoundaryTests, I8 — somatic doctor must keep real-mode runtime blocked., I8 — doctor output mentions the out-of-process sidecar connector., I8 — doctor output confirms real-mode runtime is blocked/disabled.
+### Community 169 - "Integration Status"
+Cohesion: 0.20
+Nodes (9): Adoption Rule, Conditional Reference-Only, Currently Implemented, Integration Status, Needs Inspection, Optional and Non-Default, Planned, Reference-Only (+1 more)
 
-### Community 185 - "UI Screenshot Capture"
-Cohesion: 0.60
-Nodes (4): _browser(), main(), Refresh docs/ui-screenshots/*.png from the local loopback UI.  Requires Google, _shot()
+### Community 173 - "RobinProvider"
+Cohesion: 0.29
+Nodes (8): RuntimeError, Raised when a caller tries to enable the reference-only Robin scaffold., Reference-only FutureHouse Robin stack scaffold. This provider records how…, RobinPlanRequest, RobinProvider, RobinProviderConfig, RobinReferencePlan, RobinRuntimeNotEnabledError
 
-### Community 187 - "Safety-Aware Item Ranking"
-Cohesion: 0.80
-Nodes (3): final_score(), _normalized_scores(), rank_scored_items()
+### Community 174 - "Future Financial Repo Workflow Plan"
+Cohesion: 0.20
+Nodes (9): First workflow candidates, Future Financial Repo Workflow Plan, Initial inspection prompt for later, Language strategy, Relationship to Content Fabric, Relationship to Locus Evolution Lab, Relationship to Somatic, Safety and legal boundaries (+1 more)
 
-### Community 192 - "Project Documentation"
+### Community 175 - "✨ Features"
+Cohesion: 0.22
+Nodes (9): Analyze & share, Consent & safety spine, ✨ Features, Ingestion (CSV / Apple Health), Local UI (`python -m somatic ui`), N-of-1 experiments, Research / Remedy / Parasite, Science & presence (render-only) (+1 more)
+
+### Community 176 - "Hypothesis Tournament"
+Cohesion: 0.25
+Nodes (7): Artifacts, Boundary, Flow, Hypothesis Tournament, Phase 2.1 Pairwise and Elo Layer, Phase 2.5 TeamOrchestrator Scaffold, Scoring
+
+### Community 177 - "Biomodel Plan Placeholder"
 Cohesion: 0.50
-Nodes (3): docs/ARCHITECTURE.md, docs/HISTORY.md, .github/workflows/ci.yml
+Nodes (4): Biomodel Plan Placeholder, Biomodel Readiness Report Placeholder, Biomodel Request Placeholder, Biomodel Result Placeholder
 
-### Community 193 - "Phase Review Summaries"
+### Community 178 - "Phase 12O Workflow Mode Safety Gate Runtime Prerequisite Matrix"
 Cohesion: 0.50
-Nodes (4): Phase 12Q Non-Authorizing Workflow Mode Review Decision Record, Phase 12R Workflow Mode Review Audit Trail Index, Phase 12S Workflow Mode Review Chain Closeout Summary, Phase 9H / 11M Release Summary
+Nodes (4): Phase 12N Workflow Orchestration Mode Registry Capability Profile, Phase 12O Workflow Mode Safety Gate Runtime Prerequisite Matrix, Phase 12P Workflow Mode Activation Request Review Packet Boundary, Phase 12Q Non-Authorizing Workflow Mode Review Decision Record
 
-### Community 194 - "System Architecture Diagrams"
-Cohesion: 0.83
-Nodes (4): UI Screenshot: README Rendered with Architecture Diagram, Somatic Engine, Local UI (Bioluminescence Cockpit), stdlib bridge
+### Community 179 - "In-Silico Screening Workflow"
+Cohesion: 0.25
+Nodes (7): Artifacts, Boundaries, Evidence Bus Mapping, In-Silico Screening Workflow, Phase 6C Readiness Gates, Phase 6D Provenance And Fabric Pack Planning, Runtime Shape
 
-### Community 195 - "Scientific Agent Skills"
+### Community 180 - "PaperQA2 Adapter Scaffold"
+Cohesion: 0.25
+Nodes (7): Data And Consent, Doctor Output, Files, Future Real Adapter Work, PaperQA2 Adapter Scaffold, Provider Surface, Runtime Boundary
+
+### Community 181 - "somatic/somatic/advisory/adapter.py"
 Cohesion: 0.50
-Nodes (4): database-lookup skill, paper-lookup skill, K-Dense-AI/scientific-agent-skills, SKILL.md
+Nodes (4): somatic/somatic/advisory/adapter.py, somatic/somatic/consent/ledger.py, somatic/somatic/net/ssrf.py, somatic/somatic/safety/core.py
 
-### Community 196 - "Static Assets and Types"
+### Community 182 - "somatic/somatic/mock_runtime.py"
+Cohesion: 0.50
+Nodes (4): somatic/somatic/local_crypto.py, somatic/somatic/mock_runtime.py, somatic/somatic/run_writer.py, somatic/somatic/workflow_loader.py
+
+### Community 183 - "vite-env.d.ts"
 Cohesion: 0.50
 Nodes (3): *.ttf, *.woff, *.woff2
 
+### Community 184 - "csi_udp_forward.py"
+Cohesion: 0.39
+Nodes (7): _bind_host(), demo_lines(), main(), Host-side CSI line forwarder: stdin/serial/demo -> UDP 127.0.0.1. The ESP32…, send_line(), WiFi CSI Demo, socket
+
+### Community 185 - "Somatic Architecture"
+Cohesion: 0.09
+Nodes (18): Core Data Flow: Content Fabric Fixture Check, Core Data Flow: N-of-1 Sensor Planning, Core Request Flow: Local Mock Run, Local graphical UI, Major Areas, Safety Invariant, Somatic Architecture, Where To Read Next (+10 more)
+
+### Community 186 - "Autonomous Build Log"
+Cohesion: 0.67
+Nodes (3): Autonomous Build Mode Master Plan, Autonomous Build Log, Finishing Report
+
+### Community 187 - "Workflow Schema"
+Cohesion: 0.67
+Nodes (3): Somatic Roadmap, Workflow Modes, Workflow Schema
+
+### Community 188 - "N-of-1 CSI Replay Example"
+Cohesion: 0.67
+Nodes (3): Replay UI, N-of-1 CSI Replay Example, Valid Robin Loop Workflow
+
+### Community 189 - "Mock Sensor Provider"
+Cohesion: 0.67
+Nodes (3): Sandbox Field UI, Toy Counter Fixture Provider Example, Mock Sensor Provider
+
+### Community 190 - "Valid N-of-1 Sensor Planning Workflow"
+Cohesion: 0.67
+Nodes (3): N-of-1 Baseline Placeholder, Sandbox Sensor Provider Placeholder, Valid N-of-1 Sensor Planning Workflow
+
+### Community 191 - "Somatic — Planning (Index)"
+Cohesion: 0.67
+Nodes (3): Somatic — Autonomous Build: professional-grade closeout, Somatic — Autonomous Build: enrich the UI + README, Somatic — Planning (Index)
+
+### Community 192 - "Somatic — Current Plan (the pivot)"
+Cohesion: 0.67
+Nodes (3): Somatic — Current Plan (the pivot), Fable 5 — Repo Handoff: Somatic, Somatic — Master Plan & Build Bible (v2)
+
+### Community 193 - "Development"
+Cohesion: 0.29
+Nodes (6): Contribution Boundary, Development, Optional Checks, Project Layout, Requirements, Standard Checks
+
+### Community 194 - "Phase11FollowupQueueAcceptanceValidationResult"
+Cohesion: 0.29
+Nodes (3): _invalid_phase11i_acceptance_result(), Phase11FollowupQueueAcceptanceValidationResult, Sanitized validation result for Phase 11I queue acceptance checks.
+
+### Community 195 - "Phase11FollowupQueueValidationResult"
+Cohesion: 0.29
+Nodes (3): _invalid_phase11i_queue_result(), Phase11FollowupQueueValidationResult, Sanitized validation result for Phase 11I queue index records.
+
+### Community 198 - "Literature Only"
+Cohesion: 0.67
+Nodes (3): Hybrid Clinical Decision Support, Literature Only, Robin Loop
+
+### Community 199 - "N-of-1 Report Packet"
+Cohesion: 0.50
+Nodes (4): Boundary, N-of-1 Report Packet, Packet Contents, Phase 7G Fabric Pack Planning
+
+### Community 266 - "Finch Toolbelt"
+Cohesion: 0.29
+Nodes (6): Finch Optional Extras, Dose-Response Boundary, Finch Toolbelt, Modules, Robin Outputs, Scope
+
+### Community 382 - "Recommended Next Phases.md"
+Cohesion: 0.14
+Nodes (13): Fabric Consumer Boundary, For immediate decision, Product direction (future-gated), Somatic — Open Questions, Structural (medium-term), Somatic Review Hub, Do NOT (without explicit Josh approval), Parallel tracks (not Codex) (+5 more)
+
 ## Knowledge Gaps
-- **330 isolated node(s):** `class`, `createdAt`, `dependencies`, `description`, `files` (+325 more)
+- **609 isolated node(s):** `class`, `createdAt`, `dependencies`, `description`, `files` (+604 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **257 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **221 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `_doctor()` connect `Phase 12 Closeout Summary` to `Phase 12 Authorization Finalization`, `Sensor Hardware Ingestion`, `Authorization Design Profiles`, `Workflow Safety Gate Audit`, `Phase 11 Preflight Dossiers`, `Literature Evidence Providers`, `Dossier Lifecycle Management`, `Biomodel Evidence Processing`, `Benchmarking and Scoring`, `Phase 11 Contract Review`, `Presence and Research Rendering`, `Sensor Evidence Provider Validation`, `Phase 12 Model Registry`, `Phase 11 Audit Status`, `Phase 11 Decision Closeout`, `Environment Evidence Provider`, `Phase 12 Knowledge Profile`, `Production Readiness Matrix`, `Phase 12 Safety Matrix`, `Document Evidence Validation`, `Production Ownership Matrix`, `Provider Manifest Validation`, `Phase 12 Interop Profile`, `Finch Extras Provider`, `Phase 12 Orchestration Profile`, `CSI Booth Boundary Planning`, `Sandbox Sensor Provider`?**
-  _High betweenness centrality (0.032) - this node is a cross-community bridge._
-- **Why does `SandboxSensorProvider` connect `Sandbox Sensor Provider` to `CSI Capture Planning`, `CSI Replay Evaluation`, `Sensor Evidence Records`, `Benchmarking and Scoring`, `Phase 12 Closeout Summary`, `CSI Booth Boundary Planning`, `Workflow Evidence Analysis`, `Sensor Evidence Provider Validation`?**
-  _High betweenness centrality (0.028) - this node is a cross-community bridge._
-- **Why does `SensorHardwareDisabled` connect `Sensor Hardware Ingestion` to `Consent Ledger Management`, `Consent and Experiment Storage`, `Benchmarking and Scoring`, `Live CSI Adapter`, `Evidence Measurement Planning`?**
-  _High betweenness centrality (0.025) - this node is a cross-community bridge._
-- **Are the 118 inferred relationships involving `ConsentLedger` (e.g. with `AdvisoryConfigError` and `AdvisoryHttpError`) actually correct?**
-  _`ConsentLedger` has 118 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 4 inferred relationships involving `constructor()` (e.g. with `e()` and `w()`) actually correct?**
-  _`constructor()` has 4 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `class`, `createdAt`, `dependencies` to the rest of the system?**
-  _330 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `App UI and State` be split into smaller, more focused modules?**
-  _Cohesion score 0.004962406015037594 - nodes in this community are weakly interconnected._
+- **Why does `U5()` connect `U5` to `app.js`, `n`, `jt`, `OG`, `push`, `fm`, `IY`, `y`, `rd`, `a`, `constructor`, `Dn`, `dispatchEvent`, `Ps`, `addEventListener`, `C`?**
+  _High betweenness centrality (0.033) - this node is a cross-community bridge._
+- **Why does `Local UI` connect `Somatic Architecture` to `server.py`?**
+  _High betweenness centrality (0.022) - this node is a cross-community bridge._
+- **Why does `OG()` connect `OG` to `app.js`, `n`, `copy`, `U5`, `push`, `fm`, `IY`, `rd`, `y`, `t`, `constructor`, `Dn`, `dispatchEvent`, `Ps`, `addEventListener`, `C`?**
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+- **Are the 408 inferred relationships involving `U5()` (e.g. with `ke()` and `Ne()`) actually correct?**
+  _`U5()` has 408 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 310 inferred relationships involving `OG()` (e.g. with `De()` and `ke()`) actually correct?**
+  _`OG()` has 310 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 89 inferred relationships involving `constructor()` (e.g. with `De()` and `ke()`) actually correct?**
+  _`constructor()` has 89 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 219 inferred relationships involving `IY()` (e.g. with `$0()` and `$a()`) actually correct?**
+  _`IY()` has 219 INFERRED edges - model-reasoned connections that need verification._

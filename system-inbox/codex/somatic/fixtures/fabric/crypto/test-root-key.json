@@ -1,0 +1,6 @@
+{
+  "keyId": "10ba682c8ad13513971e8b56881aab8bd702bb807796eca81932c735a94d6e6d",
+  "publicKey": "0EqyMnQrtKs6E2i9RhXk5tAiSrcaAWuvhSCjMsl3hzc=",
+  "testOnlyPrivateKeyBase64": "ERERERERERERERERERERERERERERERERERERERERERE=",
+  "warning": "TEST VECTOR ONLY. Never use for production Fabric signing."
+}

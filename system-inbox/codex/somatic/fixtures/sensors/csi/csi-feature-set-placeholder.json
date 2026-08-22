@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "csi-feature-set-placeholder",
+  "capture_plan_id": "csi-capture-plan-placeholder",
+  "feature_plan_id": "csi-feature-plan-placeholder",
+  "mock": true,
+  "offline": true,
+  "fake_backed": true,
+  "research_only": true,
+  "planning_only": true,
+  "sample_pack_read": false,
+  "hardware_access": false,
+  "packet_capture": false,
+  "wifi_network_probing": false,
+  "monitor_mode": false,
+  "network_calls": false,
+  "raw_rf_data_collected": false,
+  "raw_csi_data_collected": false,
+  "real_monitoring": false,
+  "clinical_interpretation": false,
+  "medical_or_clinical_claim": false,
+  "reference_inventory_ref": "fixtures/sensors/csi/csi-reference-inventory.json",
+  "features": {
+    "respiratory_rate": 14,
+    "heart_rate_placeholder": "not-estimated-placeholder",
+    "hrv_placeholder": "not-estimated-placeholder",
+    "motion_score": 0.18,
+    "posture_state": "upright-placeholder",
+    "sleep_state_estimate": "awake-placeholder",
+    "fall_risk_placeholder": "not-assessed-placeholder",
+    "pose3d_placeholder": "not-reconstructed-placeholder",
+    "confidence": "not-applicable"
+  },
+  "artifact_noise_flags": {
+    "multipath_placeholder": false,
+    "packet_loss_placeholder": false,
+    "motion_artifact_placeholder": false,
+    "device_calibration_placeholder": "not-performed"
+  },
+  "limitations": [
+    "Fixed deterministic placeholder metadata only.",
+    "No WiFi hardware, ESP32, RTL8812AU, router, adapter, driver, monitor mode, packet capture, or WiFi device probing.",
+    "No raw RF/CSI collection, retention, export, clinical interpretation, diagnosis, treatment, or emergency triage.",
+    "RuView is conditional reference-only; Somatic does not run, copy, import, or depend on it.",
+    "Booth-first CSI planning is metadata only for a future single-subject controlled booth."
+  ],
+  "ruview_dependency": "conditional-reference-only",
+  "booth_profile": {
+    "profile": "booth-first-single-subject-v1",
+    "single_subject": true,
+    "space": "small-controlled-booth",
+    "future_topology": "fixed-ap-plus-4-to-6-receiver-nodes",
+    "preferred_radio_family": "esp32-s3",
+    "empty_booth_baseline": "planned-reference-concept",
+    "room_adaptation_logic": "skipped",
+    "research_note_labels": [
+      "phase-variance",
+      "conjugation",
+      "temporal-embedding"
+    ]
+  }
+}

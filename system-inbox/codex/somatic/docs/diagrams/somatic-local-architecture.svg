@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 640" role="img" aria-labelledby="title desc" font-family="'IBM Plex Sans','Segoe UI',system-ui,sans-serif">
+  <title id="title">Somatic local architecture</title>
+  <desc id="desc">The Bioluminescence local UI talks only to a stdlib loopback bridge on 127.0.0.1. The bridge reuses engine gates: require_consent, emergency_screen, frame_advisory, citation-bind, and screen_biosecurity. Core dependencies stay empty. Raw sensor data never egresses.</desc>
+  <defs>
+    <radialGradient id="bg" cx="72%" cy="0%" r="90%">
+      <stop offset="0" stop-color="#0d241b"/><stop offset="55%" stop-color="#08150F"/><stop offset="100%" stop-color="#06110C"/>
+    </radialGradient>
+    <linearGradient id="em" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#35E7A6"/><stop offset="1" stop-color="#12A574"/></linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#12261E"/><stop offset="1" stop-color="#0a1812"/></linearGradient>
+  </defs>
+  <rect width="1100" height="640" fill="url(#bg)"/>
+  <!-- faint grid -->
+  <g stroke="#ffffff" stroke-opacity="0.035">
+    <path d="M0 40H1100M0 80H1100M0 120H1100M0 160H1100M0 200H1100M0 240H1100M0 280H1100M0 320H1100M0 360H1100M0 400H1100M0 440H1100M0 480H1100M0 520H1100M0 560H1100M0 600H1100"/>
+    <path d="M40 0V640M80 0V640M120 0V640M160 0V640M200 0V640M240 0V640M280 0V640M320 0V640M360 0V640M400 0V640M440 0V640M480 0V640M520 0V640M560 0V640M600 0V640M640 0V640M680 0V640M720 0V640M760 0V640M800 0V640M840 0V640M880 0V640M920 0V640M960 0V640M1000 0V640M1040 0V640M1080 0V640"/>
+  </g>
+
+  <!-- header -->
+  <text x="48" y="52" fill="#35E7A6" font-family="'IBM Plex Mono',monospace" font-size="13" letter-spacing="4">FIGURE 1 — SOMATIC LOCAL ARCHITECTURE</text>
+  <text x="48" y="86" fill="#EAF5EF" font-size="30" font-weight="700" font-family="'Space Grotesk','IBM Plex Sans',sans-serif">Engine ⇄ stdlib bridge ⇄ local UI</text>
+  <text x="48" y="112" fill="#93AC9F" font-size="15">Everything runs on 127.0.0.1. The gates live in the engine; the browser never reimplements one.</text>
+
+  <!-- ===== NODE 1: LOCAL UI ===== -->
+  <g>
+    <rect x="48" y="168" width="300" height="300" rx="16" fill="url(#panel)" stroke="#35E7A6" stroke-opacity="0.55"/>
+    <rect x="48" y="168" width="300" height="300" rx="16" fill="none" stroke="#35E7A6" stroke-opacity="0.14" stroke-width="6"/>
+    <circle cx="80" cy="204" r="7" fill="#35E7A6"/>
+    <text x="100" y="209" fill="#EAF5EF" font-size="19" font-weight="700" font-family="'Space Grotesk',sans-serif">Local UI</text>
+    <text x="72" y="238" fill="#4CC4F5" font-family="'IBM Plex Mono',monospace" font-size="12.5" letter-spacing="1">browser · 127.0.0.1</text>
+    <g fill="#CFE8DD" font-size="14.5">
+      <text x="72" y="278">Bioluminescence cockpit</text>
+      <text x="72" y="308">React · R3F/Drei 3D Field</text>
+      <text x="72" y="338">⌘K palette · inspector rail</text>
+      <text x="72" y="368">self-hosted static assets</text>
+    </g>
+    <rect x="72" y="398" width="252" height="44" rx="9" fill="#0a1812" stroke="#35E7A6" stroke-opacity="0.3"/>
+    <text x="88" y="425" fill="#35E7A6" font-family="'IBM Plex Mono',monospace" font-size="12.5">CSP: script-src 'self'</text>
+  </g>
+
+  <!-- ===== NODE 2: BRIDGE ===== -->
+  <g>
+    <rect x="430" y="214" width="240" height="208" rx="16" fill="url(#panel)" stroke="#4CC4F5" stroke-opacity="0.5"/>
+    <rect x="430" y="214" width="240" height="208" rx="16" fill="none" stroke="#4CC4F5" stroke-opacity="0.12" stroke-width="6"/>
+    <circle cx="462" cy="250" r="7" fill="#4CC4F5"/>
+    <text x="482" y="255" fill="#EAF5EF" font-size="19" font-weight="700" font-family="'Space Grotesk',sans-serif">stdlib bridge</text>
+    <g fill="#CFE8DD" font-size="14.5">
+      <text x="454" y="296">http.server · loopback</text>
+      <text x="454" y="326">JSON API over 127.0.0.1</text>
+      <text x="454" y="356">binds loopback only;</text>
+      <text x="454" y="378">refuses non-loopback host</text>
+    </g>
+    <text x="454" y="410" fill="#93AC9F" font-family="'IBM Plex Mono',monospace" font-size="12">no third-party runtime dep</text>
+  </g>
+
+  <!-- ===== NODE 3: ENGINE ===== -->
+  <g>
+    <rect x="752" y="150" width="300" height="360" rx="16" fill="url(#panel)" stroke="#35E7A6" stroke-opacity="0.55"/>
+    <rect x="752" y="150" width="300" height="360" rx="16" fill="none" stroke="#35E7A6" stroke-opacity="0.14" stroke-width="6"/>
+    <circle cx="784" cy="186" r="7" fill="#35E7A6"/>
+    <text x="804" y="191" fill="#EAF5EF" font-size="19" font-weight="700" font-family="'Space Grotesk',sans-serif">Engine</text>
+    <text x="776" y="216" fill="#35E7A6" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="1">stdlib-only core · dependencies == []</text>
+    <!-- gate chain -->
+    <g font-family="'IBM Plex Mono',monospace" font-size="12.5">
+      <rect x="776" y="234" width="252" height="34" rx="8" fill="#0e2019" stroke="#35E7A6" stroke-opacity="0.4"/>
+      <text x="792" y="256" fill="#8DF6C9">require_consent()  · default-OFF</text>
+      <rect x="776" y="276" width="252" height="34" rx="8" fill="#0e2019" stroke="#35E7A6" stroke-opacity="0.4"/>
+      <text x="792" y="298" fill="#8DF6C9">emergency_screen()  → clinician</text>
+      <rect x="776" y="318" width="252" height="34" rx="8" fill="#0e2019" stroke="#35E7A6" stroke-opacity="0.4"/>
+      <text x="792" y="340" fill="#8DF6C9">frame_advisory · citation-bind</text>
+      <rect x="776" y="360" width="252" height="34" rx="8" fill="#0e2019" stroke="#F5B84A" stroke-opacity="0.4"/>
+      <text x="792" y="382" fill="#F5D79A">screen_biosecurity()  · refuse</text>
+    </g>
+    <text x="776" y="424" fill="#93AC9F" font-size="13">surfaces: consent · analyze · share ·</text>
+    <text x="776" y="444" fill="#93AC9F" font-size="13">research · remedy · parasite · ingest ·</text>
+    <text x="776" y="464" fill="#93AC9F" font-size="13">experiments · science · presence · bench</text>
+    <text x="776" y="490" fill="#4CC4F5" font-family="'IBM Plex Mono',monospace" font-size="12">sensors: features only · no raw egress</text>
+  </g>
+
+  <!-- arrows -->
+  <g stroke="#35E7A6" stroke-width="2" fill="#35E7A6">
+    <line x1="348" y1="318" x2="428" y2="318" stroke-opacity="0.8"/>
+    <polygon points="430,318 418,312 418,324" stroke="none"/>
+    <line x1="672" y1="318" x2="750" y2="318" stroke-opacity="0.8"/>
+    <polygon points="752,318 740,312 740,324" stroke="none"/>
+  </g>
+  <text x="360" y="308" fill="#93AC9F" font-family="'IBM Plex Mono',monospace" font-size="11">JSON / loopback</text>
+  <text x="684" y="308" fill="#93AC9F" font-family="'IBM Plex Mono',monospace" font-size="11">reuses gates</text>
+
+  <!-- bottom rail -->
+  <rect x="48" y="536" width="1004" height="60" rx="12" fill="#0a1812" stroke="#35E7A6" stroke-opacity="0.22"/>
+  <circle cx="78" cy="566" r="6" fill="#35E7A6"/>
+  <text x="98" y="571" fill="#CFE8DD" font-size="14.5" font-family="'IBM Plex Mono',monospace">Nothing leaves this machine  ·  dependencies == []  ·  consent default-OFF  ·  raw sensor data never egresses  ·  right-to-erasure</text>
+</svg>

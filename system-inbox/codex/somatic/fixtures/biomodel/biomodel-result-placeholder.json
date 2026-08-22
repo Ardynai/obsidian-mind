@@ -1,0 +1,54 @@
+{
+  "id": "boltz2-result-placeholder",
+  "schema_version": 1,
+  "provider_id": "boltz2-biomodel-provider",
+  "plan_id": "boltz2-plan-placeholder",
+  "status": "mock-planned-not-executed",
+  "artifact_refs": [
+    "mock-boltz://boltz2-plan-placeholder/plan.json",
+    "mock-boltz://boltz2-plan-placeholder/result-metadata.json"
+  ],
+  "evidence_refs": ["mock-boltz://boltz2-plan-placeholder/evidence-record"],
+  "assumptions": [
+    "Boltz source was inspected read-only for planning.",
+    "Mock mode emits metadata only and does not predict structures or affinity."
+  ],
+  "limitations": [
+    "No protein structure, binding affinity, efficacy, safety, lab, or clinical conclusion is produced.",
+    "Future real mode requires explicit implementation, provenance, consent, and resource gates."
+  ],
+  "evidence_mapping": {
+    "raw_evidence_modality": "sim",
+    "raw_evidence_submodality": "biomodel",
+    "structured_verdict_confidence": "not-applicable"
+  },
+  "metadata": {
+    "mock": true,
+    "runtime_execution": false,
+    "model_downloads": false,
+    "msa_server": false,
+    "network_calls": false,
+    "gpu_execution": false,
+    "clinical_or_lab_conclusion": false,
+    "real_runtime": "future-only",
+    "phase": "6C",
+    "readiness_report": {
+      "ready": false,
+      "execution_permitted": false,
+      "runtime_boundary": "future-real-runtime-only",
+      "phase_runtime": "not-implemented",
+      "block_reasons": [
+        "runtime-execution-disabled",
+        "model-downloads-disabled",
+        "msa-server-disabled",
+        "network-calls-disabled",
+        "gpu-execution-disabled",
+        "missing-resource-review",
+        "missing-provenance-plan",
+        "missing-user-consent",
+        "research-only-boundary-not-acknowledged"
+      ]
+    },
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  }
+}

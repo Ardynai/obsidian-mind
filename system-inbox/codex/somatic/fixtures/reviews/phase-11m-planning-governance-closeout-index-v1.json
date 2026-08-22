@@ -1,0 +1,28 @@
+{
+  "adapter_execution_granted": false,
+  "blocker_count": 10,
+  "closeout_index_id": "p11m-closeout-88b0f9419c4a420f",
+  "covered_phase_count": 12,
+  "domain_count": 2,
+  "domain_labels": [
+    "document-ingestion",
+    "wifi-csi-rf-booth"
+  ],
+  "execution_permitted": false,
+  "final_status": "phase-11-planning-governance-complete",
+  "gap_ledger_contract_version": 1,
+  "gap_ledger_id": "p11l-ledger-e270e536d5e9fa82",
+  "gap_ledger_phase_range": "11A-11K",
+  "missing_future_gate_count": 9,
+  "model_execution_granted": false,
+  "next_phase_requirement": "explicit-future-phase-required-before-runtime-work",
+  "phase_range": "11A-11L",
+  "planning_governance_closeout_contract_version": 1,
+  "provider_execution_granted": false,
+  "readiness_gap": "real-mode-authorization-missing",
+  "real_mode_runtime_enabled": false,
+  "runtime_authorization_status": "not-authorized",
+  "runtime_stage": "not-implemented",
+  "stale_count": 1,
+  "unresolved_review_count": 21
+}

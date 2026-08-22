@@ -1,0 +1,141 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "somatic"
+version = "0.1.0"
+description = "Standalone open scientific discovery harness with offline mock runner and optional advanced lanes."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "License not selected; see LICENSE-DISCUSSION.md" }
+authors = [
+  { name = "Somatic Contributors" },
+]
+dependencies = []
+
+[project.scripts]
+somatic = "somatic.cli:main"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6",
+  "mypy>=1.10",
+]
+cli = [
+  "rich>=13.0",
+  "typer>=0.12",
+]
+schemas = [
+  "pydantic>=2.7",
+]
+agents = [
+  "dspy-ai>=2.4",
+  "langgraph>=0.2",
+]
+robin = [
+  "pandas>=2.0",
+  "scipy>=1.11",
+]
+finch = [
+  "numpy>=1.26",
+  "pandas>=2.0",
+  "scipy>=1.11",
+]
+biomodel = [
+  "rdkit>=2023.9",
+]
+sensors = [
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "pyserial>=3.5",
+]
+csi = [
+  "neurokit2>=0.2",
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "pyserial>=3.5",
+]
+video = [
+  "mediapipe>=0.10",
+  "opencv-python>=4.8",
+]
+video3d = [
+  "opencv-python>=4.8",
+]
+thermal = [
+  "opencv-python>=4.8",
+]
+audio = [
+  "librosa>=0.10",
+  "transformers[torch]>=4.40",
+]
+presence = [
+  "numpy>=1.26",
+]
+fabric = [
+  "canonicaljson>=2.0",
+  "cryptography>=42.0",
+]
+bench = [
+  "pandas>=2.0",
+  "pytest>=8.0",
+]
+all = [
+  "canonicaljson>=2.0",
+  "cryptography>=42.0",
+  "dspy-ai>=2.4",
+  "langgraph>=0.2",
+  "librosa>=0.10",
+  "mediapipe>=0.10",
+  "mypy>=1.10",
+  "neurokit2>=0.2",
+  "numpy>=1.26",
+  "opencv-python>=4.8",
+  "pandas>=2.0",
+  "pydantic>=2.7",
+  "pyserial>=3.5",
+  "pytest>=8.0",
+  "rdkit>=2023.9",
+  "rich>=13.0",
+  "ruff>=0.6",
+  "scipy>=1.11",
+  "typer>=0.12",
+]
+
+[tool.uv]
+package = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["somatic"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+# Byte-pinned files must never be reformatted: fabric JCS/Merkle conformance
+# sources and the phase12 contracts monolith.
+extend-exclude = ["somatic/fabric", "somatic/safety/phase12_contracts.py"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = []
+
+[tool.ruff.lint.per-file-ignores]
+# Prose lines inside triple-quoted disclaimer strings are byte-compared
+# against fixtures/workflows/valid-n-of-1.yaml; rewrapping would change
+# shipped report-packet content.
+"somatic/mock_runtime.py" = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+packages = ["somatic"]
+ignore_missing_imports = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+no_implicit_optional = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-q"

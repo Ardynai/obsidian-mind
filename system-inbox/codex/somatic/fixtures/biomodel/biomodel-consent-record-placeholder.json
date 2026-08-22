@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "biomodel-consent-record-placeholder",
+  "user_consent": false,
+  "research_only_acknowledged": false,
+  "resource_review_acknowledged": false,
+  "provenance_plan_acknowledged": false,
+  "model_downloads_acknowledged": false,
+  "msa_server_acknowledged": false,
+  "network_calls_acknowledged": false,
+  "gpu_execution_acknowledged": false,
+  "consent_scope": "none",
+  "recorded_by": "somatic-fixture-placeholder",
+  "recorded_at": "not-recorded",
+  "metadata": {
+    "phase": "6C",
+    "placeholder_only": true,
+    "real_runtime_consent": false
+  }
+}

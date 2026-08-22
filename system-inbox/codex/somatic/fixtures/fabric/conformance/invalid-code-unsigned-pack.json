@@ -1,0 +1,32 @@
+{
+  "class": "code",
+  "createdAt": "2026-05-28T17:04:09Z",
+  "files": [
+    {
+      "executable": true,
+      "installTarget": "somatic/sample-plugin/index.js",
+      "path": "index.js",
+      "sha256": "5555555555555555555555555555555555555555555555555555555555555555",
+      "size": 256
+    }
+  ],
+  "harnesses": [
+    "somatic"
+  ],
+  "id": "somatic/sample-plugin",
+  "license": "Apache-2.0",
+  "name": "Unsigned Code Pack",
+  "publisher": {
+    "displayName": "Somatic Fixtures",
+    "keyId": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "namespace": "somatic"
+  },
+  "schemaVersion": "1.0.0",
+  "signatures": [],
+  "transport": {
+    "infohash": "5555555555555555555555555555555555555555",
+    "magnet": "magnet:?xt=urn:btih:5555555555555555555555555555555555555555&dn=somatic%2Fsample-plugin%400.1.0&ws=https%3A%2F%2Fexample.invalid%2Ffabric%2F"
+  },
+  "type": "plugin",
+  "version": "0.1.0"
+}

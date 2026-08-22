@@ -1,0 +1,1 @@
+{"nodes": [{"id": "docker_compose_somatic", "label": "Somatic Docker Service", "file_type": "code", "source_file": "docker-compose.yml", "rationale": "Defines the local no-network test service scaffold using python:3.11-slim."}], "edges": [], "hyperedges": []}

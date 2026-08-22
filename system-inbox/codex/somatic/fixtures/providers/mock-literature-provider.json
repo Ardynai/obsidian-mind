@@ -1,0 +1,38 @@
+{
+  "id": "mock-literature-provider",
+  "class": "literature",
+  "name": "Mock Literature Provider",
+  "version": "0.1.0",
+  "description": "Offline fixture provider for corpus search and evidence extraction.",
+  "capabilities": [
+    {
+      "id": "corpus.search",
+      "input_types": ["text", "directory", "pack"],
+      "output_types": ["document-list"]
+    },
+    {
+      "id": "evidence.extract",
+      "input_types": ["document-list"],
+      "output_types": ["evidence-table"]
+    }
+  ],
+  "modes_supported": ["literature-only", "hypothesis-tournament", "robin-loop", "hybrid-clinical"],
+  "data_locality": "local-only",
+  "determinism": "deterministic",
+  "offline_supported": true,
+  "permissions_required": ["read:workflow", "read:input", "write:evidence", "write:artifact"],
+  "auth": {
+    "type": "none",
+    "secrets_required": []
+  },
+  "limits": {
+    "max_documents": 25,
+    "network_calls_allowed": false
+  },
+  "artifacts_emitted": ["evidence-table"],
+  "evidence_emitted": ["paper", "dataset", "fabric-pack"],
+  "mock": {
+    "fixture_corpus": "fixtures/corpus/sample",
+    "stable_timestamps": true
+  }
+}

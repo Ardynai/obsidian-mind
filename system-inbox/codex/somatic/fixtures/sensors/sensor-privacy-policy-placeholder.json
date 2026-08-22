@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "sensor-privacy-policy-placeholder",
+  "mock": true,
+  "offline": true,
+  "research_only": true,
+  "local_first": true,
+  "private_by_default": true,
+  "raw_data_leaves_machine": false,
+  "personal_data_exported": false,
+  "explicit_consent_required": true,
+  "retention": "run-artifact-metadata-only",
+  "allowed_exports": [],
+  "raw_rf_data_leaves_machine": false,
+  "raw_csi_data_leaves_machine": false,
+  "raw_rf_retention": "not-collected",
+  "raw_csi_retention": "not-collected",
+  "blocked_exports": ["raw-camera", "raw-microphone", "raw-rf", "raw-csi", "raw-wearable"],
+  "future_real_mode_requirements": [
+    "explicit user consent",
+    "local-first privacy policy",
+    "retention and export controls",
+    "privacy review",
+    "safety review",
+    "human review",
+    "separate opt-in configuration",
+    "separate WiFi CSI hardware and raw RF privacy review"
+  ]
+}

@@ -1,0 +1,432 @@
+schema_version: 1
+id: valid-n-of-1
+title: Valid N-of-1 Sensor Planning Fixture
+mode: n-of-1
+description: Offline fixture for fake-backed sensor planning and local personal baseline placeholders.
+version: 0.7.0
+status: fixture
+stages:
+  - id: plan-sandbox-sensor-stream
+    kind: sensor-plan
+    requires: []
+    provider_refs:
+      - sensor
+    inputs:
+      - research_goal
+      - local_baseline_placeholder
+      - observation_window_placeholder
+    outputs:
+      - sensor_stream_plan
+      - n_of_1_baseline_placeholder
+      - personal_profile
+      - baseline_graph
+    safety_gate: sensor-privacy-boundary-review
+  - id: emit-sandbox-observations
+    kind: sensor-sandbox
+    requires:
+      - plan-sandbox-sensor-stream
+    provider_refs:
+      - sensor
+    inputs:
+      - sensor_stream_plan
+      - csi_parser_fixtures
+      - environment_fixture_rows
+    outputs:
+      - sensor_observations
+      - sensor_feature_set
+      - csi_parser_report
+      - csi_parsed_summary
+      - csi_evidence_pack
+      - environment_evidence_pack
+      - sensor_evidence_record
+  - id: render-n-of-1-report
+    kind: report
+    requires:
+      - emit-sandbox-observations
+    provider_refs:
+      - report
+    inputs:
+      - sensor_evidence_record
+    outputs:
+      - baseline_comparison
+      - intervention_tag
+      - intervention_context
+      - response_evaluation_plan
+      - mock_intervention_ledger
+      - follow_up_observation_window
+      - follow_up_sensor_snapshot
+      - response_comparison
+      - response_evaluation_summary
+      - n_of_1_summary
+      - n_of_1_report_packet
+      - n_of_1_fabric_pack_plan
+      - report_packet
+inputs:
+  - id: research_goal
+    kind: text
+    required: true
+    sensitivity: public
+    description: Research-only planning question for a fake-backed n-of-1 workflow.
+  - id: local_baseline_placeholder
+    kind: baseline-graph
+    required: false
+    sensitivity: personal
+    ref: fixture://sensors/n-of-1-baseline-placeholder.json
+    description: Placeholder baseline metadata; no real baseline or monitoring data is collected.
+  - id: personal_profile_placeholder
+    kind: personal-profile
+    required: false
+    sensitivity: personal
+    ref: fixture://baseline/personal-profile-placeholder.json
+    description: Fake-backed local profile placeholder; no real health data or real profile storage is used.
+  - id: baseline_graph_placeholder
+    kind: baseline-graph
+    required: false
+    sensitivity: personal
+    ref: fixture://baseline/baseline-graph-placeholder.json
+    description: Fake-backed local baseline graph placeholder; no real health data is loaded.
+  - id: observation_window_placeholder
+    kind: sensor-stream
+    required: false
+    sensitivity: personal
+    ref: fixture://sensors/sandbox-sensor-provider-placeholder.json
+    description: Placeholder observation window; no hardware, CSI, camera, audio, wearable, BLE, or WiFi capture occurs.
+  - id: csi_parser_fixtures
+    kind: csi-parser-fixtures
+    provider_id: wifi-csi
+    required: false
+    sensitivity: local
+    refs:
+      - sample-esp32-csi.csv
+      - csi-tabular-fixture.csv
+      - sample-csi-jsonl.jsonl
+    description: Local fake/sample WiFi CSI parser fixtures only; no serial, MQTT, UDP, pcap, monitor mode, live capture, hardware, or vital-sign inference.
+  - id: environment_fixture_rows
+    kind: environment-fixture-rows
+    provider_id: environment-fixture
+    required: false
+    sensitivity: local
+    refs:
+      - environment-parsed.csv
+    description: Local neutral environment tabular fixture rows for sanitized row/count/status evidence metadata only; no hardware, network, live capture, raw row export, or advice.
+  - id: intervention_tag_placeholder
+    kind: intervention-tag
+    required: false
+    sensitivity: personal
+    ref: fixture://baseline/intervention-tag-placeholder.json
+    description: Mock intervention tag placeholder; no recommendation, no prescription, and no treatment recommendation is generated.
+  - id: intervention_context_placeholder
+    kind: intervention-context
+    required: false
+    sensitivity: personal
+    ref: fixture://baseline/intervention-context-placeholder.json
+    description: Fake-backed intervention context placeholder linking existing local artifacts only.
+  - id: response_evaluation_plan_placeholder
+    kind: response-evaluation-plan
+    required: false
+    sensitivity: personal
+    ref: fixture://baseline/response-evaluation-plan-placeholder.json
+    description: Response evaluation is future planning only; no reminders, automation, scheduling, notification, or monitoring is created.
+  - id: mock_intervention_ledger_placeholder
+    kind: intervention-ledger
+    required: false
+    sensitivity: personal
+    ref: fixture://baseline/mock-intervention-ledger-placeholder.json
+    description: Mock intervention ledger placeholder; no real intervention is performed and no external memory is used.
+  - id: follow_up_observation_window_placeholder
+    kind: follow-up-observation-window
+    required: false
+    sensitivity: personal
+    ref: fixture://baseline/follow-up-observation-window-placeholder.json
+    description: Fake-backed follow-up window placeholder; no reminders, automation, notification, scheduling, or real monitoring is created.
+  - id: follow_up_sensor_snapshot_placeholder
+    kind: follow-up-sensor-snapshot
+    required: false
+    sensitivity: personal
+    ref: fixture://baseline/follow-up-sensor-snapshot-placeholder.json
+    description: Fake-backed follow-up sensor snapshot placeholder; no hardware, live capture, real health data, or network call is used.
+  - id: response_comparison_placeholder
+    kind: response-comparison
+    required: false
+    sensitivity: personal
+    ref: fixture://baseline/response-comparison-placeholder.json
+    description: Mechanical placeholder comparison only; no effectiveness claim, recommendation, prescription, or medical advice.
+  - id: response_evaluation_summary_placeholder
+    kind: response-evaluation-summary
+    required: false
+    sensitivity: personal
+    ref: fixture://baseline/response-evaluation-summary-placeholder.json
+    description: Fake-backed local research-only planning only; fixture trend labels only, not advice.
+  - id: n_of_1_report_packet_placeholder
+    kind: report-packet
+    required: false
+    sensitivity: personal
+    ref: fixture://reports/n-of-1-report-packet-placeholder.json
+    description: Consolidated fake-backed/local/research-only n-of-1 report packet placeholder; not a medical record and not advice.
+  - id: n_of_1_fabric_pack_plan_placeholder
+    kind: fabric-pack-plan
+    required: false
+    sensitivity: personal
+    ref: fixture://reports/n-of-1-fabric-pack-plan-placeholder.json
+    description: Planning-only private n-of-1 Fabric data-pack candidate placeholder; no signing, publication, transport, install, execution, or real personal health data export.
+providers:
+  - ref: sensor
+    class: sensor
+    capabilities:
+      - sensor.sandbox.plan
+      - sensor.sandbox.observe
+      - sensor.sandbox.features
+      - sensor.evidence_record
+      - wifi-csi.parse-fixture
+      - environment-fixture.evidence-pack
+    required: true
+    constraints:
+      offline_required: true
+      mock_only: true
+      fixture_only: true
+      fake_backed: true
+      research_only: true
+      allow_hardware_access: false
+      allow_live_capture: false
+      allow_camera: false
+      allow_microphone: false
+      allow_audio_capture: false
+      allow_ble: false
+      allow_wifi_csi_capture: false
+      allow_packet_capture: false
+      allow_wifi_network_probing: false
+      allow_monitor_mode: false
+      allow_driver_access: false
+      allow_raw_rf_collection: false
+      allow_raw_rf_export: false
+      allow_raw_csi_collection: false
+      allow_raw_csi_export: false
+      allow_wearable_capture: false
+      allow_thermal_capture: false
+      allow_network_calls: false
+      allow_personal_data_export: false
+      allow_personal_health_data_export: false
+      allow_real_health_data: false
+      allow_health_data_import: false
+      allow_profile_storage: false
+      allow_real_profile_storage: false
+      allow_baseline_export: false
+      allow_database: false
+      allow_external_memory: false
+      allow_hindsight_runtime: false
+      allow_mem0_runtime: false
+      allow_zep_runtime: false
+      allow_real_intervention: false
+      allow_recommendation: false
+      allow_medical_advice: false
+      allow_intervention_recommendation: false
+      allow_prescription: false
+      allow_medication_recommendation: false
+      allow_medication_action: false
+      allow_clinician_action: false
+      allow_clinician_review_action: false
+      allow_effectiveness_claim: false
+      allow_intervention_effectiveness_claim: false
+      allow_response_effectiveness_claim: false
+      allow_follow_up_capture: false
+      allow_real_scheduling: false
+      allow_notification_automation: false
+      allow_reminder_automation: false
+      allow_real_response_monitoring: false
+      allow_real_monitoring: false
+      allow_diagnosis: false
+      allow_treatment_recommendation: false
+      allow_emergency_triage: false
+  - ref: report
+    class: report
+    capabilities:
+      - report.packet.create
+    required: true
+artifacts:
+  - id: sensor_stream_plan
+    kind: plan
+    format: json
+    retention: run
+    hash_required: true
+  - id: sensor_observations
+    kind: sensor-dataset
+    format: json
+    retention: run
+    hash_required: true
+  - id: sensor_feature_set
+    kind: evidence-table
+    format: json
+    retention: run
+    hash_required: true
+  - id: csi_parser_report
+    kind: csi-parser-report
+    format: json
+    retention: run
+    hash_required: true
+  - id: csi_parsed_summary
+    kind: csi-parsed-summary
+    format: json
+    retention: run
+    hash_required: true
+  - id: csi_evidence_pack
+    kind: csi-evidence-pack
+    format: json
+    retention: run
+    hash_required: true
+  - id: environment_evidence_pack
+    kind: environment-tabular-evidence-pack
+    format: json
+    retention: run
+    hash_required: true
+  - id: sensor_evidence_record
+    kind: evidence-table
+    format: json
+    retention: run
+    hash_required: true
+  - id: n_of_1_baseline_placeholder
+    kind: plan
+    format: json
+    retention: run
+    hash_required: true
+  - id: personal_profile
+    kind: personal-profile
+    format: json
+    retention: run
+    hash_required: true
+  - id: baseline_graph
+    kind: baseline-graph
+    format: json
+    retention: run
+    hash_required: true
+  - id: baseline_comparison
+    kind: baseline-comparison
+    format: json
+    retention: run
+    hash_required: true
+  - id: intervention_tag
+    kind: intervention-tag
+    format: json
+    retention: run
+    hash_required: true
+  - id: intervention_context
+    kind: intervention-context
+    format: json
+    retention: run
+    hash_required: true
+  - id: response_evaluation_plan
+    kind: response-evaluation-plan
+    format: json
+    retention: run
+    hash_required: true
+  - id: mock_intervention_ledger
+    kind: intervention-ledger
+    format: json
+    retention: run
+    hash_required: true
+  - id: follow_up_observation_window
+    kind: follow-up-observation-window
+    format: json
+    retention: run
+    hash_required: true
+  - id: follow_up_sensor_snapshot
+    kind: follow-up-sensor-snapshot
+    format: json
+    retention: run
+    hash_required: true
+  - id: response_comparison
+    kind: response-comparison
+    format: json
+    retention: run
+    hash_required: true
+  - id: response_evaluation_summary
+    kind: response-evaluation-summary
+    format: json
+    retention: run
+    hash_required: true
+  - id: n_of_1_summary
+    kind: report-packet
+    format: json
+    retention: run
+    hash_required: true
+  - id: n_of_1_report_packet
+    kind: report-packet
+    format: json
+    retention: run
+    hash_required: true
+  - id: n_of_1_fabric_pack_plan
+    kind: fabric-pack-plan
+    format: json
+    retention: run
+    hash_required: true
+  - id: report_packet
+    kind: report-packet
+    format: markdown
+    retention: user-export
+    hash_required: true
+safety_profile:
+  risk_class: low
+  domain: sensor-research
+  human_review_required: true
+  external_actions_allowed: false
+  real_lab_action_requires_approval: false
+  clinical_safety_gate_required: false
+  code_pack_quarantine_required: false
+  notes:
+    - Fake-backed sensor planning only.
+    - No hardware, CSI, camera, audio, wearable, BLE, WiFi, thermal, or environmental capture.
+    - No WiFi CSI packet capture, monitor mode, WiFi device probing, ESP32, RTL8812AU, router, adapter, or driver access.
+    - Raw RF/CSI data is local-first and private by default; this fixture collects, retains, and exports none.
+    - Personal profile and baseline graph are fake-backed local placeholders only.
+    - No real health data is loaded and no real profile storage is performed.
+    - No database, external memory, Hindsight, Mem0, or Zep runtime is used.
+    - Fake-backed intervention tags are mock intervention metadata only.
+    - No advice, no medical advice, no recommendation, no prescription, no treatment recommendation, no medication action, no clinician action, and no effectiveness claim.
+    - Medication placeholder disabled and clinician review placeholder disabled categories are disabled metadata only.
+    - Response evaluation is future planning only; no real monitoring, no reminders, automation, or scheduling.
+    - Phase 7E response evaluation is fake-backed local research-only planning only.
+    - Follow-up comparison uses fixture trend labels only; no intervention effectiveness is claimed.
+    - No effectiveness claim and no action/advice/prescription/treatment is recommended.
+    - The consolidated n-of-1 report packet is fake-backed/local/research-only, not a medical record, and not a health record.
+    - Report packet hashes are for reproducibility/provenance only.
+    - The n-of-1 Fabric pack plan is planning-only and private-only by default.
+    - No Fabric signing, catalog publication, transport, magnet, WebSeed, seeding, upload, install, or execution is enabled.
+    - No real personal data export, no personal health data export, no raw sensor data export, and no raw RF/CSI data export.
+    - The neutral environment evidence pack is fixture-only sanitized row/count/status metadata, not raw row export and not ranking input.
+    - Future real Fabric packaging requires explicit consent, redaction, license review, privacy review, safety review, human review, local-first storage controls, retention/export controls, and separate publication approval.
+    - No reminders, automation, notification, or scheduling.
+    - No diagnosis, treatment, emergency triage, real monitoring, or clinical claim.
+    - No emergency triage is performed.
+    - Future real sensor mode requires explicit consent, local-first privacy policy, and safety review.
+    - Future real baseline storage requires explicit local storage consent, data-locality review, privacy review, safety review, human review, retention/export controls, and separate opt-in configuration.
+    - Future real intervention tag use requires explicit consent, human/clinical review, local storage controls, safety gates, and no emergency-triage substitution.
+evidence_requirements:
+  min_records: 1
+  accepted_source_types:
+    - sensor-planning-placeholder
+  citation_required: false
+  provenance_required: true
+  hash_required: true
+  limitations_required: true
+  counterevidence_required: false
+output_packet:
+  kind: report-packet
+  schema_ref: docs/report-packet.md
+  required_sections:
+    - workflow
+    - sensor_plan
+    - baseline_placeholder
+    - personal_baseline_planning
+    - baseline_comparison
+    - intervention_tagging
+    - response_evaluation_plan
+    - response_evaluation_summary
+    - n_of_1_report_packet
+    - n_of_1_fabric_pack_plan
+    - artifact_count_hash_summary
+    - loop_stage_summary
+    - strict_boundary_summary
+    - privacy_boundary
+    - limitations
+    - safety_review
+    - future_real_mode_requirements
+  review_state: human-review-required

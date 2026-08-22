@@ -1,0 +1,1 @@
+{"nodes": [{"id": "pyproject_toml", "label": "pyproject.toml", "file_type": "code", "source_file": "pyproject.toml", "rationale": "Defines the project structure, dependencies, and entry points for the Somatic package.", "verification": "unverified"}], "edges": [], "hyperedges": []}

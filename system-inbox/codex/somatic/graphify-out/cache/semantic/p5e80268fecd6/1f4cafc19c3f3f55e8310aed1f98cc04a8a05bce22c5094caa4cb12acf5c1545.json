@@ -1,0 +1,1 @@
+{"nodes": [{"id": "somatic_fabric_canonical_canonical_dumps", "label": "canonical_dumps", "file_type": "code", "source_file": "somatic/fabric/canonical.py", "rationale": "Implements RFC 8785/JCS canonical JSON serialization for Fabric-supported values."}], "edges": [], "hyperedges": []}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "csi-hardware-profile-placeholder",
+  "mock": true,
+  "offline": true,
+  "fake_backed": true,
+  "research_only": true,
+  "profile_status": "placeholder",
+  "adapter_family": "none-placeholder",
+  "esp32_access": false,
+  "rtl8812au_access": false,
+  "router_access": false,
+  "wifi_adapter_access": false,
+  "driver_access": false,
+  "monitor_mode": false,
+  "packet_capture": false,
+  "wifi_network_probing": false,
+  "hardware_access": false,
+  "network_calls": false,
+  "notes": [
+    "No ESP32, RTL8812AU, router, adapter, driver, monitor mode, packet capture, or WiFi device probing is used.",
+    "This fixture is metadata only and does not describe an enabled hardware path.",
+    "A future booth-first profile may prefer ESP32-S3 radios, but this fixture does not flash, probe, or control them."
+  ]
+}

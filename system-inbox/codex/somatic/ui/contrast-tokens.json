@@ -1,0 +1,16 @@
+{
+  "pairs": [
+    {"id": "dark-ink-bg", "fg": "#EAF5EF", "bg": "#07120E", "min": 7},
+    {"id": "dark-muted-bg", "fg": "#93AC9F", "bg": "#07120E", "min": 4.5},
+    {"id": "dark-primary-on-fill", "fg": "#04140D", "bg": "#12A574", "min": 4.5},
+    {"id": "dark-accent-bg", "fg": "#4CC4F5", "bg": "#07120E", "min": 4.5},
+    {"id": "dark-coral-text", "fg": "#FB7185", "bg": "#07120E", "min": 4.5},
+    {"id": "dark-emerald-bg", "fg": "#35E7A6", "bg": "#07120E", "min": 4.5},
+    {"id": "light-ink-bg", "fg": "#0B1712", "bg": "#F4F7F5", "min": 7},
+    {"id": "light-muted-bg", "fg": "#3D5348", "bg": "#F4F7F5", "min": 4.5},
+    {"id": "light-primary-on-fill", "fg": "#04140D", "bg": "#12A574", "min": 4.5},
+    {"id": "light-accent-bg", "fg": "#0C6A92", "bg": "#F4F7F5", "min": 4.5},
+    {"id": "light-coral-text", "fg": "#C43B52", "bg": "#F4F7F5", "min": 4.5},
+    {"id": "light-emerald-bg", "fg": "#0E7A58", "bg": "#F4F7F5", "min": 4.5}
+  ]
+}

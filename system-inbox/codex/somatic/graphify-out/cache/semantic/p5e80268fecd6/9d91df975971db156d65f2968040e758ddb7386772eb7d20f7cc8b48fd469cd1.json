@@ -1,0 +1,1 @@
+{"nodes": [{"id": "docs_sensor_provider_boundary", "label": "Sensor Provider Boundary", "file_type": "document", "source_file": "docs/sensor-provider-boundary.md", "rationale": "Defines Somatic-owned sensor provider contracts and sandbox behavior."}], "edges": [], "hyperedges": []}

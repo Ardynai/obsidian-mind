@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "id": "csi-reference-inventory",
+  "phase": "8A",
+  "generated_date": "2026-06-03",
+  "research_only": true,
+  "staging_root": "C:\\AI\\external-sources\\somatic\\wifi-csi",
+  "source_staging_git_clone_performed": true,
+  "does_not_require_external_repos_in_ci": true,
+  "future_real_mode_consent": "Future real WiFi CSI use requires explicit consent from the operator, intended subject, and all potentially affected people in the sensing area. Do not deploy in shared, public, workplace, household, or care environments unless bystanders are informed and consent is practical.",
+  "sensitive_data_classes": [
+    "WiFi CSI",
+    "RSSI",
+    "pcap",
+    "serial CSI logs",
+    "SD-card CSVs",
+    "raw RF/CSI",
+    "derived features",
+    "embeddings",
+    "ReID sequences",
+    "pose outputs",
+    "skeleton outputs",
+    "activity labels"
+  ],
+  "policy": {
+    "read_only_source_inspection": true,
+    "git_clone_or_fetch_only": true,
+    "no_runtime_execution": true,
+    "no_hardware_access": true,
+    "no_dependency_install": true,
+    "no_package_managers_run": true,
+    "no_wifi_adapter_access": true,
+    "no_packet_capture": true,
+    "no_monitor_mode": true,
+    "no_serial_capture": true,
+    "no_sd_card_read_write": true,
+    "no_mqtt_or_udp_listener": true,
+    "no_esp32_or_router_tools": true,
+    "no_model_download": true,
+    "no_model_execution": true,
+    "no_home_automation_bridge": true,
+    "no_vitals_inference": true,
+    "no_external_apis_except_git_clone_fetch": true,
+    "no_source_vendoring": true,
+    "no_medical_or_clinical_claims": true
+  },
+  "source_adapter_boundary": {
+    "adapter_kind": "metadata-wifi-csi-source-adapter",
+    "adapter_contract_version": 1,
+    "status": "reference-only-ready",
+    "metadata_only": true,
+    "reference_only": true,
+    "offline": true,
+    "fixture_backed": true,
+    "hardware_access": false,
+    "packet_capture": false,
+    "monitor_mode": false,
+    "wifi_network_probing": false,
+    "network_calls": false,
+    "esp32_flashing": false,
+    "router_ap_control": false,
+    "mqtt_udp_listener": false,
+    "smart_home_bridge": false,
+    "model_download": false,
+    "model_execution": false,
+    "vitals_inference": false,
+    "diagnosis": false,
+    "treatment": false,
+    "emergency_triage": false,
+    "medical_or_clinical_claim": false,
+    "raw_signal_export": false
+  },
+  "booth_first_planning_profile": {
+    "profile": "booth-first-single-subject-v1",
+    "status": "future-planning-metadata-only",
+    "single_subject": true,
+    "space": "small-controlled-booth",
+    "future_topology": "fixed-ap-plus-4-to-6-receiver-nodes",
+    "preferred_radio_family": "esp32-s3",
+    "empty_booth_baseline": "planned-reference-concept",
+    "room_adaptation_logic": "skipped",
+    "research_note_labels": [
+      "phase-variance",
+      "conjugation",
+      "temporal-embedding"
+    ],
+    "reference_only": true,
+    "metadata_only": true,
+    "hardware_access": false,
+    "packet_capture": false,
+    "model_execution": false,
+    "vitals_inference": false
+  },
+  "references": [
+    {
+      "repo": "NTUMARS/Awesome-WiFi-CSI-Sensing",
+      "status": "staged_reference",
+      "local_path": "C:\\AI\\external-sources\\somatic\\wifi-csi\\Awesome-WiFi-CSI-Sensing",
+      "remote_url": "https://github.com/NTUMARS/Awesome-WiFi-CSI-Sensing.git",
+      "commit": "fc8e21f4392d16fa110f1e00952d7f6bfd8f78c0",
+      "branch": "main",
+      "license": {
+        "file": "LICENSE",
+        "identifier": "MIT",
+        "notes": "Root LICENSE is MIT."
+      },
+      "purpose": "Curated bibliography, platform list, dataset list, and code-resource map for WiFi CSI sensing.",
+      "hardware_assumptions": [
+        "Reference catalog only; links out to Intel 5300, Atheros, Nexmon, ESP32 CSI Tool, SDR, routers, and dataset hardware.",
+        "Does not provide a Somatic capture implementation."
+      ],
+      "supported_capture_path": [
+        "No local capture path in this repo.",
+        "References CSI extraction tools and datasets that require separate review."
+      ],
+      "data_formats": [
+        "Markdown bibliography and links.",
+        "Referenced datasets include CSI traces, subcarrier arrays, multimodal records, and other third-party formats."
+      ],
+      "dependencies": [
+        "No local runtime dependency for the staged repository.",
+        "Linked projects may require Python, MATLAB, PyTorch, hardware drivers, or dataset access."
+      ],
+      "useful_method_ideas": [
+        "Keep CSI planning split between learning-based, model-based, and hybrid methods.",
+        "Track privacy, cross-environment, multimodal, and data-leakage concerns before future real-mode work.",
+        "Use the platform and dataset taxonomy for future sample-pack intake planning."
+      ],
+      "somatic_should_not_adopt": [
+        "Do not treat linked papers or external repos as implemented Somatic runtime.",
+        "Do not copy linked code, download datasets, or infer license clearance from this catalog."
+      ],
+      "privacy_security_cautions": [
+        "Catalog includes human identification, occupancy, respiration, fall detection, pose, and through-environment sensing areas that require explicit consent and safety review.",
+        "Linked datasets and projects can include sensitive human-subject data.",
+        "Upstream claims about fall detection, vital signs, healthcare, respiration, sleep, identity, gait, pose, or localization are research context only and are not Somatic capabilities."
+      ],
+      "no_runtime_execution": true,
+      "no_hardware_access": true,
+      "no_dependency_install": true,
+      "no_source_vendoring": true,
+      "failure_reason": null
+    },
+    {
+      "repo": "thu4n/ESP32-WiFi-Sensing",
+      "status": "staged_reference",
+      "local_path": "C:\\AI\\external-sources\\somatic\\wifi-csi\\ESP32-WiFi-Sensing",
+      "remote_url": "https://github.com/thu4n/ESP32-WiFi-Sensing.git",
+      "commit": "9ebd9204cd695e9772a78f466532a7a99c790a67",
+      "branch": "master",
+      "license": {
+        "file": null,
+        "identifier": "license-unclear",
+        "notes": "No root license file found. Nested esp32-csi-tool/LICENSE is MIT for that embedded/forked tool subtree."
+      },
+      "purpose": "ESP32 CSI collection, CSV parsing, model training, Jetson Nano inference, MQTT publishing, and Android subscriber example for human-activity sensing.",
+      "hardware_assumptions": [
+        "Two ESP32 microcontrollers commonly used as AP and station for active collection.",
+        "Optional passive ESP32 receiver.",
+        "Jetson Nano edge inference is referenced.",
+        "WiFi credentials, ESP-IDF v4.3, serial monitor, SD card, and MQTT server may be involved."
+      ],
+      "supported_capture_path": [
+        "active_sta sends packet requests to an AP and receives CSI packet responses.",
+        "active_ap accepts stations and receives CSI packet responses.",
+        "passive listens on a configured channel.",
+        "idf.py flash monitor and serial output are the documented collection path."
+      ],
+      "data_formats": [
+        "CSI_DATA serial lines.",
+        "CSV files written from serial monitor or SD card.",
+        "Parsed CSI amplitude and phase arrays.",
+        "Notebook/model artifacts under notebooks and models."
+      ],
+      "dependencies": [
+        "ESP-IDF v4.3 for firmware build/flash paths.",
+        "Python analysis utilities reference numpy, matplotlib, pandas, scikit-learn style workflows, TensorRT/CUDA, paho MQTT, and serial access.",
+        "Utilities contain HiveMQ Cloud endpoint usage and hardcoded JetsonNano MQTT credentials; these must not be reused.",
+        "No dependencies were installed for Phase 8A."
+      ],
+      "useful_method_ideas": [
+        "CSV as a future sample-pack fixture format after consent and hardware review.",
+        "Separate capture metadata from model inference metadata.",
+        "Record clock synchronization and local timestamping limitations for future capture provenance."
+      ],
+      "somatic_should_not_adopt": [
+        "Do not flash ESP32 firmware, open serial ports, publish MQTT messages, run TensorRT/CUDA inference, or reuse notebooks as Somatic runtime.",
+        "Do not adopt the root repository until license status is resolved."
+      ],
+      "privacy_security_cautions": [
+        "Active and passive CSI collection can observe people in a physical environment, including bystanders.",
+        "Serial CSI logs, SD-card CSVs, raw RF/CSI, derived features, activity labels, MQTT messages, and Android subscriber outputs are sensitive by default.",
+        "MQTT/Android publishing and raw CSI CSV export require explicit consent, retention controls, authentication, and network review."
+      ],
+      "no_runtime_execution": true,
+      "no_hardware_access": true,
+      "no_dependency_install": true,
+      "no_serial_capture": true,
+      "no_sd_card_read_write": true,
+      "no_mqtt_or_udp_listener": true,
+      "no_source_vendoring": true,
+      "failure_reason": null
+    },
+    {
+      "repo": "MaliosDark/wifi-3d-fusion",
+      "status": "staged_reference",
+      "local_path": "C:\\AI\\external-sources\\somatic\\wifi-csi\\wifi-3d-fusion",
+      "remote_url": "https://github.com/MaliosDark/wifi-3d-fusion.git",
+      "commit": "0c0f99e6af9fa1a22d850c45b8f23aa75f34f328",
+      "branch": "main",
+      "license": {
+        "file": "LICENSE",
+        "identifier": "requires-review",
+        "notes": "LICENSE file says Apache-2.0 with research/safe-use disclaimer text. README badge says GPL-2.0. Vendored third-party folders add more license surfaces: Person-in-WiFi-3D is Apache-2.0, NeRF2 is MIT, and 3D_wifi_scanner has no obvious license file."
+      },
+      "purpose": "Real-time WiFi CSI/RSSI motion detection, optional 3D pose/visualization bridge, training scripts, and web visualization.",
+      "hardware_assumptions": [
+        "ESP32 CSI firmware via UDP.",
+        "Nexmon/tcpdump/csiread path with monitor-mode WiFi interface.",
+        "RTL8812AU-style adapter guidance appears in docs.",
+        "Linux and optional CUDA GPU are referenced."
+      ],
+      "supported_capture_path": [
+        "ESP32 UDP JSON on a configured port.",
+        "Nexmon plus tcpdump pcap capture.",
+        "Monitor Radiotap RSSI stream.",
+        "Dummy mode exists but was not executed."
+      ],
+      "data_formats": [
+        "UDP JSON batches.",
+        "pcap files/streams.",
+        "CSI amplitude and phase vectors.",
+        "YAML config.",
+        "3D point cloud/skeleton visualization data.",
+        "env/csi_logs pickle-style training inputs.",
+        "env/nexmon_live.pcap.",
+        "data/reid/person_* sequences.",
+        "Model checkpoints and training logs."
+      ],
+      "dependencies": [
+        "requirements.txt includes numpy, PyYAML, loguru, open3d, opencv-python, csiread, matplotlib, Flask, pandas, pyshark, requests, scapy, scikit-learn, scipy, torch/torchvision CUDA packages, vtk, and related packages.",
+        "Scripts reference shell installers, Docker Compose, Nexmon, tcpdump, Aircrack-style monitor mode setup, and CUDA paths.",
+        "No dependencies were installed for Phase 8A."
+      ],
+      "useful_method_ideas": [
+        "Keep source selection explicit: esp32, nexmon, radiotap, or dummy.",
+        "Model future Somatic real-mode gates around source type, retention/export policy, and local-only visualization.",
+        "Preserve strong safe-use language around controlled environments and informed participants."
+      ],
+      "somatic_should_not_adopt": [
+        "Do not adopt packet capture, monitor mode, tcpdump, Nexmon, UDP listener, Flask/WebSocket server, Docker, CUDA training, continuous learning, pose estimation, or person tracking as Somatic default runtime.",
+        "Do not enable channel hopping, tcpdump/tshark/aircrack-ng, driver changes, WiFi interface reconfiguration, or pcap processing outside a separately approved real-hardware mode.",
+        "Do not copy source while license status requires review."
+      ],
+      "privacy_security_cautions": [
+        "The project describes real-time motion detection, person tracking, re-identification, and 3D pose from WiFi; these are surveillance-sensitive capabilities.",
+        "Raw CSI, RSSI, pcap, derived embeddings, ReID sequences, pose outputs, skeleton data, and activity labels are sensitive by default.",
+        "Any future use requires owned/authorized networks, informed participants, bystander controls, local retention/export controls, and no covert monitoring.",
+        "Upstream real-time person detection, tracking, ReID, skeleton, pose, continuous learning, monitoring, and production-readiness language is not a Somatic capability or validation claim."
+      ],
+      "no_runtime_execution": true,
+      "no_hardware_access": true,
+      "no_dependency_install": true,
+      "no_serial_capture": true,
+      "no_sd_card_read_write": true,
+      "no_mqtt_or_udp_listener": true,
+      "no_source_vendoring": true,
+      "failure_reason": null
+    },
+    {
+      "repo": "ruvnet/RuView",
+      "status": "conditional-reference-only",
+      "local_path": null,
+      "commit": null,
+      "branch": null,
+      "license": {
+        "file": null,
+        "identifier": "not-inspected",
+        "notes": "Conditional reference-only reassessment; not cloned, copied, imported, executed, or depended on."
+      },
+      "purpose": "Conditional reference-only candidate for reassessment tracking.",
+      "hardware_assumptions": [
+        "V2 materials describe hardware and sensing-server crates, but Somatic treats those as unverified reference claims only."
+      ],
+      "supported_capture_path": [
+        "No Somatic capture path is adopted."
+      ],
+      "data_formats": [
+        "No data format is adopted into Somatic from this reference."
+      ],
+      "dependencies": [
+        "No RuView dependency is installed, imported, executed, vendored, or copied."
+      ],
+      "useful_method_ideas": [
+        "Track Rust workspace and wifi-densepose crate claims as reassessment metadata only.",
+        "Treat the reported temporal embedding metric as representation quality, not downstream presence, vitals, pose, or deployment accuracy.",
+        "Prefer the booth-first single-subject planning profile over broad room-adaptation claims."
+      ],
+      "somatic_should_not_adopt": [
+        "Do not use as an implementation source.",
+        "Do not copy, vendor, import, execute, or depend on this repository.",
+        "Do not adopt broad sensing, vitals, smart-home, or hardware deployment claims without a separate validated real-mode phase."
+      ],
+      "privacy_security_cautions": [
+        "Keep the earlier warning history explicit so future CSI work does not accidentally treat this as a source dependency.",
+        "Earlier overclaims, incompatible model-loading concerns, and unverified deployment claims remain audit warnings."
+      ],
+      "reference_only": true,
+      "reassessable": true,
+      "runtime_dependency": false,
+      "v2_reassessment": {
+        "rust_workspace_reported": true,
+        "wifi_densepose_crates_reported": true,
+        "signal_pipeline_crates_reported": true,
+        "temporal_embedding_metric_reported": true,
+        "downstream_accuracy_validated": false,
+        "deployment_claims_verified": false
+      },
+      "warning_history": [
+        "earlier-overclaims",
+        "incompatible-model-loading-concerns",
+        "unverified-deployment-claims",
+        "self-published-v2-materials-only"
+      ],
+      "no_runtime_execution": true,
+      "no_hardware_access": true,
+      "no_dependency_install": true,
+      "no_source_vendoring": true,
+      "failure_reason": null
+    }
+  ],
+  "boundaries": {
+    "runtime_dependency": false,
+    "hardware_access": false,
+    "packet_capture": false,
+    "wifi_network_probing": false,
+    "monitor_mode": false,
+    "esp32_flash_or_monitor": false,
+    "serial_capture": false,
+    "sd_card_read_write": false,
+    "mqtt_or_udp_listener": false,
+    "smart_home_bridge": false,
+    "model_download": false,
+    "model_execution": false,
+    "vitals_inference": false,
+    "dependency_install": false,
+    "source_vendoring": false,
+    "clinical_interpretation": false
+  }
+}

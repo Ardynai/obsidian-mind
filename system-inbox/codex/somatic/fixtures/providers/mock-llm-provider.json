@@ -1,0 +1,48 @@
+{
+  "id": "mock-llm-provider",
+  "class": "llm",
+  "name": "Mock LLM Provider",
+  "version": "0.1.0",
+  "description": "Deterministic offline fixture provider for planning, critique, and analysis contract tests.",
+  "capabilities": [
+    {
+      "id": "plan.research",
+      "input_types": ["text", "evidence-table"],
+      "output_types": ["plan"]
+    },
+    {
+      "id": "critique.generate",
+      "input_types": ["hypothesis-set", "plan"],
+      "output_types": ["critique-log"]
+    },
+    {
+      "id": "result.analyze",
+      "input_types": ["dataset", "model-output", "user-note"],
+      "output_types": ["analysis-summary"]
+    },
+    {
+      "id": "hypothesis.update",
+      "input_types": ["analysis-summary", "evidence-table"],
+      "output_types": ["hypothesis-set"]
+    }
+  ],
+  "modes_supported": ["hypothesis-tournament", "robin-loop", "sandbox-lab"],
+  "data_locality": "local-only",
+  "determinism": "seeded",
+  "offline_supported": true,
+  "permissions_required": ["read:workflow", "read:input", "read:evidence", "write:artifact"],
+  "auth": {
+    "type": "none",
+    "secrets_required": []
+  },
+  "limits": {
+    "max_input_bytes": 100000,
+    "network_calls_allowed": false
+  },
+  "artifacts_emitted": ["plan", "hypothesis-set", "analysis-summary"],
+  "evidence_emitted": ["model-output"],
+  "mock": {
+    "fixture_seed": "somatic-phase-1a",
+    "stable_timestamps": true
+  }
+}

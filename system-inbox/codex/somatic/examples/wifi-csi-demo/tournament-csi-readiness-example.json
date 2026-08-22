@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "example_id": "wifi-csi-tournament-batch-readiness",
+  "title": "Tournament CSI batch readiness metadata",
+  "entrypoint": "python -m somatic",
+  "workflow_path": "fixtures/workflows/valid-hypothesis-tournament.yaml",
+  "runs_dir": "runs/examples",
+  "run_id": "run-csi-tournament-example",
+  "cli_args": [
+    "run",
+    "fixtures/workflows/valid-hypothesis-tournament.yaml",
+    "--runs-dir",
+    "runs/examples",
+    "--run-id",
+    "run-csi-tournament-example"
+  ],
+  "workflow_outputs": [
+    "artifacts/team_orchestrator_summary.json",
+    "artifacts/csi_evidence_pack.json",
+    "artifacts/ranked_hypotheses.json"
+  ],
+  "public_artifacts_to_inspect": [
+    "artifacts/csi_evidence_pack.json"
+  ],
+  "primary_portable_artifact": "artifacts/csi_evidence_pack.json",
+  "readiness_only": {
+    "score_fields_modified": false,
+    "elo_modified": false,
+    "rankings_modified": false,
+    "winner_selection_modified": false
+  },
+  "privacy_boundary": {
+    "fixture_only": true,
+    "offline": true,
+    "metadata_only": true,
+    "portable_export_has_fixture_refs": false,
+    "portable_export_has_private_paths": false,
+    "portable_export_has_signal_values": false
+  }
+}

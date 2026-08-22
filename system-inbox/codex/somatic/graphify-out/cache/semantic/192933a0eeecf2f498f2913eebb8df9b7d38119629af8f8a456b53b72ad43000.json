@@ -1,0 +1,1 @@
+{"nodes": [{"id": "sensors_live_consent", "label": "Live Sensor Consent", "file_type": "code", "source_file": "somatic/sensors/live_consent.py", "rationale": "Manages granular hardware-privacy grants for live modalities."}], "edges": [], "hyperedges": []}

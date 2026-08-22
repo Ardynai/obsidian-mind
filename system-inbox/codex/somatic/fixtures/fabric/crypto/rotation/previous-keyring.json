@@ -1,0 +1,61 @@
+{
+  "expires": "2036-05-28T00:00:00Z",
+  "publishers": [
+    {
+      "displayName": "Somatic Fabric Test Fixtures",
+      "keys": [
+        {
+          "algo": "ed25519",
+          "keyId": "24aa2a5589edcb57fea0be3552f065de6d3a837feaccf60f8bde018fa4926b6a",
+          "publicKey": "SAdaWX5yGhVuLgeZ3lzAxTJNxufq8c3UYlCGjsUyFd0=",
+          "status": "active",
+          "validFrom": "2026-01-01T00:00:00Z",
+          "validUntil": null
+        },
+        {
+          "algo": "ed25519",
+          "keyId": "eeec86207f875ff654d070a8179f86becb1fda1395b3312be417542c99c6ba53",
+          "publicKey": "XiEsCYDks5/AlyETSqAhCTdO39JgwNPQPLUByNZUV6k=",
+          "status": "active",
+          "validFrom": "2026-01-01T00:00:00Z",
+          "validUntil": null
+        }
+      ],
+      "namespace": "somatic",
+      "threshold": 1
+    }
+  ],
+  "rootKeys": [
+    {
+      "algo": "ed25519",
+      "keyId": "24aa2a5589edcb57fea0be3552f065de6d3a837feaccf60f8bde018fa4926b6a",
+      "publicKey": "SAdaWX5yGhVuLgeZ3lzAxTJNxufq8c3UYlCGjsUyFd0=",
+      "status": "active",
+      "validFrom": "2026-01-01T00:00:00Z",
+      "validUntil": null
+    },
+    {
+      "algo": "ed25519",
+      "keyId": "eeec86207f875ff654d070a8179f86becb1fda1395b3312be417542c99c6ba53",
+      "publicKey": "XiEsCYDks5/AlyETSqAhCTdO39JgwNPQPLUByNZUV6k=",
+      "status": "active",
+      "validFrom": "2026-01-01T00:00:00Z",
+      "validUntil": null
+    }
+  ],
+  "rootThreshold": 2,
+  "schemaVersion": "1.0.0",
+  "signatures": [
+    {
+      "algo": "ed25519",
+      "keyId": "24aa2a5589edcb57fea0be3552f065de6d3a837feaccf60f8bde018fa4926b6a",
+      "sig": "Ye0H9mQ8HN0gg4SxMrxWK1H+IRr4sz9WbeYbanKKFH8owxS+UouFvhNg4alL3o8vKpmdbuvW0nqxvQo9ia3PCQ=="
+    },
+    {
+      "algo": "ed25519",
+      "keyId": "eeec86207f875ff654d070a8179f86becb1fda1395b3312be417542c99c6ba53",
+      "sig": "Z3rtR0G/E18dj0sfKm8Cw2Ss1J168gz2n4WJPPq+QhcLxotQI9Wh2gfvEJQx7etFdDLBYhHsrqfxYLTGsFkCAA=="
+    }
+  ],
+  "version": 1
+}

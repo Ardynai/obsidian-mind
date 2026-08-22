@@ -1,0 +1,99 @@
+{
+  "artifacts": [
+    "shared-pack.json",
+    "shared-data-pack.json",
+    "shared-keyring.json",
+    "shared-catalog.json",
+    "shared-invalid-signature-pack.json",
+    "shared-invalid-catalog-signature.json",
+    "shared-invalid-keyring-threshold.json"
+  ],
+  "deferred": [
+    "Locus-origin companion fixture certification",
+    "full Locus runtime interop certification",
+    "BitTorrent/WebSeed transport runtime",
+    "catalog HTTP/WS server runtime",
+    "pack download/install/quarantine/enablement runtime"
+  ],
+  "digests": {
+    "sharedCatalogCanonicalSha256": "a2bd9191a781831859ad9db7c88d225d930f8939bf8f53b1dd53d79749f26a40",
+    "sharedCatalogDigest": "sha256:a2bd9191a781831859ad9db7c88d225d930f8939bf8f53b1dd53d79749f26a40",
+    "sharedCatalogSigningPayloadSha256": "5ffd423264ab31edb03015183d4c828f51c9de0bc76083a0adab5146534b3d74",
+    "sharedDataPackCanonicalSha256": "31c66ec2c9b86c07241fec3b3fea7e6d7fcfce9656fce8e63738d23d93d3a7e6",
+    "sharedDataPackManifestDigest": "sha256:31c66ec2c9b86c07241fec3b3fea7e6d7fcfce9656fce8e63738d23d93d3a7e6",
+    "sharedDataPackSigningPayloadSha256": "b8331c8b3cb061ba95481c954df8f9145becb801c0b5af188e54d729f39971da",
+    "sharedKeyringCanonicalSha256": "5bb06368f9eef50e8bd62d5cf7ef58e7a2dc11faf7cb9da8de54a0ed92658069",
+    "sharedKeyringSigningPayloadSha256": "f87b6364ee09b822ac5ac88e1e1982a102e88f156737c334c9f9ed08dfba6ffa",
+    "sharedPackCanonicalSha256": "37e1bd59cd6877c236e4aa1500368f5fd17322dadd2063f95bebe76175856b69",
+    "sharedPackManifestDigest": "sha256:37e1bd59cd6877c236e4aa1500368f5fd17322dadd2063f95bebe76175856b69",
+    "sharedPackSigningPayloadSha256": "1920e5c9fcf6bec88befebb9be4f7046790b04111db34f92b8f1fe01d1af8dd9"
+  },
+  "generatedAt": "2026-06-01T00:00:00Z",
+  "generatedBy": {
+    "canonicalizer": "somatic.fabric.canonical",
+    "commit": "39231de6cb6134a541e98bf2f7f98526d61c7ea7",
+    "implementation": "somatic",
+    "phase": "4G.2"
+  },
+  "keyIds": {
+    "publisher": "1325b850c2871916eae203f0efc3c8987f64e5e3cdb27679e6d1fa97808357e6",
+    "root": "10ba682c8ad13513971e8b56881aab8bd702bb807796eca81932c735a94d6e6d"
+  },
+  "limits": {
+    "certifiedInterop": false,
+    "download": false,
+    "install": false,
+    "locusRuntimeDependency": false,
+    "network": false,
+    "quarantine": false,
+    "sharedFixtureCertification": true
+  },
+  "locusVerification": {
+    "commandsAttempted": [
+      "npm run test:content",
+      "npm run test:security",
+      "npm run test:connectivity",
+      "PowerShell stdin verifier piped to node - using .tmp-tests/electron/content-fabric/manifest.js and signing.js"
+    ],
+    "commit": "5f81ee360834dc6451c4ea35d7509325813d9d10",
+    "invalidCatalogSignature": "rejected-with-ed25519-primitive",
+    "invalidKeyringThreshold": "rejected",
+    "invalidSignaturePack": "rejected",
+    "normalCiRequired": false,
+    "path": "C:\\AI\\locus\\electron\\content-fabric\\",
+    "sharedCatalogCanonicalSha256": "match",
+    "sharedCatalogSignature": "verified-with-locus-ed25519-primitive-no-high-level-catalog-verifier",
+    "sharedCatalogSigningPayloadSha256": "match",
+    "sharedCatalogValidation": "verified-shape",
+    "sharedDataPackCanonicalSha256": "match",
+    "sharedDataPackManifestDigest": "match",
+    "sharedDataPackSignature": "verified",
+    "sharedDataPackSigningPayloadSha256": "match",
+    "sharedKeyringCanonicalSha256": "match",
+    "sharedKeyringRootThreshold": "verified",
+    "sharedKeyringSigningPayloadSha256": "match",
+    "sharedPackCanonicalSha256": "match",
+    "sharedPackManifestDigest": "match",
+    "sharedPackSignature": "verified",
+    "sharedPackSigningPayloadSha256": "match",
+    "status": "certified-shared-fixtures",
+    "verifiedAt": "2026-06-01T00:00:00Z"
+  },
+  "schemaVersion": "1.0.0",
+  "signatureAlgorithms": [
+    "ed25519"
+  ],
+  "testOnlyKeys": true,
+  "verification": {
+    "invalidCatalogSignature": "rejected",
+    "invalidKeyringThreshold": "rejected",
+    "invalidSignaturePack": "rejected",
+    "locusVerification": "passed",
+    "sharedCatalogWithSharedKeyring": "passed",
+    "sharedDataPackWithSharedKeyring": "passed",
+    "sharedKeyringRootThreshold": "passed",
+    "sharedPackWithSharedKeyring": "passed",
+    "somaticSelfCertification": "passed"
+  },
+  "warning": "TEST VECTOR ONLY. Public keys and signatures are for interop tests only; do not use related private keys for production Fabric signing."
+}

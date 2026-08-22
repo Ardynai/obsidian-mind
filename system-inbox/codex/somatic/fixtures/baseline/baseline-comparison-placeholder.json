@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "baseline-comparison-placeholder",
+  "workflow_id": "valid-n-of-1",
+  "profile_id": "personal-profile-placeholder",
+  "baseline_graph_id": "baseline-graph-placeholder",
+  "feature_set_id": "sensor-feature-set-n-of-1-sandbox",
+  "comparison_status": "outside_baseline",
+  "status_vocabulary": [
+    "within_baseline",
+    "outside_baseline",
+    "insufficient_data"
+  ],
+  "status_counts": {
+    "within_baseline": 5,
+    "outside_baseline": 1,
+    "insufficient_data": 1
+  },
+  "mock": true,
+  "offline": true,
+  "research_only": true,
+  "sandbox_only": true,
+  "fake_backed": true,
+  "local_only": true,
+  "comparison_only": true,
+  "real_health_data_loaded": false,
+  "real_profile_storage": false,
+  "personal_data_exported": false,
+  "personal_health_data_exported": false,
+  "baseline_data_exported": false,
+  "live_sensor_access": false,
+  "hardware_access": false,
+  "network_calls": false,
+  "database_access": false,
+  "diagnosis": false,
+  "treatment_recommendation": false,
+  "emergency_triage": false,
+  "real_monitoring": false,
+  "clinical_interpretation": false,
+  "medical_or_clinical_claim": false,
+  "results": [
+    {
+      "category": "movement_score",
+      "status": "outside_baseline",
+      "deviation_note": "outside_baseline: current placeholder value is above the local placeholder window by 0.03."
+    },
+    {
+      "category": "notes_placeholder",
+      "status": "insufficient_data",
+      "deviation_note": "insufficient_data: no current placeholder value was available for notes_placeholder."
+    }
+  ],
+  "limitations": [
+    "Fake-backed local baseline scaffold only.",
+    "No real health data is loaded.",
+    "No real profile storage is performed.",
+    "No diagnosis, treatment, or emergency triage is produced."
+  ]
+}

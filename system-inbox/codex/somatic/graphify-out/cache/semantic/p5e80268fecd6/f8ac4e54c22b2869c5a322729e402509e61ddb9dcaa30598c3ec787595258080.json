@@ -1,0 +1,1 @@
+{"nodes": [{"id": "somatic_advisory_adapter_py", "label": "somatic/advisory/adapter.py", "file_type": "code", "source_file": "somatic/advisory/adapter.py", "rationale": "Consent-gated AI advisory client using OpenAI-compatible endpoints."}], "edges": [], "hyperedges": []}

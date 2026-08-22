@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "biomodel-runtime-policy-safe-default",
+  "policy_version": "phase-6c-safe-default",
+  "runtime_boundary": "future-real-runtime-only",
+  "runtime_execution_enabled": false,
+  "model_downloads_enabled": false,
+  "msa_server_enabled": false,
+  "network_calls_enabled": false,
+  "gpu_execution_enabled": false,
+  "resource_review_complete": false,
+  "provenance_plan_complete": false,
+  "require_user_consent": true,
+  "require_research_only_acknowledgement": true,
+  "metadata": {
+    "phase": "6C",
+    "fake_backed_in_silico_available": true,
+    "real_runtime": "future only"
+  }
+}

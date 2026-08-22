@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [], "hyperedges": [{"id": "external_science_scaffolds", "label": "External Science Provider Scaffolds", "nodes": ["somatic_providers_paperqa2", "somatic_providers_boltz", "somatic_providers_robin"], "relation": "implement", "confidence": "EXTRACTED", "confidence_score": 0.9, "source_file": "docs/integration-status.md"}]}

@@ -1,0 +1,61 @@
+{
+  "class": "code",
+  "createdAt": "2026-06-01T00:00:00Z",
+  "dependencies": [
+    {
+      "id": "somatic/shared-data-pack",
+      "version": "1.0.0"
+    }
+  ],
+  "description": "TEST VECTOR ONLY. Shared interop code pack signed with checked-in test keys; do not execute.",
+  "files": [
+    {
+      "executable": false,
+      "installTarget": "somatic/shared-code-pack/plugin/manifest.json",
+      "path": "plugin/manifest.json",
+      "sha256": "3333333333333333333333333333333333333333333333333333333333333333",
+      "size": 192
+    },
+    {
+      "executable": true,
+      "installTarget": "somatic/shared-code-pack/plugin/runner.py",
+      "path": "plugin/runner.py",
+      "sha256": "4444444444444444444444444444444444444444444444444444444444444444",
+      "size": 384
+    }
+  ],
+  "harnesses": [
+    "somatic"
+  ],
+  "id": "somatic/shared-code-pack",
+  "license": "Apache-2.0",
+  "name": "Somatic Shared Code Pack",
+  "publisher": {
+    "displayName": "Somatic Shared Fixture Publisher",
+    "keyId": "1325b850c2871916eae203f0efc3c8987f64e5e3cdb27679e6d1fa97808357e6",
+    "namespace": "somatic"
+  },
+  "schemaVersion": "1.0.0",
+  "signatures": [
+    {
+      "algo": "ed25519",
+      "keyId": "1325b850c2871916eae203f0efc3c8987f64e5e3cdb27679e6d1fa97808357e6",
+      "sig": "6htEdtqfCm63TceFxQfm0CTZavodjmw268SQdSWI11Z1X+q05euEZ00toT3NNIl6gEXeZAYLiqjy2auu7JEfBg=="
+    }
+  ],
+  "transport": {
+    "infohash": "2222222222222222222222222222222222222222",
+    "magnet": "magnet:?xt=urn:btih:2222222222222222222222222222222222222222&dn=somatic%2Fshared-code-pack%401.0.0&ws=https%3A%2F%2Fexample.invalid%2Ffabric%2Fshared%2F"
+  },
+  "type": "plugin",
+  "version": "1.0.0",
+  "xInteropUnknown": {
+    "note": "unknown code-pack fields must remain signed",
+    "tamperedAfterSigning": true,
+    "utf16OrderProbe": {
+      "퟿": "before-surrogate",
+      "": "private-use",
+      "😀": "emoji"
+    }
+  }
+}

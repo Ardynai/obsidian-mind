@@ -1,0 +1,65 @@
+{
+  "id": "safety-response-phase1a-001",
+  "request_id": "safety-request-phase1a-001",
+  "schema_version": 1,
+  "decision": "require-human-review",
+  "checks": [
+    {
+      "id": "medical-boundary",
+      "status": "pass",
+      "notes": "Claims are framed as research summary language."
+    },
+    {
+      "id": "unsupported-claim",
+      "status": "pass",
+      "notes": "No claims exceed fixture evidence."
+    },
+    {
+      "id": "evidence-sufficiency",
+      "status": "warning",
+      "notes": "Single fixture evidence record is enough for schema tests but not for research conclusions."
+    },
+    {
+      "id": "human-review-required",
+      "status": "required",
+      "notes": "Human review required before use outside fixture validation."
+    },
+    {
+      "id": "privacy-consent",
+      "status": "warning",
+      "notes": "Consent state is declared but not independently verified in Phase 1A."
+    },
+    {
+      "id": "license-gate",
+      "status": "pass",
+      "notes": "Fixture license gate is satisfied."
+    }
+  ],
+  "required_actions": [
+    "Preserve fixture limitations in report packet.",
+    "Mark report as human-review-required."
+  ],
+  "blocked_actions": [
+    "Do not present fixture output as real-world sensor findings.",
+    "Do not run real CSI, camera, audio, wearable, BLE, WiFi, thermal, environmental, or hardware capture.",
+    "Do not perform real monitoring, diagnosis, treatment, or emergency triage."
+  ],
+  "human_review": {
+    "required": true,
+    "reviewer_qualifications": ["sensor-research-reviewer"],
+    "due_before": "publication-or-use"
+  },
+  "language_constraints": [
+    "Use research and decision-support framing only.",
+    "Do not add diagnosis, treatment, cure, emergency triage, or clinician replacement claims."
+  ],
+  "evidence_requirements": {
+    "missing": [],
+    "warnings": ["Fixture evidence is synthetic."]
+  },
+  "audit": {
+    "evaluated_at": "2026-01-01T00:10:00Z",
+    "policy_version": "phase-1a-fixture",
+    "provider_id": "mock-safety-provider"
+  }
+}

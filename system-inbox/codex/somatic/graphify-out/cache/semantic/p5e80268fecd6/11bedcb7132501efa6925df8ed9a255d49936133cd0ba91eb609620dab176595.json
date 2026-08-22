@@ -1,0 +1,1 @@
+{"nodes": [{"id": "fabric_signing", "label": "Fabric Signing", "file_type": "code", "source_file": "somatic/fabric/signing.py", "rationale": "Implements Ed25519 signing for Fabric manifests."}], "edges": [], "hyperedges": []}

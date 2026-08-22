@@ -1,0 +1,92 @@
+{
+  "adapter_execution_granted": false,
+  "authorization_status": "not-authorized",
+  "camera_capture_execution_granted": false,
+  "capability_label_count": 7,
+  "capability_labels": [
+    {
+      "capability_label": "dashboard-observation",
+      "capability_status": "profile-metadata-only",
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_label": "terminal-output-observation",
+      "capability_status": "profile-metadata-only",
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_label": "ci-status-observation",
+      "capability_status": "profile-metadata-only",
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_label": "doctor-output-observation",
+      "capability_status": "profile-metadata-only",
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_label": "review-status-observation",
+      "capability_status": "profile-metadata-only",
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_label": "sanitized-visual-event-summary",
+      "capability_status": "profile-metadata-only",
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    },
+    {
+      "capability_label": "notification-policy-metadata",
+      "capability_status": "profile-metadata-only",
+      "execution_permitted": false,
+      "metadata_only": true,
+      "real_mode_runtime_enabled": false
+    }
+  ],
+  "click_automation_execution_granted": false,
+  "clipboard_capture_execution_granted": false,
+  "execution_permitted": false,
+  "grant_status": "no-grant",
+  "jules_review_required_for_validator_or_authorization_semantics": true,
+  "mic_capture_execution_granted": false,
+  "model_execution_granted": false,
+  "phase12c_profiles_are_approvals_grants_or_permissions": false,
+  "profile_id": "p12c-profile-f14562c8bee7f2cf",
+  "profile_kind": "phase-12c-visual-supervision-capability-profile",
+  "profile_status": "phase-12c-capability-profile-only-non-executing",
+  "provider_execution_granted": false,
+  "real_mode_runtime_enabled": false,
+  "runtime_stage": "not-implemented",
+  "source_phase": "12B",
+  "source_record_candidate": {
+    "authorization_phase": "record-candidate-only",
+    "authorization_status": "not-authorized",
+    "contract_version": 1,
+    "decision_status": "not-submitted",
+    "execution_permitted": false,
+    "grant_status": "no-grant",
+    "real_mode_runtime_enabled": false,
+    "record_candidate_status": "phase-12b-record-candidate-not-approval-grant-or-permission",
+    "record_id": "p12b-record-3cc57e7c02909f17",
+    "record_kind": "phase-12b-runtime-authorization-record-candidate",
+    "requested_domain_count": 2,
+    "required_future_gate_count": 8,
+    "required_future_reviewer_role_count": 6,
+    "runtime_stage": "not-implemented",
+    "source_phase": "12A"
+  },
+  "supervision_phase": "capability-profile-only",
+  "visual_capture_execution_granted": false,
+  "visual_supervision_capability_profile_contract_version": 1
+}

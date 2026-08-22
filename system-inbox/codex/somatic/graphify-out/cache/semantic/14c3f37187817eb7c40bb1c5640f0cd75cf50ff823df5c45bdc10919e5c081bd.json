@@ -1,0 +1,1 @@
+{"nodes": [], "edges": [], "hyperedges": [{"id": "fabric_interop_flow", "label": "Content Fabric Interop Flow", "nodes": ["somatic_fabric", "somatic_safety_phase12_contracts", "somatic_mock_runtime"], "relation": "form", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "docs/HISTORY.md"}]}

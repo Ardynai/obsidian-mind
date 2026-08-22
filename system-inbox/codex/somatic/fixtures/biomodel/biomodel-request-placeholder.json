@@ -1,0 +1,21 @@
+{
+  "id": "biomodel-request-placeholder",
+  "schema_version": 1,
+  "provider_class": "biomodel",
+  "objective": "Plan a Boltz-2 structure and affinity prediction without executing the model.",
+  "target_refs": ["target://mock-protein-ligand-complex"],
+  "input_artifact_refs": ["fixture://biomodel/input/boltz2-example.yaml"],
+  "constraints": {
+    "model": "boltz2",
+    "input_format": "yaml",
+    "requires_precomputed_msa": true,
+    "allow_msa_server": false,
+    "allow_model_download": false,
+    "allow_gpu_execution": false
+  },
+  "metadata": {
+    "mock": true,
+    "research_only": true,
+    "clinical_or_lab_conclusion": false
+  }
+}

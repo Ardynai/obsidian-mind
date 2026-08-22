@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "mock-intervention-ledger-placeholder",
+  "workflow_id": "valid-n-of-1",
+  "intervention_tag_id": "intervention-tag-placeholder",
+  "intervention_context_id": "intervention-context-placeholder",
+  "response_evaluation_plan_id": "response-evaluation-plan-placeholder",
+  "entries": [
+    {
+      "id": "mock-intervention-ledger-entry-placeholder",
+      "intervention_tag_id": "intervention-tag-placeholder",
+      "category": "rest_placeholder",
+      "entry_status": "mock-tag-recorded",
+      "real_intervention_performed": false,
+      "recommendation_generated": false,
+      "prescription_generated": false,
+      "treatment_recommendation": false,
+      "medical_advice": false,
+      "claim_effectiveness": false,
+      "real_monitoring": false,
+      "real_scheduling": false
+    }
+  ],
+  "mock": true,
+  "offline": true,
+  "research_only": true,
+  "sandbox_only": true,
+  "fake_backed": true,
+  "local_only": true,
+  "recommendation_generated": false,
+  "prescription_generated": false,
+  "treatment_recommendation": false,
+  "medical_advice": false,
+  "claim_effectiveness": false,
+  "real_intervention_performed": false,
+  "real_health_data_loaded": false,
+  "personal_data_exported": false,
+  "live_sensor_access": false,
+  "hardware_access": false,
+  "network_calls": false,
+  "database_access": false,
+  "external_memory": false,
+  "diagnosis": false,
+  "emergency_triage": false,
+  "real_monitoring": false,
+  "real_scheduling": false,
+  "notification_automation": false,
+  "reminder_automation": false,
+  "clinical_interpretation": false,
+  "medical_or_clinical_claim": false,
+  "future_real_use_requirements": [
+    "explicit consent",
+    "human review",
+    "clinical review where applicable",
+    "local storage controls",
+    "safety gates",
+    "no emergency-triage substitution"
+  ],
+  "limitations": [
+    "Mock local intervention tag scaffold only.",
+    "No recommendation or prescription is generated.",
+    "No treatment recommendation, medical advice, or emergency triage is produced.",
+    "Medication and clinician placeholders are disabled metadata only.",
+    "Response evaluation is future planning only, not real monitoring.",
+    "No reminders, automation, notification, or scheduling is created."
+  ],
+  "metadata": {
+    "ledger_status": "local-placeholder-only",
+    "applied_interventions": []
+  }
+}

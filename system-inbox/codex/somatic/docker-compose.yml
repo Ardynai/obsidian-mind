@@ -1,0 +1,8 @@
+services:
+  somatic:
+    image: python:3.11-slim
+    working_dir: /workspace
+    network_mode: "none"
+    volumes:
+      - .:/workspace
+    command: ["python", "-m", "unittest"]

@@ -1,0 +1,58 @@
+schema_version: 1
+id: invalid-missing-mode
+title: Invalid Missing Mode Fixture
+description: This fixture intentionally omits mode for future schema validation tests.
+version: 0.1.0
+status: fixture
+stages:
+  - id: placeholder
+    kind: report
+    requires: []
+    provider_refs:
+      - report
+    inputs:
+      - research_question
+    outputs:
+      - report_packet
+inputs:
+  - id: research_question
+    kind: text
+    required: true
+    sensitivity: public
+    description: Placeholder input.
+providers:
+  - ref: report
+    class: report
+    capabilities:
+      - report.packet.create
+    required: true
+artifacts:
+  - id: report_packet
+    kind: report-packet
+    format: json
+    retention: run
+    hash_required: true
+safety_profile:
+  risk_class: low
+  domain: general-research
+  human_review_required: true
+  external_actions_allowed: false
+  real_lab_action_requires_approval: false
+  clinical_safety_gate_required: false
+  code_pack_quarantine_required: false
+evidence_requirements:
+  min_records: 0
+  accepted_source_types:
+    - user-note
+  citation_required: false
+  provenance_required: true
+  hash_required: false
+  limitations_required: true
+  counterevidence_required: false
+output_packet:
+  kind: report-packet
+  schema_ref: docs/report-packet.md
+  required_sections:
+    - summary
+    - safety_review
+  review_state: human-review-required

@@ -1,0 +1,96 @@
+schema_version: 1
+id: valid-literature-only
+title: Valid Literature Only Fixture
+mode: literature-only
+description: Offline fixture for literature review, evidence extraction, and research summary output.
+version: 0.1.0
+status: fixture
+stages:
+  - id: collect-literature
+    kind: literature-search
+    requires: []
+    provider_refs:
+      - literature
+    inputs:
+      - research_question
+      - corpus
+    outputs:
+      - evidence_table
+  - id: draft-summary
+    kind: report
+    requires:
+      - collect-literature
+    provider_refs:
+      - report
+    inputs:
+      - evidence_table
+    outputs:
+      - report_packet
+    safety_gate: literature-summary-review
+inputs:
+  - id: research_question
+    kind: text
+    required: true
+    sensitivity: public
+    description: Research question to summarize.
+  - id: corpus
+    kind: directory
+    required: true
+    sensitivity: public
+    description: Local fixture corpus.
+providers:
+  - ref: literature
+    class: literature
+    capabilities:
+      - corpus.search
+      - evidence.extract
+    required: true
+    constraints:
+      offline_required: true
+  - ref: report
+    class: report
+    capabilities:
+      - report.packet.create
+    required: true
+artifacts:
+  - id: evidence_table
+    kind: evidence-table
+    format: json
+    retention: run
+    hash_required: true
+  - id: report_packet
+    kind: report-packet
+    format: json
+    retention: user-export
+    hash_required: true
+safety_profile:
+  risk_class: low
+  domain: general-research
+  human_review_required: true
+  external_actions_allowed: false
+  real_lab_action_requires_approval: false
+  clinical_safety_gate_required: false
+  code_pack_quarantine_required: false
+  notes:
+    - Literature-only fixture with no lab or clinical action.
+evidence_requirements:
+  min_records: 1
+  accepted_source_types:
+    - paper
+    - dataset
+    - user-note
+  citation_required: true
+  provenance_required: true
+  hash_required: true
+  limitations_required: true
+  counterevidence_required: true
+output_packet:
+  kind: report-packet
+  schema_ref: docs/report-packet.md
+  required_sections:
+    - summary
+    - evidence_table
+    - methods
+    - limitations
+    - safety_review
+  review_state: human-review-required

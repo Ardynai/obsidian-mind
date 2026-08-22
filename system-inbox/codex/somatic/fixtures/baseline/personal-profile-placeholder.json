@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "personal-profile-placeholder",
+  "workflow_id": "valid-n-of-1",
+  "profile_status": "placeholder",
+  "label": "local-placeholder-profile",
+  "mock": true,
+  "offline": true,
+  "research_only": true,
+  "sandbox_only": true,
+  "fake_backed": true,
+  "local_only": true,
+  "real_health_data_loaded": false,
+  "real_profile_storage": false,
+  "personal_data_exported": false,
+  "personal_health_data_exported": false,
+  "network_calls": false,
+  "database_access": false,
+  "diagnosis": false,
+  "treatment_recommendation": false,
+  "emergency_triage": false,
+  "real_monitoring": false,
+  "clinical_interpretation": false,
+  "pii_fields": [],
+  "limitations": [
+    "Fake-backed local baseline scaffold only.",
+    "No real health data is loaded.",
+    "No real profile storage is performed.",
+    "No diagnosis, treatment, or emergency triage is produced."
+  ]
+}

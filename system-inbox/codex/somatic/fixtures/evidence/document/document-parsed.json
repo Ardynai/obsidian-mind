@@ -1,0 +1,28 @@
+{
+  "documents": [
+    {
+      "id": "doc-001",
+      "status": "parsed",
+      "word_count": 142,
+      "line_count": 12,
+      "char_count": 823,
+      "format": "plain-text"
+    },
+    {
+      "id": "doc-002",
+      "status": "parsed",
+      "word_count": 89,
+      "line_count": 7,
+      "char_count": 510,
+      "format": "plain-text"
+    },
+    {
+      "id": "doc-003",
+      "status": "parsed",
+      "word_count": 215,
+      "line_count": 18,
+      "char_count": 1247,
+      "format": "json"
+    }
+  ]
+}
